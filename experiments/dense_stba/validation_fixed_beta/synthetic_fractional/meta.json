@@ -1,0 +1,80 @@
+{
+  "name": "synthetic_fractional",
+  "manifest_path": "/data/jjy/ipc/stba/experiments/dense_stba/data/synthetic/fractional/manifest.json",
+  "observations_path": "/data/jjy/ipc/stba/experiments/dense_stba/cache/synthetic_fractional/observations.npz",
+  "config": {
+    "seed": 20261111,
+    "association": {
+      "stride": 4,
+      "margin": 8,
+      "confidence_min": 0.15,
+      "roma_fb_max": 2.0,
+      "anchor_error_max": 1.5,
+      "anchor_min_support": 2,
+      "collision_distance": 0.75,
+      "min_track_observations": 8
+    },
+    "holdout_every": 5,
+    "holdout_phase": 2,
+    "synthetic_beta_bound_frames": 2.0,
+    "real_raw_beta_bound_frames": 6.0,
+    "integer_beta_bound_frames": 1.0,
+    "time_init": {
+      "step_frames": 0.1,
+      "max_gap_frames": 2.1,
+      "min_motion_span_px": 2.0,
+      "min_motion_speed_px_frame": 0.02,
+      "min_dynamic_tracks": 8,
+      "min_samples_per_track": 6,
+      "huber_px": 1.0
+    },
+    "knot_interval_frames": 4.0,
+    "initialization_max_reprojection_px": 4.0,
+    "minimum_initialization_samples": 8,
+    "optimizer": {
+      "max_iterations": 50,
+      "batch_size": 128,
+      "sigma_px": 1.0,
+      "huber_delta": 2.0,
+      "lambda_motion": 0.0001,
+      "lm_initial": 0.001,
+      "beta_step_tolerance_seconds": 1e-06,
+      "control_step_tolerance": 1e-06,
+      "objective_tolerance": 1e-07,
+      "min_observations": 12,
+      "min_cameras": 2,
+      "min_dynamic_tracks": 8,
+      "inlier_threshold_px": 4.0
+    },
+    "motion_prior_units": "Sum per trajectory of integral squared world acceleration dt; lambda not secretly normalized by image or point count",
+    "default_methods": [
+      "B0",
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "spatial_prior": false,
+    "default_LSM": false
+  },
+  "camera_ids": [
+    0,
+    1,
+    2
+  ],
+  "fps": 30.000000000000007,
+  "methods": [
+    "B2"
+  ],
+  "window": null,
+  "seed_frame": 16,
+  "seed_grid_size": 1408,
+  "calibration_fixed": true,
+  "reference_camera_index": 0,
+  "beta_convention": "physical_time=nominal_timestamp+beta_seconds",
+  "holdout_policy": "Every fifth original observation (phase2) withheld from time-profile scoring, 3D initialization, spline and beta optimization. Frontend uses images for tracking/association; this tests prediction of held-out 2D measurements, not independent 3D accuracy.",
+  "geometry_support_policy": "Exported valid 3D samples require >=2 views with observed endpoints within2.1frames, positive camera depth, valid trajectory, and physical support; model-only continuation separately marked. Interpolated2D samples are initialization/support checks, never extra loss observations.",
+  "software": {
+    "torch": "2.5.1+cu121",
+    "numpy": "2.2.6"
+  }
+}

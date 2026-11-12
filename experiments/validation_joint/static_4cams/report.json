@@ -1,0 +1,227 @@
+{
+  "scenario": "static_4cams",
+  "generator_command": [
+    "python3",
+    "tools/generate_synthetic.py",
+    "--cameras",
+    "4",
+    "--frames",
+    "24",
+    "--tracks",
+    "4",
+    "--static-points",
+    "20",
+    "--noise",
+    "0.1",
+    "--seed",
+    "42",
+    "--pose-noise",
+    "0.003",
+    "--intrinsics-noise",
+    "0.01",
+    "--out",
+    "experiments/validation_joint/static_4cams/input"
+  ],
+  "input_camera_errors": {
+    "all": {
+      "count": 4,
+      "rotation_rmse_degrees": 0.1546724249373582,
+      "camera_center_rmse_m": 0.010438464903981431,
+      "focal_relative_rmse": 0.0036532822638268006
+    },
+    "perturbed_cameras_ge2": {
+      "count": 2,
+      "rotation_rmse_degrees": 0.21873984106821406,
+      "camera_center_rmse_m": 0.014762218637566108,
+      "focal_relative_rmse": 0.005166521324680945
+    }
+  },
+  "runs": {
+    "fixed_calibration": {
+      "command": [
+        "build/stba",
+        "--input",
+        "experiments/validation_joint/static_4cams/input",
+        "--output",
+        "experiments/validation_joint/static_4cams/fixed_calibration",
+        "--config",
+        "configs/default.yaml",
+        "--mode",
+        "full"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.51027113300006,
+      "stages": [
+        {
+          "stage": "incremental",
+          "cost": "6711.90401900299",
+          "image_cost": "2025.386075126351",
+          "motion_cost": "4686.517943876639",
+          "reprojection_rmse": "0.93758936498295742",
+          "usable": "1",
+          "order_valid": "1"
+        },
+        {
+          "stage": "global",
+          "cost": "6711.9031897243112",
+          "image_cost": "2025.3592431515294",
+          "motion_cost": "4686.5439465727814",
+          "reprojection_rmse": "0.93758315444910811",
+          "usable": "1",
+          "order_valid": "1"
+        }
+      ],
+      "reconstructed_observations": 2304,
+      "input_observations": 2304,
+      "observation_coverage": 1.0,
+      "matched_truth_observations": 2304,
+      "all_trajectory_rmse_m": 0.003725250367931756,
+      "dynamic_trajectory_rmse_m": 0.005333739857881488,
+      "static_trajectory_rmse_m": 0.0033110771948446165,
+      "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+      "similarity_alignment": "One fitted Sim(3) over all matched points, for spatial gauge only; raw errors are also reported.",
+      "similarity_scale": 1.0001456271652442,
+      "all_similarity_aligned_rmse_m": 0.0026085911420560383,
+      "dynamic_similarity_aligned_rmse_m": 0.004936087468794708,
+      "static_similarity_aligned_rmse_m": 0.001814581327958998,
+      "dct_matched_truth_observations": 2304,
+      "all_dct_interpolated_rmse_m": 0.003784740407080702,
+      "dynamic_dct_interpolated_rmse_m": 0.005579372611937289,
+      "static_dct_interpolated_rmse_m": 0.0033110771948446165,
+      "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+      "offset_reference_camera": 0,
+      "offset_errors": [
+        {
+          "camera_id": 0,
+          "error_seconds": 0.0,
+          "error_frames": 0.0
+        },
+        {
+          "camera_id": 1,
+          "error_seconds": -0.001598896133909039,
+          "error_frames": -0.04796688401727117
+        },
+        {
+          "camera_id": 2,
+          "error_seconds": 0.0026639295907996824,
+          "error_frames": 0.07991788772399047
+        },
+        {
+          "camera_id": 3,
+          "error_seconds": -0.0006673111161367724,
+          "error_frames": -0.02001933348410317
+        }
+      ],
+      "offset_mae_frames": 0.04930136840845494,
+      "offset_max_error_frames": 0.07991788772399047,
+      "camera_errors_raw_world": {
+        "all": {
+          "count": 4,
+          "rotation_rmse_degrees": 0.1546724249373582,
+          "camera_center_rmse_m": 0.010438464903981431,
+          "focal_relative_rmse": 0.0036532822638268006
+        },
+        "perturbed_cameras_ge2": {
+          "count": 2,
+          "rotation_rmse_degrees": 0.21873984106821406,
+          "camera_center_rmse_m": 0.014762218637566108,
+          "focal_relative_rmse": 0.005166521324680945
+        }
+      }
+    },
+    "joint_calibration": {
+      "command": [
+        "build/stba",
+        "--input",
+        "experiments/validation_joint/static_4cams/input",
+        "--output",
+        "experiments/validation_joint/static_4cams/joint_calibration",
+        "--config",
+        "configs/default.yaml",
+        "--mode",
+        "full",
+        "--optimize-poses",
+        "--optimize-intrinsics"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.0116145319998395,
+      "stages": [
+        {
+          "stage": "incremental",
+          "cost": "6711.90401900299",
+          "image_cost": "2025.386075126351",
+          "motion_cost": "4686.517943876639",
+          "reprojection_rmse": "0.93758936498295742",
+          "usable": "1",
+          "order_valid": "1"
+        },
+        {
+          "stage": "global",
+          "cost": "3303.1485212546572",
+          "image_cost": "130.95091109114091",
+          "motion_cost": "3172.1976101635164",
+          "reprojection_rmse": "0.23840371838304714",
+          "usable": "1",
+          "order_valid": "1"
+        }
+      ],
+      "reconstructed_observations": 2304,
+      "input_observations": 2304,
+      "observation_coverage": 1.0,
+      "matched_truth_observations": 2304,
+      "all_trajectory_rmse_m": 0.14053741633511033,
+      "dynamic_trajectory_rmse_m": 0.11476547484748927,
+      "static_trajectory_rmse_m": 0.14514370680392527,
+      "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+      "similarity_alignment": "One fitted Sim(3) over all matched points, for spatial gauge only; raw errors are also reported.",
+      "similarity_scale": 1.1535103437567276,
+      "all_similarity_aligned_rmse_m": 0.07076836788071077,
+      "dynamic_similarity_aligned_rmse_m": 0.04289293009904608,
+      "static_similarity_aligned_rmse_m": 0.07511214003410639,
+      "dct_matched_truth_observations": 2304,
+      "all_dct_interpolated_rmse_m": 0.14055002717070664,
+      "dynamic_dct_interpolated_rmse_m": 0.11485809811327696,
+      "static_dct_interpolated_rmse_m": 0.14514370680392527,
+      "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+      "offset_reference_camera": 0,
+      "offset_errors": [
+        {
+          "camera_id": 0,
+          "error_seconds": 0.0,
+          "error_frames": 0.0
+        },
+        {
+          "camera_id": 1,
+          "error_seconds": 0.0008741795932288247,
+          "error_frames": 0.02622538779686474
+        },
+        {
+          "camera_id": 2,
+          "error_seconds": -7.17184026998649e-05,
+          "error_frames": -0.002151552080995947
+        },
+        {
+          "camera_id": 3,
+          "error_seconds": 0.0008262354356795942,
+          "error_frames": 0.024787063070387826
+        }
+      ],
+      "offset_mae_frames": 0.017721334316082835,
+      "offset_max_error_frames": 0.02622538779686474,
+      "camera_errors_raw_world": {
+        "all": {
+          "count": 4,
+          "rotation_rmse_degrees": 3.4840404418174256,
+          "camera_center_rmse_m": 0.44471676307758057,
+          "focal_relative_rmse": 0.20890760670505903
+        },
+        "perturbed_cameras_ge2": {
+          "count": 2,
+          "rotation_rmse_degrees": 4.425244285400708,
+          "camera_center_rmse_m": 0.4959974875408715,
+          "focal_relative_rmse": 0.2064209433146328
+        }
+      }
+    }
+  }
+}

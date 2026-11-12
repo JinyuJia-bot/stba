@@ -1,0 +1,120 @@
+{
+  "all_passed": true,
+  "group": "synthetic_affine_brightness",
+  "scene_mode": "static",
+  "source_calibrations_exactly_equal": true,
+  "calibration_sha256": "05f27ce4dfe3999992b8f2d7bc3cbead84cb5bf38c1848316bde5d78603f1a4d",
+  "eligibility_exactly_joint_A1_affine_and_geometry": true,
+  "eligible_pixels": 18957,
+  "common_four_arms_pixels": 18930,
+  "cpu_patch_replay_threshold": 0.999,
+  "depth_initial_bitwise_identical_all_arms": true,
+  "weights_frozen_recomputed": true,
+  "no_ground_truth_used_in_acceptance_or_weights": true,
+  "arms": {
+    "uniform": {
+      "success_pixels": 18950,
+      "positive_ray_depth": true,
+      "positive_target_depth": [
+        true,
+        true
+      ],
+      "patch_mask_failed_counts": [
+        0,
+        0,
+        0
+      ],
+      "maximum_projection_replay_error_px": [
+        3.7577410401614605e-05,
+        4.5528200414093194e-05
+      ],
+      "affine_exactly_fixed_from_stage1": true,
+      "mean_frozen_weights": [
+        1.0,
+        1.0
+      ],
+      "mean_absolute_depth_change_vs_uniform_on_common": 0.0,
+      "maximum_absolute_depth_change_vs_uniform_on_common": 0.0,
+      "optimization_seconds": 6.188402445986867,
+      "peak_allocated_MB": 23.113728
+    },
+    "quality": {
+      "success_pixels": 18948,
+      "positive_ray_depth": true,
+      "positive_target_depth": [
+        true,
+        true
+      ],
+      "patch_mask_failed_counts": [
+        0,
+        0,
+        0
+      ],
+      "maximum_projection_replay_error_px": [
+        3.463396671513592e-05,
+        3.7296505291141275e-05
+      ],
+      "affine_exactly_fixed_from_stage1": true,
+      "mean_frozen_weights": [
+        0.7996518844421596,
+        1.2003481155578537
+      ],
+      "mean_absolute_depth_change_vs_uniform_on_common": 0.0006138493772596121,
+      "maximum_absolute_depth_change_vs_uniform_on_common": 0.0039119720458984375,
+      "optimization_seconds": 5.4779308419674635,
+      "peak_allocated_MB": 23.113728
+    },
+    "distance": {
+      "success_pixels": 18944,
+      "positive_ray_depth": true,
+      "positive_target_depth": [
+        true,
+        true
+      ],
+      "patch_mask_failed_counts": [
+        0,
+        0,
+        0
+      ],
+      "maximum_projection_replay_error_px": [
+        3.220452476544379e-05,
+        3.8078401216318954e-05
+      ],
+      "affine_exactly_fixed_from_stage1": true,
+      "mean_frozen_weights": [
+        1.2983578337091493,
+        0.701642166290292
+      ],
+      "mean_absolute_depth_change_vs_uniform_on_common": 0.0009620062774047256,
+      "maximum_absolute_depth_change_vs_uniform_on_common": 0.005692481994628906,
+      "optimization_seconds": 5.857379201799631,
+      "peak_allocated_MB": 23.113728
+    },
+    "quality_distance": {
+      "success_pixels": 18949,
+      "positive_ray_depth": true,
+      "positive_target_depth": [
+        true,
+        true
+      ],
+      "patch_mask_failed_counts": [
+        0,
+        0,
+        0
+      ],
+      "maximum_projection_replay_error_px": [
+        3.6435066245218694e-05,
+        4.494906206730933e-05
+      ],
+      "affine_exactly_fixed_from_stage1": true,
+      "mean_frozen_weights": [
+        1.1038197210493879,
+        0.8961802789506196
+      ],
+      "mean_absolute_depth_change_vs_uniform_on_common": 0.0003297821094747633,
+      "maximum_absolute_depth_change_vs_uniform_on_common": 0.004951000213623047,
+      "optimization_seconds": 5.270267989486456,
+      "peak_allocated_MB": 23.113728
+    }
+  }
+}

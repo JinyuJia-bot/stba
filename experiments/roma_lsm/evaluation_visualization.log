@@ -1,0 +1,18 @@
+EVALUATE experiments/roma_lsm/results/real_7_10
+PLOT experiments/roma_lsm/results/real_7_10
+DONE experiments/roma_lsm/results/real_7_10 5
+EVALUATE experiments/roma_lsm/results/real_7_9
+PLOT experiments/roma_lsm/results/real_7_9
+DONE experiments/roma_lsm/results/real_7_9 5
+EVALUATE experiments/roma_lsm/results/synthetic_affine_brightness_0_1
+PLOT experiments/roma_lsm/results/synthetic_affine_brightness_0_1
+DONE experiments/roma_lsm/results/synthetic_affine_brightness_0_1 7
+EVALUATE experiments/roma_lsm/results/synthetic_affine_brightness_0_2
+PLOT experiments/roma_lsm/results/synthetic_affine_brightness_0_2
+DONE experiments/roma_lsm/results/synthetic_affine_brightness_0_2 7
+EVALUATE experiments/roma_lsm/results/synthetic_occlusion_weak_noise_0_1
+PLOT experiments/roma_lsm/results/synthetic_occlusion_weak_noise_0_1
+DONE experiments/roma_lsm/results/synthetic_occlusion_weak_noise_0_1 7
+EVALUATE experiments/roma_lsm/results/synthetic_translation_0_1
+PLOT experiments/roma_lsm/results/synthetic_translation_0_1
+DONE experiments/roma_lsm/results/synthetic_translation_0_1 7

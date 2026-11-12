@@ -1,0 +1,10 @@
+{"case": "corgi_raw", "coarse_beta_frames": [0.0, 0.5597935364325491, 1.2038752438655156], "reliable": [true, true, true], "motion_tracks": 755}
+/data/jjy/ipc/stba/experiments/dense_stba/run_experiment.py:211: RuntimeWarning: Mean of empty slice
+  fields['confidence']=np.nanmean(np.where(method_obs['visible'],method_obs['weight'],np.nan),axis=(1,2))
+{"case": "corgi_raw", "method": "B0", "beta_frames": [0.0, 0.0, 0.0], "trajectories": 831, "valid_samples": 49776, "status": ["assumed_synchronous", "assumed_synchronous", "assumed_synchronous"], "seconds": 0.48956812731921673}
+{"case": "corgi_raw", "method": "B1", "beta_frames": [0.0, 0.5597935364325491, 1.2038752438655156], "trajectories": 831, "valid_samples": 48851, "status": ["reference_gauge", "fixed_beta_not_estimated", "fixed_beta_not_estimated"], "seconds": 1.3907945454120636}
+{"case": "corgi_raw", "method": "B3", "beta_frames": [0.0, 0.493942313488404, 1.6155163616755752], "trajectories": 831, "valid_samples": 48851, "status": ["reference_gauge", "locally_observable", "locally_observable"], "seconds": 1.5632104761898518}
+{"case": "corgi_integer_aligned", "coarse_beta_frames": [0.0, -0.5231132133418035, -0.9999979291974356], "reliable": [true, true, false], "motion_tracks": 755}
+{"case": "corgi_integer_aligned", "method": "B0", "beta_frames": [0.0, 0.0, 0.0], "trajectories": 823, "valid_samples": 49296, "status": ["assumed_synchronous", "assumed_synchronous", "assumed_synchronous"], "seconds": 0.44551149383187294}
+{"case": "corgi_integer_aligned", "method": "B1", "beta_frames": [0.0, -0.5231132133418035, -0.9999979291974356], "trajectories": 823, "valid_samples": 48471, "status": ["reference_gauge", "fixed_beta_not_estimated", "fixed_beta_not_estimated"], "seconds": 1.1889478955417871}
+{"case": "corgi_integer_aligned", "method": "B3", "beta_frames": [0.0, -0.48948234967357007, -1.0], "trajectories": 823, "valid_samples": 48471, "status": ["reference_gauge", "iteration_limit_or_no_convergence", "at_beta_bound"], "seconds": 2.7314667496830225}

@@ -1,0 +1,634 @@
+{
+  "fixed_zero": {
+    "stages": [
+      {
+        "stage": "incremental",
+        "cost": "21750.312578469973",
+        "image_cost": "2394.8382805743959",
+        "motion_cost": "19355.474297895576",
+        "reprojection_rmse": "1.2896054199978282",
+        "usable": "1",
+        "order_valid": "1"
+      },
+      {
+        "stage": "global",
+        "cost": "21750.312578469973",
+        "image_cost": "2394.8382805743959",
+        "motion_cost": "19355.474297895576",
+        "reprojection_rmse": "1.2896054199978282",
+        "usable": "1",
+        "order_valid": "1"
+      }
+    ],
+    "reconstructed_observations": 1440,
+    "input_observations": 1440,
+    "observation_coverage": 1.0,
+    "matched_truth_observations": 1440,
+    "all_trajectory_rmse_m": 0.02102376210779456,
+    "dynamic_trajectory_rmse_m": 0.027141484124884305,
+    "static_trajectory_rmse_m": 7.869028424713086e-05,
+    "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+    "dct_matched_truth_observations": 1440,
+    "all_dct_interpolated_rmse_m": 0.021023766473237077,
+    "dynamic_dct_interpolated_rmse_m": 0.02714148976066215,
+    "static_dct_interpolated_rmse_m": 7.869028424713086e-05,
+    "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+    "offset_reference_camera": 0,
+    "offset_errors": [
+      {
+        "camera_id": 0,
+        "error_seconds": 0.0,
+        "error_frames": 0.0
+      },
+      {
+        "camera_id": 1,
+        "error_seconds": -0.024999999999999998,
+        "error_frames": -0.3
+      },
+      {
+        "camera_id": 2,
+        "error_seconds": 0.016666666666666666,
+        "error_frames": 0.2
+      }
+    ],
+    "offset_mae_frames": 0.25,
+    "offset_max_error_frames": 0.3,
+    "dynamic_error_quantiles_mm": {
+      "median": 20.922265918459853,
+      "p90": 40.20612991577968,
+      "p95": 49.360375912522265,
+      "max": 76.64670792189327
+    },
+    "dynamic_middle_frames_rmse_mm": 27.15844371045769,
+    "dynamic_worst_observations": [
+      {
+        "track_id": 9,
+        "camera_id": 1,
+        "frame": 16,
+        "time": 1.3333333333333333,
+        "error_mm": 76.64670792189327
+      },
+      {
+        "track_id": 5,
+        "camera_id": 1,
+        "frame": 10,
+        "time": 0.8333333333333334,
+        "error_mm": 75.72637668076689
+      },
+      {
+        "track_id": 7,
+        "camera_id": 1,
+        "frame": 17,
+        "time": 1.4166666666666667,
+        "error_mm": 75.53895780217438
+      },
+      {
+        "track_id": 5,
+        "camera_id": 1,
+        "frame": 11,
+        "time": 0.9166666666666666,
+        "error_mm": 75.2853491648279
+      },
+      {
+        "track_id": 9,
+        "camera_id": 1,
+        "frame": 3,
+        "time": 0.25,
+        "error_mm": 75.1017861693174
+      },
+      {
+        "track_id": 9,
+        "camera_id": 1,
+        "frame": 17,
+        "time": 1.4166666666666667,
+        "error_mm": 75.0164510126368
+      },
+      {
+        "track_id": 7,
+        "camera_id": 1,
+        "frame": 16,
+        "time": 1.3333333333333333,
+        "error_mm": 72.83620374539753
+      },
+      {
+        "track_id": 7,
+        "camera_id": 1,
+        "frame": 3,
+        "time": 0.25,
+        "error_mm": 70.6908056148906
+      }
+    ],
+    "dynamic_per_track": [
+      {
+        "track_id": 0,
+        "label": "TakeoMonday:LBWT",
+        "rmse_mm": 24.385756823976408,
+        "max_mm": 42.166871957000936
+      },
+      {
+        "track_id": 1,
+        "label": "TakeoMonday:RBWT",
+        "rmse_mm": 24.684361600791124,
+        "max_mm": 42.21741333853248
+      },
+      {
+        "track_id": 2,
+        "label": "TakeoMonday:LFWT",
+        "rmse_mm": 24.481347855750855,
+        "max_mm": 41.60983425009434
+      },
+      {
+        "track_id": 3,
+        "label": "TakeoMonday:RFWT",
+        "rmse_mm": 24.763812569326475,
+        "max_mm": 41.5957919847963
+      },
+      {
+        "track_id": 4,
+        "label": "TakeoMonday:LFRM",
+        "rmse_mm": 27.80915313123693,
+        "max_mm": 57.39535804438586
+      },
+      {
+        "track_id": 5,
+        "label": "TakeoMonday:RWRA",
+        "rmse_mm": 29.551992444128334,
+        "max_mm": 75.72637668076689
+      },
+      {
+        "track_id": 6,
+        "label": "TakeoMonday:RFRM",
+        "rmse_mm": 25.800278331817015,
+        "max_mm": 56.87391909932716
+      },
+      {
+        "track_id": 7,
+        "label": "TakeoMonday:LWRB",
+        "rmse_mm": 32.68186869429683,
+        "max_mm": 75.53895780217438
+      },
+      {
+        "track_id": 8,
+        "label": "TakeoMonday:RELB",
+        "rmse_mm": 24.653492870661474,
+        "max_mm": 48.672967345961716
+      },
+      {
+        "track_id": 9,
+        "label": "TakeoMonday:LWRA",
+        "rmse_mm": 32.2075978480059,
+        "max_mm": 76.64670792189327
+      },
+      {
+        "track_id": 10,
+        "label": "TakeoMonday:RTHI",
+        "rmse_mm": 27.471589007457467,
+        "max_mm": 56.152349088942564
+      },
+      {
+        "track_id": 11,
+        "label": "TakeoMonday:LELB",
+        "rmse_mm": 25.35972881547124,
+        "max_mm": 47.17271293245596
+      }
+    ],
+    "output_directory": "/data/jjy/ipc/stba/experiments/mocap/02_01/analysis_rbvws8tc/fixed_zero"
+  },
+  "stba": {
+    "stages": [
+      {
+        "stage": "incremental",
+        "cost": "19758.951071163625",
+        "image_cost": "217.32817854499282",
+        "motion_cost": "19541.62289261863",
+        "reprojection_rmse": "0.38848725360274122",
+        "usable": "1",
+        "order_valid": "1"
+      },
+      {
+        "stage": "global",
+        "cost": "19758.938904414317",
+        "image_cost": "217.47101943789252",
+        "motion_cost": "19541.467884976424",
+        "reprojection_rmse": "0.38861490099623591",
+        "usable": "1",
+        "order_valid": "1"
+      }
+    ],
+    "reconstructed_observations": 1440,
+    "input_observations": 1440,
+    "observation_coverage": 1.0,
+    "matched_truth_observations": 1440,
+    "all_trajectory_rmse_m": 0.004856891243493785,
+    "dynamic_trajectory_rmse_m": 0.006269890441207941,
+    "static_trajectory_rmse_m": 7.869028332631328e-05,
+    "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+    "dct_matched_truth_observations": 1440,
+    "all_dct_interpolated_rmse_m": 0.004925922184417375,
+    "dynamic_dct_interpolated_rmse_m": 0.006359013616206403,
+    "static_dct_interpolated_rmse_m": 7.869028332631328e-05,
+    "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+    "offset_reference_camera": 0,
+    "offset_errors": [
+      {
+        "camera_id": 0,
+        "error_seconds": 0.0,
+        "error_frames": 0.0
+      },
+      {
+        "camera_id": 1,
+        "error_seconds": -0.0003658810147981889,
+        "error_frames": -0.004390572177578267
+      },
+      {
+        "camera_id": 2,
+        "error_seconds": 0.00040969209276052465,
+        "error_frames": 0.004916305113126296
+      }
+    ],
+    "offset_mae_frames": 0.004653438645352281,
+    "offset_max_error_frames": 0.004916305113126296,
+    "dynamic_error_quantiles_mm": {
+      "median": 2.329284449520255,
+      "p90": 5.767177112303073,
+      "p95": 8.000832169726964,
+      "max": 50.004406761988555
+    },
+    "dynamic_middle_frames_rmse_mm": 3.04697977555004,
+    "dynamic_worst_observations": [
+      {
+        "track_id": 5,
+        "camera_id": 2,
+        "frame": 23,
+        "time": 1.9329236412405726,
+        "error_mm": 50.004406761988555
+      },
+      {
+        "track_id": 6,
+        "camera_id": 2,
+        "frame": 23,
+        "time": 1.9329236412405726,
+        "error_mm": 46.987785637974454
+      },
+      {
+        "track_id": 8,
+        "camera_id": 2,
+        "frame": 23,
+        "time": 1.9329236412405726,
+        "error_mm": 40.29380622897795
+      },
+      {
+        "track_id": 4,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.02463411898520181,
+        "error_mm": 38.0376910532649
+      },
+      {
+        "track_id": 9,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.02463411898520181,
+        "error_mm": 37.495062194725605
+      },
+      {
+        "track_id": 11,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.02463411898520181,
+        "error_mm": 37.13170078005798
+      },
+      {
+        "track_id": 2,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.02463411898520181,
+        "error_mm": 36.860749420387734
+      },
+      {
+        "track_id": 8,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.02463411898520181,
+        "error_mm": 36.50800768001401
+      }
+    ],
+    "dynamic_per_track": [
+      {
+        "track_id": 0,
+        "label": "TakeoMonday:LBWT",
+        "rmse_mm": 5.505962396062805,
+        "max_mm": 36.43890615256274
+      },
+      {
+        "track_id": 1,
+        "label": "TakeoMonday:RBWT",
+        "rmse_mm": 5.356846202489722,
+        "max_mm": 35.79006410981249
+      },
+      {
+        "track_id": 2,
+        "label": "TakeoMonday:LFWT",
+        "rmse_mm": 5.653987787273102,
+        "max_mm": 36.860749420387734
+      },
+      {
+        "track_id": 3,
+        "label": "TakeoMonday:RFWT",
+        "rmse_mm": 5.309032211718631,
+        "max_mm": 35.07474134022681
+      },
+      {
+        "track_id": 4,
+        "label": "TakeoMonday:LFRM",
+        "rmse_mm": 5.683517286323728,
+        "max_mm": 38.0376910532649
+      },
+      {
+        "track_id": 5,
+        "label": "TakeoMonday:RWRA",
+        "rmse_mm": 8.45216042156385,
+        "max_mm": 50.004406761988555
+      },
+      {
+        "track_id": 6,
+        "label": "TakeoMonday:RFRM",
+        "rmse_mm": 7.6757543719287575,
+        "max_mm": 46.987785637974454
+      },
+      {
+        "track_id": 7,
+        "label": "TakeoMonday:LWRB",
+        "rmse_mm": 6.452395313838365,
+        "max_mm": 36.493456295862224
+      },
+      {
+        "track_id": 8,
+        "label": "TakeoMonday:RELB",
+        "rmse_mm": 7.03325228097666,
+        "max_mm": 40.29380622897795
+      },
+      {
+        "track_id": 9,
+        "label": "TakeoMonday:LWRA",
+        "rmse_mm": 6.542199885988669,
+        "max_mm": 37.495062194725605
+      },
+      {
+        "track_id": 10,
+        "label": "TakeoMonday:RTHI",
+        "rmse_mm": 4.84660659313148,
+        "max_mm": 29.06222352377219
+      },
+      {
+        "track_id": 11,
+        "label": "TakeoMonday:LELB",
+        "rmse_mm": 5.703059021667832,
+        "max_mm": 37.13170078005798
+      }
+    ],
+    "output_directory": "/data/jjy/ipc/stba/experiments/mocap/02_01/result"
+  },
+  "fixed_truth": {
+    "stages": [
+      {
+        "stage": "incremental",
+        "cost": "19759.483060065748",
+        "image_cost": "216.30547151809589",
+        "motion_cost": "19543.177588547653",
+        "reprojection_rmse": "0.38757210038737011",
+        "usable": "1",
+        "order_valid": "1"
+      },
+      {
+        "stage": "global",
+        "cost": "19759.483060065748",
+        "image_cost": "216.30547151809589",
+        "motion_cost": "19543.177588547653",
+        "reprojection_rmse": "0.38757210038737011",
+        "usable": "1",
+        "order_valid": "1"
+      }
+    ],
+    "reconstructed_observations": 1440,
+    "input_observations": 1440,
+    "observation_coverage": 1.0,
+    "matched_truth_observations": 1440,
+    "all_trajectory_rmse_m": 0.004840464758695369,
+    "dynamic_trajectory_rmse_m": 0.006248682823322048,
+    "static_trajectory_rmse_m": 7.869028345671914e-05,
+    "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+    "dct_matched_truth_observations": 1440,
+    "all_dct_interpolated_rmse_m": 0.004903560468168968,
+    "dynamic_dct_interpolated_rmse_m": 0.0063301432844111915,
+    "static_dct_interpolated_rmse_m": 7.869028345671914e-05,
+    "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+    "offset_reference_camera": 0,
+    "offset_errors": [
+      {
+        "camera_id": 0,
+        "error_seconds": 0.0,
+        "error_frames": 0.0
+      },
+      {
+        "camera_id": 1,
+        "error_seconds": 0.0,
+        "error_frames": 0.0
+      },
+      {
+        "camera_id": 2,
+        "error_seconds": 0.0,
+        "error_frames": 0.0
+      }
+    ],
+    "offset_mae_frames": 0.0,
+    "offset_max_error_frames": 0.0,
+    "dynamic_error_quantiles_mm": {
+      "median": 2.3273074280767077,
+      "p90": 5.756040240292351,
+      "p95": 8.08013220807526,
+      "max": 49.89682547922218
+    },
+    "dynamic_middle_frames_rmse_mm": 2.9905503834931024,
+    "dynamic_worst_observations": [
+      {
+        "track_id": 5,
+        "camera_id": 2,
+        "frame": 23,
+        "time": 1.9333333333333333,
+        "error_mm": 49.89682547922218
+      },
+      {
+        "track_id": 6,
+        "camera_id": 2,
+        "frame": 23,
+        "time": 1.9333333333333333,
+        "error_mm": 46.90515365745981
+      },
+      {
+        "track_id": 8,
+        "camera_id": 2,
+        "frame": 23,
+        "time": 1.9333333333333333,
+        "error_mm": 40.22777673477008
+      },
+      {
+        "track_id": 4,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.024999999999999998,
+        "error_mm": 37.98941822781194
+      },
+      {
+        "track_id": 9,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.024999999999999998,
+        "error_mm": 37.443706852376536
+      },
+      {
+        "track_id": 11,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.024999999999999998,
+        "error_mm": 37.08907092586553
+      },
+      {
+        "track_id": 2,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.024999999999999998,
+        "error_mm": 36.80919849716178
+      },
+      {
+        "track_id": 8,
+        "camera_id": 1,
+        "frame": 0,
+        "time": -0.024999999999999998,
+        "error_mm": 36.45246018006321
+      }
+    ],
+    "dynamic_per_track": [
+      {
+        "track_id": 0,
+        "label": "TakeoMonday:LBWT",
+        "rmse_mm": 5.503086951292204,
+        "max_mm": 36.38630524491003
+      },
+      {
+        "track_id": 1,
+        "label": "TakeoMonday:RBWT",
+        "rmse_mm": 5.336908396712609,
+        "max_mm": 35.73196632989289
+      },
+      {
+        "track_id": 2,
+        "label": "TakeoMonday:LFWT",
+        "rmse_mm": 5.636542996799222,
+        "max_mm": 36.80919849716178
+      },
+      {
+        "track_id": 3,
+        "label": "TakeoMonday:RFWT",
+        "rmse_mm": 5.288304153837423,
+        "max_mm": 35.02437315236354
+      },
+      {
+        "track_id": 4,
+        "label": "TakeoMonday:LFRM",
+        "rmse_mm": 5.670089715284722,
+        "max_mm": 37.98941822781194
+      },
+      {
+        "track_id": 5,
+        "label": "TakeoMonday:RWRA",
+        "rmse_mm": 8.4248544933629,
+        "max_mm": 49.89682547922218
+      },
+      {
+        "track_id": 6,
+        "label": "TakeoMonday:RFRM",
+        "rmse_mm": 7.650237367227142,
+        "max_mm": 46.90515365745981
+      },
+      {
+        "track_id": 7,
+        "label": "TakeoMonday:LWRB",
+        "rmse_mm": 6.425818161226894,
+        "max_mm": 36.44098073843137
+      },
+      {
+        "track_id": 8,
+        "label": "TakeoMonday:RELB",
+        "rmse_mm": 7.0047814667537684,
+        "max_mm": 40.22777673477008
+      },
+      {
+        "track_id": 9,
+        "label": "TakeoMonday:LWRA",
+        "rmse_mm": 6.528023191803195,
+        "max_mm": 37.443706852376536
+      },
+      {
+        "track_id": 10,
+        "label": "TakeoMonday:RTHI",
+        "rmse_mm": 4.796063425780536,
+        "max_mm": 29.00926119402315
+      },
+      {
+        "track_id": 11,
+        "label": "TakeoMonday:LELB",
+        "rmse_mm": 5.693810087061373,
+        "max_mm": 37.08907092586553
+      }
+    ],
+    "output_directory": "/data/jjy/ipc/stba/experiments/mocap/02_01/analysis_rbvws8tc/fixed_truth"
+  },
+  "comparison": {
+    "dynamic_rmse_reduction_percent": 76.899235088403,
+    "notes": [
+      "The fixed_truth control uses ground-truth offsets only in its separate input directory.",
+      "All runs use identical image observations, fixed calibration, and the default motion weight of 1000.",
+      "The fixed_truth result is a diagnostic reference at the same regularization, not a theoretical accuracy bound."
+    ]
+  },
+  "provenance": {
+    "binary": "/data/jjy/ipc/stba/build/stba",
+    "binary_sha256": "5f059a239887445c0cdb98f5dd3af742dcde3e100b75bf52a22dbd057b9822ef",
+    "commands": [
+      [
+        "build/stba",
+        "--input",
+        "/data/jjy/ipc/stba/experiments/mocap/02_01/analysis_rbvws8tc/zero_offset_input",
+        "--output",
+        "/data/jjy/ipc/stba/experiments/mocap/02_01/analysis_rbvws8tc/fixed_zero",
+        "--mode",
+        "fixed"
+      ],
+      [
+        "build/stba",
+        "--input",
+        "/data/jjy/ipc/stba/experiments/mocap/02_01/analysis_rbvws8tc/true_offset_input",
+        "--output",
+        "/data/jjy/ipc/stba/experiments/mocap/02_01/analysis_rbvws8tc/fixed_truth",
+        "--mode",
+        "fixed"
+      ]
+    ],
+    "stba_result": "Existing user-produced result; reused without changing it.",
+    "settings": "Default Options; motion_weight=1000, max_iterations=80, fixed poses and intrinsics; DCT enabled.",
+    "input_sha256": {
+      "cameras.csv": "05992325be8eb19b5e427e8f6897660c7f73d8d1df26609c2cce5d579b95c2c8",
+      "views.csv": "6edd1d99f6eabccb95c93143df113c44de0f9f7b8b5ebbca2096819a9db87f12",
+      "observations.csv": "bcb52788bc7dc7dad2ce93bd12d60a1d6db2dcb4de1091b16d4a93342866c909",
+      "truth.csv": "d2582e3f801ffa325efd3af9274bce82def3f9e1f9cc83273d6232d840315fe8",
+      "true_cameras.csv": "a18a23bfce498d313fb0149f1d48a94054444532c4e0bc4774be5ec09eb80e41"
+    }
+  },
+  "interpretation_numbers": {
+    "dct_dynamic_rmse_change_mm": 0.08912317499846188,
+    "global_objective_relative_decrease_percent": 6.157588661378482e-05,
+    "max_reference_offset_error_ms": 0.40969209276052465,
+    "max_pairwise_offset_error_ms": 0.7755731075587136
+  }
+}

@@ -1,0 +1,261 @@
+--- a/src/core/beta_bounds.h
++++ b/src/core/beta_bounds.h
+@@ -0,0 +1,52 @@
++#pragma once
++#include "core/stba.h"
++#include <algorithm>
++#include <cmath>
++#include <cstdlib>
++#include <fstream>
++#include <iomanip>
++#include <numeric>
++#include <stdexcept>
++
++namespace stba {
++inline bool Bounded(const Options &o) {
++    if (!std::isfinite(o.offset_bound_frames) || o.offset_bound_frames < 0)
++        throw std::invalid_argument("offset_bound_frames must be finite and nonnegative");
++    return o.offset_bound_frames > 0;
++}
++inline bool BetaInside(double beta, const Options &o) {
++    return !Bounded(o) || (std::isfinite(beta) && std::abs(beta) <= o.offset_bound_frames);
++}
++inline double ProjectBeta(double beta, const Options &o) {
++    return Bounded(o) ? std::clamp(beta, -o.offset_bound_frames, o.offset_bound_frames) : beta;
++}
++inline void CheckBetaBounds(const Dataset &d, const std::vector<int> &active,
++                            const Options &o, const char *stage, int iteration = -1) {
++    if (!Bounded(o)) return;
++    double lower = o.offset_bound_frames, upper = -o.offset_bound_frames;
++    for (int c : active) {
++        const double beta = d.cameras.at(c).beta;
++        if (!BetaInside(beta, o))
++            throw std::runtime_error(std::string(stage) + ": residual beta outside hard box");
++        lower = std::min(lower, beta);
++        upper = std::max(upper, beta);
++    }
++    if (const char *path = std::getenv("STBA_BOUND_AUDIT_PATH")) {
++        std::ofstream file(path, std::ios::app);
++        if (!file) throw std::runtime_error("Cannot write bound audit file");
++        file << std::setprecision(17) << stage << ',' << iteration << ',' << active.size()
++             << ',' << lower << ',' << upper << '\n';
++    }
++}
++inline std::vector<int> AllCameras(const Dataset &d) {
++    std::vector<int> active(d.cameras.size());
++    std::iota(active.begin(), active.end(), 0);
++    return active;
++}
++// Feasible INITIALIZATION only. Never clamp an optimized solution after the solve.
++inline void ProjectGraphInitialization(Dataset &d, const Options &o) {
++    if (!Bounded(o)) return;
++    for (auto &c : d.cameras) c.beta = ProjectBeta(c.beta, o);
++    CheckBetaBounds(d, AllCameras(d), o, "graph_initialization");
++}
++} // namespace stba
+--- a/src/core/options.cpp
++++ b/src/core/options.cpp
+@@ -23,6 +23,7 @@
+                                                {"epsilon_seconds", &o.epsilon_seconds},
+                                                {"min_dt", &o.min_dt},
+                                                {"search_radius", &o.search_radius},
++                                               {"offset_bound_frames", &o.offset_bound_frames},
+                                                {"coarse_step", &o.coarse_step},
+                                                {"fine_step", &o.fine_step},
+                                                {"huber_px", &o.huber_px},
+@@ -65,7 +66,8 @@
+     }
+     if (o.motion_weight <= 0 || o.epsilon_seconds <= 0 || o.min_dt < 0 || o.search_radius <= 0 ||
+         o.coarse_step <= 0 || o.fine_step <= 0 || o.fine_step > o.coarse_step || o.huber_px < 0 ||
+-        o.dct_fps <= 0 || o.dct_max_samples < 2 || o.max_iterations < 1 || o.reference_camera < 0)
++        o.dct_fps <= 0 || o.dct_max_samples < 2 || o.max_iterations < 1 || o.reference_camera < 0 ||
++        o.offset_bound_frames < 0)
+         throw std::runtime_error("Config contains out-of-range value");
+     return o;
+ }
+--- a/src/core/stba.h
++++ b/src/core/stba.h
+@@ -47,6 +47,9 @@
+ struct Options {
+     double motion_weight = 1000, epsilon_seconds = 1e-6, min_dt = 1e-10;
+     double search_radius = 0.75, coarse_step = 0.05, fine_step = 0.005;
++    // Temporary experiment: absolute residual-frame box after beta_ref=0 normalization.
++    // 0 disables bounds and preserves the original code path.
++    double offset_bound_frames = 0;
+     int max_iterations = 80, reference_camera = 0;
+     bool optimize_offsets = true, optimize_poses = false, optimize_intrinsics = false;
+     double huber_px = 0; // 0 keeps the paper's quadratic image cost
+--- a/src/optimization/global_stba.cpp
++++ b/src/optimization/global_stba.cpp
+@@ -1,4 +1,5 @@
+ #include "core/stba.h"
++#include "core/beta_bounds.h"
+ #include "optimization/cost_functions.h"
+ #include <algorithm>
+ #include <ceres/ceres.h>
+@@ -10,6 +11,23 @@
+ 
+ namespace stba {
+ namespace {
++class BoundsCallback final : public ceres::IterationCallback {
++  public:
++    BoundsCallback(const Dataset &data, const std::vector<int> &active, const Options &options)
++        : data_(data), active_(active), options_(options) {}
++    ceres::CallbackReturnType operator()(const ceres::IterationSummary &summary) override {
++        try {
++            CheckBetaBounds(data_, active_, options_, "ceres_iterate", summary.iteration);
++        } catch (const std::exception &) {
++            return ceres::SOLVER_ABORT;
++        }
++        return ceres::SOLVER_CONTINUE;
++    }
++  private:
++    const Dataset &data_;
++    const std::vector<int> &active_;
++    const Options &options_;
++};
+ struct Event {
+     int camera, frame;
+     double time;
+@@ -125,6 +143,7 @@
+         options.max_iterations < 1 || !std::isfinite(options.motion_weight) ||
+         !std::isfinite(options.epsilon_seconds))
+         throw std::invalid_argument("Invalid optimizer options");
++    CheckBetaBounds(input, active, options, "optimize_input");
+     Solution result;
+     result.data = input;
+     result.active = active;
+@@ -194,9 +213,14 @@
+                                          nullptr, &data.cameras[a.camera].beta,
+                                          &data.cameras[b.camera].beta);
+         }
+-    for (int c : active)
++    for (int c : active) {
++        if (Bounded(options)) {
++            problem.SetParameterLowerBound(&data.cameras[c].beta, 0, -options.offset_bound_frames);
++            problem.SetParameterUpperBound(&data.cameras[c].beta, 0, options.offset_bound_frames);
++        }
+         if (!options.optimize_offsets || fixed_offsets.count(c))
+             problem.SetParameterBlockConstant(&data.cameras[c].beta);
++    }
+ 
+     int reference_view = -1, scale_view = -1;
+     for (int v : used_views)
+@@ -250,8 +274,14 @@
+     solver.parameter_tolerance = 1e-9;
+     solver.gradient_tolerance = 1e-10;
+     solver.max_num_consecutive_invalid_steps = 30;
++    BoundsCallback bounds_callback(data, active, options);
++    if (Bounded(options)) {
++        solver.update_state_every_iteration = true;
++        solver.callbacks.push_back(&bounds_callback);
++    }
+     ceres::Solver::Summary summary;
+     ceres::Solve(solver, &problem, &summary);
++    CheckBetaBounds(data, active, options, "optimize_output");
+     result.report = summary.BriefReport();
+     result.order_valid = SameOrder(data, events);
+     result.usable = summary.IsSolutionUsable() && result.order_valid;
+--- a/src/optimization/incremental_stba.cpp
++++ b/src/optimization/incremental_stba.cpp
+@@ -1,4 +1,5 @@
+ #include "core/stba.h"
++#include "core/beta_bounds.h"
+ 
+ #include <algorithm>
+ #include <cmath>
+@@ -177,6 +178,9 @@
+     if (options.reference_camera < 0 ||
+         static_cast<std::size_t>(options.reference_camera) >= input.cameras.size())
+         throw std::invalid_argument("Invalid reference_camera");
++    if (Bounded(options) && input.cameras[options.reference_camera].beta != 0.0)
++        throw std::invalid_argument("Temporary offset bounds require a zero reference beta");
++    CheckBetaBounds(input, AllCameras(input), options, "pipeline_input");
+     PipelineResult result;
+     const int count = static_cast<int>(input.cameras.size());
+     for (int a = 0; a < count; ++a)
+@@ -206,6 +210,7 @@
+     const double target_beta =
+         input.cameras[static_cast<std::size_t>(options.reference_camera)].beta;
+     NormalizeReference(data, options.reference_camera, target_beta);
++    ProjectGraphInitialization(data, options);
+     Options fixed = options;
+     fixed.optimize_offsets = false;
+     fixed.optimize_poses = false;
+@@ -235,13 +240,23 @@
+                 (base.beta / base.fps + OrientedOffset(edge, parent));
+             break;
+         }
++        if (Bounded(options)) {
++            // Keep the global zero gauge even if the reference is added late.
++            data.cameras[added].beta = added == options.reference_camera ? target_beta
++                : ProjectBeta(data.cameras[added].beta, options);
++        }
+         const double center = data.cameras[static_cast<std::size_t>(added)].beta;
+-        const auto boundaries = SlotBoundaries(data, active, added, center - options.search_radius,
+-                                               center + options.search_radius);
++        const double lower = Bounded(options) ? std::max(-options.offset_bound_frames, center-options.search_radius)
++                                             : center-options.search_radius;
++        const double upper = Bounded(options) ? std::min(options.offset_bound_frames, center+options.search_radius)
++                                             : center+options.search_radius;
++        const auto boundaries = SlotBoundaries(data, active, added, lower, upper);
+         active.push_back(added);
+         Solution best;
+         std::size_t best_log = result.trials.size();
+         auto trial = [&](double beta, int slot) {
++            if (!BetaInside(beta, options)) return;
++            if (Bounded(options) && added == options.reference_camera && beta != target_beta) return;
+             Dataset candidate = data;
+             candidate.cameras[static_cast<std::size_t>(added)].beta = beta;
+             NormalizeReference(candidate, options.reference_camera, target_beta);
+@@ -258,6 +273,11 @@
+             }
+         };
+         trial(center, -1); // Include the graph estimate in addition to slot midpoints.
++        if (Bounded(options)) {
++            // A constrained optimum may lie on either closed box boundary.
++            trial(lower, -10001);
++            trial(upper, -10002);
++        }
+         for (std::size_t i = 1; i < boundaries.size(); ++i) {
+             if (boundaries[i] - boundaries[i - 1] >
+                 2 * options.min_dt * data.cameras[static_cast<std::size_t>(added)].fps)
+@@ -276,6 +296,7 @@
+     result.global = refine_global ? Optimize(current.data, active, options, &current) : current;
+     if (!result.global.usable || !result.global.order_valid)
+         throw std::runtime_error("Global optimization failed: " + result.global.report);
++    CheckBetaBounds(result.global.data, AllCameras(result.global.data), options, "pipeline_output");
+     return result;
+ }
+ 
+--- a/src/optimization/pairwise_alignment.cpp
++++ b/src/optimization/pairwise_alignment.cpp
+@@ -1,4 +1,5 @@
+ #include "core/stba.h"
++#include "core/beta_bounds.h"
+ 
+ #include <algorithm>
+ #include <cmath>
+@@ -100,8 +101,10 @@
+     const std::size_t bi = static_cast<std::size_t>(b);
+     const std::size_t ai = static_cast<std::size_t>(a);
+     const double center = data.cameras[bi].beta;
++    CheckBetaBounds(data, {a, b}, options, "pairwise_input");
+     double best_beta = center;
+     auto evaluate = [&](double beta) {
++        if (!BetaInside(beta, options)) return;
+         Dataset candidate = data;
+         candidate.cameras[bi].beta = beta;
+         try {
+@@ -117,6 +120,11 @@
+         }
+     };
+     auto sweep = [&](double lower, double upper, double step) {
++        if (Bounded(options)) {
++            lower = std::max(lower, -options.offset_bound_frames);
++            upper = std::min(upper, options.offset_bound_frames);
++        }
++        if (upper < lower) return;
+         const double intervals = std::ceil((upper - lower) / step);
+         if (intervals > 10000)
+             throw std::invalid_argument("Pairwise search exceeds 10000 intervals; increase step");

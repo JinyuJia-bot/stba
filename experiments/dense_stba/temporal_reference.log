@@ -1,0 +1,35 @@
+{"flow_cache": "experiments/dense_stba/cache/temporal/cam7", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [480, 270], "camera_id": 7, "n_frames": 60, "raw_frame_ids": [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259], "pair_cache_hits": 0, "pairs_computed": 70, "flow_compute_seconds": 9.043873017653823, "flow_save_seconds": 10.468554655089974, "total_seconds": 19.518729684874415, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+{
+  "config": {
+    "fb_max": 0.75,
+    "fb_relative": 0.03,
+    "seed_texture_min": 0.005,
+    "cycle_max": 1.5,
+    "cycle_fb_max": 2.0,
+    "use_cycle": true
+  },
+  "status_legend": {
+    "0": "unvisited",
+    "1": "tracked",
+    "2": "outside_image",
+    "3": "fb_inconsistent_possible_occlusion",
+    "4": "low_seed_texture",
+    "5": "multi_frame_drift",
+    "6": "lost_after_failure",
+    "7": "invalid_seed",
+    "8": "invalid_flow"
+  },
+  "tracking_seconds": 0.10850002430379391,
+  "seed_frame": 30,
+  "query_count": 1488,
+  "accepted_seed_count": 1475,
+  "accepted_observations": 83419,
+  "tracks_with_ge_10_observations": 1460,
+  "tracks_with_ge_30_observations": 1428,
+  "visibility_semantics": "Accepted optical-flow observation; actual occlusion vs identity error is not independently known.",
+  "identity_policy": "Persistent seed point_id; follow flow at moving coordinates in each direction. After first failure terminate that branch; no reidentification or holes filled.",
+  "confidence_semantics": "Heuristic minimum of seed texture and flow consistency scores, not calibrated probability/inverse variance",
+  "cumulative_drift_policy": "Direct skip-frame flow vs composed adjacent tracks, gated by reliable direct FB. No guarantee all drift is detected.",
+  "device": "CPU",
+  "peak_gpu_memory_bytes": 0
+}

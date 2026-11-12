@@ -1,0 +1,8 @@
+Ceres Solver Report: Iterations: 32, Initial cost: 3.355952e+03, Final cost: 3.355952e+03, Termination: CONVERGENCE
+objective=6711.9 reprojection_rmse_px=0.937583
+camera 0 beta=0 frames
+camera 1 beta=0.322033 frames
+camera 2 beta=-0.150082 frames
+camera 3 beta=0.0899807 frames
+seconds=3.50261
+output=experiments/validation_joint/static_4cams/fixed_calibration

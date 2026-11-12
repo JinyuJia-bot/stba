@@ -1,0 +1,29 @@
+test_catalog_load_and_field_laziness (test_adapter.AdapterTests) ... ok
+test_frozen_source_hash_and_traversal_are_rejected (test_adapter.AdapterTests) ... ok
+test_image_rgb_single_frame_and_identity (test_adapter.AdapterTests) ... ok
+test_json_conversion_and_readonly_requests_do_not_write (test_adapter.AdapterTests) ... ok
+test_method_specific_frozen_lsm_and_two_run_cache (test_adapter.AdapterTests) ... ok
+test_single_point_row_does_not_materialize_large_field (test_adapter.AdapterTests) ... ok
+test_missing_and_point_pagination (test_diagnostics_rois_flow.CoverageTests) ... ok
+test_recorded_order_and_overlapping_edge4_reasons (test_diagnostics_rois_flow.CoverageTests) ... ok
+test_seed_anchor_never_counts_as_independent (test_diagnostics_rois_flow.CoverageTests) ... ok
+test_missing_cache_and_recorded_failure (test_diagnostics_rois_flow.FlowCacheTests) ... ok
+test_read_only_verified_replay_matches_translation (test_diagnostics_rois_flow.FlowCacheTests) ... ok
+test_source_image_change_refuses_cached_pair (test_diagnostics_rois_flow.FlowCacheTests) ... ok
+test_polygon_boundary_and_ids (test_diagnostics_rois_flow.ROITests) ... ok
+test_save_refuses_workspace_symlink (test_diagnostics_rois_flow.ROITests) ... ok
+test_save_requires_explicit_and_rejects_escape (test_diagnostics_rois_flow.ROITests) ... ok
+test_seed_coordinates_half_open_and_background (test_diagnostics_rois_flow.ROITests) ... ok
+test_continuous_samples_do_not_claim_support_across_long_gap (test_inspector.InspectorTests) ... ok
+test_native_roma_fallback_respects_direction_and_half_pixel_convention (test_inspector.InspectorTests) ... ok
+test_nonseed_click_uses_moving_track_not_pixel_id (test_inspector.InspectorTests) ... ok
+test_point_status_time_residual_spline_and_missing_initial_controls (test_inspector.InspectorTests) ... ok
+test_raw_work_mapping_applies_distortion_then_half_pixel_resize (test_inspector.InspectorTests) ... ok
+test_readonly_inspection_and_explicit_missing_field (test_inspector.InspectorTests) ... ok
+test_seed_click_does_not_invent_unqueried_trajectory (test_inspector.InspectorTests) ... ok
+test_unreconstructed_candidate_is_still_inspectable (test_inspector.InspectorTests) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.260s
+
+OK

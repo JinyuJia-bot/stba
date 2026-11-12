@@ -1,0 +1,14 @@
+Ceres Solver Report: Iterations: 3, Initial cost: 3.558967e+05, Final cost: 1.230125e+05, Termination: CONVERGENCE
+objective=246025 reprojection_rmse_px=3.77772
+camera 0 beta=0 frames
+camera 1 beta=0 frames
+camera 2 beta=0 frames
+camera 3 beta=0 frames
+camera 4 beta=0 frames
+camera 5 beta=0 frames
+camera 6 beta=0 frames
+camera 7 beta=0 frames
+camera 8 beta=0 frames
+camera 9 beta=0 frames
+seconds=1.602
+output=/data/jjy/ipc/stba/experiments/mocap/02_01_10cams_41tracks/fixed_zero

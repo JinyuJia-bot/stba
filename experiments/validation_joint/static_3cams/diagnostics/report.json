@@ -1,0 +1,698 @@
+{
+  "input": "../input",
+  "settings": "3 cameras, 24 frames, 4 dynamic + 20 static tracks; seed42/noise0.1/pose noise0.003/intrinsics noise0.01; data identical to earlier full-joint failure.",
+  "input_geometry": {
+    "views": [
+      {
+        "view_id": 0,
+        "camera_id": 0,
+        "rotation_error_degrees": 0.0,
+        "center_error_m": 0.0,
+        "fx": 1000.0,
+        "fy": 1000.0,
+        "focal_relative_errors": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "view_id": 1,
+        "camera_id": 1,
+        "rotation_error_degrees": 2.091309789151873e-06,
+        "center_error_m": 0.0,
+        "fx": 1000.0,
+        "fy": 1000.0,
+        "focal_relative_errors": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "view_id": 2,
+        "camera_id": 2,
+        "rotation_error_degrees": 0.22657831661347247,
+        "center_error_m": 0.016298984584660475,
+        "fx": 1001.2792215384378,
+        "fy": 996.8425692783854,
+        "focal_relative_errors": [
+          0.001279221538437847,
+          -0.0031574307216145625
+        ]
+      }
+    ],
+    "rotation_rmse_degrees": 0.1308150520948928,
+    "center_rmse_m": 0.009410223137471287,
+    "focal_relative_rmse": 0.0013907897340599182,
+    "gauge": {
+      "reference_pose_max_parameter_change": 0.0,
+      "scale_view_id": 1,
+      "scale_translation_axis": "tz",
+      "scale_coordinate_change": 0.0,
+      "reference_focal_length_changes": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "static_point_geometry": {
+    "count": 20,
+    "min_world_m": [
+      -1.046838585349979,
+      -0.6889565953734917,
+      -0.5763960262251043
+    ],
+    "max_world_m": [
+      1.0242359732366444,
+      0.5414467579888731,
+      0.7531168390318452
+    ],
+    "covariance_eigenvalues_m2": [
+      0.12576894829121696,
+      0.17717469985723014,
+      0.4840866199000212
+    ],
+    "rank": 3,
+    "covariance_min_max_ratio": 0.2598067021914221
+  },
+  "gauge_selection": {
+    "reference_view_id": 0,
+    "scale_view_id": 1,
+    "scale_axis": "tz",
+    "initial_relative_baseline_component_m": 5.905912136187516,
+    "policy": "First reference view pose fixed; one translation coordinate at another view fixed for scale. Reference focal lengths are still variable when optimize-intrinsics is enabled.",
+    "caveat": "This constraint removes pure similarity gauge freedoms; it does not preserve every calibrated camera or enforce a known baseline length under camera rotation changes."
+  },
+  "runs": {
+    "poses_only_lambda1000": {
+      "command": [
+        "build/stba",
+        "--input",
+        "experiments/validation_joint/static_3cams/input",
+        "--output",
+        "experiments/validation_joint/static_3cams/diagnostics/poses_only_lambda1000",
+        "--config",
+        "configs/default.yaml",
+        "--mode",
+        "full",
+        "--optimize-poses"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.459159598000042,
+      "config_sha256": "1dbbc941f0008c64d0c009c88ad34dc9294a50632db89cf887f62bac40141b1f",
+      "stages": [
+        {
+          "stage": "incremental",
+          "cost": "5699.3495277178436",
+          "image_cost": "1087.1754892574238",
+          "motion_cost": "4612.17403846042",
+          "reprojection_rmse": "0.793191327618474",
+          "usable": "1",
+          "order_valid": "1"
+        },
+        {
+          "stage": "global",
+          "cost": "4714.8163750173344",
+          "image_cost": "103.61238934285427",
+          "motion_cost": "4611.2039856744805",
+          "reprojection_rmse": "0.24486909454298214",
+          "usable": "1",
+          "order_valid": "1"
+        }
+      ],
+      "reconstructed_observations": 1728,
+      "input_observations": 1728,
+      "observation_coverage": 1.0,
+      "matched_truth_observations": 1728,
+      "all_trajectory_rmse_m": 0.004533432627742371,
+      "dynamic_trajectory_rmse_m": 0.006975470213967438,
+      "static_trajectory_rmse_m": 0.0038640622053928595,
+      "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+      "similarity_alignment": "One fitted Sim(3) over all matched points, for spatial gauge only; raw errors are also reported.",
+      "similarity_scale": 1.0011515332077494,
+      "all_similarity_aligned_rmse_m": 0.00255388212773695,
+      "dynamic_similarity_aligned_rmse_m": 0.0048132197400460154,
+      "static_similarity_aligned_rmse_m": 0.0017869974408642353,
+      "dct_matched_truth_observations": 1728,
+      "all_dct_interpolated_rmse_m": 0.004561507773858137,
+      "dynamic_dct_interpolated_rmse_m": 0.007084436137765771,
+      "static_dct_interpolated_rmse_m": 0.0038640622053928595,
+      "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+      "offset_reference_camera": 0,
+      "offset_errors": [
+        {
+          "camera_id": 0,
+          "error_seconds": 0.0,
+          "error_frames": 0.0
+        },
+        {
+          "camera_id": 1,
+          "error_seconds": -0.000334788108622296,
+          "error_frames": -0.01004364325866888
+        },
+        {
+          "camera_id": 2,
+          "error_seconds": -0.00018761740150672473,
+          "error_frames": -0.005628522045201742
+        }
+      ],
+      "offset_mae_frames": 0.00783608265193531,
+      "offset_max_error_frames": 0.01004364325866888,
+      "camera_geometry": {
+        "views": [
+          {
+            "view_id": 0,
+            "camera_id": 0,
+            "rotation_error_degrees": 0.0,
+            "center_error_m": 0.0,
+            "fx": 1000.0,
+            "fy": 1000.0,
+            "focal_relative_errors": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "view_id": 1,
+            "camera_id": 1,
+            "rotation_error_degrees": 0.23388509791325712,
+            "center_error_m": 0.018232448926029855,
+            "fx": 1000.0,
+            "fy": 1000.0,
+            "focal_relative_errors": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "view_id": 2,
+            "camera_id": 2,
+            "rotation_error_degrees": 0.14703245517809757,
+            "center_error_m": 0.01324048200392008,
+            "fx": 1001.2792215384378,
+            "fy": 996.8425692783854,
+            "focal_relative_errors": [
+              0.001279221538437847,
+              -0.0031574307216145625
+            ]
+          }
+        ],
+        "rotation_rmse_degrees": 0.15950003333499457,
+        "center_rmse_m": 0.013009388373227734,
+        "focal_relative_rmse": 0.0013907897340599182,
+        "gauge": {
+          "reference_pose_max_parameter_change": 0.0,
+          "scale_view_id": 1,
+          "scale_translation_axis": "tz",
+          "scale_coordinate_change": 0.0,
+          "reference_focal_length_changes": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "joint_lambda10": {
+      "command": [
+        "build/stba",
+        "--input",
+        "experiments/validation_joint/static_3cams/input",
+        "--output",
+        "experiments/validation_joint/static_3cams/diagnostics/joint_lambda10",
+        "--config",
+        "experiments/validation_joint/static_3cams/diagnostics/lambda10.yaml",
+        "--mode",
+        "full",
+        "--optimize-poses",
+        "--optimize-intrinsics"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.7043773350005722,
+      "config_sha256": "43b3bb93d5ebd8489d61c3ac930fa54188976fc86da00a7efa18c1a4964a72d9",
+      "stages": [
+        {
+          "stage": "incremental",
+          "cost": "1032.4394246310474",
+          "image_cost": "982.62280603011368",
+          "motion_cost": "49.816618600933786",
+          "reprojection_rmse": "0.7540871681664878",
+          "usable": "1",
+          "order_valid": "1"
+        },
+        {
+          "stage": "global",
+          "cost": "73.983488649097836",
+          "image_cost": "27.940332364414608",
+          "motion_cost": "46.043156284683228",
+          "reprojection_rmse": "0.12715806628759024",
+          "usable": "1",
+          "order_valid": "1"
+        }
+      ],
+      "reconstructed_observations": 1728,
+      "input_observations": 1728,
+      "observation_coverage": 1.0,
+      "matched_truth_observations": 1728,
+      "all_trajectory_rmse_m": 0.015577800429152458,
+      "dynamic_trajectory_rmse_m": 0.013218783065557736,
+      "static_trajectory_rmse_m": 0.01600794160114747,
+      "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+      "similarity_alignment": "One fitted Sim(3) over all matched points, for spatial gauge only; raw errors are also reported.",
+      "similarity_scale": 1.010595542671323,
+      "all_similarity_aligned_rmse_m": 0.011138953628966382,
+      "dynamic_similarity_aligned_rmse_m": 0.010164328240264708,
+      "static_similarity_aligned_rmse_m": 0.011323817016481125,
+      "dct_matched_truth_observations": 1728,
+      "all_dct_interpolated_rmse_m": 0.0155707651164765,
+      "dynamic_dct_interpolated_rmse_m": 0.013168955400719896,
+      "static_dct_interpolated_rmse_m": 0.01600794160114747,
+      "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+      "offset_reference_camera": 0,
+      "offset_errors": [
+        {
+          "camera_id": 0,
+          "error_seconds": 0.0,
+          "error_frames": 0.0
+        },
+        {
+          "camera_id": 1,
+          "error_seconds": -1.3290392835180187e-05,
+          "error_frames": -0.0003987117850554056
+        },
+        {
+          "camera_id": 2,
+          "error_seconds": -6.6773090813404545e-06,
+          "error_frames": -0.00020031927244021364
+        }
+      ],
+      "offset_mae_frames": 0.0002995155287478096,
+      "offset_max_error_frames": 0.0003987117850554056,
+      "camera_geometry": {
+        "views": [
+          {
+            "view_id": 0,
+            "camera_id": 0,
+            "rotation_error_degrees": 0.0,
+            "center_error_m": 0.0,
+            "fx": 1004.2814678186134,
+            "fy": 1036.08285298067,
+            "focal_relative_errors": [
+              0.0042814678186133825,
+              0.036082852980670044
+            ]
+          },
+          {
+            "view_id": 1,
+            "camera_id": 1,
+            "rotation_error_degrees": 0.6236213447391942,
+            "center_error_m": 0.03659026633599001,
+            "fx": 1005.6905497895596,
+            "fy": 1038.029355476184,
+            "focal_relative_errors": [
+              0.005690549789559629,
+              0.038029355476184135
+            ]
+          },
+          {
+            "view_id": 2,
+            "camera_id": 2,
+            "rotation_error_degrees": 0.6793968357303343,
+            "center_error_m": 0.051603779488688,
+            "fx": 995.0980224899212,
+            "fy": 1029.1638703115943,
+            "focal_relative_errors": [
+              -0.004901977510078814,
+              0.029163870311594398
+            ]
+          }
+        ],
+        "rotation_rmse_degrees": 0.5324420600762465,
+        "center_rmse_m": 0.03652304134860541,
+        "focal_relative_rmse": 0.024743612629689306,
+        "gauge": {
+          "reference_pose_max_parameter_change": 0.0,
+          "scale_view_id": 1,
+          "scale_translation_axis": "tz",
+          "scale_coordinate_change": 0.0,
+          "reference_focal_length_changes": [
+            4.281467818613351,
+            36.08285298066994
+          ]
+        }
+      }
+    },
+    "fixed_calibration_lambda10": {
+      "command": [
+        "build/stba",
+        "--input",
+        "experiments/validation_joint/static_3cams/input",
+        "--output",
+        "experiments/validation_joint/static_3cams/diagnostics/fixed_calibration_lambda10",
+        "--config",
+        "experiments/validation_joint/static_3cams/diagnostics/lambda10.yaml",
+        "--mode",
+        "full"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.3070954900003926,
+      "config_sha256": "43b3bb93d5ebd8489d61c3ac930fa54188976fc86da00a7efa18c1a4964a72d9",
+      "stages": [
+        {
+          "stage": "incremental",
+          "cost": "1032.4394246310474",
+          "image_cost": "982.62280603011368",
+          "motion_cost": "49.816618600933786",
+          "reprojection_rmse": "0.7540871681664878",
+          "usable": "1",
+          "order_valid": "1"
+        },
+        {
+          "stage": "global",
+          "cost": "1032.439233592678",
+          "image_cost": "982.62296361867129",
+          "motion_cost": "49.81626997400668",
+          "reprojection_rmse": "0.75408722863501321",
+          "usable": "1",
+          "order_valid": "1"
+        }
+      ],
+      "reconstructed_observations": 1728,
+      "input_observations": 1728,
+      "observation_coverage": 1.0,
+      "matched_truth_observations": 1728,
+      "all_trajectory_rmse_m": 0.003798557861446931,
+      "dynamic_trajectory_rmse_m": 0.005887537569559505,
+      "static_trajectory_rmse_m": 0.003222146872120731,
+      "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+      "similarity_alignment": "One fitted Sim(3) over all matched points, for spatial gauge only; raw errors are also reported.",
+      "similarity_scale": 1.0010050577051162,
+      "all_similarity_aligned_rmse_m": 0.0024540094850652927,
+      "dynamic_similarity_aligned_rmse_m": 0.005520814480589607,
+      "static_similarity_aligned_rmse_m": 0.001063351568170626,
+      "dct_matched_truth_observations": 1728,
+      "all_dct_interpolated_rmse_m": 0.0037516470758836838,
+      "dynamic_dct_interpolated_rmse_m": 0.00570420742648201,
+      "static_dct_interpolated_rmse_m": 0.003222146872120731,
+      "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+      "offset_reference_camera": 0,
+      "offset_errors": [
+        {
+          "camera_id": 0,
+          "error_seconds": 0.0,
+          "error_frames": 0.0
+        },
+        {
+          "camera_id": 1,
+          "error_seconds": -0.0012591777812350716,
+          "error_frames": -0.03777533343705215
+        },
+        {
+          "camera_id": 2,
+          "error_seconds": 0.0033655721002541477,
+          "error_frames": 0.10096716300762443
+        }
+      ],
+      "offset_mae_frames": 0.06937124822233828,
+      "offset_max_error_frames": 0.10096716300762443,
+      "camera_geometry": {
+        "views": [
+          {
+            "view_id": 0,
+            "camera_id": 0,
+            "rotation_error_degrees": 0.0,
+            "center_error_m": 0.0,
+            "fx": 1000.0,
+            "fy": 1000.0,
+            "focal_relative_errors": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "view_id": 1,
+            "camera_id": 1,
+            "rotation_error_degrees": 2.091309789151873e-06,
+            "center_error_m": 0.0,
+            "fx": 1000.0,
+            "fy": 1000.0,
+            "focal_relative_errors": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "view_id": 2,
+            "camera_id": 2,
+            "rotation_error_degrees": 0.22657831661347247,
+            "center_error_m": 0.016298984584660475,
+            "fx": 1001.2792215384378,
+            "fy": 996.8425692783854,
+            "focal_relative_errors": [
+              0.001279221538437847,
+              -0.0031574307216145625
+            ]
+          }
+        ],
+        "rotation_rmse_degrees": 0.1308150520948928,
+        "center_rmse_m": 0.009410223137471287,
+        "focal_relative_rmse": 0.0013907897340599182,
+        "gauge": {
+          "reference_pose_max_parameter_change": 0.0,
+          "scale_view_id": 1,
+          "scale_translation_axis": "tz",
+          "scale_coordinate_change": 0.0,
+          "reference_focal_length_changes": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "fixed_calibration_lambda1000": {
+      "stages": [
+        {
+          "stage": "incremental",
+          "cost": "5699.3495277178436",
+          "image_cost": "1087.1754892574238",
+          "motion_cost": "4612.17403846042",
+          "reprojection_rmse": "0.793191327618474",
+          "usable": "1",
+          "order_valid": "1"
+        },
+        {
+          "stage": "global",
+          "cost": "5699.347850503711",
+          "image_cost": "1087.2067805285258",
+          "motion_cost": "4612.141069975185",
+          "reprojection_rmse": "0.79320274242064848",
+          "usable": "1",
+          "order_valid": "1"
+        }
+      ],
+      "reconstructed_observations": 1728,
+      "input_observations": 1728,
+      "observation_coverage": 1.0,
+      "matched_truth_observations": 1728,
+      "all_trajectory_rmse_m": 0.004080240118803238,
+      "dynamic_trajectory_rmse_m": 0.006926687825718836,
+      "static_trajectory_rmse_m": 0.0032221468721207367,
+      "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+      "similarity_alignment": "One fitted Sim(3) over all matched points, for spatial gauge only; raw errors are also reported.",
+      "similarity_scale": 1.0011263439710723,
+      "all_similarity_aligned_rmse_m": 0.0028607554395561814,
+      "dynamic_similarity_aligned_rmse_m": 0.006578035889312776,
+      "static_similarity_aligned_rmse_m": 0.0010800901766625575,
+      "dct_matched_truth_observations": 1728,
+      "all_dct_interpolated_rmse_m": 0.004144051096485695,
+      "dynamic_dct_interpolated_rmse_m": 0.007150370942414002,
+      "static_dct_interpolated_rmse_m": 0.0032221468721207367,
+      "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+      "offset_reference_camera": 0,
+      "offset_errors": [
+        {
+          "camera_id": 0,
+          "error_seconds": 0.0,
+          "error_frames": 0.0
+        },
+        {
+          "camera_id": 1,
+          "error_seconds": -0.00126118946144552,
+          "error_frames": -0.0378356838433656
+        },
+        {
+          "camera_id": 2,
+          "error_seconds": 0.003999921374872683,
+          "error_frames": 0.1199976412461805
+        }
+      ],
+      "offset_mae_frames": 0.07891666254477304,
+      "offset_max_error_frames": 0.1199976412461805,
+      "camera_geometry": {
+        "views": [
+          {
+            "view_id": 0,
+            "camera_id": 0,
+            "rotation_error_degrees": 0.0,
+            "center_error_m": 0.0,
+            "fx": 1000.0,
+            "fy": 1000.0,
+            "focal_relative_errors": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "view_id": 1,
+            "camera_id": 1,
+            "rotation_error_degrees": 2.091309789151873e-06,
+            "center_error_m": 0.0,
+            "fx": 1000.0,
+            "fy": 1000.0,
+            "focal_relative_errors": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "view_id": 2,
+            "camera_id": 2,
+            "rotation_error_degrees": 0.22657831661347247,
+            "center_error_m": 0.016298984584660475,
+            "fx": 1001.2792215384378,
+            "fy": 996.8425692783854,
+            "focal_relative_errors": [
+              0.001279221538437847,
+              -0.0031574307216145625
+            ]
+          }
+        ],
+        "rotation_rmse_degrees": 0.1308150520948928,
+        "center_rmse_m": 0.009410223137471287,
+        "focal_relative_rmse": 0.0013907897340599182,
+        "gauge": {
+          "reference_pose_max_parameter_change": 0.0,
+          "scale_view_id": 1,
+          "scale_translation_axis": "tz",
+          "scale_coordinate_change": 0.0,
+          "reference_focal_length_changes": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "joint_lambda1000": {
+      "stages": [
+        {
+          "stage": "incremental",
+          "cost": "5699.3495277178436",
+          "image_cost": "1087.1754892574238",
+          "motion_cost": "4612.17403846042",
+          "reprojection_rmse": "0.793191327618474",
+          "usable": "1",
+          "order_valid": "1"
+        },
+        {
+          "stage": "global",
+          "cost": "3658.768622251167",
+          "image_cost": "121.577632737009",
+          "motion_cost": "3537.190989514158",
+          "reprojection_rmse": "0.26524974335979246",
+          "usable": "1",
+          "order_valid": "1"
+        }
+      ],
+      "reconstructed_observations": 1728,
+      "input_observations": 1728,
+      "observation_coverage": 1.0,
+      "matched_truth_observations": 1728,
+      "all_trajectory_rmse_m": 0.10870966270334435,
+      "dynamic_trajectory_rmse_m": 0.08854711729211662,
+      "static_trajectory_rmse_m": 0.11230863956945213,
+      "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+      "similarity_alignment": "One fitted Sim(3) over all matched points, for spatial gauge only; raw errors are also reported.",
+      "similarity_scale": 1.0903044498899448,
+      "all_similarity_aligned_rmse_m": 0.07301667733350906,
+      "dynamic_similarity_aligned_rmse_m": 0.0647533636687215,
+      "static_similarity_aligned_rmse_m": 0.07455952374652208,
+      "dct_matched_truth_observations": 1728,
+      "all_dct_interpolated_rmse_m": 0.10872080343737058,
+      "dynamic_dct_interpolated_rmse_m": 0.08862914865155072,
+      "static_dct_interpolated_rmse_m": 0.11230863956945213,
+      "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+      "offset_reference_camera": 0,
+      "offset_errors": [
+        {
+          "camera_id": 0,
+          "error_seconds": 0.0,
+          "error_frames": 0.0
+        },
+        {
+          "camera_id": 1,
+          "error_seconds": -0.0006971549501105408,
+          "error_frames": -0.020914648503316223
+        },
+        {
+          "camera_id": 2,
+          "error_seconds": 0.00039737097181802555,
+          "error_frames": 0.011921129154540766
+        }
+      ],
+      "offset_mae_frames": 0.016417888828928494,
+      "offset_max_error_frames": 0.020914648503316223,
+      "camera_geometry": {
+        "views": [
+          {
+            "view_id": 0,
+            "camera_id": 0,
+            "rotation_error_degrees": 0.0,
+            "center_error_m": 0.0,
+            "fx": 1062.5248941987227,
+            "fy": 1318.0206047153654,
+            "focal_relative_errors": [
+              0.06252489419872265,
+              0.3180206047153653
+            ]
+          },
+          {
+            "view_id": 1,
+            "camera_id": 1,
+            "rotation_error_degrees": 4.369572006438181,
+            "center_error_m": 0.27309852387152495,
+            "fx": 1064.599720075039,
+            "fy": 1326.431946657711,
+            "focal_relative_errors": [
+              0.064599720075039,
+              0.326431946657711
+            ]
+          },
+          {
+            "view_id": 2,
+            "camera_id": 2,
+            "rotation_error_degrees": 4.358922668349656,
+            "center_error_m": 0.4523551746472013,
+            "fx": 938.9803635071602,
+            "fy": 1199.509748353009,
+            "focal_relative_errors": [
+              -0.06101963649283981,
+              0.19950974835300905
+            ]
+          }
+        ],
+        "rotation_rmse_degrees": 3.5633956814673593,
+        "center_rmse_m": 0.30507267318400594,
+        "focal_relative_rmse": 0.20788816816428152,
+        "gauge": {
+          "reference_pose_max_parameter_change": 0.0,
+          "scale_view_id": 1,
+          "scale_translation_axis": "tz",
+          "scale_coordinate_change": 0.0,
+          "reference_focal_length_changes": [
+            62.52489419872268,
+            318.0206047153654
+          ]
+        }
+      }
+    }
+  },
+  "metric_caution": "Objectives with different lambda weights are not directly comparable. Each retains raw and Sim(3) point errors; lambda10 fixed-calibration baseline is included."
+}

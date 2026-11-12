@@ -1,0 +1,3 @@
+# Only needed for video marker extraction and C3D import.
+opencv-python-headless>=4.7
+ezc3d>=1.5

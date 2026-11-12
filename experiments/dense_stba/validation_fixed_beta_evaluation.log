@@ -1,0 +1,8 @@
+{
+  "directory": "experiments/dense_stba/validation_fixed_beta/synthetic_fractional",
+  "methods": [
+    "B2"
+  ],
+  "ground_truth_available": true,
+  "query_grid_count": 1408
+}

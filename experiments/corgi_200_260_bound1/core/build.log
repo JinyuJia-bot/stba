@@ -1,0 +1,22 @@
+[  5%] Building CXX object CMakeFiles/stba_core.dir/src/core/camera.cpp.o
+[ 11%] Building CXX object CMakeFiles/stba_core.dir/src/core/trajectory.cpp.o
+[ 16%] Building CXX object CMakeFiles/stba_core.dir/src/core/observations.cpp.o
+[ 22%] Building CXX object CMakeFiles/stba_core.dir/src/core/options.cpp.o
+[ 27%] Building CXX object CMakeFiles/stba_core.dir/src/core/results.cpp.o
+[ 33%] Building CXX object CMakeFiles/stba_core.dir/src/optimization/reprojection_cost.cpp.o
+[ 38%] Building CXX object CMakeFiles/stba_core.dir/src/optimization/motion_prior_cost.cpp.o
+[ 44%] Building CXX object CMakeFiles/stba_core.dir/src/optimization/pairwise_alignment.cpp.o
+[ 50%] Building CXX object CMakeFiles/stba_core.dir/src/optimization/incremental_stba.cpp.o
+[ 55%] Building CXX object CMakeFiles/stba_core.dir/src/optimization/global_stba.cpp.o
+[ 61%] Building CXX object CMakeFiles/stba_core.dir/src/resampling/dct_resampling.cpp.o
+[ 66%] Linking CXX static library libstba_core.a
+[ 66%] Built target stba_core
+[ 72%] Building CXX object CMakeFiles/stba.dir/src/main.cpp.o
+[ 77%] Building CXX object CMakeFiles/test_core.dir/tests/test_core.cpp.o
+[ 83%] Building CXX object CMakeFiles/test_bounds.dir/tests/test_bounds.cpp.o
+[ 88%] Linking CXX executable test_bounds
+[ 94%] Linking CXX executable stba
+[ 94%] Built target test_bounds
+[ 94%] Built target stba
+[100%] Linking CXX executable test_core
+[100%] Built target test_core

@@ -1,0 +1,14 @@
+{
+  "video_fps": 15,
+  "original_fps": 60,
+  "playback": "quarter speed, all 60 frames",
+  "crop_half_resolution": [
+    734,
+    486,
+    1089,
+    981
+  ],
+  "metric_units": "Full-resolution 3840x2160 pixels; image displayed from 1920x1080 source",
+  "legend": "Green detected 2D, magenta projected discrete 3D from seven other views; no camera07 fitting",
+  "skeleton": "17 DCT joints at original cam04 frame/60 times; X,Z,-Y display basis; output XYZ unchanged"
+}

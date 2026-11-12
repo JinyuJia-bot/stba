@@ -1,0 +1,18 @@
+build/
+__pycache__/
+*.pyc
+experiments/checks/
+experiments/synthetic/
+experiments/real_video/
+experiments/batch/
+data/
+/tmp/
+
+# Large generated experiment inputs, caches, and binary results stay local.
+experiments/**/frames/
+experiments/**/cache*/
+experiments/**/*.npz
+experiments/**/*.npy
+experiments/**/*.mp4
+experiments/**/*.avi
+experiments/**/*.mov

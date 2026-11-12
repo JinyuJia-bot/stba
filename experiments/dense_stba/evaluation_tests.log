@@ -1,0 +1,10 @@
+test_external_reference_integer_shift_sign (test_evaluation.EvaluationTests) ... ok
+test_modified_or_mismatched_frontend_cache_is_rejected (test_evaluation.EvaluationTests) ... ok
+test_rejections_reduce_fixed_denominator_coverage (test_evaluation.EvaluationTests) ... ok
+test_shared_holdout_uses_identical_raw_measurements_and_windows (test_evaluation.EvaluationTests) ... ok
+test_train_holdout_overlap_is_rejected (test_evaluation.EvaluationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.092s
+
+OK

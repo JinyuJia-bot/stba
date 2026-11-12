@@ -1,0 +1,22 @@
+{
+  "query_count": 1488,
+  "accepted_seed_count": 1475,
+  "ge30frames": 1428,
+  "full60frames": 1245,
+  "ge30_and_displacement_gt2": 696,
+  "status_counts": {
+    "1": 83419,
+    "3": 46,
+    "4": 13,
+    "5": 250,
+    "6": 5552
+  },
+  "previous_roma_lsm_frame230_equal_sha256": {
+    "7": true,
+    "9": true,
+    "10": true
+  },
+  "preview_video": "experiments/dense_stba/results/temporal_reference_preview.mp4",
+  "preview_only_point_subsampling": "Every8thquery for visibility; actual tracking all1488 stride4seeds",
+  "preview_playback_fps": 30
+}

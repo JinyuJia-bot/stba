@@ -1,0 +1,16 @@
+Generated fractional: 3 cameras x 8 RGB frames at /tmp/dense-stba-synthetic-c37b4u2g
+test_public_inputs_do_not_contain_true_time_offsets_or_material_identity (test_synthetic_dynamic.DynamicFileTests) ... ok
+test_seed_identity_and_truth_api (test_synthetic_dynamic.DynamicFileTests) ... ok
+test_gt_finite_derivatives_against_independent_center_formulas (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_independent_continuous_render_finite_and_temporally_smooth (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_material_projection_ray_intersection_roundtrip (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_near_static_is_small_relative_to_dynamic_motion (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_pose_is_valid_rotation_and_accelerating_3d_motion (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_static_occluder_and_material_motion_are_distinct (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_synchronous_epipolar_geometry_and_asynchronous_difference (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_temporal_visibility_detects_true_dynamic_occlusion (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.364s
+
+OK

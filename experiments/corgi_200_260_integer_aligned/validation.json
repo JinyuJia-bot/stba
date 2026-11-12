@@ -1,0 +1,67 @@
+{
+  "raw_observations_match_source": true,
+  "source_hashes_unchanged": true,
+  "all480_frame_mappings_valid": true,
+  "maximum_physical_time_difference_seconds": 0.0,
+  "maximum_distortion_roundtrip_px": 1.4380373887290168e-12,
+  "all24_residual_span_frames": 0.8858184739947319,
+  "selected8_residual_span_frames": 0.6391115263104439,
+  "per_run": {
+    "baseline": {
+      "calibration_max_change": 0.0,
+      "observations": 6795,
+      "usable": true,
+      "order_valid": true,
+      "dct_usable_tracks": 17,
+      "solver": "Global: Ceres Solver Report: Iterations: 32, Initial cost: 4.676886e+07, Final cost: 4.871438e+05, Termination: CONVERGENCE"
+    },
+    "result": {
+      "calibration_max_change": 0.0,
+      "observations": 6795,
+      "usable": true,
+      "order_valid": true,
+      "dct_usable_tracks": 17,
+      "solver": "Global: Ceres Solver Report: Iterations: 201, Initial cost: 4.234717e+05, Final cost: 4.234121e+05, Termination: NO_CONVERGENCE"
+    },
+    "result_refined": {
+      "calibration_max_change": 0.0,
+      "observations": 6795,
+      "usable": true,
+      "order_valid": true,
+      "dct_usable_tracks": 17,
+      "solver": "Global: Ceres Solver Report: Iterations: 666, Initial cost: 4.234121e+05, Final cost: 4.233800e+05, Termination: CONVERGENCE"
+    },
+    "holdout07/baseline": {
+      "calibration_max_change": 0.0,
+      "observations": 5997,
+      "usable": true,
+      "order_valid": true,
+      "dct_usable_tracks": 17,
+      "solver": "Global: Ceres Solver Report: Iterations: 41, Initial cost: 4.397578e+07, Final cost: 4.168905e+05, Termination: CONVERGENCE"
+    },
+    "holdout07/result": {
+      "calibration_max_change": 0.0,
+      "observations": 5997,
+      "usable": true,
+      "order_valid": true,
+      "dct_usable_tracks": 17,
+      "solver": "Global: Ceres Solver Report: Iterations: 201, Initial cost: 3.594423e+05, Final cost: 3.585428e+05, Termination: NO_CONVERGENCE"
+    },
+    "holdout07/result_refined": {
+      "calibration_max_change": 0.0,
+      "observations": 5997,
+      "usable": true,
+      "order_valid": true,
+      "dct_usable_tracks": 17,
+      "solver": "Global: Ceres Solver Report: Iterations: 1001, Initial cost: 3.585428e+05, Final cost: 3.577762e+05, Termination: NO_CONVERGENCE"
+    },
+    "holdout07/result_refined2": {
+      "calibration_max_change": 0.0,
+      "observations": 5997,
+      "usable": true,
+      "order_valid": true,
+      "dct_usable_tracks": 17,
+      "solver": "Global: Ceres Solver Report: Iterations: 499, Initial cost: 3.577762e+05, Final cost: 3.577614e+05, Termination: CONVERGENCE"
+    }
+  }
+}

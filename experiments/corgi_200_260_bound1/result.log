@@ -1,0 +1,12 @@
+Ceres Solver Report: Iterations: 9, Initial cost: 4.413491e+05, Final cost: 4.413491e+05, Termination: CONVERGENCE
+objective=882698 reprojection_rmse_px=21.7911
+camera 0 beta=0 frames
+camera 1 beta=0.407903 frames
+camera 2 beta=1 frames
+camera 3 beta=-0.0986277 frames
+camera 4 beta=0.161541 frames
+camera 5 beta=-0.838519 frames
+camera 6 beta=-0.444326 frames
+camera 7 beta=-0.598806 frames
+seconds=260.488
+output=/data/jjy/ipc/stba/experiments/corgi_200_260_bound1/result

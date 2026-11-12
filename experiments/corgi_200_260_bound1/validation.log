@@ -1,0 +1,19 @@
+{
+  "root_source_and_binary_unchanged": true,
+  "source_data_unchanged": true,
+  "videos": {
+    "skeleton": {
+      "codec_name": "h264",
+      "r_frame_rate": "15/1",
+      "nb_frames": "60"
+    },
+    "heldout07": {
+      "codec_name": "h264",
+      "r_frame_rate": "15/1",
+      "nb_frames": "60"
+    }
+  },
+  "input_same_as_unbounded": true,
+  "all_checks_passed": true
+}
+Total audited states: 102432

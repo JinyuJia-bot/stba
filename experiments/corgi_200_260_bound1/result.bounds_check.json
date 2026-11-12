@@ -1,0 +1,18 @@
+{
+  "audited_states": 58188,
+  "minimum_beta": -1.0,
+  "maximum_beta": 1.0,
+  "final_beta": [
+    0.0,
+    0.4079034080302724,
+    1.0,
+    -0.09862768968808568,
+    0.16154110361681107,
+    -0.8385189180245323,
+    -0.4443259866288541,
+    -0.5988063476573662
+  ],
+  "relative_to_original_camera": 4,
+  "hard_limit_frames": 1,
+  "passed": true
+}

@@ -1,0 +1,20 @@
+{
+  "dynamic_observations": 9840,
+  "rmse_mm": 1.8475200359271495,
+  "detailed_tracks": [
+    0,
+    15,
+    39
+  ],
+  "worst_rmse_track": 39,
+  "source": "experiments/mocap/02_01_10cams_41tracks/trajectory.csv",
+  "display_gt_z_shift_mm": -20.0,
+  "display_dct_z_shift_mm": 20.0,
+  "interpretation": [
+    "3D blue samples are reconstructed points; actual input observations are 2D pixels.",
+    "Black ground-truth curves are linearly connected source MoCap samples when --source is supplied.",
+    "DCT curves connect the exported grid; DCT errors include its linear interpolation error.",
+    "Errors match physical observations by track/camera/frame using unshifted coordinates.",
+    "Display shifts affect only 3D GT/DCT curves; zooms, 2D inputs, samples and metrics remain unshifted."
+  ]
+}

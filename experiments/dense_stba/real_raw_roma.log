@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/data/jjy/ipc/stba/experiments/dense_stba/cross_view_association.py", line 196, in <module>
+    if not args.skip_roma:prepare_roma(args.manifest,args.out,args.device)
+  File "/data/jjy/ipc/stba/experiments/dense_stba/cross_view_association.py", line 66, in prepare_roma
+    return run_roma(path,Path(output)/'roma',device=device)
+  File "/data/jjy/ipc/stba/experiments/roma_lsm/roma_adapter.py", line 135, in run
+    raise RuntimeError('CUDA is unavailable in this execution context; use permitted host GPU execution, do not silently run CPU')
+RuntimeError: CUDA is unavailable in this execution context; use permitted host GPU execution, do not silently run CPU

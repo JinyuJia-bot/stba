@@ -1,0 +1,20 @@
+{
+  "method": "B3",
+  "artifacts": [
+    "experiments/dense_stba/results_density1/corgi_integer_aligned/figures/coverage.png",
+    "experiments/dense_stba/results_density1/corgi_integer_aligned/figures/error_curves.png",
+    "experiments/dense_stba/results_density1/corgi_integer_aligned/figures/offsets.png",
+    "experiments/dense_stba/results_density1/corgi_integer_aligned/figures/pointcloud.gif",
+    "experiments/dense_stba/results_density1/corgi_integer_aligned/figures/pointcloud_snapshots.png",
+    "experiments/dense_stba/results_density1/corgi_integer_aligned/figures/query_status.png",
+    "experiments/dense_stba/results_density1/corgi_integer_aligned/figures/tracks_2d.png",
+    "experiments/dense_stba/results_density1/corgi_integer_aligned/figures/trajectories_3d.png"
+  ],
+  "density_note": "Stride 1, 125x192 ROI within 480x270; 24,000 queried, 12,777 optimized",
+  "max_displayed_cloud_trajectories": 3500,
+  "max_displayed_trajectory_lines": 12,
+  "cloud_color": "reference RGB",
+  "queried_trajectories": 24000,
+  "optimized_trajectories": 12777,
+  "interpretation": "Plots may subsample tracks for readability; algorithm outputs and metrics retain the full query grid. No geometric offset or post-hoc alignment is applied to GT."
+}

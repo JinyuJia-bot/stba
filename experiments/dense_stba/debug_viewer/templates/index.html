@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dense STBA Debug Studio</title>
+<link rel="stylesheet" href="/static/studio.css"><script src="/vendor/plotly.min.js" defer></script><script src="/static/studio.js" defer></script>
+</head><body>
+<header><div class="brand-icon">D<span>·</span>S</div><div><h1>Dense STBA <span>Debug Studio</span></h1><p>像素身份 · 时间证据 · 连续三维轨迹</p></div><span class="read-only">● READ ONLY · 固定相机</span><span id="busy">准备加载</span></header>
+<aside>
+ <div class="section-label">EXPERIMENT / 实验</div>
+ <label>已有实验目录<select id="run-select"></select></label>
+ <label>方法<select id="method-select"></select></label>
+ <div id="run-info" class="muted small"></div>
+ <div class="section-label">IDENTITY / 点身份</div>
+ <label>point_id<div class="input-row"><input id="point-id" type="number" min="0"><button id="point-go">检查</button></div></label>
+ <div class="input-row"><input id="pixel-x" type="number" placeholder="x"><input id="pixel-y" type="number" placeholder="y"><button id="pixel-go">像素</button></div>
+ <p class="hint">点击 cam07 图像选择点。非种子帧按当前轨迹位置查身份，不把当前位置当作 point_id。</p>
+ <label>诊断相机<select id="camera-select"></select></label>
+ <div class="section-label">TIME / 时间</div>
+ <div class="input-row"><button id="prev">‹</button><button id="play" title="播放 / 暂停" aria-label="播放 / 暂停">▶</button><button id="next">›</button><button id="seed-frame">种子帧</button></div>
+ <label>local frame <span id="frame-label"></span><input id="frame" type="range" min="0" max="59" value="30"></label>
+ <label>播放速度<select id="play-rate"><option value="2">2 FPS</option><option value="5" selected>5 FPS</option><option value="10">10 FPS</option></select></label>
+ <p class="hint">三台相机的相同 local frame 是不同物理时刻。曝光帧号与估计 t 显示在各图上。</p>
+ <div class="section-label">OVERLAYS / 叠加</div>
+ <label class="check"><input id="show-roma" type="checkbox" checked><i class="dot roma"></i>原始 RoMa 候选</label>
+ <label class="check"><input id="show-flow" type="checkbox" checked><i class="dot flow"></i>二维跟踪 / 实际测量</label>
+ <label class="check"><input id="show-stba" type="checkbox" checked><i class="dot stba"></i>STBA 模型投影</label>
+ <label class="check"><input id="show-gt" type="checkbox"><i class="dot gt"></i>独立合成 GT</label>
+ <label>Patch 空间<select id="patch-space"><option value="1">原始畸变图像</option><option value="0">工作去畸变图像</option></select></label>
+ <div class="section-label">PROVENANCE</div><p id="provenance" class="hint"></p>
+ <details><summary>数据检查与缺失字段</summary><pre id="run-details"></pre></details>
+</aside>
+<main>
+ <nav id="tabs"><button data-tab="inspect" class="active">01 · Pixel & Coverage</button><button data-tab="flow">02 · Temporal Tracks</button><button data-tab="alignment">03 · Alignment Lab</button><button data-tab="scene">04 · 3D Inspector</button><button data-tab="compare">05 · Compare</button></nav>
+ <div id="error" role="alert" hidden></div><div id="notice" hidden></div>
+ <section id="view-inspect" class="view active">
+  <div class="heading"><div><h2>Pixel / Track Inspector</h2><p id="selection-info">选择参考图像上的一个像素</p></div><span class="tag" id="point-state"></span></div>
+  <div id="camera-grid" class="camera-grid"></div>
+  <div class="workspace-grid">
+   <article class="panel coverage-panel"><div class="panel-head"><h3>Coverage & Failure Explorer</h3><span class="tag">参考种子图坐标</span></div>
+    <div class="controls"><select id="roi-select"><option value="full">全部查询 ROI</option><option value="dog">狗区域（人工矩形）</option><option value="person">人区域（人工矩形）</option><option value="background">其余背景候选区域</option><option value="custom">自定义 ROI</option></select><select id="coverage-stage"><option value="first_failure">记录的首个拒绝门槛</option><option value="roma_initial_valid">RoMa 初始候选</option><option value="flow">目标时间跟踪 ≥8 帧</option><option value="anchors">两个非种子锚帧一致</option><option value="temporal_success">参考时间跟踪</option><option value="multiview_seed">至少两视角候选</option><option value="all_three_seed">三视角候选</option><option value="initialization">三维初始化资格</option><option value="trajectory_valid">最终轨迹有效</option><option value="edge_status">跨视角原始状态</option></select></div>
+    <div class="controls"><button class="draw-mode active" data-mode="point">选点</button><button class="draw-mode" data-mode="rectangle">绘制矩形</button><button class="draw-mode" data-mode="polygon">绘制多边形</button><button id="finish-polygon">完成多边形</button><button id="clear-roi">清除</button></div>
+    <canvas id="coverage-canvas" width="480" height="270"></canvas>
+    <div id="coverage-legend" class="legend"></div><p class="hint">透明 = 未查询 / ROI 外；颜色表示所选相机的门槛。此相机失败不排除其他相机仍能重建。</p>
+    <div class="controls"><input id="roi-name" placeholder="ROI 名称"><button id="save-roi">保存 ROI</button><select id="saved-rois"><option value="">加载已保存 ROI</option></select></div>
+    <div id="coverage-stats"></div>
+    <details><summary>多重异常与原始门控定义</summary><div id="coverage-detail"></div></details>
+   </article>
+   <article class="panel"><div class="panel-head"><h3>所选点 · 阶段证据</h3><span id="selected-coordinate" class="tag"></span></div><div id="point-evidence"></div>
+    <div class="panel-head"><h3>失败点 / 候选点列表</h3><span id="list-count" class="muted"></span></div>
+    <div class="controls"><select id="reason-filter"><option value="">全部状态</option></select><select id="point-sort"><option value="point_id">point_id ↑</option><option value="max_anchor_error">锚帧误差 ↓</option><option value="roma_fb_error">RoMa FB ↓</option><option value="temporal_observations">跟踪帧数 ↓</option><option value="roma_confidence">RoMa 置信度 ↓</option></select></div>
+    <div class="table-scroll"><table id="point-table"></table></div><div class="controls"><button id="list-prev">上一页</button><button id="list-next">下一页</button></div>
+    <details><summary>所选点的完整只读诊断 JSON</summary><pre id="point-json"></pre></details>
+   </article>
+  </div>
+ </section>
+ <section id="view-flow" class="view"><div class="heading"><div><h2>Temporal Track Diagnostics</h2><p>保留的候选轨迹、可见性与首次失效；被关联拒绝的轨迹仍可检查。</p></div><button id="flow-replay">读取缓存 · 重放所选点检查</button></div>
+  <div id="flow-note" class="callout"></div><div id="track-plot" class="plot tall"></div><div class="two-col"><div id="status-plot" class="plot"></div><div id="motion-plot" class="plot"></div></div><div id="fb-plot" class="plot"></div>
+  <article class="panel"><h3>直接 / 复合光流诊断</h3><div id="flow-evidence">点击上方按钮读取已有光流缓存。不会重新计算光流；缺失缓存会明确提示。</div><div id="cycle-plot" class="plot"></div><details><summary>缓存重放数据与来源</summary><pre id="flow-json"></pre></details></article>
+ </section>
+ <section id="view-alignment" class="view"><div class="heading"><div><h2>Temporal Alignment Lab</h2><p>估计值、公布同步参考、边界和跨窗口诊断分别呈现。</p></div><span class="tag">只读已有日志</span></div>
+  <div id="alignment-summary"></div><div class="two-col"><div id="beta-plot" class="plot"></div><div id="objective-plot" class="plot"></div><div id="profile-plot" class="plot"></div><div id="window-plot" class="plot"></div></div><article class="panel"><h3>时间约束与留出预测</h3><div id="alignment-constraints"></div><details><summary>完整时间诊断</summary><pre id="alignment-json"></pre></details></article>
+ </section>
+ <section id="view-scene" class="view"><div class="heading"><div><h2>3D Trajectory Inspector</h2><p id="scene-caption">固定相机与参考物理时刻的轨迹采样</p></div><div class="controls"><select id="scene-color"><option value="speed">速度着色</option><option value="residual">重投影残差</option><option value="validity">有效性 / 观测支持</option></select><label class="check"><input type="checkbox" id="scene-rays" checked>曝光射线</label></div></div>
+  <div id="scene-plot" class="plot scene"></div><div id="scene-stats"></div><article class="panel"><h3>所选点：位置、速度与加速度</h3><div id="kinematics-plot" class="plot"></div><div id="scene-evidence"></div><details><summary>三维数据说明</summary><pre id="scene-json"></pre></details></article>
+ </section>
+ <section id="view-compare" class="view"><div class="heading"><div><h2>Experiment Comparator</h2><p>左侧为当前实验；曝光配对与共同物理时刻的模型差异分开统计。</p></div></div>
+  <article class="panel"><div class="controls"><label>对照实验<select id="right-run"></select></label><label>对照方法<select id="right-method"></select></label><label>空间范围<select id="compare-scope"><option value="roi">当前 ROI 全部点</option><option value="point">仅选中 point_id</option></select></label><label>三维配对时刻<select id="compare-time"><option value="current">当前参考时刻</option><option value="all">共同参考时间段</option></select></label><button id="compare-go">配对并比较</button></div><div id="comparison-summary"></div></article>
+  <div class="two-col"><div id="compare-error-plot" class="plot"></div><div id="compare-trajectory-plot" class="plot"></div></div><article class="panel"><h3>真实曝光帧与点身份配对证据</h3><div id="comparison-evidence"></div><details><summary>完整配对诊断 JSON</summary><pre id="comparison-json"></pre></details></article>
+ </section>
+ <footer>Dense STBA Debug Studio · 图像测量 ≠ 模型延续 ≠ 独立真值 · 网页不会运行优化</footer>
+</main>
+<dialog id="patch-dialog"><div class="panel-head"><h3 id="patch-title">纹理 Patch</h3><button id="patch-close">关闭 ×</button></div><img id="patch-large" width="512" height="512" alt="magnified original texture"><label>工作坐标半径（映射到原图）<input id="patch-radius" type="range" min="4" max="40" value="10"></label><p id="patch-coordinate" class="hint"></p></dialog>
+</body></html>

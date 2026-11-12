@@ -1,0 +1,17 @@
+{
+  "dynamic_observations": 9840,
+  "rmse_mm": 1.8475200359271495,
+  "detailed_tracks": [
+    0,
+    15,
+    39
+  ],
+  "worst_rmse_track": 39,
+  "source": "experiments/mocap/02_01_10cams_41tracks/trajectory.csv",
+  "interpretation": [
+    "3D blue samples are reconstructed points; actual input observations are 2D pixels.",
+    "Black ground-truth curves are linearly connected source MoCap samples when --source is supplied.",
+    "DCT curves connect the exported grid; DCT errors include its linear interpolation error.",
+    "Errors match physical observations by track/camera/frame; no spatial alignment or error amplification."
+  ]
+}

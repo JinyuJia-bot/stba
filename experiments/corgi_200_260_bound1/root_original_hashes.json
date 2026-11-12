@@ -1,0 +1,20 @@
+{
+  "build/stba": "5f059a239887445c0cdb98f5dd3af742dcde3e100b75bf52a22dbd057b9822ef",
+  "build/libstba_core.a": "03cfcd88df85db2d75d208b9f821f767c0b0b73784f517d5aace171e4ace2d2a",
+  "CMakeLists.txt": "5caf4e9a36a4880f9a80feddf2115f37ddb87dcf48c5f76f536b1ce2919fb291",
+  "tests/test_core.cpp": "e6041f878596b2731f558eb373b87dd42007d156d010d9a620f10bb82f0b2e4c",
+  "src/core/camera.cpp": "87893d7dc1055722868c7ca8558f3df8db1094107f50dd6b052b81dd180c8925",
+  "src/core/observations.cpp": "6fe8a30b8f7d16526bc06f4fabeeedf5abda6a11ada7332fa9e5e1af0f778bb5",
+  "src/core/options.cpp": "f504a31aeb6d20eec22354add75cd76c2fedbc6fc14cb76d00966556fcbcb261",
+  "src/core/results.cpp": "0049578e88bc63a75032eda01a600b38f355cfb9728ecefdde3ce8a1cb7f7725",
+  "src/core/stba.h": "54d8f98ac586a609236d8e552ab904a285422f05f0475fb9cf0e68c4e168fa13",
+  "src/core/trajectory.cpp": "5432f19737968f0bce8756a218724e8f61b36b78240e52a55a606b93ba4f8922",
+  "src/main.cpp": "27f4e9640aee6099e5a47f5eee596d4f5324adf657c966a4eb5a90a303f83a1b",
+  "src/optimization/cost_functions.h": "511b16744507e561bd367f4ed56395b76ef329676a65dbcc460d3888241f21f2",
+  "src/optimization/global_stba.cpp": "8bfcd143916d0a270616671a250ccf6db872550a0cb01236de273cc6435d8dd6",
+  "src/optimization/incremental_stba.cpp": "d10dd4c441552603e530eefdcd8cd9f7780e7915683eaa9f1083f7c035b3fbdb",
+  "src/optimization/motion_prior_cost.cpp": "cbde6409f650aa1cfcdc27e503aa0691a2165575b1de81fb8335e0ed023eefd5",
+  "src/optimization/pairwise_alignment.cpp": "c5d8bc397107a594d1640446fe1e364b7a2b457854d9878ede9fa23e7c919e77",
+  "src/optimization/reprojection_cost.cpp": "db01cd2c47a1d98f019d2a56204fbb8ffb601557ec21127f97399c32b5a3b189",
+  "src/resampling/dct_resampling.cpp": "2b01e246d73d33b41b42c4e01112b204851fbdfe70d6b36303f8d6186f612dd5"
+}

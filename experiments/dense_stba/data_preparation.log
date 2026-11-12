@@ -1,0 +1,161 @@
+{"camera_id": 7, "prepared_raw_frames": [200, 260], "count": 60}
+{"camera_id": 9, "prepared_raw_frames": [199, 260], "count": 61}
+{"camera_id": 10, "prepared_raw_frames": [197, 260], "count": 63}
+{
+  "manifests": {
+    "raw": "/data/jjy/ipc/stba/experiments/dense_stba/data/real/raw/manifest.json",
+    "integer_aligned": "/data/jjy/ipc/stba/experiments/dense_stba/data/real/integer_aligned/manifest.json"
+  },
+  "preparation_seconds": 26.30670409090817,
+  "streams": {
+    "7": {
+      "video_path": "/data/datasets/selfcap/corgi-release/videos/0007.mp4",
+      "stream": {
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "time_base": "1/15360",
+        "nb_frames": "3500",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      "fps": 60.0,
+      "timestamp_kind": "MP4 encoded presentation time; not independently measured hardware exposure time"
+    },
+    "9": {
+      "video_path": "/data/datasets/selfcap/corgi-release/videos/0009.mp4",
+      "stream": {
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "time_base": "1/15360",
+        "nb_frames": "3500",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      "fps": 60.0,
+      "timestamp_kind": "MP4 encoded presentation time; not independently measured hardware exposure time"
+    },
+    "10": {
+      "video_path": "/data/datasets/selfcap/corgi-release/videos/0010.mp4",
+      "stream": {
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "time_base": "1/15360",
+        "nb_frames": "3500",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      "fps": 60.0,
+      "timestamp_kind": "MP4 encoded presentation time; not independently measured hardware exposure time"
+    }
+  },
+  "sync_sign_evidence": "Local official SelfCap README: time computed from frame index - sync.json = actual timestamp.",
+  "camera_clock_mappings": {
+    "7": {
+      "raw": {
+        "raw_frame_shift": 0,
+        "raw_beta_seconds": 0.0,
+        "raw_beta_frames": 0.0,
+        "residual_beta_seconds": 0.0,
+        "residual_beta_frames": 0.0
+      },
+      "integer_aligned": {
+        "raw_frame_shift": 0,
+        "raw_beta_seconds": 0.0,
+        "raw_beta_frames": 0.0,
+        "residual_beta_seconds": 0.0,
+        "residual_beta_frames": 0.0
+      }
+    },
+    "9": {
+      "raw": {
+        "raw_frame_shift": 0,
+        "raw_beta_seconds": 0.012422295287251472,
+        "raw_beta_frames": 0.7453377172350883,
+        "residual_beta_seconds": 0.012422295287251472,
+        "residual_beta_frames": 0.7453377172350883
+      },
+      "integer_aligned": {
+        "raw_frame_shift": -1,
+        "raw_beta_seconds": 0.012422295287251472,
+        "raw_beta_frames": 0.7453377172350883,
+        "residual_beta_seconds": -0.004244371379415194,
+        "residual_beta_frames": -0.25466228276491165
+      }
+    },
+    "10": {
+      "raw": {
+        "raw_frame_shift": 0,
+        "raw_beta_seconds": 0.04939606413245201,
+        "raw_beta_frames": 2.9637638479471207,
+        "residual_beta_seconds": 0.04939606413245201,
+        "residual_beta_frames": 2.9637638479471207
+      },
+      "integer_aligned": {
+        "raw_frame_shift": -3,
+        "raw_beta_seconds": 0.04939606413245201,
+        "raw_beta_frames": 2.9637638479471207,
+        "residual_beta_seconds": -0.0006039358675479917,
+        "residual_beta_frames": -0.0362361520528795
+      }
+    }
+  },
+  "cotracker_reference": "https://github.com/facebookresearch/co-tracker",
+  "tracker_choice": "OpenCV DIS medium preset on CPU; full-resolution dense pairwise flow, arbitrary subpixel grid-query tracking, no sparse feature detector."
+}

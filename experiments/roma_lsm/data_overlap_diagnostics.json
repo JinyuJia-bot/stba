@@ -1,0 +1,35 @@
+{
+  "purpose": "Evidence of actual static co-visibility after baseline/orientation/visual selection. Consistency only: no real GT, no accuracy claim.",
+  "mask_support": "Both source and target manually inspected structural-floor masks eroded by5pixels; all bilinear contributors and both dense directions valid.",
+  "sampler": "PyTorch bilinear grid_sample, align_corners=False, integer pixel centers.",
+  "pairs": [
+    {
+      "reference_id": 7,
+      "target_id": 9,
+      "baseline": 0.587429690677867,
+      "reference_eroded_static_pixels": 22090,
+      "both_eroded_static_and_dense_valid_pixels": 14904,
+      "reference_static_coverage": 0.6746944318696243,
+      "confidence_median": 0.8861008286476135,
+      "FB_median_px": 0.04071048331816532,
+      "FB_P90_px": 0.07238027593375332,
+      "epipolar_median_px": 0.04939068472392901,
+      "epipolar_P90_px": 0.11508553864464595,
+      "confidence_gt_02_and_FB_lt_2_pixels": 14904
+    },
+    {
+      "reference_id": 7,
+      "target_id": 10,
+      "baseline": 1.3669391271393703,
+      "reference_eroded_static_pixels": 22090,
+      "both_eroded_static_and_dense_valid_pixels": 10892,
+      "reference_static_coverage": 0.49307378904481663,
+      "confidence_median": 0.7228299379348755,
+      "FB_median_px": 0.06293046315888101,
+      "FB_P90_px": 0.12029685452786774,
+      "epipolar_median_px": 0.0608718175656343,
+      "epipolar_P90_px": 0.13155940756146906,
+      "confidence_gt_02_and_FB_lt_2_pixels": 10492
+    }
+  ]
+}

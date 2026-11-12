@@ -1,0 +1,1120 @@
+{
+  "timestamp_utc": "2026-11-11T09:53:06.028035+00:00",
+  "audit_type": "Independent read-only CPU audit of existing pair artifacts",
+  "command": [
+    "/data/tools/miniconda3/envs/roma_corr/bin/python",
+    "experiments/roma_lsm/audit_results.py"
+  ],
+  "passed": true,
+  "pairs_checked": 6,
+  "method_outputs_checked": 30,
+  "accepted_refinement_pixels_checked": 323249,
+  "source_calibration": {
+    "/data/datasets/selfcap/corgi-release/optimized/intri.yml": {
+      "expected_sha256": "0ffc58c859c8083edffb3d7cdba12b2bea5140e5228f680541e599eee79fc492",
+      "current_sha256": "0ffc58c859c8083edffb3d7cdba12b2bea5140e5228f680541e599eee79fc492",
+      "unchanged": true
+    },
+    "/data/datasets/selfcap/corgi-release/optimized/extri.yml": {
+      "expected_sha256": "22aa3a0eb954d456e853020609320fc5d6658b4b9c30eae56d4e9282148741f2",
+      "current_sha256": "22aa3a0eb954d456e853020609320fc5d6658b4b9c30eae56d4e9282148741f2",
+      "unchanged": true
+    }
+  },
+  "pairs": [
+    {
+      "pair": "real_7_10",
+      "mode": "asynchronous_unknown",
+      "passed": true,
+      "checks": {
+        "reference_calibration_equals_input": true,
+        "target_calibration_equals_input": true,
+        "reported_common_all_support_matches": true,
+        "reported_common_primary_support_matches": true,
+        "reported_valid_counts_match": true
+      },
+      "common_all_pixels": 6960,
+      "common_primary_pixels": 9094,
+      "methods": {
+        "A0": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 10002,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 10002,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.5969647169113159,
+            "max_affine_singular_value": 1.879188060760498,
+            "min_affine_determinant": 0.6920145750045776,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A0g": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 10002,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 9995,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.5969647169113159,
+            "max_affine_singular_value": 1.879188060760498,
+            "min_affine_determinant": 0.6920145750045776,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A1_translation": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 10002,
+          "attempted_pixels": 10002,
+          "accepted_refinement_pixels": 7520,
+          "valid_pixels": 7520,
+          "max_displacement_among_attempted_px": 3.3239657878875732,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.0,
+            "max_affine_singular_value": 1.0,
+            "min_affine_determinant": 1.0,
+            "min_gain": 0.5,
+            "max_gain": 1.3337615728378296,
+            "max_abs_bias": 0.3499999940395355
+          }
+        },
+        "A1_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 10002,
+          "attempted_pixels": 10002,
+          "accepted_refinement_pixels": 9370,
+          "valid_pixels": 9370,
+          "max_displacement_among_attempted_px": 0.483585387468338,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.5134328007698059,
+            "max_affine_singular_value": 1.8867367506027222,
+            "min_affine_determinant": 0.5752602815628052,
+            "min_gain": 0.5058152079582214,
+            "max_gain": 1.124291181564331,
+            "max_abs_bias": 0.3499999940395355
+          }
+        },
+        "A2_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 10002,
+          "attempted_pixels": 10002,
+          "accepted_refinement_pixels": 9420,
+          "valid_pixels": 9420,
+          "max_displacement_among_attempted_px": 0.4312790036201477,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.5139784812927246,
+            "max_affine_singular_value": 1.886431336402893,
+            "min_affine_determinant": 0.5606731176376343,
+            "min_gain": 0.5056810975074768,
+            "max_gain": 1.127073884010315,
+            "max_abs_bias": 0.3499999940395355
+          }
+        }
+      }
+    },
+    {
+      "pair": "real_7_9",
+      "mode": "asynchronous_unknown",
+      "passed": true,
+      "checks": {
+        "reference_calibration_equals_input": true,
+        "target_calibration_equals_input": true,
+        "reported_common_all_support_matches": true,
+        "reported_common_primary_support_matches": true,
+        "reported_valid_counts_match": true
+      },
+      "common_all_pixels": 12125,
+      "common_primary_pixels": 13963,
+      "methods": {
+        "A0": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 15242,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 15242,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.7185225486755371,
+            "max_affine_singular_value": 1.1348150968551636,
+            "min_affine_determinant": 0.6766119003295898,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A0g": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 15242,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 15238,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.7185225486755371,
+            "max_affine_singular_value": 1.1348150968551636,
+            "min_affine_determinant": 0.6766119003295898,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A1_translation": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 15242,
+          "attempted_pixels": 15242,
+          "accepted_refinement_pixels": 13130,
+          "valid_pixels": 13130,
+          "max_displacement_among_attempted_px": 1.239198923110962,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.0,
+            "max_affine_singular_value": 1.0,
+            "min_affine_determinant": 1.0,
+            "min_gain": 0.5,
+            "max_gain": 1.482441782951355,
+            "max_abs_bias": 0.3499999940395355
+          }
+        },
+        "A1_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 15242,
+          "attempted_pixels": 15242,
+          "accepted_refinement_pixels": 14395,
+          "valid_pixels": 14395,
+          "max_displacement_among_attempted_px": 1.1172887086868286,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.5625426769256592,
+            "max_affine_singular_value": 1.294695258140564,
+            "min_affine_determinant": 0.5319736003875732,
+            "min_gain": 0.5,
+            "max_gain": 1.0264809131622314,
+            "max_abs_bias": 0.3499999940395355
+          }
+        },
+        "A2_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 22090,
+          "raw_valid_pixels": 15242,
+          "attempted_pixels": 15242,
+          "accepted_refinement_pixels": 14544,
+          "valid_pixels": 14544,
+          "max_displacement_among_attempted_px": 1.037928819656372,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.5869863629341125,
+            "max_affine_singular_value": 1.3055425882339478,
+            "min_affine_determinant": 0.5180827975273132,
+            "min_gain": 0.5,
+            "max_gain": 1.0296740531921387,
+            "max_abs_bias": 0.3499999940395355
+          }
+        }
+      }
+    },
+    {
+      "pair": "synthetic_affine_brightness_0_1",
+      "mode": "static",
+      "passed": true,
+      "checks": {
+        "reference_calibration_equals_input": true,
+        "target_calibration_equals_input": true,
+        "reported_common_all_support_matches": true,
+        "reported_common_primary_support_matches": true,
+        "reported_valid_counts_match": true
+      },
+      "common_all_pixels": 21030,
+      "common_primary_pixels": 21069,
+      "methods": {
+        "A0": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21098,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 21098,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.0115196704864502,
+            "max_affine_singular_value": 1.056322455406189,
+            "min_affine_determinant": 1.0519851446151733,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A0g": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21098,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 21090,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.0115196704864502,
+            "max_affine_singular_value": 1.056322455406189,
+            "min_affine_determinant": 1.0522465705871582,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A1_translation": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21098,
+          "attempted_pixels": 21098,
+          "accepted_refinement_pixels": 21059,
+          "valid_pixels": 21059,
+          "max_displacement_among_attempted_px": 0.34645649790763855,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.0,
+            "max_affine_singular_value": 1.0,
+            "min_affine_determinant": 1.0,
+            "min_gain": 0.8670816421508789,
+            "max_gain": 1.1129289865493774,
+            "max_abs_bias": 0.1461639255285263
+          }
+        },
+        "A1_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21098,
+          "attempted_pixels": 21098,
+          "accepted_refinement_pixels": 21079,
+          "valid_pixels": 21079,
+          "max_displacement_among_attempted_px": 0.09998590499162674,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.00426185131073,
+            "max_affine_singular_value": 1.0662742853164673,
+            "min_affine_determinant": 1.0418370962142944,
+            "min_gain": 0.9745457768440247,
+            "max_gain": 1.0792269706726074,
+            "max_abs_bias": 0.09006614983081818
+          }
+        },
+        "A2_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21098,
+          "attempted_pixels": 21098,
+          "accepted_refinement_pixels": 21077,
+          "valid_pixels": 21077,
+          "max_displacement_among_attempted_px": 0.0988631397485733,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.0044044256210327,
+            "max_affine_singular_value": 1.0657966136932373,
+            "min_affine_determinant": 1.0420204401016235,
+            "min_gain": 0.9746410250663757,
+            "max_gain": 1.0792772769927979,
+            "max_abs_bias": 0.09001702815294266
+          }
+        }
+      }
+    },
+    {
+      "pair": "synthetic_affine_brightness_0_2",
+      "mode": "static",
+      "passed": true,
+      "checks": {
+        "reference_calibration_equals_input": true,
+        "target_calibration_equals_input": true,
+        "reported_common_all_support_matches": true,
+        "reported_common_primary_support_matches": true,
+        "reported_valid_counts_match": true
+      },
+      "common_all_pixels": 21715,
+      "common_primary_pixels": 21720,
+      "methods": {
+        "A0": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21744,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 21744,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.9376711249351501,
+            "max_affine_singular_value": 1.0392249822616577,
+            "min_affine_determinant": 0.9501791596412659,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A0g": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21744,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 21741,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.9376711249351501,
+            "max_affine_singular_value": 1.0392249822616577,
+            "min_affine_determinant": 0.9501791596412659,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A1_translation": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21744,
+          "attempted_pixels": 21744,
+          "accepted_refinement_pixels": 21741,
+          "valid_pixels": 21741,
+          "max_displacement_among_attempted_px": 0.30755001306533813,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.0,
+            "max_affine_singular_value": 1.0,
+            "min_affine_determinant": 1.0,
+            "min_gain": 0.7296121120452881,
+            "max_gain": 0.9326657056808472,
+            "max_abs_bias": 0.07437007874250412
+          }
+        },
+        "A1_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21744,
+          "attempted_pixels": 21744,
+          "accepted_refinement_pixels": 21733,
+          "valid_pixels": 21733,
+          "max_displacement_among_attempted_px": 0.11679612845182419,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.9268706440925598,
+            "max_affine_singular_value": 1.0580894947052002,
+            "min_affine_determinant": 0.9363970756530762,
+            "min_gain": 0.7850673198699951,
+            "max_gain": 0.8944489359855652,
+            "max_abs_bias": 0.049670856446027756
+          }
+        },
+        "A2_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 21744,
+          "attempted_pixels": 21744,
+          "accepted_refinement_pixels": 21726,
+          "valid_pixels": 21726,
+          "max_displacement_among_attempted_px": 0.11106842756271362,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.9268277287483215,
+            "max_affine_singular_value": 1.0574228763580322,
+            "min_affine_determinant": 0.936553418636322,
+            "min_gain": 0.7851023077964783,
+            "max_gain": 0.9691239595413208,
+            "max_abs_bias": 0.049653325229883194
+          }
+        }
+      }
+    },
+    {
+      "pair": "synthetic_occlusion_weak_noise_0_1",
+      "mode": "static",
+      "passed": true,
+      "checks": {
+        "reference_calibration_equals_input": true,
+        "target_calibration_equals_input": true,
+        "reported_common_all_support_matches": true,
+        "reported_common_primary_support_matches": true,
+        "reported_valid_counts_match": true
+      },
+      "common_all_pixels": 19583,
+      "common_primary_pixels": 19613,
+      "methods": {
+        "A0": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 19950,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 19950,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.787248969078064,
+            "max_affine_singular_value": 1.626434326171875,
+            "min_affine_determinant": 0.8277773857116699,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A0g": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 19950,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 19946,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.787248969078064,
+            "max_affine_singular_value": 1.626434326171875,
+            "min_affine_determinant": 0.8277773857116699,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A1_translation": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 19950,
+          "attempted_pixels": 19950,
+          "accepted_refinement_pixels": 19873,
+          "valid_pixels": 19873,
+          "max_displacement_among_attempted_px": 1.2238003015518188,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.0,
+            "max_affine_singular_value": 1.0,
+            "min_affine_determinant": 1.0,
+            "min_gain": 0.5,
+            "max_gain": 1.1092356443405151,
+            "max_abs_bias": 0.3499999940395355
+          }
+        },
+        "A1_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 19950,
+          "attempted_pixels": 19950,
+          "accepted_refinement_pixels": 19684,
+          "valid_pixels": 19684,
+          "max_displacement_among_attempted_px": 2.2103874683380127,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.4457036852836609,
+            "max_affine_singular_value": 1.4748303890228271,
+            "min_affine_determinant": 0.3602856397628784,
+            "min_gain": 0.5,
+            "max_gain": 1.0990883111953735,
+            "max_abs_bias": 0.3499999940395355
+          }
+        },
+        "A2_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 19950,
+          "attempted_pixels": 19950,
+          "accepted_refinement_pixels": 19695,
+          "valid_pixels": 19695,
+          "max_displacement_among_attempted_px": 2.218043088912964,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.4307306706905365,
+            "max_affine_singular_value": 1.7729134559631348,
+            "min_affine_determinant": 0.3889629542827606,
+            "min_gain": 0.5,
+            "max_gain": 1.1017688512802124,
+            "max_abs_bias": 0.3499999940395355
+          }
+        }
+      }
+    },
+    {
+      "pair": "synthetic_translation_0_1",
+      "mode": "static",
+      "passed": true,
+      "checks": {
+        "reference_calibration_equals_input": true,
+        "target_calibration_equals_input": true,
+        "reported_common_all_support_matches": true,
+        "reported_common_primary_support_matches": true,
+        "reported_valid_counts_match": true
+      },
+      "common_all_pixels": 22401,
+      "common_primary_pixels": 22401,
+      "methods": {
+        "A0": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 22401,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 22401,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.975446343421936,
+            "max_affine_singular_value": 1.0110821723937988,
+            "min_affine_determinant": 0.9748890399932861,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A0g": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 22401,
+          "attempted_pixels": 0,
+          "accepted_refinement_pixels": 0,
+          "valid_pixels": 22401,
+          "max_displacement_among_attempted_px": null,
+          "max_correction_bound_px": null,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.975446343421936,
+            "max_affine_singular_value": 1.0110821723937988,
+            "min_affine_determinant": 0.9748890399932861,
+            "min_gain": 1.0,
+            "max_gain": 1.0,
+            "max_abs_bias": 0.0
+          }
+        },
+        "A1_translation": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 22401,
+          "attempted_pixels": 22401,
+          "accepted_refinement_pixels": 22401,
+          "valid_pixels": 22401,
+          "max_displacement_among_attempted_px": 0.11178295314311981,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 1.0,
+            "max_affine_singular_value": 1.0,
+            "min_affine_determinant": 1.0,
+            "min_gain": 0.8724485635757446,
+            "max_gain": 0.953292191028595,
+            "max_abs_bias": 0.06616531312465668
+          }
+        },
+        "A1_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 22401,
+          "attempted_pixels": 22401,
+          "accepted_refinement_pixels": 22401,
+          "valid_pixels": 22401,
+          "max_displacement_among_attempted_px": 0.11475431174039841,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.9728524088859558,
+            "max_affine_singular_value": 1.027819275856018,
+            "min_affine_determinant": 0.9702911376953125,
+            "min_gain": 0.8709076046943665,
+            "max_gain": 0.9518325328826904,
+            "max_abs_bias": 0.06706889718770981
+          }
+        },
+        "A2_affine": {
+          "passed": true,
+          "checks": {
+            "raw_correspondence_bitwise_unchanged": true,
+            "reference_roi_identical_across_methods": true,
+            "raw_valid_identical_across_methods": true,
+            "valid_subset_of_roi": true,
+            "success_subset_of_valid_and_attempted": true,
+            "status_success_matches_accepted_attempts": true,
+            "accepted_coordinates_finite": true,
+            "geometry_only_in_reference_allowed_mask": true,
+            "controls_not_counted_as_refinement": true,
+            "center_update_within_bound": true,
+            "accepted_affine_in_bounds": true,
+            "accepted_photometric_parameters_in_bounds": true,
+            "all_accepted_source_and_target_patches_allowed": true
+          },
+          "roi_pixels": 24388,
+          "raw_valid_pixels": 22401,
+          "attempted_pixels": 22401,
+          "accepted_refinement_pixels": 22401,
+          "valid_pixels": 22401,
+          "max_displacement_among_attempted_px": 0.11431687325239182,
+          "max_correction_bound_px": 4.0,
+          "parameter_bounds_observed": {
+            "min_affine_singular_value": 0.9729783535003662,
+            "max_affine_singular_value": 1.0278315544128418,
+            "min_affine_determinant": 0.9703661203384399,
+            "min_gain": 0.8709631562232971,
+            "max_gain": 0.9518608450889587,
+            "max_abs_bias": 0.06703954190015793
+          }
+        }
+      }
+    }
+  ],
+  "code_review": {
+    "ground_truth_separation": "experiment.py and lsm.py do not load GT; evaluate.py loads GT only after results are saved.",
+    "fixed_geometry": "F derives from fixed input K/R/t. Asynchronous inputs require both static masks; patch validity is checked throughout optimization.",
+    "evaluation_denominator": "Reference ROI is fixed before matching; synthetic accuracy denominator is reference_roi & true visibility, independent of method acceptance.",
+    "fallback_policy": "Raw field is retained exactly. Rejected optimizer proposals may remain in uv_refined but valid_refined/refined_mask are false; no fallback counts as success.",
+    "common_regions": "All-method and primary-method supports are intersections of their accepted valid fields.",
+    "limitations": "This audit verifies code/artifact invariants, not whether manually drawn static masks are semantically perfect or whether matches have true geometric accuracy."
+  }
+}

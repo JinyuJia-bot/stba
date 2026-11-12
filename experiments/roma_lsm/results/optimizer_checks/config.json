@@ -1,0 +1,30 @@
+{
+  "experiment": "controlled_optimizer_verification_NOT_RoMa",
+  "command": [
+    "/data/tools/miniconda3/envs/roma_corr/bin/python",
+    "experiments/roma_lsm/run_optimizer_checks.py",
+    "--device",
+    "cuda:0"
+  ],
+  "suite": "/data/jjy/ipc/stba/experiments/roma_lsm/data/synthetic/suite.json",
+  "seed": 20261111,
+  "roi": [
+    64,
+    48,
+    128,
+    96
+  ],
+  "stride": 1,
+  "device": "cuda:0",
+  "python": "3.10.20",
+  "numpy": "2.2.6",
+  "torch": "2.5.1+cu121",
+  "input_images": "independently rendered float32 images_float; no PNG quantization",
+  "coordinate_system": "ideal pinhole working-image pixels, x/y, integer pixel centers",
+  "initialization": "Known synthetic mapping + declared smooth perturbation; not network output",
+  "acceptance": "LSM diagnostics only; all regular-grid points attempted; no GT visibility gating",
+  "affine_initialization": "Fit perturbed dense mapping with fixed raw FB<=3 px screening; unreliable fits use identity",
+  "confidence": "All ones: neutral synthetic score, NOT a RoMa confidence",
+  "forward_backward": "Diagnostics against the same fixed perturbed reverse field before/after; reverse is not refined",
+  "ground_truth_usage": "Evaluation only after initialization fields are loaded; no GT accepts/rejects or weights"
+}

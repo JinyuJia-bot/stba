@@ -1,0 +1,555 @@
+{
+  "all_passed": true,
+  "checked_case_count": 4,
+  "failed_case_count": 0,
+  "audited_methods": 16,
+  "cases": [
+    {
+      "directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/synthetic_near_static",
+      "name": "synthetic_near_static",
+      "all_passed": true,
+      "methods": {
+        "B0": {
+          "all_passed": true,
+          "observations_sha256": "dc2e04120610dc30e567d9a9f6ab3a016c46ff6f5b16b7525c4c51b5449e42db",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "beta_status": [
+            "assumed_synchronous",
+            "assumed_synchronous",
+            "assumed_synchronous"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1408,
+          "valid_samples": 45056,
+          "train_observations": 109616,
+          "holdout_observations": 25296,
+          "inlier_support_replayed": false,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 0.0
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        },
+        "B1": {
+          "all_passed": true,
+          "observations_sha256": "dc2e04120610dc30e567d9a9f6ab3a016c46ff6f5b16b7525c4c51b5449e42db",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "fixed_beta_not_estimated",
+            "fixed_beta_not_estimated"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1408,
+          "valid_samples": 45056,
+          "train_observations": 109616,
+          "holdout_observations": 25296,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 8.526512829121202e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        },
+        "B2": {
+          "all_passed": true,
+          "observations_sha256": "dc2e04120610dc30e567d9a9f6ab3a016c46ff6f5b16b7525c4c51b5449e42db",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.01,
+            -0.016666666666666666
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "fixed_beta_not_estimated",
+            "fixed_beta_not_estimated"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1408,
+          "valid_samples": 45048,
+          "train_observations": 109616,
+          "holdout_observations": 25296,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 8.526512829121202e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": true
+        },
+        "B3": {
+          "all_passed": true,
+          "observations_sha256": "dc2e04120610dc30e567d9a9f6ab3a016c46ff6f5b16b7525c4c51b5449e42db",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "insufficient_motion",
+            "insufficient_motion"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1408,
+          "valid_samples": 45056,
+          "train_observations": 109616,
+          "holdout_observations": 25296,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 8.526512829121202e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        }
+      },
+      "manifest_sha256": "c54918bd00f40e44baafbc6e2c558cd272105079eade5302b8691bf12c4c67eb",
+      "calibration_source_sha256": {},
+      "working_calibration_matches_prior_roma_lsm": null,
+      "window": null,
+      "no_GT_or_external_sync_accessed": true,
+      "interpretation": "This is a numerical/provenance audit, not an independent accuracy claim. Real beta disagreement with published synchronization is not a failure criterion.",
+      "B1_B3_initialization_evidence": "Initial controls were not persisted, so byte identity cannot be proved from artifacts. run_experiment.py caches the same (tri,fit,selected) tuple for B1/B3; frozen observations, initial beta, seed eligibility, knots, split and initial objective agree."
+    },
+    {
+      "directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/synthetic_noisy_occlusion",
+      "name": "synthetic_noisy_occlusion",
+      "all_passed": true,
+      "methods": {
+        "B0": {
+          "all_passed": true,
+          "observations_sha256": "3d413573e65b747bfcabb384b9b19ecf6bf8509c74c40ce8c44592e7435cc6bb",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "beta_status": [
+            "assumed_synchronous",
+            "assumed_synchronous",
+            "assumed_synchronous"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 944,
+          "valid_samples": 22726,
+          "train_observations": 56220,
+          "holdout_observations": 14586,
+          "inlier_support_replayed": false,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 0.0
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        },
+        "B1": {
+          "all_passed": true,
+          "observations_sha256": "3d413573e65b747bfcabb384b9b19ecf6bf8509c74c40ce8c44592e7435cc6bb",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.009653399200745674,
+            -0.016963503234265973
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "fixed_beta_not_estimated",
+            "fixed_beta_not_estimated"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 944,
+          "valid_samples": 22387,
+          "train_observations": 56220,
+          "holdout_observations": 14586,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 8.526512829121202e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        },
+        "B2": {
+          "all_passed": true,
+          "observations_sha256": "3d413573e65b747bfcabb384b9b19ecf6bf8509c74c40ce8c44592e7435cc6bb",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.01,
+            -0.016666666666666666
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "fixed_beta_not_estimated",
+            "fixed_beta_not_estimated"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 944,
+          "valid_samples": 22387,
+          "train_observations": 56220,
+          "holdout_observations": 14586,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 8.526512829121202e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": true
+        },
+        "B3": {
+          "all_passed": true,
+          "observations_sha256": "3d413573e65b747bfcabb384b9b19ecf6bf8509c74c40ce8c44592e7435cc6bb",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.009834647913087101,
+            -0.016732782006361267
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "locally_observable",
+            "locally_observable"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 944,
+          "valid_samples": 22387,
+          "train_observations": 56220,
+          "holdout_observations": 14586,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 5.684341886080802e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        }
+      },
+      "manifest_sha256": "1ff3e98b9d9504404f3b841a3a0b86d690284b71d3694ed8e6ccaa438e985681",
+      "calibration_source_sha256": {},
+      "working_calibration_matches_prior_roma_lsm": null,
+      "window": null,
+      "no_GT_or_external_sync_accessed": true,
+      "interpretation": "This is a numerical/provenance audit, not an independent accuracy claim. Real beta disagreement with published synchronization is not a failure criterion.",
+      "B1_B3_initialization_evidence": "Initial controls were not persisted, so byte identity cannot be proved from artifacts. run_experiment.py caches the same (tri,fit,selected) tuple for B1/B3; frozen observations, initial beta, seed eligibility, knots, split and initial objective agree."
+    },
+    {
+      "directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/synthetic_wide",
+      "name": "synthetic_wide",
+      "all_passed": true,
+      "methods": {
+        "B0": {
+          "all_passed": true,
+          "observations_sha256": "21a4fb8921df99d71536cfe493c7d8992297561792796ba2d8caf469b35511ce",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "beta_status": [
+            "assumed_synchronous",
+            "assumed_synchronous",
+            "assumed_synchronous"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1098,
+          "valid_samples": 27039,
+          "train_observations": 67676,
+          "holdout_observations": 17202,
+          "inlier_support_replayed": false,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 0.0
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        },
+        "B1": {
+          "all_passed": true,
+          "observations_sha256": "21a4fb8921df99d71536cfe493c7d8992297561792796ba2d8caf469b35511ce",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.039966165672225155,
+            -0.016594631396597937
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "fixed_beta_not_estimated",
+            "fixed_beta_not_estimated"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1098,
+          "valid_samples": 26696,
+          "train_observations": 67676,
+          "holdout_observations": 17202,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 5.684341886080802e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        },
+        "B2": {
+          "all_passed": true,
+          "observations_sha256": "21a4fb8921df99d71536cfe493c7d8992297561792796ba2d8caf469b35511ce",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.04,
+            -0.016666666666666666
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "fixed_beta_not_estimated",
+            "fixed_beta_not_estimated"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1098,
+          "valid_samples": 26696,
+          "train_observations": 67676,
+          "holdout_observations": 17202,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 5.684341886080802e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": true
+        },
+        "B3": {
+          "all_passed": true,
+          "observations_sha256": "21a4fb8921df99d71536cfe493c7d8992297561792796ba2d8caf469b35511ce",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.04017869373511021,
+            -0.016600480874255984
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "locally_observable",
+            "locally_observable"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1098,
+          "valid_samples": 26696,
+          "train_observations": 67676,
+          "holdout_observations": 17202,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 5.684341886080802e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        }
+      },
+      "manifest_sha256": "47ffe77a461a6011f80d8438050b326b968214440fb82590c7790c2166a7ca03",
+      "calibration_source_sha256": {},
+      "working_calibration_matches_prior_roma_lsm": null,
+      "window": null,
+      "no_GT_or_external_sync_accessed": true,
+      "interpretation": "This is a numerical/provenance audit, not an independent accuracy claim. Real beta disagreement with published synchronization is not a failure criterion.",
+      "B1_B3_initialization_evidence": "Initial controls were not persisted, so byte identity cannot be proved from artifacts. run_experiment.py caches the same (tri,fit,selected) tuple for B1/B3; frozen observations, initial beta, seed eligibility, knots, split and initial objective agree."
+    },
+    {
+      "directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/synthetic_zero",
+      "name": "synthetic_zero",
+      "all_passed": true,
+      "methods": {
+        "B0": {
+          "all_passed": true,
+          "observations_sha256": "35a4b4cdc9dc5a6cbeca6ce9df3acf6d2bc7b7493659d0c3795f353c7134feee",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "beta_status": [
+            "assumed_synchronous",
+            "assumed_synchronous",
+            "assumed_synchronous"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1098,
+          "valid_samples": 27029,
+          "train_observations": 64525,
+          "holdout_observations": 16490,
+          "inlier_support_replayed": false,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 0.0
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        },
+        "B1": {
+          "all_passed": true,
+          "observations_sha256": "35a4b4cdc9dc5a6cbeca6ce9df3acf6d2bc7b7493659d0c3795f353c7134feee",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.00010178679914831174,
+            -1.811456080769657e-05
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "fixed_beta_not_estimated",
+            "fixed_beta_not_estimated"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1098,
+          "valid_samples": 26499,
+          "train_observations": 64525,
+          "holdout_observations": 16490,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 8.526512829121202e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        },
+        "B2": {
+          "all_passed": true,
+          "observations_sha256": "35a4b4cdc9dc5a6cbeca6ce9df3acf6d2bc7b7493659d0c3795f353c7134feee",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "fixed_beta_not_estimated",
+            "fixed_beta_not_estimated"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1098,
+          "valid_samples": 27029,
+          "train_observations": 64525,
+          "holdout_observations": 16490,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 5.684341886080802e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": true
+        },
+        "B3": {
+          "all_passed": true,
+          "observations_sha256": "35a4b4cdc9dc5a6cbeca6ce9df3acf6d2bc7b7493659d0c3795f353c7134feee",
+          "frozen_uv_ids_timestamps_identical": true,
+          "train_holdout_window_exact": true,
+          "beta_gauge_and_boxes_valid": true,
+          "beta_seconds": [
+            0.0,
+            8.795579333011336e-05,
+            -6.990483249283764e-06
+          ],
+          "beta_status": [
+            "reference_gauge",
+            "locally_observable",
+            "locally_observable"
+          ],
+          "query_tracks": 1408,
+          "valid_tracks": 1098,
+          "valid_samples": 26499,
+          "train_observations": 64525,
+          "holdout_observations": 16490,
+          "inlier_support_replayed": true,
+          "numerical_replay": {
+            "xyz_max_abs_error": 0.0,
+            "velocity_max_abs_error": 0.0,
+            "acceleration_max_abs_error": 0.0,
+            "projection_max_abs_error_px": 5.684341886080802e-14
+          },
+          "source_calibration_unchanged": true,
+          "oracle_beta": false
+        }
+      },
+      "manifest_sha256": "c90ccfa365fd25a71c28dc5d5f00ebb25a6abdcc916ee874b2a17b823712461b",
+      "calibration_source_sha256": {},
+      "working_calibration_matches_prior_roma_lsm": null,
+      "window": null,
+      "no_GT_or_external_sync_accessed": true,
+      "interpretation": "This is a numerical/provenance audit, not an independent accuracy claim. Real beta disagreement with published synchronization is not a failure criterion.",
+      "B1_B3_initialization_evidence": "Initial controls were not persisted, so byte identity cannot be proved from artifacts. run_experiment.py caches the same (tri,fit,selected) tuple for B1/B3; frozen observations, initial beta, seed eligibility, knots, split and initial objective agree."
+    }
+  ],
+  "failures": [],
+  "auditor_sha256": "8e461e6e5b8a533d7c37718fcd893d587a7495c040d3f27447c02ec488cb5477",
+  "purpose": "Reproducibility, numerical consistency and support isolation; no GT accuracy or real-sync agreement assertions"
+}

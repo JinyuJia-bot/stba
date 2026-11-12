@@ -1,0 +1,4 @@
+{"case": "corgi_raw", "coarse_beta_frames": [0.0, 0.5480359086631857, 1.1601018575064375], "reliable": [true, true, true], "motion_tracks": 12224}
+{"case": "corgi_raw", "method": "B3", "beta_frames": [0.0, 0.492329643820682, 1.619326273102976], "trajectories": 12908, "valid_samples": 758855, "status": ["reference_gauge", "locally_observable", "locally_observable"], "seconds": 23.645950596779585}
+{"case": "corgi_integer_aligned", "coarse_beta_frames": [0.0, -0.5337545062055503, -0.9999979291974356], "reliable": [true, true, false], "motion_tracks": 12224}
+{"case": "corgi_integer_aligned", "method": "B3", "beta_frames": [0.0, -0.49826091828519314, -1.0], "trajectories": 12777, "valid_samples": 752714, "status": ["reference_gauge", "iteration_limit_or_no_convergence", "at_beta_bound"], "seconds": 36.18727884069085}

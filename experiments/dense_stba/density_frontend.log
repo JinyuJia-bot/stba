@@ -1,0 +1,363 @@
+BUILD_STRIDE1 corgi_raw
+{"flow_cache": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [480, 270], "camera_id": 7, "n_frames": 60, "raw_frame_ids": [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259], "pair_cache_hits": 70, "pairs_computed": 0, "flow_compute_seconds": 0.0, "flow_save_seconds": 0.0, "total_seconds": 1.1490193754434586, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+{"flow_cache": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [480, 270], "camera_id": 9, "n_frames": 60, "raw_frame_ids": [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259], "pair_cache_hits": 70, "pairs_computed": 0, "flow_compute_seconds": 0.0, "flow_save_seconds": 0.0, "total_seconds": 1.1683443058282137, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+{"flow_cache": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam10", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [480, 270], "camera_id": 10, "n_frames": 60, "raw_frame_ids": [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259], "pair_cache_hits": 70, "pairs_computed": 0, "flow_compute_seconds": 0.0, "flow_save_seconds": 0.0, "total_seconds": 1.1139567233622074, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+{"camera": 9, "queried": 24000, "roma_candidate": 15802, "associated": 11352, "anchor_support_2": 13018}
+{"camera": 10, "queried": 24000, "roma_candidate": 13231, "associated": 8871, "anchor_support_2": 10527}
+{
+  "case": "corgi_raw",
+  "metadata": {
+    "manifest_path": "/data/jjy/ipc/stba/experiments/dense_stba/data/real/raw/manifest.json",
+    "config": {
+      "stride": 1,
+      "margin": 8,
+      "confidence_min": 0.15,
+      "roma_fb_max": 2.0,
+      "anchor_error_max": 1.5,
+      "anchor_min_support": 2,
+      "collision_distance": 0.75,
+      "min_track_observations": 8,
+      "use_lsm": false
+    },
+    "tracking_config": {
+      "fb_max": 0.75,
+      "fb_relative": 0.03,
+      "seed_texture_min": 0.005,
+      "cycle_max": 1.5,
+      "cycle_fb_max": 2.0,
+      "use_cycle": true
+    },
+    "camera_ids": [
+      7,
+      9,
+      10
+    ],
+    "seed_frame": 30,
+    "anchor_frames": [
+      15,
+      30,
+      45
+    ],
+    "query_pixels": 24000,
+    "temporal_success": 23691,
+    "associated_two_or_more": 12908,
+    "associated_all_three": 7315,
+    "valid_observations": 2553609,
+    "seconds": 13.568420292809606,
+    "edge_status_legend": {
+      "0": "not_attempted",
+      "1": "accepted_candidate_identity",
+      "2": "RoMa_score_FB_or_bounds",
+      "3": "competing_identity",
+      "4": "temporal_or_multi_anchor_inconsistent"
+    },
+    "temporal_edge_definition": "Same point_id across adjacent valid observations within each camera, propagated using actual dense optical flow",
+    "cross_camera_edge_definition": "RoMa seed association plus reciprocal checks and TWO independent non-seed anchors, each within threshold; candidate physical identity, not GT-certified",
+    "geometry_policy": "No equal-frame epipolar rejection on asynchronous dynamic candidates; time-aware geometry is applied later",
+    "density": "Full dense RoMa and optical flow front end; actual trajectory seeds are regular stride grid with IDs retained; no interpolated refined tracks"
+  },
+  "diagnostics": {
+    "ground_truth_available": false,
+    "reference_camera_id": 7,
+    "stride": 1,
+    "query_count": 24000,
+    "region_caution": "Manual broad diagnostic boxes at reference frame230; contain possible background, can overlap; never used for filtering/optimization. Counts do not certify correct physical identities.",
+    "motion_diagnostic": "Reference image displacement >2px from seed and >=30 accepted observations; not a proof of beta observability.",
+    "regions": {
+      "all_candidate_roi": {
+        "box_xyxy": null,
+        "queries": 24000,
+        "temporal_success": 23691,
+        "ge30frames": 22984,
+        "cross_view_two_or_more": 12908,
+        "cross_view_all_three": 7315,
+        "all_three_ge30_and_motion_gt2": 3177
+      },
+      "dog_candidate_seed_box": {
+        "box_xyxy": [
+          207,
+          145,
+          241,
+          213
+        ],
+        "queries": 2312,
+        "temporal_success": 2258,
+        "ge30frames": 1708,
+        "cross_view_two_or_more": 47,
+        "cross_view_all_three": 8,
+        "all_three_ge30_and_motion_gt2": 3
+      },
+      "person_candidate_seed_box": {
+        "box_xyxy": [
+          231,
+          50,
+          303,
+          236
+        ],
+        "queries": 13392,
+        "temporal_success": 13262,
+        "ge30frames": 13081,
+        "cross_view_two_or_more": 7391,
+        "cross_view_all_three": 4546,
+        "all_three_ge30_and_motion_gt2": 3010
+      }
+    },
+    "per_camera": {
+      "7": {
+        "original_temporal_observations": 1342284,
+        "observations_after_cross_view_association": 1342284,
+        "tracks_ge30_before_association": 22984,
+        "duration_quantiles_frames": [
+          40.0,
+          60.0,
+          60.0
+        ],
+        "status_observation_counts": {
+          "1": 1342284,
+          "3": 717,
+          "4": 255,
+          "5": 4107,
+          "6": 92637
+        }
+      },
+      "9": {
+        "original_temporal_observations": 1348054,
+        "observations_after_cross_view_association": 679937,
+        "tracks_ge30_before_association": 23033,
+        "duration_quantiles_frames": [
+          39.0,
+          60.0,
+          60.0
+        ],
+        "status_observation_counts": {
+          "1": 1348054,
+          "3": 871,
+          "4": 144,
+          "5": 3436,
+          "6": 87495
+        }
+      },
+      "10": {
+        "original_temporal_observations": 1331265,
+        "observations_after_cross_view_association": 531388,
+        "tracks_ge30_before_association": 22491,
+        "duration_quantiles_frames": [
+          36.0,
+          60.0,
+          60.0
+        ],
+        "status_observation_counts": {
+          "1": 1331265,
+          "3": 1103,
+          "4": 202,
+          "5": 3869,
+          "6": 103561
+        }
+      }
+    },
+    "camera_edge_status": {
+      "9": {
+        "1": 11352,
+        "2": 6848,
+        "3": 1350,
+        "4": 4450
+      },
+      "10": {
+        "1": 8871,
+        "2": 9656,
+        "3": 1113,
+        "4": 4360
+      }
+    },
+    "stage_counts": {
+      "query_grid": 24000,
+      "reference_temporal_success": 23691,
+      "cross_view_two_or_more_candidates": 12908,
+      "cross_view_all_three_candidates": 7315,
+      "reference_ge30_and_displacement_gt2": 11100,
+      "all_three_ge30_and_displacement_gt2": 3177
+    }
+  }
+}
+BUILD_STRIDE1 corgi_integer_aligned
+{"flow_cache": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [480, 270], "camera_id": 7, "n_frames": 60, "raw_frame_ids": [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259], "pair_cache_hits": 70, "pairs_computed": 0, "flow_compute_seconds": 0.0, "flow_save_seconds": 0.0, "total_seconds": 1.1515806280076504, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+{"flow_cache": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [480, 270], "camera_id": 9, "n_frames": 60, "raw_frame_ids": [199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258], "pair_cache_hits": 70, "pairs_computed": 0, "flow_compute_seconds": 0.0, "flow_save_seconds": 0.0, "total_seconds": 1.1159089226275682, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+{"flow_cache": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam10", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [480, 270], "camera_id": 10, "n_frames": 60, "raw_frame_ids": [197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256], "pair_cache_hits": 70, "pairs_computed": 0, "flow_compute_seconds": 0.0, "flow_save_seconds": 0.0, "total_seconds": 1.128214644268155, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+{"camera": 9, "queried": 24000, "roma_candidate": 15700, "associated": 11281, "anchor_support_2": 13037}
+{"camera": 10, "queried": 24000, "roma_candidate": 13254, "associated": 8682, "anchor_support_2": 10492}
+{
+  "case": "corgi_integer_aligned",
+  "metadata": {
+    "manifest_path": "/data/jjy/ipc/stba/experiments/dense_stba/data/real/integer_aligned/manifest.json",
+    "config": {
+      "stride": 1,
+      "margin": 8,
+      "confidence_min": 0.15,
+      "roma_fb_max": 2.0,
+      "anchor_error_max": 1.5,
+      "anchor_min_support": 2,
+      "collision_distance": 0.75,
+      "min_track_observations": 8,
+      "use_lsm": false
+    },
+    "tracking_config": {
+      "fb_max": 0.75,
+      "fb_relative": 0.03,
+      "seed_texture_min": 0.005,
+      "cycle_max": 1.5,
+      "cycle_fb_max": 2.0,
+      "use_cycle": true
+    },
+    "camera_ids": [
+      7,
+      9,
+      10
+    ],
+    "seed_frame": 30,
+    "anchor_frames": [
+      15,
+      30,
+      45
+    ],
+    "query_pixels": 24000,
+    "temporal_success": 23691,
+    "associated_two_or_more": 12777,
+    "associated_all_three": 7186,
+    "valid_observations": 2537926,
+    "seconds": 11.952447574585676,
+    "edge_status_legend": {
+      "0": "not_attempted",
+      "1": "accepted_candidate_identity",
+      "2": "RoMa_score_FB_or_bounds",
+      "3": "competing_identity",
+      "4": "temporal_or_multi_anchor_inconsistent"
+    },
+    "temporal_edge_definition": "Same point_id across adjacent valid observations within each camera, propagated using actual dense optical flow",
+    "cross_camera_edge_definition": "RoMa seed association plus reciprocal checks and TWO independent non-seed anchors, each within threshold; candidate physical identity, not GT-certified",
+    "geometry_policy": "No equal-frame epipolar rejection on asynchronous dynamic candidates; time-aware geometry is applied later",
+    "density": "Full dense RoMa and optical flow front end; actual trajectory seeds are regular stride grid with IDs retained; no interpolated refined tracks"
+  },
+  "diagnostics": {
+    "ground_truth_available": false,
+    "reference_camera_id": 7,
+    "stride": 1,
+    "query_count": 24000,
+    "region_caution": "Manual broad diagnostic boxes at reference frame230; contain possible background, can overlap; never used for filtering/optimization. Counts do not certify correct physical identities.",
+    "motion_diagnostic": "Reference image displacement >2px from seed and >=30 accepted observations; not a proof of beta observability.",
+    "regions": {
+      "all_candidate_roi": {
+        "box_xyxy": null,
+        "queries": 24000,
+        "temporal_success": 23691,
+        "ge30frames": 22984,
+        "cross_view_two_or_more": 12777,
+        "cross_view_all_three": 7186,
+        "all_three_ge30_and_motion_gt2": 3045
+      },
+      "dog_candidate_seed_box": {
+        "box_xyxy": [
+          207,
+          145,
+          241,
+          213
+        ],
+        "queries": 2312,
+        "temporal_success": 2258,
+        "ge30frames": 1708,
+        "cross_view_two_or_more": 40,
+        "cross_view_all_three": 5,
+        "all_three_ge30_and_motion_gt2": 1
+      },
+      "person_candidate_seed_box": {
+        "box_xyxy": [
+          231,
+          50,
+          303,
+          236
+        ],
+        "queries": 13392,
+        "temporal_success": 13262,
+        "ge30frames": 13081,
+        "cross_view_two_or_more": 7261,
+        "cross_view_all_three": 4413,
+        "all_three_ge30_and_motion_gt2": 2880
+      }
+    },
+    "per_camera": {
+      "7": {
+        "original_temporal_observations": 1342284,
+        "observations_after_cross_view_association": 1342284,
+        "tracks_ge30_before_association": 22984,
+        "duration_quantiles_frames": [
+          40.0,
+          60.0,
+          60.0
+        ],
+        "status_observation_counts": {
+          "1": 1342284,
+          "3": 717,
+          "4": 255,
+          "5": 4107,
+          "6": 92637
+        }
+      },
+      "9": {
+        "original_temporal_observations": 1351862,
+        "observations_after_cross_view_association": 675795,
+        "tracks_ge30_before_association": 23058,
+        "duration_quantiles_frames": [
+          41.0,
+          60.0,
+          60.0
+        ],
+        "status_observation_counts": {
+          "1": 1351862,
+          "3": 1101,
+          "4": 141,
+          "5": 2986,
+          "6": 83910
+        }
+      },
+      "10": {
+        "original_temporal_observations": 1345121,
+        "observations_after_cross_view_association": 519847,
+        "tracks_ge30_before_association": 22924,
+        "duration_quantiles_frames": [
+          40.0,
+          60.0,
+          60.0
+        ],
+        "status_observation_counts": {
+          "1": 1345121,
+          "3": 1024,
+          "4": 189,
+          "5": 3466,
+          "6": 90200
+        }
+      }
+    },
+    "camera_edge_status": {
+      "9": {
+        "1": 11281,
+        "2": 7001,
+        "3": 1299,
+        "4": 4419
+      },
+      "10": {
+        "1": 8682,
+        "2": 9604,
+        "3": 1142,
+        "4": 4572
+      }
+    },
+    "stage_counts": {
+      "query_grid": 24000,
+      "reference_temporal_success": 23691,
+      "cross_view_two_or_more_candidates": 12777,
+      "cross_view_all_three_candidates": 7186,
+      "reference_ge30_and_displacement_gt2": 11100,
+      "all_three_ge30_and_displacement_gt2": 3045
+    }
+  }
+}
+STRIDE1_FRONTENDS_COMPLETE {"corgi_raw": {"optimization_candidates_before_time_aware_initialization": 12908, "all_three_camera_candidates": 7315, "observations_sha256": "b95bda09504339eb2b8387dda9a20b4ff7c5406fa3300a6c0116618dc6b2e6ac"}, "corgi_integer_aligned": {"optimization_candidates_before_time_aware_initialization": 12777, "all_three_camera_candidates": 7186, "observations_sha256": "1e62a398621a6ba9113b121b305d7dc6bbaa0982469192871c66404ea5c430a7"}}

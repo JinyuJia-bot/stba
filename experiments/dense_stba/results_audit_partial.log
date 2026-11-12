@@ -1,0 +1,4 @@
+{"directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/synthetic_near_static", "all_passed": true, "methods": ["B0", "B1", "B2", "B3"]}
+{"directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/synthetic_noisy_occlusion", "all_passed": true, "methods": ["B0", "B1", "B2", "B3"]}
+{"directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/synthetic_wide", "all_passed": true, "methods": ["B0", "B1", "B2", "B3"]}
+{"directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/synthetic_zero", "all_passed": true, "methods": ["B0", "B1", "B2", "B3"]}

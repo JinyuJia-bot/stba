@@ -1,0 +1,13 @@
+test_aligned_triangulation_uses_query_time_minus_beta (test_time_init.TimeInitializationTests) ... ok
+test_heldout_coordinates_and_weights_do_not_affect_initialization (test_time_init.TimeInitializationTests) ... ok
+test_interpolation_never_extrapolates_or_fills_long_gaps (test_time_init.TimeInitializationTests) ... ok
+test_motion_along_epipolar_lines_has_flat_time_profile (test_time_init.TimeInitializationTests) ... ok
+test_near_static_cannot_estimate_time_offsets (test_time_init.TimeInitializationTests) ... ok
+test_plus_beta_sign_is_recovered_from_projected_motion (test_time_init.TimeInitializationTests) ... ok
+test_separated_periodic_minima_are_not_declared_reliable (test_time_init.TimeInitializationTests) ... ok
+test_training_split_is_disjoint_and_preserves_missing_data (test_time_init.TimeInitializationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.679s
+
+OK

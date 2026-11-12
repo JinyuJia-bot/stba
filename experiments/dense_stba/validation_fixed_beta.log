@@ -1,0 +1,6 @@
+/data/jjy/ipc/stba/experiments/dense_stba/time_init.py:105: RuntimeWarning: Mean of empty slice
+  fixed_weight=np.clip(weight[:,reference],.01,1)*np.clip(np.nanmean(np.where(visible[:,j],weight[:,j],np.nan),axis=-1),.01,1)[:,None]
+{"case": "synthetic_fractional", "coarse_beta_frames": [0.0, 0.2983914404290068, -0.502415921805419], "reliable": [true, true, true], "motion_tracks": 1408}
+/data/jjy/ipc/stba/experiments/dense_stba/time_init.py:169: RuntimeWarning: Mean of empty slice
+  reprojection=np.nanmean(np.stack(errors,-1),axis=-1)
+{"case": "synthetic_fractional", "method": "B2", "beta_frames": [0.0, 0.3000000000000001, -0.5000000000000001], "trajectories": 1401, "valid_samples": 33165, "status": ["reference_gauge", "fixed_beta_not_estimated", "fixed_beta_not_estimated"], "seconds": 2.0961140356957912}

@@ -1,0 +1,90 @@
+{
+  "stages": [
+    {
+      "stage": "incremental",
+      "cost": "246025.03988316999",
+      "image_cost": "167828.86401061973",
+      "motion_cost": "78196.175872550273",
+      "reprojection_rmse": "3.7777191406541784",
+      "usable": "1",
+      "order_valid": "1"
+    },
+    {
+      "stage": "global",
+      "cost": "246025.03988316999",
+      "image_cost": "167828.86401061973",
+      "motion_cost": "78196.175872550273",
+      "reprojection_rmse": "3.7777191406541784",
+      "usable": "1",
+      "order_valid": "1"
+    }
+  ],
+  "reconstructed_observations": 11760,
+  "input_observations": 11760,
+  "observation_coverage": 1.0,
+  "matched_truth_observations": 11760,
+  "all_trajectory_rmse_m": 0.02139689952184687,
+  "dynamic_trajectory_rmse_m": 0.02339143066710994,
+  "static_trajectory_rmse_m": 4.739914254988325e-05,
+  "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+  "dct_matched_truth_observations": 11760,
+  "all_dct_interpolated_rmse_m": 0.021396900236447015,
+  "dynamic_dct_interpolated_rmse_m": 0.02339143144832281,
+  "static_dct_interpolated_rmse_m": 4.739914254988325e-05,
+  "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+  "offset_reference_camera": 0,
+  "offset_errors": [
+    {
+      "camera_id": 0,
+      "error_seconds": 0.0,
+      "error_frames": 0.0
+    },
+    {
+      "camera_id": 1,
+      "error_seconds": -0.024999999999999998,
+      "error_frames": -0.3
+    },
+    {
+      "camera_id": 2,
+      "error_seconds": 0.016666666666666666,
+      "error_frames": 0.2
+    },
+    {
+      "camera_id": 3,
+      "error_seconds": -0.009166666666666667,
+      "error_frames": -0.11
+    },
+    {
+      "camera_id": 4,
+      "error_seconds": 0.025833333333333333,
+      "error_frames": 0.31
+    },
+    {
+      "camera_id": 5,
+      "error_seconds": -0.022500000000000003,
+      "error_frames": -0.27
+    },
+    {
+      "camera_id": 6,
+      "error_seconds": 0.010833333333333334,
+      "error_frames": 0.13
+    },
+    {
+      "camera_id": 7,
+      "error_seconds": -0.015833333333333335,
+      "error_frames": -0.19
+    },
+    {
+      "camera_id": 8,
+      "error_seconds": -0.005833333333333334,
+      "error_frames": -0.07
+    },
+    {
+      "camera_id": 9,
+      "error_seconds": 0.005833333333333334,
+      "error_frames": 0.07
+    }
+  ],
+  "offset_mae_frames": 0.18333333333333332,
+  "offset_max_error_frames": 0.31
+}

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/data/jjy/ipc/stba/build/stba",
+    "--input",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_fixed_calibration/input",
+    "--output",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_fixed_calibration/baseline",
+    "--config",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_fixed_calibration/config.yaml",
+    "--mode",
+    "fixed"
+  ],
+  "seconds": 4.602840185165405,
+  "returncode": 0,
+  "solver_sha256": "5f059a239887445c0cdb98f5dd3af742dcde3e100b75bf52a22dbd057b9822ef",
+  "config_sha256": "59f8f774e9a0cc78992a32c0aba086d74de003f8e1726000a91a56a95b9e1107",
+  "input_sha256": {
+    "observations.csv": "407d2a4ca9a5039eda158db4f096fcf2e7075a2f6bcdc4d404d31354ccca06a0",
+    "views.csv": "4f50c37b3396835d560707cc746e706e35550b6803594ce1ce71e77d1cac9d46",
+    "cameras.csv": "538153638c15b42f651caeec0795c2322d13083efb1f9dcf9b30e58eef8f9767"
+  }
+}

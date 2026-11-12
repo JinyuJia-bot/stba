@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/data/jjy/ipc/stba/build/stba",
+    "--input",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/equivalence/input",
+    "--output",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/equivalence/result",
+    "--config",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/config.yaml",
+    "--mode",
+    "fixed",
+    "--no-dct"
+  ],
+  "returncode": 0,
+  "seconds": 0.5289397239685059,
+  "solver_sha256": "5f059a239887445c0cdb98f5dd3af742dcde3e100b75bf52a22dbd057b9822ef"
+}

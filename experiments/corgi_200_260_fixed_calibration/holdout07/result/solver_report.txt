@@ -1,0 +1,2 @@
+Incremental: Ceres Solver Report: Iterations: 201, Initial cost: 2.259206e+07, Final cost: 3.604633e+05, Termination: NO_CONVERGENCE
+Global: Ceres Solver Report: Iterations: 201, Initial cost: 3.604633e+05, Final cost: 3.594674e+05, Termination: NO_CONVERGENCE

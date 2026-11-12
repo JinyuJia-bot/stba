@@ -1,0 +1,221 @@
+{
+  "run_id": "results_density1/corgi_raw",
+  "method": "B3",
+  "directory": "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw",
+  "label": "corgi_raw",
+  "camera_ids": [
+    7,
+    9,
+    10
+  ],
+  "image_sizes": [
+    [
+      480,
+      270
+    ],
+    [
+      480,
+      270
+    ],
+    [
+      480,
+      270
+    ]
+  ],
+  "frame_counts": [
+    60,
+    60,
+    60
+  ],
+  "seed_frame": 30,
+  "query_count": 24000,
+  "stride": 1,
+  "window": null,
+  "valid_trajectories": 12908,
+  "valid_3D_samples": 758855,
+  "beta_frames": [
+    0.0,
+    0.492329643820682,
+    1.619326273102976
+  ],
+  "initial_beta_frames": [
+    0.0,
+    0.5480359086631857,
+    1.1601018575064375
+  ],
+  "observability": {
+    "status": [
+      "reference_gauge",
+      "locally_observable",
+      "locally_observable"
+    ],
+    "reliable": [
+      false,
+      true,
+      true
+    ],
+    "local_optimizer_status": [
+      "reference_gauge",
+      "locally_observable",
+      "locally_observable"
+    ],
+    "dynamic_tracks_per_camera": [
+      5071,
+      4778,
+      3632
+    ],
+    "converged": true,
+    "marginal_schur_information": [
+      [
+        58134182.23180291,
+        -12072041.710001662
+      ],
+      [
+        -12072041.710001662,
+        16055200.739408586
+      ]
+    ],
+    "interpretation": "Local motion/Schur/box/convergence diagnostics; no calibrated uncertainty or uniqueness guarantee"
+  },
+  "timing": {
+    "seconds": 23.645950596779585,
+    "peak_cuda_allocated_bytes": 213363712,
+    "device": "cuda",
+    "dtype": "torch.float64",
+    "point_count": 12908,
+    "eligible_point_count": 12908,
+    "raw_training_observations": 1587794,
+    "controls_per_trajectory": 21,
+    "global_beta_variables": 2,
+    "saving_seconds": 6.315875243395567,
+    "method_wall_seconds": 59.33086618594825
+  },
+  "config": {
+    "seed": 20261111,
+    "association": {
+      "stride": 1,
+      "margin": 8,
+      "confidence_min": 0.15,
+      "roma_fb_max": 2.0,
+      "anchor_error_max": 1.5,
+      "anchor_min_support": 2,
+      "collision_distance": 0.75,
+      "min_track_observations": 8
+    },
+    "holdout_every": 5,
+    "holdout_phase": 2,
+    "synthetic_beta_bound_frames": 2.0,
+    "real_raw_beta_bound_frames": 6.0,
+    "integer_beta_bound_frames": 1.0,
+    "time_init": {
+      "step_frames": 0.1,
+      "max_gap_frames": 2.1,
+      "min_motion_span_px": 2.0,
+      "min_motion_speed_px_frame": 0.02,
+      "min_dynamic_tracks": 8,
+      "min_samples_per_track": 6,
+      "huber_px": 1.0
+    },
+    "knot_interval_frames": 4.0,
+    "initialization_max_reprojection_px": 4.0,
+    "minimum_initialization_samples": 8,
+    "optimizer": {
+      "max_iterations": 50,
+      "batch_size": 128,
+      "sigma_px": 1.0,
+      "huber_delta": 2.0,
+      "lambda_motion": 0.0001,
+      "lm_initial": 0.001,
+      "beta_step_tolerance_seconds": 1e-06,
+      "control_step_tolerance": 1e-06,
+      "objective_tolerance": 1e-07,
+      "min_observations": 12,
+      "min_cameras": 2,
+      "min_dynamic_tracks": 8,
+      "inlier_threshold_px": 4.0
+    },
+    "motion_prior_units": "Sum per trajectory of integral squared world acceleration dt; lambda not secretly normalized by image or point count",
+    "default_methods": [
+      "B0",
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "spatial_prior": false,
+    "default_LSM": false,
+    "optimizer_use_confidence_weights": true
+  },
+  "source_validation": {
+    "observations_sha256": "b95bda09504339eb2b8387dda9a20b4ff7c5406fa3300a6c0116618dc6b2e6ac",
+    "observations_expected_sha256": "b95bda09504339eb2b8387dda9a20b4ff7c5406fa3300a6c0116618dc6b2e6ac",
+    "manifest_sha256": "75867f53d063dd794ab3b4dccb113bd31f43c4eebba34b0639112efe9ab524ee",
+    "manifest_expected_sha256": "75867f53d063dd794ab3b4dccb113bd31f43c4eebba34b0639112efe9ab524ee",
+    "calibration_sources": {
+      "/data/datasets/SelfCap/corgi-release/optimized/intri.yml": "0ffc58c859c8083edffb3d7cdba12b2bea5140e5228f680541e599eee79fc492",
+      "/data/datasets/SelfCap/corgi-release/optimized/extri.yml": "22aa3a0eb954d456e853020609320fc5d6658b4b9c30eae56d4e9282148741f2"
+    },
+    "raw_or_lsm_observations": "raw",
+    "verified": true
+  },
+  "obs_fields": [
+    "point_ids",
+    "seed_uv",
+    "query_mask",
+    "seed_roi",
+    "uv",
+    "visible",
+    "weight",
+    "status",
+    "temporal_fb_error",
+    "edge_status",
+    "roma_confidence",
+    "roma_fb_error",
+    "anchor_error",
+    "anchor_support",
+    "temporal_success",
+    "multiview_seed",
+    "all_three_seed",
+    "lsm_seed_refined",
+    "lsm_seed_status",
+    "timestamps",
+    "anchor_frames",
+    "seed_frame"
+  ],
+  "result_fields": [
+    "point_ids",
+    "seed_uv",
+    "trajectory_times",
+    "observed_uv",
+    "train_visible",
+    "holdout_visible",
+    "motion_mask",
+    "initial_beta",
+    "seed_eligible",
+    "query_mask",
+    "seed_roi",
+    "camera_ids",
+    "timestamps",
+    "xyz",
+    "valid",
+    "trajectory_valid",
+    "view_support",
+    "beta",
+    "predicted_uv",
+    "model_only_mask",
+    "control",
+    "knots",
+    "velocity",
+    "acceleration",
+    "support_interval",
+    "beta_information",
+    "observation_inlier",
+    "view_support_before_residual_screen",
+    "confidence"
+  ],
+  "missing_optional_fields": [
+    "control_initial",
+    "objective_per_observation"
+  ],
+  "gt_available": false,
+  "warnings": []
+}

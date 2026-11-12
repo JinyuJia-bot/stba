@@ -1,0 +1,58 @@
+{
+  "out": "experiments/mocap/02_01/input",
+  "cameras": 3,
+  "frames": 24,
+  "tracks": 12,
+  "static_points": 8,
+  "fps": 12.0,
+  "fps_list": null,
+  "noise": 0.1,
+  "drop_rate": 0.0,
+  "seed": 42,
+  "beta": "0,0.3,-0.2",
+  "pose_noise": 0.0,
+  "intrinsics_noise": 0.0,
+  "moving": false,
+  "trajectory_csv": "data/02_01_trajectory.csv",
+  "start_time": null,
+  "max_gap": null,
+  "true_beta_frames": [
+    0.0,
+    0.3,
+    -0.2
+  ],
+  "fps_per_camera": [
+    12.0,
+    12.0,
+    12.0
+  ],
+  "source_track_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "trajectory_source_start_seconds": 0.024999999999999998,
+  "max_gap_seconds_per_track": [
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994,
+    0.01674999999999994
+  ]
+}

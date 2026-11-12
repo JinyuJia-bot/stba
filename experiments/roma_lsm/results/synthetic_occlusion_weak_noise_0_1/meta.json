@@ -1,0 +1,475 @@
+{
+  "name": "synthetic_occlusion_weak_noise_0_1",
+  "cameras": {
+    "ref": {
+      "camera_id": 0,
+      "size": [
+        192,
+        144
+      ],
+      "K": [
+        [
+          180.0,
+          0.0,
+          95.5
+        ],
+        [
+          0.0,
+          176.0,
+          71.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "R": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "t": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "center_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "none",
+      "D": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "coordinate_system": "ideal pinhole working-image pixels, x/y, integer pixel centers",
+      "image_path": "/data/jjy/ipc/stba/experiments/roma_lsm/data/synthetic/occlusion_weak_noise/cam00.png"
+    },
+    "target": {
+      "camera_id": 1,
+      "size": [
+        192,
+        144
+      ],
+      "K": [
+        [
+          182.0,
+          0.0,
+          95.5
+        ],
+        [
+          0.0,
+          179.0,
+          71.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "R": [
+        [
+          0.9992256661096338,
+          -0.034992854604336196,
+          0.017988004736448654
+        ],
+        [
+          0.034987185914947386,
+          0.9993875625234886,
+          0.0006298373703743832
+        ],
+        [
+          -0.017999028015746276,
+          0.0,
+          0.9998380043739528
+        ]
+      ],
+      "t": [
+        -0.2610234230996566,
+        0.025881896350435783,
+        0.004679747284094032
+      ],
+      "center_world": [
+        0.26,
+        -0.035,
+        0.0
+      ],
+      "distortion_model": "none",
+      "D": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "coordinate_system": "ideal pinhole working-image pixels, x/y, integer pixel centers",
+      "image_path": "/data/jjy/ipc/stba/experiments/roma_lsm/data/synthetic/occlusion_weak_noise/cam01.png"
+    }
+  },
+  "cache_path": "/data/jjy/ipc/stba/experiments/roma_lsm/cache/synthetic_occlusion_weak_noise/pair_0_1.npz",
+  "dataset_metadata_path": "/data/jjy/ipc/stba/experiments/roma_lsm/data/synthetic/occlusion_weak_noise/metadata.json",
+  "mode": "static",
+  "config": {
+    "seed": 20261111,
+    "stride": 1,
+    "mode": "asynchronous_unknown",
+    "confidence_min": 0.2,
+    "fb_max": 2.0,
+    "lsm": {
+      "patch_size": 11,
+      "max_iterations": 15,
+      "batch_size": 512,
+      "sigma_photo": 0.03,
+      "huber_photo": 1.5,
+      "sigma_epi": 1.0,
+      "lambda_epi": 0.1,
+      "huber_epi": 2.0,
+      "affine_regularization": 0.001,
+      "max_correction": 4.0,
+      "gain_min": 0.5,
+      "gain_max": 2.0,
+      "bias_limit": 0.35,
+      "affine_sv_min": 0.35,
+      "affine_sv_max": 2.8,
+      "affine_det_min": 0.12,
+      "texture_std_min": 0.012,
+      "texture_eigen_min": 1e-06,
+      "condition_max": 10000000.0,
+      "photo_rmse_max": 0.1,
+      "step_tolerance": 0.003,
+      "objective_tolerance": 1e-05,
+      "lm_initial": 0.001,
+      "require_convergence": true
+    },
+    "multiview": {
+      "weight_modes": [
+        "uniform",
+        "quality",
+        "distance",
+        "quality_distance"
+      ],
+      "distance_floor": 0.2,
+      "distance_scale": "median_selected_baselines",
+      "weights_frozen": true
+    }
+  },
+  "stride": 1,
+  "ref_size": [
+    192,
+    144
+  ],
+  "target_size": [
+    192,
+    144
+  ],
+  "coordinate_system": "Undistorted working-image x/y; zero-based integer pixel centers; align_corners=False",
+  "affine_initialization": "Weighted local fit to raw RoMa field; bad score/FB/discontinuous neighbors excluded; identity fallback",
+  "fb_reference": "Both before/after query the SAME fixed raw reverse RoMa map (not refined reverse); this is consistency, not GT accuracy",
+  "calibration_fixed": true,
+  "F": [
+    [
+      -3.888154229822952e-06,
+      -2.953987304475879e-05,
+      0.03124688556712256
+    ],
+    [
+      -1.38422686118259e-07,
+      -1.0516528750542746e-06,
+      0.29516346174179203
+    ],
+    [
+      -0.038952186777648244,
+      -0.2959354449990159,
+      0.9070871521770019
+    ]
+  ],
+  "baseline": 0.2623451924468982,
+  "roi_pixels": 24388,
+  "raw_valid_pixels": 19950,
+  "screening_seconds": 0.12666435167193413,
+  "status_legend": {
+    "0": "not_attempted",
+    "1": "success",
+    "2": "nonfinite_input",
+    "3": "reference_boundary",
+    "4": "target_boundary",
+    "5": "low_texture",
+    "6": "ill_conditioned",
+    "7": "affine_invalid",
+    "8": "no_convergence",
+    "9": "correction_limit",
+    "10": "photo_high",
+    "11": "low_confidence",
+    "12": "fb_before",
+    "13": "fb_after",
+    "14": "static_mask_boundary",
+    "15": "geometry_degenerate"
+  },
+  "methods": {
+    "A0": {
+      "method": "A0",
+      "lsm_config": null,
+      "timing": {
+        "optimization_and_dispatch_seconds": 0.00021157041192054749,
+        "postscreen_seconds": 0.16350991278886795,
+        "saving_seconds": 0.09010208211839199
+      },
+      "valid_pixels": 19950,
+      "attempted_pixels": 0,
+      "refined_pixels": 0,
+      "control_only": true
+    },
+    "A0g": {
+      "method": "A0g",
+      "lsm_config": null,
+      "timing": {
+        "optimization_and_dispatch_seconds": 0.0034672245383262634,
+        "postscreen_seconds": 0.16377869620919228,
+        "saving_seconds": 0.09341124817728996
+      },
+      "valid_pixels": 19946,
+      "attempted_pixels": 0,
+      "refined_pixels": 0,
+      "control_only": true
+    },
+    "A1_translation": {
+      "method": "A1_translation",
+      "lsm_config": {
+        "patch_size": 11,
+        "max_iterations": 15,
+        "batch_size": 512,
+        "model": "translation",
+        "geometry_mode": "off",
+        "sigma_photo": 0.03,
+        "huber_photo": 1.5,
+        "sigma_epi": 1.0,
+        "lambda_epi": 0.1,
+        "huber_epi": 2.0,
+        "affine_regularization": 0.001,
+        "max_correction": 4.0,
+        "gain_min": 0.5,
+        "gain_max": 2.0,
+        "bias_limit": 0.35,
+        "affine_sv_min": 0.35,
+        "affine_sv_max": 2.8,
+        "affine_det_min": 0.12,
+        "texture_std_min": 0.012,
+        "texture_eigen_min": 1e-06,
+        "condition_max": 10000000.0,
+        "photo_rmse_max": 0.1,
+        "step_tolerance": 0.003,
+        "objective_tolerance": 1e-05,
+        "lm_initial": 0.001,
+        "require_convergence": true
+      },
+      "timing": {
+        "seconds": 5.298483626917005,
+        "peak_cuda_allocated_bytes": 17242112,
+        "points": 19950,
+        "config": {
+          "patch_size": 11,
+          "max_iterations": 15,
+          "batch_size": 512,
+          "model": "translation",
+          "geometry_mode": "off",
+          "sigma_photo": 0.03,
+          "huber_photo": 1.5,
+          "sigma_epi": 1.0,
+          "lambda_epi": 0.1,
+          "huber_epi": 2.0,
+          "affine_regularization": 0.001,
+          "max_correction": 4.0,
+          "gain_min": 0.5,
+          "gain_max": 2.0,
+          "bias_limit": 0.35,
+          "affine_sv_min": 0.35,
+          "affine_sv_max": 2.8,
+          "affine_det_min": 0.12,
+          "texture_std_min": 0.012,
+          "texture_eigen_min": 1e-06,
+          "condition_max": 10000000.0,
+          "photo_rmse_max": 0.1,
+          "step_tolerance": 0.003,
+          "objective_tolerance": 1e-05,
+          "lm_initial": 0.001,
+          "require_convergence": true
+        },
+        "device": "cuda",
+        "optimization_and_dispatch_seconds": 5.303033299744129,
+        "postscreen_seconds": 0.16741088591516018,
+        "saving_seconds": 0.1229680273681879
+      },
+      "valid_pixels": 19873,
+      "attempted_pixels": 19950,
+      "refined_pixels": 19873,
+      "control_only": false
+    },
+    "A1_affine": {
+      "method": "A1_affine",
+      "lsm_config": {
+        "patch_size": 11,
+        "max_iterations": 15,
+        "batch_size": 512,
+        "model": "affine",
+        "geometry_mode": "off",
+        "sigma_photo": 0.03,
+        "huber_photo": 1.5,
+        "sigma_epi": 1.0,
+        "lambda_epi": 0.1,
+        "huber_epi": 2.0,
+        "affine_regularization": 0.001,
+        "max_correction": 4.0,
+        "gain_min": 0.5,
+        "gain_max": 2.0,
+        "bias_limit": 0.35,
+        "affine_sv_min": 0.35,
+        "affine_sv_max": 2.8,
+        "affine_det_min": 0.12,
+        "texture_std_min": 0.012,
+        "texture_eigen_min": 1e-06,
+        "condition_max": 10000000.0,
+        "photo_rmse_max": 0.1,
+        "step_tolerance": 0.003,
+        "objective_tolerance": 1e-05,
+        "lm_initial": 0.001,
+        "require_convergence": true
+      },
+      "timing": {
+        "seconds": 7.414055865257978,
+        "peak_cuda_allocated_bytes": 18494976,
+        "points": 19950,
+        "config": {
+          "patch_size": 11,
+          "max_iterations": 15,
+          "batch_size": 512,
+          "model": "affine",
+          "geometry_mode": "off",
+          "sigma_photo": 0.03,
+          "huber_photo": 1.5,
+          "sigma_epi": 1.0,
+          "lambda_epi": 0.1,
+          "huber_epi": 2.0,
+          "affine_regularization": 0.001,
+          "max_correction": 4.0,
+          "gain_min": 0.5,
+          "gain_max": 2.0,
+          "bias_limit": 0.35,
+          "affine_sv_min": 0.35,
+          "affine_sv_max": 2.8,
+          "affine_det_min": 0.12,
+          "texture_std_min": 0.012,
+          "texture_eigen_min": 1e-06,
+          "condition_max": 10000000.0,
+          "photo_rmse_max": 0.1,
+          "step_tolerance": 0.003,
+          "objective_tolerance": 1e-05,
+          "lm_initial": 0.001,
+          "require_convergence": true
+        },
+        "device": "cuda",
+        "optimization_and_dispatch_seconds": 7.418889855965972,
+        "postscreen_seconds": 0.1684604324400425,
+        "saving_seconds": 0.14380489848554134
+      },
+      "valid_pixels": 19684,
+      "attempted_pixels": 19950,
+      "refined_pixels": 19684,
+      "control_only": false
+    },
+    "A2_affine": {
+      "method": "A2_affine",
+      "lsm_config": {
+        "patch_size": 11,
+        "max_iterations": 15,
+        "batch_size": 512,
+        "model": "affine",
+        "geometry_mode": "soft_epipolar",
+        "sigma_photo": 0.03,
+        "huber_photo": 1.5,
+        "sigma_epi": 1.0,
+        "lambda_epi": 0.1,
+        "huber_epi": 2.0,
+        "affine_regularization": 0.001,
+        "max_correction": 4.0,
+        "gain_min": 0.5,
+        "gain_max": 2.0,
+        "bias_limit": 0.35,
+        "affine_sv_min": 0.35,
+        "affine_sv_max": 2.8,
+        "affine_det_min": 0.12,
+        "texture_std_min": 0.012,
+        "texture_eigen_min": 1e-06,
+        "condition_max": 10000000.0,
+        "photo_rmse_max": 0.1,
+        "step_tolerance": 0.003,
+        "objective_tolerance": 1e-05,
+        "lm_initial": 0.001,
+        "require_convergence": true
+      },
+      "timing": {
+        "seconds": 7.359674399718642,
+        "peak_cuda_allocated_bytes": 18494976,
+        "points": 19950,
+        "config": {
+          "patch_size": 11,
+          "max_iterations": 15,
+          "batch_size": 512,
+          "model": "affine",
+          "geometry_mode": "soft_epipolar",
+          "sigma_photo": 0.03,
+          "huber_photo": 1.5,
+          "sigma_epi": 1.0,
+          "lambda_epi": 0.1,
+          "huber_epi": 2.0,
+          "affine_regularization": 0.001,
+          "max_correction": 4.0,
+          "gain_min": 0.5,
+          "gain_max": 2.0,
+          "bias_limit": 0.35,
+          "affine_sv_min": 0.35,
+          "affine_sv_max": 2.8,
+          "affine_det_min": 0.12,
+          "texture_std_min": 0.012,
+          "texture_eigen_min": 1e-06,
+          "condition_max": 10000000.0,
+          "photo_rmse_max": 0.1,
+          "step_tolerance": 0.003,
+          "objective_tolerance": 1e-05,
+          "lm_initial": 0.001,
+          "require_convergence": true
+        },
+        "device": "cuda",
+        "optimization_and_dispatch_seconds": 7.365086439996958,
+        "postscreen_seconds": 0.16789584420621395,
+        "saving_seconds": 0.14371894858777523
+      },
+      "valid_pixels": 19695,
+      "attempted_pixels": 19950,
+      "refined_pixels": 19695,
+      "control_only": false
+    }
+  },
+  "software": {
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu121",
+    "opencv": "4.13.0"
+  }
+}

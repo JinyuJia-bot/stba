@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/data/jjy/ipc/stba/build/stba",
+    "--input",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/holdout07/input",
+    "--output",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/holdout07/result",
+    "--config",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/config.yaml",
+    "--mode",
+    "full"
+  ],
+  "seconds": 165.24409914016724,
+  "returncode": 0,
+  "solver_sha256": "5f059a239887445c0cdb98f5dd3af742dcde3e100b75bf52a22dbd057b9822ef",
+  "config_sha256": "59f8f774e9a0cc78992a32c0aba086d74de003f8e1726000a91a56a95b9e1107",
+  "input_sha256": {
+    "observations.csv": "7888ce2d04df98f56052be6ce9df8aa2df6948cf505a98d22650fb711b14ab0b",
+    "views.csv": "1e44aa90dd797be89f53b920134460dc89a7720652a8783c4a93cb9961d135d3",
+    "cameras.csv": "7f9e899707012aa3936bd96aae940d5172012916e0698376fca3b851d2b9f626"
+  }
+}

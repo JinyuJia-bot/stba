@@ -1,0 +1,15 @@
+# Coordinates are 2x previous half-size pixels: lambda 1000->4000, Huber 3->6.
+motion_weight: 4000
+epsilon_seconds: 0.000001
+min_dt: 0.0000000001
+search_radius: 0.6
+coarse_step: 0.15
+fine_step: 0.025
+max_iterations: 200
+reference_camera: 0
+optimize_offsets: true
+optimize_poses: false
+optimize_intrinsics: false
+huber_px: 6
+dct_fps: 60
+dct_max_samples: 256

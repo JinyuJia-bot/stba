@@ -1,0 +1,256 @@
+{
+  "image_source": "cv2.IMREAD_GRAYSCALE PNG /255, matching experiment.py",
+  "pixel_convention": "xy integer pixel centers; torch bilinear align_corners=False",
+  "invalid_samples": "Explicitly masked; no padding or interpolation of failed refinement is shown as valid",
+  "map_display": {
+    "crop_xyxy": [
+      2,
+      2,
+      189,
+      141
+    ],
+    "displacement_color_max_px": 0.2,
+    "displacement_color_policy": "Pair-wide99thpercentile of valid corrections, clipped to[0.2,4]; outliers saturate display only, metrics unchanged"
+  },
+  "patch_selection": "Three deterministic spatial quantiles of common accepted affine-method support; no GT or residual-based selection",
+  "patch_records": [
+    {
+      "method": "A1_affine",
+      "point_index": 1,
+      "reference_xy": [
+        106.0,
+        29.0
+      ],
+      "raw_target_xy": [
+        118.15504455566406,
+        23.980518341064453
+      ],
+      "refined_target_xy": [
+        118.11666107177734,
+        23.985605239868164
+      ],
+      "gain": 0.8600954413414001,
+      "bias": 0.010075245052576065,
+      "raw_A": [
+        [
+          0.9525073170661926,
+          0.03869186341762543
+        ],
+        [
+          -0.045279182493686676,
+          1.0246281623840332
+        ]
+      ],
+      "refined_A": [
+        [
+          0.9474818706512451,
+          0.04363980516791344
+        ],
+        [
+          -0.05460670217871666,
+          1.0355671644210815
+        ]
+      ]
+    },
+    {
+      "method": "A1_affine",
+      "point_index": 2,
+      "reference_xy": [
+        170.0,
+        73.0
+      ],
+      "raw_target_xy": [
+        181.17381286621094,
+        66.25871276855469
+      ],
+      "refined_target_xy": [
+        181.1885223388672,
+        66.29679107666016
+      ],
+      "gain": 0.8435161113739014,
+      "bias": 0.018020354211330414,
+      "raw_A": [
+        [
+          0.956732451915741,
+          0.04329651594161987
+        ],
+        [
+          -0.04346471652388573,
+          1.0284844636917114
+        ]
+      ],
+      "refined_A": [
+        [
+          0.957551121711731,
+          0.04812128469347954
+        ],
+        [
+          -0.04029413312673569,
+          1.0176323652267456
+        ]
+      ]
+    },
+    {
+      "method": "A1_affine",
+      "point_index": 3,
+      "reference_xy": [
+        148.0,
+        118.0
+      ],
+      "raw_target_xy": [
+        162.1467742919922,
+        113.49565124511719
+      ],
+      "refined_target_xy": [
+        162.1119842529297,
+        113.460693359375
+      ],
+      "gain": 0.8479176163673401,
+      "bias": 0.01586025394499302,
+      "raw_A": [
+        [
+          0.9572441577911377,
+          0.04157380387187004
+        ],
+        [
+          -0.04363323748111725,
+          1.0250120162963867
+        ]
+      ],
+      "refined_A": [
+        [
+          0.9401430487632751,
+          0.03925936296582222
+        ],
+        [
+          -0.04368053749203682,
+          1.0304129123687744
+        ]
+      ]
+    },
+    {
+      "method": "A2_affine",
+      "point_index": 1,
+      "reference_xy": [
+        106.0,
+        29.0
+      ],
+      "raw_target_xy": [
+        118.15504455566406,
+        23.980518341064453
+      ],
+      "refined_target_xy": [
+        118.11312103271484,
+        23.984180450439453
+      ],
+      "gain": 0.8600250482559204,
+      "bias": 0.01010933518409729,
+      "raw_A": [
+        [
+          0.9525073170661926,
+          0.03869186341762543
+        ],
+        [
+          -0.045279182493686676,
+          1.0246281623840332
+        ]
+      ],
+      "refined_A": [
+        [
+          0.946770191192627,
+          0.04300619289278984
+        ],
+        [
+          -0.05452149733901024,
+          1.0358530282974243
+        ]
+      ]
+    },
+    {
+      "method": "A2_affine",
+      "point_index": 2,
+      "reference_xy": [
+        170.0,
+        73.0
+      ],
+      "raw_target_xy": [
+        181.17381286621094,
+        66.25871276855469
+      ],
+      "refined_target_xy": [
+        181.18740844726562,
+        66.2925796508789
+      ],
+      "gain": 0.8440701961517334,
+      "bias": 0.017747974023222923,
+      "raw_A": [
+        [
+          0.956732451915741,
+          0.04329651594161987
+        ],
+        [
+          -0.04346471652388573,
+          1.0284844636917114
+        ]
+      ],
+      "refined_A": [
+        [
+          0.9575643539428711,
+          0.04807804897427559
+        ],
+        [
+          -0.041068460792303085,
+          1.017808198928833
+        ]
+      ]
+    },
+    {
+      "method": "A2_affine",
+      "point_index": 3,
+      "reference_xy": [
+        148.0,
+        118.0
+      ],
+      "raw_target_xy": [
+        162.1467742919922,
+        113.49565124511719
+      ],
+      "refined_target_xy": [
+        162.11370849609375,
+        113.46537780761719
+      ],
+      "gain": 0.847967803478241,
+      "bias": 0.015867529436945915,
+      "raw_A": [
+        [
+          0.9572441577911377,
+          0.04157380387187004
+        ],
+        [
+          -0.04363323748111725,
+          1.0250120162963867
+        ]
+      ],
+      "refined_A": [
+        [
+          0.9404311776161194,
+          0.039572473615407944
+        ],
+        [
+          -0.04358770698308945,
+          1.0299004316329956
+        ]
+      ]
+    }
+  ],
+  "fb_interpretation": "Saved forward-backward diagnostics query the same fixed RAW reverse RoMa map; no co-adapted refined reverse field",
+  "artifacts": [
+    "plots/confidence.png",
+    "plots/patch_examples.png",
+    "plots/patch_locations.png",
+    "plots/quality_maps.png",
+    "plots/synthetic_epe_cdf.png",
+    "plots/synthetic_epe_maps.png",
+    "plots/warp_errors.png"
+  ]
+}

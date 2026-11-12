@@ -1,0 +1,10 @@
+{
+  "observations": 6807,
+  "max_physical_time_difference_seconds": 0.0,
+  "max_xyz_difference_native_units": 0.0,
+  "undistorted_rmse_px_difference": 0.0,
+  "previous_cost": 967140.3324351216,
+  "reindexed_cost": 967140.3324351216,
+  "passed": true,
+  "meaning": "Integer reindexing with matching beta preserves the same physical reconstruction. Main-window differences are not evidence that the previous time formula ignored multi-frame offsets."
+}

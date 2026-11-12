@@ -1,0 +1,6 @@
+real_7_10 22090 {'methods': ['A0', 'A1_affine', 'A2_affine'], 'pixels': 9094}
+real_7_9 22090 {'methods': ['A0', 'A1_affine', 'A2_affine'], 'pixels': 13963}
+synthetic_affine_brightness_0_1 24388 {'methods': ['A0', 'A1_affine', 'A2_affine'], 'pixels': 21069}
+synthetic_affine_brightness_0_2 24388 {'methods': ['A0', 'A1_affine', 'A2_affine'], 'pixels': 21720}
+synthetic_occlusion_weak_noise_0_1 24388 {'methods': ['A0', 'A1_affine', 'A2_affine'], 'pixels': 19613}
+synthetic_translation_0_1 24388 {'methods': ['A0', 'A1_affine', 'A2_affine'], 'pixels': 22401}

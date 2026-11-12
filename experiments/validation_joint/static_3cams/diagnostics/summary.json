@@ -1,0 +1,175 @@
+{
+  "results": [
+    {
+      "name": "poses_only_lambda1000",
+      "objective": 4714.816375017334,
+      "image_cost": 103.61238934285427,
+      "motion_cost": 4611.2039856744805,
+      "reprojection_rmse_px": 0.24486909454298214,
+      "usable": 1,
+      "order_valid": 1,
+      "coverage": 1.0,
+      "offset_mae_frames": 0.00783608265193531,
+      "dynamic_raw_rmse_m": 0.006975470213967438,
+      "dynamic_sim3_rmse_m": 0.0048132197400460154,
+      "static_raw_rmse_m": 0.0038640622053928595,
+      "static_sim3_rmse_m": 0.0017869974408642353,
+      "center_raw_rmse_m": 0.013009388373227734,
+      "focal_relative_rmse": 0.0013907897340599182,
+      "gauge": {
+        "reference_pose_max_parameter_change": 0.0,
+        "scale_view_id": 1,
+        "scale_translation_axis": "tz",
+        "scale_coordinate_change": 0.0,
+        "reference_focal_length_changes": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "joint_lambda10",
+      "objective": 73.98348864909784,
+      "image_cost": 27.94033236441461,
+      "motion_cost": 46.04315628468323,
+      "reprojection_rmse_px": 0.12715806628759024,
+      "usable": 1,
+      "order_valid": 1,
+      "coverage": 1.0,
+      "offset_mae_frames": 0.0002995155287478096,
+      "dynamic_raw_rmse_m": 0.013218783065557736,
+      "dynamic_sim3_rmse_m": 0.010164328240264708,
+      "static_raw_rmse_m": 0.01600794160114747,
+      "static_sim3_rmse_m": 0.011323817016481125,
+      "center_raw_rmse_m": 0.03652304134860541,
+      "focal_relative_rmse": 0.024743612629689306,
+      "gauge": {
+        "reference_pose_max_parameter_change": 0.0,
+        "scale_view_id": 1,
+        "scale_translation_axis": "tz",
+        "scale_coordinate_change": 0.0,
+        "reference_focal_length_changes": [
+          4.281467818613351,
+          36.08285298066994
+        ]
+      }
+    },
+    {
+      "name": "fixed_calibration_lambda10",
+      "objective": 1032.439233592678,
+      "image_cost": 982.6229636186713,
+      "motion_cost": 49.81626997400668,
+      "reprojection_rmse_px": 0.7540872286350132,
+      "usable": 1,
+      "order_valid": 1,
+      "coverage": 1.0,
+      "offset_mae_frames": 0.06937124822233828,
+      "dynamic_raw_rmse_m": 0.005887537569559505,
+      "dynamic_sim3_rmse_m": 0.005520814480589607,
+      "static_raw_rmse_m": 0.003222146872120731,
+      "static_sim3_rmse_m": 0.001063351568170626,
+      "center_raw_rmse_m": 0.009410223137471287,
+      "focal_relative_rmse": 0.0013907897340599182,
+      "gauge": {
+        "reference_pose_max_parameter_change": 0.0,
+        "scale_view_id": 1,
+        "scale_translation_axis": "tz",
+        "scale_coordinate_change": 0.0,
+        "reference_focal_length_changes": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "fixed_calibration_lambda1000",
+      "objective": 5699.347850503711,
+      "image_cost": 1087.2067805285258,
+      "motion_cost": 4612.141069975185,
+      "reprojection_rmse_px": 0.7932027424206485,
+      "usable": 1,
+      "order_valid": 1,
+      "coverage": 1.0,
+      "offset_mae_frames": 0.07891666254477304,
+      "dynamic_raw_rmse_m": 0.006926687825718836,
+      "dynamic_sim3_rmse_m": 0.006578035889312776,
+      "static_raw_rmse_m": 0.0032221468721207367,
+      "static_sim3_rmse_m": 0.0010800901766625575,
+      "center_raw_rmse_m": 0.009410223137471287,
+      "focal_relative_rmse": 0.0013907897340599182,
+      "gauge": {
+        "reference_pose_max_parameter_change": 0.0,
+        "scale_view_id": 1,
+        "scale_translation_axis": "tz",
+        "scale_coordinate_change": 0.0,
+        "reference_focal_length_changes": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "joint_lambda1000",
+      "objective": 3658.768622251167,
+      "image_cost": 121.577632737009,
+      "motion_cost": 3537.190989514158,
+      "reprojection_rmse_px": 0.26524974335979246,
+      "usable": 1,
+      "order_valid": 1,
+      "coverage": 1.0,
+      "offset_mae_frames": 0.016417888828928494,
+      "dynamic_raw_rmse_m": 0.08854711729211662,
+      "dynamic_sim3_rmse_m": 0.0647533636687215,
+      "static_raw_rmse_m": 0.11230863956945213,
+      "static_sim3_rmse_m": 0.07455952374652208,
+      "center_raw_rmse_m": 0.30507267318400594,
+      "focal_relative_rmse": 0.20788816816428152,
+      "gauge": {
+        "reference_pose_max_parameter_change": 0.0,
+        "scale_view_id": 1,
+        "scale_translation_axis": "tz",
+        "scale_coordinate_change": 0.0,
+        "reference_focal_length_changes": [
+          62.52489419872268,
+          318.0206047153654
+        ]
+      }
+    }
+  ],
+  "static_point_geometry": {
+    "count": 20,
+    "min_world_m": [
+      -1.046838585349979,
+      -0.6889565953734917,
+      -0.5763960262251043
+    ],
+    "max_world_m": [
+      1.0242359732366444,
+      0.5414467579888731,
+      0.7531168390318452
+    ],
+    "covariance_eigenvalues_m2": [
+      0.12576894829121696,
+      0.17717469985723014,
+      0.4840866199000212
+    ],
+    "rank": 3,
+    "covariance_min_max_ratio": 0.2598067021914221
+  },
+  "gauge_selection": {
+    "reference_view_id": 0,
+    "scale_view_id": 1,
+    "scale_axis": "tz",
+    "initial_relative_baseline_component_m": 5.905912136187516,
+    "policy": "First reference view pose fixed; one translation coordinate at another view fixed for scale. Reference focal lengths are still variable when optimize-intrinsics is enabled.",
+    "caveat": "This constraint removes pure similarity gauge freedoms; it does not preserve every calibrated camera or enforce a known baseline length under camera rotation changes."
+  },
+  "metric_caution": "Objectives with different lambda weights are not directly comparable. Each retains raw and Sim(3) point errors; lambda10 fixed-calibration baseline is included.",
+  "tested_advice": [
+    "Keep reliable intrinsics and poses fixed by default. The present controlled input calibration is already accurate; free self-calibration is not justified merely by smaller image residual.",
+    "When pose refinement is required, first try --optimize-poses while retaining focal lengths. In this one test it avoids the large drift: dynamic raw RMSE is essentially unchanged (~0.00698 versus 0.00693 m), Sim(3) RMSE improves, and offset MAE drops; raw camera-center error nevertheless worsens slightly.",
+    "Reducing motion_weight from 1000 to 10 moderates joint drift (dynamic raw RMSE 0.08855 to 0.01322 m, focal error 20.8% to 2.47%), but still fails to beat fixed calibration spatial accuracy at the same weight (0.00589 m). This is diagnostic evidence, not a universal lambda recommendation.",
+    "Static points span all three dimensions and both reference-pose and scale-coordinate checks are numerically unchanged. The failure is not explained by planar static geometry or an unfixed pure similarity gauge. Reference focal lengths remain free in joint optimization.",
+    "Use independent calibration and held-out truth or observations when judging joint optimization. Do not select camera freedom or lambda solely from the training objective."
+  ]
+}

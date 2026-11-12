@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "run_id": "results_density1/corgi_raw",
+  "method": "B3",
+  "roi": {
+    "type": "dog",
+    "bounds": [
+      207,
+      145,
+      241,
+      213
+    ],
+    "coordinate_system": "reference_seed_image_integer_pixel_centers_xy",
+    "seed_frame": 30,
+    "reference_camera_id": 7,
+    "image_size": [
+      480,
+      270
+    ],
+    "selected_query_count": 2312,
+    "total_query_count": 24000,
+    "caution": "Manual broad seed-frame regions, not semantic or identity ground truth. Boxes may overlap and include background; selection is never applied at current-frame UV.",
+    "builtin_boxes_source": "data_frontend_diagnostics.py reference camera07 raw frame230; descriptive only"
+  },
+  "camera_index": 1,
+  "camera_id": 9,
+  "reference_camera_id": 7,
+  "stage": "first_failure",
+  "image_shape": [
+    270,
+    480
+  ],
+  "stage_counts": {
+    "query": {
+      "count": 2312,
+      "denominator": 2312,
+      "fraction": 1.0
+    },
+    "roma_initial_valid": {
+      "count": 1721,
+      "denominator": 2312,
+      "fraction": 0.7443771626297578
+    },
+    "collision_free": {
+      "count": 1667,
+      "denominator": 2312,
+      "fraction": 0.7210207612456747
+    },
+    "flow": {
+      "count": 2262,
+      "denominator": 2312,
+      "fraction": 0.9783737024221453
+    },
+    "anchor_support": {
+      "count": 80,
+      "denominator": 2312,
+      "fraction": 0.03460207612456748
+    },
+    "anchor_error": {
+      "count": 1170,
+      "denominator": 2312,
+      "fraction": 0.5060553633217993
+    },
+    "target_edge_accepted": {
+      "count": 45,
+      "denominator": 2312,
+      "fraction": 0.019463667820069204
+    },
+    "temporal_success": {
+      "count": 2258,
+      "denominator": 2312,
+      "fraction": 0.976643598615917
+    },
+    "multiview_seed": {
+      "count": 47,
+      "denominator": 2312,
+      "fraction": 0.02032871972318339
+    },
+    "all_three_seed": {
+      "count": 8,
+      "denominator": 2312,
+      "fraction": 0.0034602076124567475
+    },
+    "initialization": {
+      "count": 47,
+      "denominator": 2312,
+      "fraction": 0.02032871972318339
+    },
+    "trajectory_valid": {
+      "count": 47,
+      "denominator": 2312,
+      "fraction": 0.02032871972318339
+    },
+    "anchors": {
+      "count": 49,
+      "denominator": 2312,
+      "fraction": 0.021193771626297576
+    }
+  },
+  "target_pipeline_cumulative_counts": [
+    {
+      "stage": "query",
+      "count": 2312,
+      "missing": false
+    },
+    {
+      "stage": "roma_initial_valid",
+      "count": 1721,
+      "missing": false
+    },
+    {
+      "stage": "collision_free",
+      "count": 1667,
+      "missing": false
+    },
+    {
+      "stage": "flow",
+      "count": 1647,
+      "missing": false
+    },
+    {
+      "stage": "anchor_support",
+      "count": 67,
+      "missing": false
+    },
+    {
+      "stage": "anchor_error",
+      "count": 45,
+      "missing": false
+    },
+    {
+      "stage": "target_edge_accepted",
+      "count": 45,
+      "missing": false
+    }
+  ],
+  "recorded_first_gate_counts": {
+    "collision": 54,
+    "flow_or_anchors": 1622,
+    "roma_initial": 591,
+    "success": 45
+  },
+  "overlapping_condition_counts": {
+    "roma_score_below_threshold": 540,
+    "roma_fb_above_threshold_or_nonfinite": 322,
+    "recorded_collision": 54,
+    "target_observation_count_insufficient": 50,
+    "independent_anchor_support_insufficient": 2232,
+    "independent_anchor_error_above_threshold": 264,
+    "reference_temporal_insufficient": 54,
+    "multiview_insufficient": 2265,
+    "initialization_rejected": 2265,
+    "trajectory_invalid": 2265
+  },
+  "edge4_subdivision": {
+    "recorded_count": 1622,
+    "conditions_can_overlap": true,
+    "counts": {
+      "target_observation_count_insufficient": 20,
+      "independent_anchor_support_insufficient": 1600,
+      "independent_anchor_error_above_threshold": 67
+    },
+    "not_explained_by_available_fields": 0,
+    "interpretation": "Saved combined gate; subdivisions are reconstructed from saved counts/independent anchors and are not recorded first-subgate order"
+  },
+  "thresholds": {
+    "min_track_observations": 8,
+    "anchor_min_support": 2,
+    "anchor_error_max": 1.5,
+    "confidence_min": 0.15,
+    "roma_fb_max": 2.0
+  },
+  "missing_fields": [],
+  "legend": {
+    "pass": {
+      "label": "Pass",
+      "color": [
+        44,
+        180,
+        110,
+        255
+      ]
+    },
+    "fail": {
+      "label": "Fail",
+      "color": [
+        226,
+        87,
+        76,
+        255
+      ]
+    },
+    "success": {
+      "label": "Valid reconstructed trajectory",
+      "color": [
+        44,
+        180,
+        110,
+        255
+      ]
+    },
+    "roma_initial": {
+      "label": "Recorded RoMa score / FB / validity / bounds gate",
+      "color": [
+        233,
+        93,
+        75,
+        255
+      ]
+    },
+    "collision": {
+      "label": "Recorded competing seed gate",
+      "color": [
+        228,
+        164,
+        48,
+        255
+      ]
+    },
+    "flow_or_anchors": {
+      "label": "Recorded combined temporal / anchor gate (edge4)",
+      "color": [
+        173,
+        94,
+        213,
+        255
+      ]
+    },
+    "reference_flow": {
+      "label": "Reference temporal observation count insufficient",
+      "color": [
+        232,
+        128,
+        82,
+        255
+      ]
+    },
+    "multiview": {
+      "label": "No accepted multiview seed",
+      "color": [
+        149,
+        113,
+        80,
+        255
+      ]
+    },
+    "initialization": {
+      "label": "Not selected by 3D initialization",
+      "color": [
+        72,
+        148,
+        210,
+        255
+      ]
+    },
+    "trajectory": {
+      "label": "Initialized but final trajectory invalid",
+      "color": [
+        56,
+        96,
+        164,
+        255
+      ]
+    },
+    "not_attempted": {
+      "label": "Recorded edge not attempted",
+      "color": [
+        140,
+        140,
+        140,
+        255
+      ]
+    },
+    "missing": {
+      "label": "Required diagnostic field missing",
+      "color": [
+        92,
+        92,
+        92,
+        255
+      ]
+    }
+  },
+  "interpretation": [
+    "All ROI coordinates belong to the reference seed image, never the displayed current frame.",
+    "Stage counts are independent conditions; only target_pipeline_cumulative_counts impose pipeline order.",
+    "first_failure uses the selected camera edge gate before downstream multiview/initialization/trajectory eligibility; an earlier camera failure can coexist with a valid trajectory from other cameras.",
+    "RoMa initial validity is inferred exactly from saved edge status; individual model-valid/bounds rejection was not separately persisted.",
+    "Flow duration counts saved status==1 before cross-view masking, not final visible==1.",
+    "Seed-frame anchor is excluded. No ground-truth identity or semantic label is used."
+  ],
+  "overlay_png": "data:image/png;base64,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",
+  "overlay_size": [
+    480,
+    270
+  ],
+  "overlay_semantics": "Exact queried seed pixels only; transparent pixels are not queried/selected."
+}

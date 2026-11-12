@@ -1,0 +1,10 @@
+{"case": "synthetic_fractional", "coarse_beta_frames": [0.0, 0.2965561943078434, -0.4978389418979382], "reliable": [true, true, true], "motion_tracks": 1408}
+{"case": "synthetic_fractional", "method": "B3", "beta_frames": [0.0, 0.299327426268488, -0.4974707506376299], "trajectories": 1100, "valid_samples": 26729, "status": ["reference_gauge", "locally_observable", "locally_observable"], "seconds": 1.6271234415471554}
+{"case": "synthetic_fractional", "coarse_beta_frames": [0.0, 0.2965561943078434, -0.4978389418979382], "reliable": [true, true, true], "motion_tracks": 1408}
+{"case": "synthetic_fractional", "method": "B3", "beta_frames": [0.0, 0.2989147629866067, -0.49670306754480653], "trajectories": 1100, "valid_samples": 26729, "status": ["reference_gauge", "locally_observable", "locally_observable"], "seconds": 1.2809261046350002}
+{"case": "synthetic_fractional", "coarse_beta_frames": [0.0, 0.2965561943078434, -0.4978389418979382], "reliable": [true, true, true], "motion_tracks": 1408}
+{"case": "synthetic_fractional", "method": "B3", "beta_frames": [0.0, 0.29964223911309046, -0.4976044567164409], "trajectories": 1100, "valid_samples": 26729, "status": ["reference_gauge", "locally_observable", "locally_observable"], "seconds": 1.5138442851603031}
+{"case": "corgi_integer_aligned", "coarse_beta_frames": [0.0, -0.5550069751210212, -1.8605782315963015], "reliable": [true, true, true], "motion_tracks": 755}
+/data/jjy/ipc/stba/experiments/dense_stba/run_experiment.py:211: RuntimeWarning: Mean of empty slice
+  fields['confidence']=np.nanmean(np.where(method_obs['visible'],method_obs['weight'],np.nan),axis=(1,2))
+{"case": "corgi_integer_aligned", "method": "B3", "beta_frames": [0.0, -0.6214362747118775, -1.6890625395339498], "trajectories": 823, "valid_samples": 48393, "status": ["reference_gauge", "locally_observable", "locally_observable"], "seconds": 1.5568929146975279}

@@ -1,0 +1,23 @@
+{
+  "camera_original_ids": [
+    4,
+    10,
+    13,
+    16,
+    18,
+    21,
+    23
+  ],
+  "frames_start": 200,
+  "frames_stop_exclusive": 260,
+  "fps": 60.0,
+  "observations": 6009,
+  "tracks": 17,
+  "confidence_threshold": 0.5,
+  "pixel_coordinates": "Original 3840x2160 calibration coordinates; undistorted with original K,D",
+  "geometry": "Official K,R,T fixed; original distortion used only for undistortion and visualization",
+  "reference_camera_original": 4,
+  "time_formula": "t=(frame-beta)/60",
+  "ground_truth": false,
+  "length_unit": "Unverified SelfCap native world-coordinate unit"
+}

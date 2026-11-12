@@ -1,0 +1,16 @@
+restored_samples=6053
+motion_weight=4000
+huber_px=6
+max_iterations=1000
+Ceres Solver Report: Iterations: 398, Initial cost: 4.243116e+05, Final cost: 4.242026e+05, Termination: CONVERGENCE
+objective=848405
+reprojection_rmse_px=21.5349
+seconds=8.79401
+camera 0 beta=0 frames
+camera 1 beta=0.140015 frames
+camera 2 beta=-1.68069 frames
+camera 3 beta=-1 frames
+camera 4 beta=-1.17352 frames
+camera 5 beta=-0.280766 frames
+camera 6 beta=-1.4243 frames
+camera 7 beta=-0.446211 frames

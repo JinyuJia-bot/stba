@@ -1,0 +1,30 @@
+{
+  "adapter": {
+    "passed": true,
+    "checks": [
+      "identity",
+      "unequal_image_sizes",
+      "bidirectional_layout",
+      "half_pixel",
+      "native_invalid_preservation"
+    ]
+  },
+  "cameras": [
+    {
+      "camera_id": 7,
+      "raw_distortion_roundtrip_max_px": 2.926674369518878e-08,
+      "static_pixels": 26749
+    },
+    {
+      "camera_id": 9,
+      "raw_distortion_roundtrip_max_px": 1.9952767615905032e-07,
+      "static_pixels": 27808
+    },
+    {
+      "camera_id": 10,
+      "raw_distortion_roundtrip_max_px": 8.242750482168049e-08,
+      "static_pixels": 21298
+    }
+  ],
+  "passed": true
+}

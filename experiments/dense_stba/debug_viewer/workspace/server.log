@@ -1,0 +1,32 @@
+ * Serving Flask app 'experiments.dense_stba.debug_viewer.server'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8917
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [12/Nov/2026 10:08:23] "GET /?point=86142&roi=dog HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:23] "GET /static/studio.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:23] "GET /static/studio.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:23] "GET /vendor/plotly.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:23] "GET /static/fonts/studio-cjk.woff HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:24] "GET /api/runs?run=results_density1/corgi_raw&method=B3&frame=0&point=86142&camera=1&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:25] "GET /api/run?run=results_density1/corgi_raw&method=B3&frame=0&point=86142&camera=1&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:26] "GET /api/point?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=1&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:26] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=0&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:26] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=1&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:26] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=2&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:27] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=0&roi=dog&gt=0&patch=1&x=222&y=179&source=1 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:28] "GET /api/coverage?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=1&roi=dog&gt=0&stage=first_failure HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:28] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=1&roi=dog&gt=0&patch=1&x=211.7560577392578&y=151.00244140625&source=1 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:28] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=2&roi=dog&gt=0&patch=1&x=192.8495330810547&y=206.95840454101562&source=1 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:28] "GET /api/points?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=1&roi=dog&gt=0&stage=first_failure&reason=&sort=point_id&descending=0&offset=0&limit=30 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:28] "GET /api/rois?run=results_density1/corgi_raw&method=B3&frame=30&point=86142&camera=1&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:30] "GET /api/point?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=1&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:30] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=0&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:30] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=1&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:30] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=2&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:30] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=0&roi=dog&gt=0&patch=1&x=207&y=145&source=1 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:31] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=2&roi=dog&gt=0&patch=1&x=139.0433807373047&y=165.369873046875&source=1 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:31] "GET /api/image?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=1&roi=dog&gt=0&patch=1&x=192.89547729492188&y=127.95599365234375&source=1 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:33] "GET /api/scene?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=1&roi=dog&gt=0&color=speed&max_points=1500 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:38] "GET /api/alignment?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=1&roi=dog&gt=0 HTTP/1.1" 200 -
+127.0.0.1 - - [12/Nov/2026 10:08:42] "GET /api/compare?run=results_density1/corgi_raw&method=B3&frame=30&point=69807&camera=1&roi=dog&gt=0&right_run=results_density1/corgi_integer_aligned&right_method=B3&scope=roi&time_scope=current HTTP/1.1" 200 -

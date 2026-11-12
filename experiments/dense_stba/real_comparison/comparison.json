@@ -1,0 +1,5525 @@
+{
+  "schema_version": 1,
+  "method": "B3",
+  "ground_truth_available": false,
+  "interpretation": "Held-out tracked2D measurement prediction only. Frontends used full video, including held-out frames. No independent 3D or synchronization GT. Own all-camera errors use different targets and must not be treated as paired raw/integer accuracy comparisons.",
+  "coordinates": "Undistorted working-image integer pixel centers; Euclidean2D errors in working pixels. Translation remains in dataset-native units; no claim of metric3D accuracy.",
+  "window_stability": {
+    "root": "/data/jjy/ipc/stba/experiments/dense_stba/stability",
+    "kind": "Independent-window diagnostic; these separately optimized offsets are NOT stitched into one reconstruction",
+    "windows": [
+      "window_0_40",
+      "window_20_60"
+    ],
+    "cases": {
+      "corgi_raw": {
+        "independent_runs": [
+          {
+            "window": "window_0_40",
+            "frame_window": [
+              0,
+              40
+            ],
+            "beta": [
+              {
+                "camera_id": 7,
+                "residual_seconds": 0.0,
+                "residual_frames": 0.0,
+                "integer_raw_frame_shift": 0,
+                "total_seconds": 0.0,
+                "total_frames": 0.0,
+                "published_reference_total_seconds": 0.0,
+                "published_reference_total_frames": 0.0,
+                "difference_from_reference_ms": 0.0,
+                "difference_from_reference_frames": 0.0,
+                "residual_bounds_frames": [
+                  0.0,
+                  0.0
+                ],
+                "total_bounds_frames": [
+                  0.0,
+                  0.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 0.0,
+                "observability_status": "reference_gauge"
+              },
+              {
+                "camera_id": 9,
+                "residual_seconds": 0.00559633395383806,
+                "residual_frames": 0.3357800372302836,
+                "integer_raw_frame_shift": 0,
+                "total_seconds": 0.00559633395383806,
+                "total_frames": 0.3357800372302836,
+                "published_reference_total_seconds": 0.012422295287251472,
+                "published_reference_total_frames": 0.7453377172350883,
+                "difference_from_reference_ms": -6.825961333413413,
+                "difference_from_reference_frames": -0.40955768000480475,
+                "residual_bounds_frames": [
+                  -6.0,
+                  6.0
+                ],
+                "total_bounds_frames": [
+                  -6.0,
+                  6.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 5.6642199627697165,
+                "observability_status": "locally_observable"
+              },
+              {
+                "camera_id": 10,
+                "residual_seconds": 0.024708743206536307,
+                "residual_frames": 1.4825245923921784,
+                "integer_raw_frame_shift": 0,
+                "total_seconds": 0.024708743206536307,
+                "total_frames": 1.4825245923921784,
+                "published_reference_total_seconds": 0.04939606413245201,
+                "published_reference_total_frames": 2.9637638479471207,
+                "difference_from_reference_ms": -24.687320925915703,
+                "difference_from_reference_frames": -1.4812392555549423,
+                "residual_bounds_frames": [
+                  -6.0,
+                  6.0
+                ],
+                "total_bounds_frames": [
+                  -6.0,
+                  6.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 4.517475407607821,
+                "observability_status": "locally_observable"
+              }
+            ],
+            "own_heldout_all_cameras": {
+              "count": 17252,
+              "mean": 0.11133506479183032,
+              "rmse": 0.18445183089155584,
+              "p50": 0.0668035260762202,
+              "p90": 0.24260549909424925,
+              "heldout_observation_denominator": 21912,
+              "finite_prediction_coverage": 0.7873311427528294,
+              "per_camera": {
+                "7": {
+                  "count": 6641,
+                  "mean": 0.08641980391524139,
+                  "rmse": 0.1256477125835497,
+                  "p50": 0.058213432635122166,
+                  "p90": 0.18545011136119274
+                },
+                "9": {
+                  "count": 5964,
+                  "mean": 0.136006435052293,
+                  "rmse": 0.23231529789131428,
+                  "p50": 0.07583449420064838,
+                  "p90": 0.3010298496375564
+                },
+                "10": {
+                  "count": 4647,
+                  "mean": 0.11527786557685883,
+                  "rmse": 0.18569022894192533,
+                  "p50": 0.07167688026109326,
+                  "p90": 0.2540985163415739
+                }
+              }
+            },
+            "timing": {
+              "seconds": 1.3996272683143616,
+              "peak_cuda_allocated_bytes": 101877760,
+              "device": "cuda",
+              "dtype": "torch.float64",
+              "point_count": 831,
+              "eligible_point_count": 831,
+              "raw_training_observations": 68984,
+              "controls_per_trajectory": 21,
+              "global_beta_variables": 2,
+              "saving_seconds": 0.3686227649450302,
+              "method_wall_seconds": 2.955486698076129
+            }
+          },
+          {
+            "window": "window_20_60",
+            "frame_window": [
+              20,
+              60
+            ],
+            "beta": [
+              {
+                "camera_id": 7,
+                "residual_seconds": 0.0,
+                "residual_frames": 0.0,
+                "integer_raw_frame_shift": 0,
+                "total_seconds": 0.0,
+                "total_frames": 0.0,
+                "published_reference_total_seconds": 0.0,
+                "published_reference_total_frames": 0.0,
+                "difference_from_reference_ms": 0.0,
+                "difference_from_reference_frames": 0.0,
+                "residual_bounds_frames": [
+                  0.0,
+                  0.0
+                ],
+                "total_bounds_frames": [
+                  0.0,
+                  0.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 0.0,
+                "observability_status": "reference_gauge"
+              },
+              {
+                "camera_id": 9,
+                "residual_seconds": 0.009052119254537647,
+                "residual_frames": 0.5431271552722589,
+                "integer_raw_frame_shift": 0,
+                "total_seconds": 0.009052119254537647,
+                "total_frames": 0.5431271552722589,
+                "published_reference_total_seconds": 0.012422295287251472,
+                "published_reference_total_frames": 0.7453377172350883,
+                "difference_from_reference_ms": -3.3701760327138253,
+                "difference_from_reference_frames": -0.20221056196282952,
+                "residual_bounds_frames": [
+                  -6.0,
+                  6.0
+                ],
+                "total_bounds_frames": [
+                  -6.0,
+                  6.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 5.456872844727741,
+                "observability_status": "locally_observable"
+              },
+              {
+                "camera_id": 10,
+                "residual_seconds": 0.029956763351736283,
+                "residual_frames": 1.797405801104177,
+                "integer_raw_frame_shift": 0,
+                "total_seconds": 0.029956763351736283,
+                "total_frames": 1.797405801104177,
+                "published_reference_total_seconds": 0.04939606413245201,
+                "published_reference_total_frames": 2.9637638479471207,
+                "difference_from_reference_ms": -19.439300780715726,
+                "difference_from_reference_frames": -1.1663580468429438,
+                "residual_bounds_frames": [
+                  -6.0,
+                  6.0
+                ],
+                "total_bounds_frames": [
+                  -6.0,
+                  6.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 4.202594198895823,
+                "observability_status": "locally_observable"
+              }
+            ],
+            "own_heldout_all_cameras": {
+              "count": 17270,
+              "mean": 0.13163374445878728,
+              "rmse": 0.22991931349344394,
+              "p50": 0.07455880602776435,
+              "p90": 0.30230670396825954,
+              "heldout_observation_denominator": 21814,
+              "finite_prediction_coverage": 0.7916934079031814,
+              "per_camera": {
+                "7": {
+                  "count": 6646,
+                  "mean": 0.10163842512288324,
+                  "rmse": 0.15928582949755918,
+                  "p50": 0.06301360212537044,
+                  "p90": 0.22207925343413965
+                },
+                "9": {
+                  "count": 5970,
+                  "mean": 0.14743655425920013,
+                  "rmse": 0.24670379430151856,
+                  "p50": 0.0827187260263712,
+                  "p90": 0.3382880434445232
+                },
+                "10": {
+                  "count": 4654,
+                  "mean": 0.1541962966285238,
+                  "rmse": 0.28610917907566563,
+                  "p50": 0.08464860893596943,
+                  "p90": 0.3586581809376492
+                }
+              }
+            },
+            "timing": {
+              "seconds": 1.5012218225747347,
+              "peak_cuda_allocated_bytes": 101877760,
+              "device": "cuda",
+              "dtype": "torch.float64",
+              "point_count": 831,
+              "eligible_point_count": 831,
+              "raw_training_observations": 69080,
+              "controls_per_trajectory": 21,
+              "global_beta_variables": 2,
+              "saving_seconds": 0.36924184672534466,
+              "method_wall_seconds": 3.119375243782997
+            }
+          }
+        ],
+        "per_camera": {
+          "7": {
+            "window_count": 2,
+            "total_beta_seconds": [
+              0.0,
+              0.0
+            ],
+            "total_beta_frames": [
+              0.0,
+              0.0
+            ],
+            "span_ms": 0.0,
+            "span_frames": 0.0,
+            "any_at_boundary": false,
+            "all_at_boundary": false,
+            "span_interpretation": "Variation across separately fitted windows; no shared global estimate was formed"
+          },
+          "9": {
+            "window_count": 2,
+            "total_beta_seconds": [
+              0.00559633395383806,
+              0.009052119254537647
+            ],
+            "total_beta_frames": [
+              0.3357800372302836,
+              0.5431271552722589
+            ],
+            "span_ms": 3.455785300699587,
+            "span_frames": 0.20734711804197525,
+            "any_at_boundary": false,
+            "all_at_boundary": false,
+            "span_interpretation": "Variation across separately fitted windows; no shared global estimate was formed"
+          },
+          "10": {
+            "window_count": 2,
+            "total_beta_seconds": [
+              0.024708743206536307,
+              0.029956763351736283
+            ],
+            "total_beta_frames": [
+              1.4825245923921784,
+              1.797405801104177
+            ],
+            "span_ms": 5.248020145199976,
+            "span_frames": 0.31488120871199854,
+            "any_at_boundary": false,
+            "all_at_boundary": false,
+            "span_interpretation": "Variation across separately fitted windows; no shared global estimate was formed"
+          }
+        }
+      },
+      "corgi_integer_aligned": {
+        "independent_runs": [
+          {
+            "window": "window_0_40",
+            "frame_window": [
+              0,
+              40
+            ],
+            "beta": [
+              {
+                "camera_id": 7,
+                "residual_seconds": 0.0,
+                "residual_frames": 0.0,
+                "integer_raw_frame_shift": 0,
+                "total_seconds": 0.0,
+                "total_frames": 0.0,
+                "published_reference_total_seconds": 0.0,
+                "published_reference_total_frames": 0.0,
+                "difference_from_reference_ms": 0.0,
+                "difference_from_reference_frames": 0.0,
+                "residual_bounds_frames": [
+                  0.0,
+                  0.0
+                ],
+                "total_bounds_frames": [
+                  0.0,
+                  0.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 0.0,
+                "observability_status": "reference_gauge"
+              },
+              {
+                "camera_id": 9,
+                "residual_seconds": -0.009460820541382402,
+                "residual_frames": -0.5676492324829442,
+                "integer_raw_frame_shift": -1,
+                "total_seconds": 0.007205846125284264,
+                "total_frames": 0.4323507675170558,
+                "published_reference_total_seconds": 0.012422295287251472,
+                "published_reference_total_frames": 0.7453377172350883,
+                "difference_from_reference_ms": -5.216449161967208,
+                "difference_from_reference_frames": -0.31298694971803254,
+                "residual_bounds_frames": [
+                  -1.0,
+                  1.0
+                ],
+                "total_bounds_frames": [
+                  0.0,
+                  2.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 0.4323507675170558,
+                "observability_status": "iteration_limit_or_no_convergence"
+              },
+              {
+                "camera_id": 10,
+                "residual_seconds": -0.016666666666666607,
+                "residual_frames": -0.9999999999999964,
+                "integer_raw_frame_shift": -3,
+                "total_seconds": 0.033333333333333395,
+                "total_frames": 2.0000000000000036,
+                "published_reference_total_seconds": 0.04939606413245201,
+                "published_reference_total_frames": 2.9637638479471207,
+                "difference_from_reference_ms": -16.062730799118615,
+                "difference_from_reference_frames": -0.9637638479471169,
+                "residual_bounds_frames": [
+                  -1.0,
+                  1.0
+                ],
+                "total_bounds_frames": [
+                  2.0,
+                  4.0
+                ],
+                "at_boundary": true,
+                "distance_to_boundary_frames": 3.552713678800501e-15,
+                "observability_status": "at_beta_bound"
+              }
+            ],
+            "own_heldout_all_cameras": {
+              "count": 17184,
+              "mean": 0.11534560965134363,
+              "rmse": 0.1890572362996248,
+              "p50": 0.0681814586605625,
+              "p90": 0.253778554261183,
+              "heldout_observation_denominator": 21913,
+              "finite_prediction_coverage": 0.7841920321270479,
+              "per_camera": {
+                "7": {
+                  "count": 6572,
+                  "mean": 0.08484699384567251,
+                  "rmse": 0.12443512723333669,
+                  "p50": 0.056721207122947634,
+                  "p90": 0.17969878282905782
+                },
+                "9": {
+                  "count": 5944,
+                  "mean": 0.13989607725495518,
+                  "rmse": 0.23349719010548453,
+                  "p50": 0.07808407202862792,
+                  "p90": 0.30946928771662896
+                },
+                "10": {
+                  "count": 4668,
+                  "mean": 0.12702275696047038,
+                  "rmse": 0.20088041884154675,
+                  "p50": 0.07834269761366953,
+                  "p90": 0.28093913519815017
+                }
+              }
+            },
+            "timing": {
+              "seconds": 2.7797106467187405,
+              "peak_cuda_allocated_bytes": 94910464,
+              "device": "cuda",
+              "dtype": "torch.float64",
+              "point_count": 823,
+              "eligible_point_count": 823,
+              "raw_training_observations": 68719,
+              "controls_per_trajectory": 19,
+              "global_beta_variables": 2,
+              "saving_seconds": 0.3627400491386652,
+              "method_wall_seconds": 3.6783962324261665
+            }
+          },
+          {
+            "window": "window_20_60",
+            "frame_window": [
+              20,
+              60
+            ],
+            "beta": [
+              {
+                "camera_id": 7,
+                "residual_seconds": 0.0,
+                "residual_frames": 0.0,
+                "integer_raw_frame_shift": 0,
+                "total_seconds": 0.0,
+                "total_frames": 0.0,
+                "published_reference_total_seconds": 0.0,
+                "published_reference_total_frames": 0.0,
+                "difference_from_reference_ms": 0.0,
+                "difference_from_reference_frames": 0.0,
+                "residual_bounds_frames": [
+                  0.0,
+                  0.0
+                ],
+                "total_bounds_frames": [
+                  0.0,
+                  0.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 0.0,
+                "observability_status": "reference_gauge"
+              },
+              {
+                "camera_id": 9,
+                "residual_seconds": -0.00829256371722734,
+                "residual_frames": -0.4975538230336404,
+                "integer_raw_frame_shift": -1,
+                "total_seconds": 0.008374102949439327,
+                "total_frames": 0.5024461769663596,
+                "published_reference_total_seconds": 0.012422295287251472,
+                "published_reference_total_frames": 0.7453377172350883,
+                "difference_from_reference_ms": -4.048192337812146,
+                "difference_from_reference_frames": -0.24289154026872872,
+                "residual_bounds_frames": [
+                  -1.0,
+                  1.0
+                ],
+                "total_bounds_frames": [
+                  0.0,
+                  2.0
+                ],
+                "at_boundary": false,
+                "distance_to_boundary_frames": 0.5024461769663596,
+                "observability_status": "iteration_limit_or_no_convergence"
+              },
+              {
+                "camera_id": 10,
+                "residual_seconds": -0.016666666666666607,
+                "residual_frames": -0.9999999999999964,
+                "integer_raw_frame_shift": -3,
+                "total_seconds": 0.033333333333333395,
+                "total_frames": 2.0000000000000036,
+                "published_reference_total_seconds": 0.04939606413245201,
+                "published_reference_total_frames": 2.9637638479471207,
+                "difference_from_reference_ms": -16.062730799118615,
+                "difference_from_reference_frames": -0.9637638479471169,
+                "residual_bounds_frames": [
+                  -1.0,
+                  1.0
+                ],
+                "total_bounds_frames": [
+                  2.0,
+                  4.0
+                ],
+                "at_boundary": true,
+                "distance_to_boundary_frames": 3.552713678800501e-15,
+                "observability_status": "at_beta_bound"
+              }
+            ],
+            "own_heldout_all_cameras": {
+              "count": 17206,
+              "mean": 0.13137887151307684,
+              "rmse": 0.2170351727926418,
+              "p50": 0.07593568029196751,
+              "p90": 0.3069358747639247,
+              "heldout_observation_denominator": 21814,
+              "finite_prediction_coverage": 0.788759512239846,
+              "per_camera": {
+                "7": {
+                  "count": 6582,
+                  "mean": 0.10412567124330138,
+                  "rmse": 0.1681379459481976,
+                  "p50": 0.06212592927728892,
+                  "p90": 0.2291346425037695
+                },
+                "9": {
+                  "count": 5948,
+                  "mean": 0.14851959363961031,
+                  "rmse": 0.2385793989164151,
+                  "p50": 0.0863369871589723,
+                  "p90": 0.3409949396379762
+                },
+                "10": {
+                  "count": 4676,
+                  "mean": 0.1479373721476024,
+                  "rmse": 0.24724292628755404,
+                  "p50": 0.08478805351985716,
+                  "p90": 0.3491713221646926
+                }
+              }
+            },
+            "timing": {
+              "seconds": 2.7528237886726856,
+              "peak_cuda_allocated_bytes": 94910464,
+              "device": "cuda",
+              "dtype": "torch.float64",
+              "point_count": 823,
+              "eligible_point_count": 823,
+              "raw_training_observations": 68824,
+              "controls_per_trajectory": 19,
+              "global_beta_variables": 2,
+              "saving_seconds": 0.3625776879489422,
+              "method_wall_seconds": 3.729377970099449
+            }
+          }
+        ],
+        "per_camera": {
+          "7": {
+            "window_count": 2,
+            "total_beta_seconds": [
+              0.0,
+              0.0
+            ],
+            "total_beta_frames": [
+              0.0,
+              0.0
+            ],
+            "span_ms": 0.0,
+            "span_frames": 0.0,
+            "any_at_boundary": false,
+            "all_at_boundary": false,
+            "span_interpretation": "Variation across separately fitted windows; no shared global estimate was formed"
+          },
+          "9": {
+            "window_count": 2,
+            "total_beta_seconds": [
+              0.007205846125284264,
+              0.008374102949439327
+            ],
+            "total_beta_frames": [
+              0.4323507675170558,
+              0.5024461769663596
+            ],
+            "span_ms": 1.168256824155063,
+            "span_frames": 0.07009540944930381,
+            "any_at_boundary": false,
+            "all_at_boundary": false,
+            "span_interpretation": "Variation across separately fitted windows; no shared global estimate was formed"
+          },
+          "10": {
+            "window_count": 2,
+            "total_beta_seconds": [
+              0.033333333333333395,
+              0.033333333333333395
+            ],
+            "total_beta_frames": [
+              2.0000000000000036,
+              2.0000000000000036
+            ],
+            "span_ms": 0.0,
+            "span_frames": 0.0,
+            "any_at_boundary": true,
+            "all_at_boundary": true,
+            "span_interpretation": "A zero span while constrained at a bound is not evidence of reliable synchronization"
+          }
+        }
+      }
+    },
+    "missing": []
+  },
+  "runs": [
+    {
+      "key": "results/corgi_raw",
+      "directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_raw",
+      "mode": "raw",
+      "stride": 4,
+      "camera_ids": [
+        7,
+        9,
+        10
+      ],
+      "fps": 60.0,
+      "frame_range_camera07": [
+        200,
+        260
+      ],
+      "own_heldout_all_cameras": {
+        "count": 25882,
+        "mean": 0.1293973823766108,
+        "rmse": 0.22289712385156693,
+        "p50": 0.07414562736837393,
+        "p90": 0.2932059806200322,
+        "heldout_observation_denominator": 32631,
+        "finite_prediction_coverage": 0.79317213692501,
+        "per_camera": {
+          "7": {
+            "count": 9963,
+            "mean": 0.09995986043317528,
+            "rmse": 0.1522043757367792,
+            "p50": 0.0635279721460148,
+            "p90": 0.2195717805287955
+          },
+          "9": {
+            "count": 8946,
+            "mean": 0.14945406884813578,
+            "rmse": 0.25246680985564723,
+            "p50": 0.08380266404957065,
+            "p90": 0.3362613968736765
+          },
+          "10": {
+            "count": 6973,
+            "mean": 0.14572592302599924,
+            "rmse": 0.2636984642182203,
+            "p50": 0.08077752959676725,
+            "p90": 0.33640313489396667
+          }
+        }
+      },
+      "beta": [
+        {
+          "camera_id": 7,
+          "residual_seconds": 0.0,
+          "residual_frames": 0.0,
+          "integer_raw_frame_shift": 0,
+          "total_seconds": 0.0,
+          "total_frames": 0.0,
+          "published_reference_total_seconds": 0.0,
+          "published_reference_total_frames": 0.0,
+          "difference_from_reference_ms": 0.0,
+          "difference_from_reference_frames": 0.0,
+          "residual_bounds_frames": [
+            0.0,
+            0.0
+          ],
+          "total_bounds_frames": [
+            0.0,
+            0.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 0.0,
+          "observability_status": "reference_gauge"
+        },
+        {
+          "camera_id": 9,
+          "residual_seconds": 0.008232371891473371,
+          "residual_frames": 0.4939423134884023,
+          "integer_raw_frame_shift": 0,
+          "total_seconds": 0.008232371891473371,
+          "total_frames": 0.4939423134884023,
+          "published_reference_total_seconds": 0.012422295287251472,
+          "published_reference_total_frames": 0.7453377172350883,
+          "difference_from_reference_ms": -4.189923395778101,
+          "difference_from_reference_frames": -0.25139540374668606,
+          "residual_bounds_frames": [
+            -6.0,
+            6.0
+          ],
+          "total_bounds_frames": [
+            -6.0,
+            6.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 5.506057686511598,
+          "observability_status": "locally_observable"
+        },
+        {
+          "camera_id": 10,
+          "residual_seconds": 0.026925272694592824,
+          "residual_frames": 1.6155163616755694,
+          "integer_raw_frame_shift": 0,
+          "total_seconds": 0.026925272694592824,
+          "total_frames": 1.6155163616755694,
+          "published_reference_total_seconds": 0.04939606413245201,
+          "published_reference_total_frames": 2.9637638479471207,
+          "difference_from_reference_ms": -22.470791437859187,
+          "difference_from_reference_frames": -1.3482474862715512,
+          "residual_bounds_frames": [
+            -6.0,
+            6.0
+          ],
+          "total_bounds_frames": [
+            -6.0,
+            6.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 4.384483638324431,
+          "observability_status": "locally_observable"
+        }
+      ],
+      "query_trajectories": 1488,
+      "initialized_trajectories": 831,
+      "valid_trajectories": 831,
+      "valid_trajectory_coverage": 0.5584677419354839,
+      "supported_3d_samples": 48851,
+      "supported_sample_coverage": 0.5471662186379929,
+      "timing": {
+        "seconds": 1.5632104761898518,
+        "peak_cuda_allocated_bytes": 103112192,
+        "device": "cuda",
+        "dtype": "torch.float64",
+        "point_count": 831,
+        "eligible_point_count": 831,
+        "raw_training_observations": 103504,
+        "controls_per_trajectory": 21,
+        "global_beta_variables": 2,
+        "saving_seconds": 0.3686502669006586,
+        "method_wall_seconds": 2.0281152725219727
+      },
+      "observability": {
+        "status": [
+          "reference_gauge",
+          "locally_observable",
+          "locally_observable"
+        ],
+        "reliable": [
+          false,
+          true,
+          true
+        ],
+        "local_optimizer_status": [
+          "reference_gauge",
+          "locally_observable",
+          "locally_observable"
+        ],
+        "dynamic_tracks_per_camera": [
+          321,
+          303,
+          238
+        ],
+        "converged": true,
+        "marginal_schur_information": [
+          [
+            3676205.3940049023,
+            -767306.29708158
+          ],
+          [
+            -767306.29708158,
+            1118087.2251691862
+          ]
+        ],
+        "interpretation": "Local motion/Schur/box/convergence diagnostics; no calibrated uncertainty or uniqueness guarantee"
+      },
+      "translation_unit": "dataset_native_common_unit; metric scale not independently verified",
+      "beta_comparison_kind": "Published synchronization reference, NOT independent time GT",
+      "beta_formula": "total_beta_seconds = residual_beta_seconds - integer_raw_frame_shift / camera_fps",
+      "observations_sha256": "7c27f528ef9723203cd3d87bd800ea64522d6a22797648e4048439072a49b15a",
+      "source_files": {
+        "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_raw/B3.npz": "3e05381e399afdda0d62997335e7dfb4efea2b36b1c6ed54b99625cf110af6fb",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_raw/B3.json": "e3bb3f306b77cee7c5c8e5504eb719d2ed6460b9afba6f7706098a7b8fef6844",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_raw/metrics.json": "747ef7175d4a4ec6747f97f1feb02eb7293a462684e2e65f8128bca68f008a28",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_raw/meta.json": "6556b384a460b2c56bfaf888058fa4021143d2e5835040be62637535333e1c5f"
+      },
+      "heldout_policy": "Every fifth original observation (phase2) withheld from time-profile scoring, 3D initialization, spline and beta optimization. Frontend uses images for tracking/association; this tests prediction of held-out 2D measurements, not independent 3D accuracy.",
+      "window": null
+    },
+    {
+      "key": "results/corgi_integer_aligned",
+      "directory": "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_integer_aligned",
+      "mode": "integer_aligned",
+      "stride": 4,
+      "camera_ids": [
+        7,
+        9,
+        10
+      ],
+      "fps": 60.0,
+      "frame_range_camera07": [
+        200,
+        260
+      ],
+      "own_heldout_all_cameras": {
+        "count": 25782,
+        "mean": 0.13009678780345826,
+        "rmse": 0.21485320916453635,
+        "p50": 0.07513101585325377,
+        "p90": 0.29928583937996095,
+        "heldout_observation_denominator": 32632,
+        "finite_prediction_coverage": 0.7900833537631773,
+        "per_camera": {
+          "7": {
+            "count": 9862,
+            "mean": 0.10043639387197689,
+            "rmse": 0.15793879075077286,
+            "p50": 0.06224829940068942,
+            "p90": 0.2179820564115791
+          },
+          "9": {
+            "count": 8916,
+            "mean": 0.1506786581817046,
+            "rmse": 0.24533139459000547,
+            "p50": 0.08614139903645689,
+            "p90": 0.34154920492680163
+          },
+          "10": {
+            "count": 7004,
+            "mean": 0.14565973021634027,
+            "rmse": 0.24121048074134846,
+            "p50": 0.08417567686890962,
+            "p90": 0.33930891996302787
+          }
+        }
+      },
+      "beta": [
+        {
+          "camera_id": 7,
+          "residual_seconds": 0.0,
+          "residual_frames": 0.0,
+          "integer_raw_frame_shift": 0,
+          "total_seconds": 0.0,
+          "total_frames": 0.0,
+          "published_reference_total_seconds": 0.0,
+          "published_reference_total_frames": 0.0,
+          "difference_from_reference_ms": 0.0,
+          "difference_from_reference_frames": 0.0,
+          "residual_bounds_frames": [
+            0.0,
+            0.0
+          ],
+          "total_bounds_frames": [
+            0.0,
+            0.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 0.0,
+          "observability_status": "reference_gauge"
+        },
+        {
+          "camera_id": 9,
+          "residual_seconds": -0.008158039161226139,
+          "residual_frames": -0.48948234967356835,
+          "integer_raw_frame_shift": -1,
+          "total_seconds": 0.008508627505440527,
+          "total_frames": 0.5105176503264317,
+          "published_reference_total_seconds": 0.012422295287251472,
+          "published_reference_total_frames": 0.7453377172350883,
+          "difference_from_reference_ms": -3.913667781810945,
+          "difference_from_reference_frames": -0.2348200669086567,
+          "residual_bounds_frames": [
+            -1.0,
+            1.0
+          ],
+          "total_bounds_frames": [
+            0.0,
+            2.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 0.5105176503264317,
+          "observability_status": "iteration_limit_or_no_convergence"
+        },
+        {
+          "camera_id": 10,
+          "residual_seconds": -0.016666666666666607,
+          "residual_frames": -0.9999999999999964,
+          "integer_raw_frame_shift": -3,
+          "total_seconds": 0.033333333333333395,
+          "total_frames": 2.0000000000000036,
+          "published_reference_total_seconds": 0.04939606413245201,
+          "published_reference_total_frames": 2.9637638479471207,
+          "difference_from_reference_ms": -16.062730799118615,
+          "difference_from_reference_frames": -0.9637638479471169,
+          "residual_bounds_frames": [
+            -1.0,
+            1.0
+          ],
+          "total_bounds_frames": [
+            2.0,
+            4.0
+          ],
+          "at_boundary": true,
+          "distance_to_boundary_frames": 3.552713678800501e-15,
+          "observability_status": "at_beta_bound"
+        }
+      ],
+      "query_trajectories": 1488,
+      "initialized_trajectories": 823,
+      "valid_trajectories": 823,
+      "valid_trajectory_coverage": 0.5530913978494624,
+      "supported_3d_samples": 48471,
+      "supported_sample_coverage": 0.5429099462365592,
+      "timing": {
+        "seconds": 2.7314667496830225,
+        "peak_cuda_allocated_bytes": 94910464,
+        "device": "cuda",
+        "dtype": "torch.float64",
+        "point_count": 823,
+        "eligible_point_count": 823,
+        "raw_training_observations": 103111,
+        "controls_per_trajectory": 19,
+        "global_beta_variables": 2,
+        "saving_seconds": 0.3689418490976095,
+        "method_wall_seconds": 3.1955696046352386
+      },
+      "observability": {
+        "status": [
+          "reference_gauge",
+          "iteration_limit_or_no_convergence",
+          "at_beta_bound"
+        ],
+        "reliable": [
+          false,
+          false,
+          false
+        ],
+        "local_optimizer_status": [
+          "reference_gauge",
+          "iteration_limit_or_no_convergence",
+          "at_beta_bound"
+        ],
+        "dynamic_tracks_per_camera": [
+          316,
+          298,
+          243
+        ],
+        "converged": false,
+        "marginal_schur_information": [
+          [
+            3600697.471950232,
+            -762683.9271268138
+          ],
+          [
+            -762683.9271268138,
+            1025508.1955364527
+          ]
+        ],
+        "interpretation": "Local motion/Schur/box/convergence diagnostics; no calibrated uncertainty or uniqueness guarantee"
+      },
+      "translation_unit": "dataset_native_common_unit; metric scale not independently verified",
+      "beta_comparison_kind": "Published synchronization reference, NOT independent time GT",
+      "beta_formula": "total_beta_seconds = residual_beta_seconds - integer_raw_frame_shift / camera_fps",
+      "observations_sha256": "6d83e92527b18fec73d0593aabfa79e72165973d61774f661c3000319afa46de",
+      "source_files": {
+        "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_integer_aligned/B3.npz": "00097f58a2ebececa32eabfd9f027755287be1238d33db950f549a7283b892f1",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_integer_aligned/B3.json": "da70f7ab1dfdd99af389054f8ca6afa8b46faa994eab48804acd4befe8b5735e",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_integer_aligned/metrics.json": "867ec3193862ab485fc9c0a124d9f9274ed957b415359f5cfbfe90c8c5f3da20",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results/corgi_integer_aligned/meta.json": "b0f1b745fc53c6657a25d5ea715a8ee863ab6500fc28589e34bb1815ca159c51"
+      },
+      "heldout_policy": "Every fifth original observation (phase2) withheld from time-profile scoring, 3D initialization, spline and beta optimization. Frontend uses images for tracking/association; this tests prediction of held-out 2D measurements, not independent 3D accuracy.",
+      "window": null
+    },
+    {
+      "key": "results_density1/corgi_raw",
+      "directory": "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw",
+      "mode": "raw",
+      "stride": 1,
+      "camera_ids": [
+        7,
+        9,
+        10
+      ],
+      "fps": 60.0,
+      "frame_range_camera07": [
+        200,
+        260
+      ],
+      "own_heldout_all_cameras": {
+        "count": 397037,
+        "mean": 0.12138510103160563,
+        "rmse": 0.20142686869418466,
+        "p50": 0.0709158549208401,
+        "p90": 0.2789066092136136,
+        "heldout_observation_denominator": 511221,
+        "finite_prediction_coverage": 0.7766445431623505,
+        "per_camera": {
+          "7": {
+            "count": 154724,
+            "mean": 0.09623411408769536,
+            "rmse": 0.14909074477821738,
+            "p50": 0.060731795111904296,
+            "p90": 0.21315211782464308
+          },
+          "9": {
+            "count": 136015,
+            "mean": 0.1376900454930691,
+            "rmse": 0.22192559265125467,
+            "p50": 0.08141804753627944,
+            "p90": 0.31296322816667727
+          },
+          "10": {
+            "count": 106298,
+            "mean": 0.13713087501591034,
+            "rmse": 0.23700318570257556,
+            "p50": 0.07623005698942645,
+            "p90": 0.32741997748282364
+          }
+        }
+      },
+      "beta": [
+        {
+          "camera_id": 7,
+          "residual_seconds": 0.0,
+          "residual_frames": 0.0,
+          "integer_raw_frame_shift": 0,
+          "total_seconds": 0.0,
+          "total_frames": 0.0,
+          "published_reference_total_seconds": 0.0,
+          "published_reference_total_frames": 0.0,
+          "difference_from_reference_ms": 0.0,
+          "difference_from_reference_frames": 0.0,
+          "residual_bounds_frames": [
+            0.0,
+            0.0
+          ],
+          "total_bounds_frames": [
+            0.0,
+            0.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 0.0,
+          "observability_status": "reference_gauge"
+        },
+        {
+          "camera_id": 9,
+          "residual_seconds": 0.008205494063678005,
+          "residual_frames": 0.4923296438206803,
+          "integer_raw_frame_shift": 0,
+          "total_seconds": 0.008205494063678005,
+          "total_frames": 0.4923296438206803,
+          "published_reference_total_seconds": 0.012422295287251472,
+          "published_reference_total_frames": 0.7453377172350883,
+          "difference_from_reference_ms": -4.2168012235734675,
+          "difference_from_reference_frames": -0.25300807341440806,
+          "residual_bounds_frames": [
+            -6.0,
+            6.0
+          ],
+          "total_bounds_frames": [
+            -6.0,
+            6.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 5.50767035617932,
+          "observability_status": "locally_observable"
+        },
+        {
+          "camera_id": 10,
+          "residual_seconds": 0.026988771218382838,
+          "residual_frames": 1.6193262731029703,
+          "integer_raw_frame_shift": 0,
+          "total_seconds": 0.026988771218382838,
+          "total_frames": 1.6193262731029703,
+          "published_reference_total_seconds": 0.04939606413245201,
+          "published_reference_total_frames": 2.9637638479471207,
+          "difference_from_reference_ms": -22.407292914069174,
+          "difference_from_reference_frames": -1.3444375748441504,
+          "residual_bounds_frames": [
+            -6.0,
+            6.0
+          ],
+          "total_bounds_frames": [
+            -6.0,
+            6.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 4.3806737268970295,
+          "observability_status": "locally_observable"
+        }
+      ],
+      "query_trajectories": 24000,
+      "initialized_trajectories": 12908,
+      "valid_trajectories": 12908,
+      "valid_trajectory_coverage": 0.5378333333333334,
+      "supported_3d_samples": 758855,
+      "supported_sample_coverage": 0.5269826388888889,
+      "timing": {
+        "seconds": 23.645950596779585,
+        "peak_cuda_allocated_bytes": 213363712,
+        "device": "cuda",
+        "dtype": "torch.float64",
+        "point_count": 12908,
+        "eligible_point_count": 12908,
+        "raw_training_observations": 1587794,
+        "controls_per_trajectory": 21,
+        "global_beta_variables": 2,
+        "saving_seconds": 6.315875243395567,
+        "method_wall_seconds": 59.33086618594825
+      },
+      "observability": {
+        "status": [
+          "reference_gauge",
+          "locally_observable",
+          "locally_observable"
+        ],
+        "reliable": [
+          false,
+          true,
+          true
+        ],
+        "local_optimizer_status": [
+          "reference_gauge",
+          "locally_observable",
+          "locally_observable"
+        ],
+        "dynamic_tracks_per_camera": [
+          5071,
+          4778,
+          3632
+        ],
+        "converged": true,
+        "marginal_schur_information": [
+          [
+            58134182.23180291,
+            -12072041.710001662
+          ],
+          [
+            -12072041.710001662,
+            16055200.739408586
+          ]
+        ],
+        "interpretation": "Local motion/Schur/box/convergence diagnostics; no calibrated uncertainty or uniqueness guarantee"
+      },
+      "translation_unit": "dataset_native_common_unit; metric scale not independently verified",
+      "beta_comparison_kind": "Published synchronization reference, NOT independent time GT",
+      "beta_formula": "total_beta_seconds = residual_beta_seconds - integer_raw_frame_shift / camera_fps",
+      "observations_sha256": "b95bda09504339eb2b8387dda9a20b4ff7c5406fa3300a6c0116618dc6b2e6ac",
+      "source_files": {
+        "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw/B3.npz": "a241b5713aee65b9c7d41d37f5eba9df33caf80c23ee36ff96aafa096bfd5a43",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw/B3.json": "ae2b53cffa638af68cfb4b7492c6926e74c2890d7ef4ad7908efe4c6bf455564",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw/metrics.json": "ba4336fbf778ecbbd4609f091108ef5679a7b97198bfa11b01c95d599bbb2d22",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw/meta.json": "aa8af199dcb29dd36f02fbfd833f05d891f8ec015e277af8bff3c98693f5a9c4"
+      },
+      "heldout_policy": "Every fifth original observation (phase2) withheld from time-profile scoring, 3D initialization, spline and beta optimization. Frontend uses images for tracking/association; this tests prediction of held-out 2D measurements, not independent 3D accuracy.",
+      "window": null
+    },
+    {
+      "key": "results_density1/corgi_integer_aligned",
+      "directory": "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_integer_aligned",
+      "mode": "integer_aligned",
+      "stride": 1,
+      "camera_ids": [
+        7,
+        9,
+        10
+      ],
+      "fps": 60.0,
+      "frame_range_camera07": [
+        200,
+        260
+      ],
+      "own_heldout_all_cameras": {
+        "count": 392276,
+        "mean": 0.12040119667434811,
+        "rmse": 0.1930738286367787,
+        "p50": 0.07087983417820075,
+        "p90": 0.27875724193327145,
+        "heldout_observation_denominator": 508069,
+        "finite_prediction_coverage": 0.7720919796326877,
+        "per_camera": {
+          "7": {
+            "count": 153115,
+            "mean": 0.095120876232688,
+            "rmse": 0.15215609266629906,
+            "p50": 0.059064842918109275,
+            "p90": 0.20897819827549455
+          },
+          "9": {
+            "count": 135174,
+            "mean": 0.13829624105157604,
+            "rmse": 0.21420925365014798,
+            "p50": 0.08301025717950404,
+            "p90": 0.3170040683434167
+          },
+          "10": {
+            "count": 103987,
+            "mean": 0.1343630528273036,
+            "rmse": 0.2165352256776606,
+            "p50": 0.07720298088286738,
+            "p90": 0.3209444222207226
+          }
+        }
+      },
+      "beta": [
+        {
+          "camera_id": 7,
+          "residual_seconds": 0.0,
+          "residual_frames": 0.0,
+          "integer_raw_frame_shift": 0,
+          "total_seconds": 0.0,
+          "total_frames": 0.0,
+          "published_reference_total_seconds": 0.0,
+          "published_reference_total_frames": 0.0,
+          "difference_from_reference_ms": 0.0,
+          "difference_from_reference_frames": 0.0,
+          "residual_bounds_frames": [
+            0.0,
+            0.0
+          ],
+          "total_bounds_frames": [
+            0.0,
+            0.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 0.0,
+          "observability_status": "reference_gauge"
+        },
+        {
+          "camera_id": 9,
+          "residual_seconds": -0.008304348638086522,
+          "residual_frames": -0.49826091828519137,
+          "integer_raw_frame_shift": -1,
+          "total_seconds": 0.008362318028580144,
+          "total_frames": 0.5017390817148086,
+          "published_reference_total_seconds": 0.012422295287251472,
+          "published_reference_total_frames": 0.7453377172350883,
+          "difference_from_reference_ms": -4.059977258671329,
+          "difference_from_reference_frames": -0.24359863552027972,
+          "residual_bounds_frames": [
+            -1.0,
+            1.0
+          ],
+          "total_bounds_frames": [
+            0.0,
+            2.0
+          ],
+          "at_boundary": false,
+          "distance_to_boundary_frames": 0.5017390817148086,
+          "observability_status": "iteration_limit_or_no_convergence"
+        },
+        {
+          "camera_id": 10,
+          "residual_seconds": -0.016666666666666607,
+          "residual_frames": -0.9999999999999964,
+          "integer_raw_frame_shift": -3,
+          "total_seconds": 0.033333333333333395,
+          "total_frames": 2.0000000000000036,
+          "published_reference_total_seconds": 0.04939606413245201,
+          "published_reference_total_frames": 2.9637638479471207,
+          "difference_from_reference_ms": -16.062730799118615,
+          "difference_from_reference_frames": -0.9637638479471169,
+          "residual_bounds_frames": [
+            -1.0,
+            1.0
+          ],
+          "total_bounds_frames": [
+            2.0,
+            4.0
+          ],
+          "at_boundary": true,
+          "distance_to_boundary_frames": 3.552713678800501e-15,
+          "observability_status": "at_beta_bound"
+        }
+      ],
+      "query_trajectories": 24000,
+      "initialized_trajectories": 12777,
+      "valid_trajectories": 12777,
+      "valid_trajectory_coverage": 0.532375,
+      "supported_3d_samples": 752714,
+      "supported_sample_coverage": 0.5227180555555555,
+      "timing": {
+        "seconds": 36.18727884069085,
+        "peak_cuda_allocated_bytes": 207860736,
+        "device": "cuda",
+        "dtype": "torch.float64",
+        "point_count": 12777,
+        "eligible_point_count": 12777,
+        "raw_training_observations": 1568827,
+        "controls_per_trajectory": 19,
+        "global_beta_variables": 2,
+        "saving_seconds": 6.26038633659482,
+        "method_wall_seconds": 57.89988128654659
+      },
+      "observability": {
+        "status": [
+          "reference_gauge",
+          "iteration_limit_or_no_convergence",
+          "at_beta_bound"
+        ],
+        "reliable": [
+          false,
+          false,
+          false
+        ],
+        "local_optimizer_status": [
+          "reference_gauge",
+          "iteration_limit_or_no_convergence",
+          "at_beta_bound"
+        ],
+        "dynamic_tracks_per_camera": [
+          5023,
+          4742,
+          3499
+        ],
+        "converged": false,
+        "marginal_schur_information": [
+          [
+            54249151.996725835,
+            -10721404.855370153
+          ],
+          [
+            -10721404.855370153,
+            14391170.48973276
+          ]
+        ],
+        "interpretation": "Local motion/Schur/box/convergence diagnostics; no calibrated uncertainty or uniqueness guarantee"
+      },
+      "translation_unit": "dataset_native_common_unit; metric scale not independently verified",
+      "beta_comparison_kind": "Published synchronization reference, NOT independent time GT",
+      "beta_formula": "total_beta_seconds = residual_beta_seconds - integer_raw_frame_shift / camera_fps",
+      "observations_sha256": "1e62a398621a6ba9113b121b305d7dc6bbaa0982469192871c66404ea5c430a7",
+      "source_files": {
+        "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_integer_aligned/B3.npz": "1eb5233a1de2d3093590b7f66d46db6ec8a32b714091424f3d7b486bc061b6e7",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_integer_aligned/B3.json": "942c6484bfe4ec5ddec97d574a21e6d883b79a281951d8a1662447d82aa89647",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_integer_aligned/metrics.json": "99c03a292be8a22a9af5a08fb3376bfa11e97c30b4421172dfa00dff97a35928",
+        "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_integer_aligned/meta.json": "46476b0e630b0a412d944d00792ade8970995e6afc07662a3a2dc5f8ea431314"
+      },
+      "heldout_policy": "Every fifth original observation (phase2) withheld from time-profile scoring, 3D initialization, spline and beta optimization. Frontend uses images for tracking/association; this tests prediction of held-out 2D measurements, not independent 3D accuracy.",
+      "window": null
+    }
+  ],
+  "common_reference07_all_runs": {
+    "reference_camera_id": 7,
+    "run_keys": [
+      "results/corgi_raw",
+      "results/corgi_integer_aligned",
+      "results_density1/corgi_raw",
+      "results_density1/corgi_integer_aligned"
+    ],
+    "shared_seed_ids_count": 1488,
+    "shared_raw_frames": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259
+    ],
+    "mutual_original_heldout_observations": 16712,
+    "common_finite_prediction_heldout_observations": 9220,
+    "common_prediction_coverage": 0.551699377692676,
+    "common_seed_ids_with_predictions": 769,
+    "original_observed_uv_bitwise_equal": true,
+    "checked_target_count": 16712,
+    "target_identity_sha256": "f51fee665089cde5d622981539bc2551dfbbdf4015e21ef1643de7fddac28348",
+    "common_observed_uv_sha256": "91a2f7093cfd952d210ea9ce4ddcba019712592f2198ff21335c3b570e39b653",
+    "sample_definition": "Identical camera07, reference pixel ID and original raw frame ID; held out in every listed run, finite predicted2D in every listed run; no residual-based selection.",
+    "by_run": {
+      "results/corgi_raw": {
+        "count": 9220,
+        "mean": 0.09752889177140829,
+        "rmse": 0.14736442280606096,
+        "p50": 0.06304904125223205,
+        "p90": 0.2127932843158779,
+        "per_raw_frame": [
+          {
+            "raw_frame_id": 200,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 201,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 202,
+            "count": 765,
+            "mean": 0.10573801831435845,
+            "rmse": 0.14758885455643267,
+            "p50": 0.0753605012826073,
+            "p90": 0.22494733150908863
+          },
+          {
+            "raw_frame_id": 203,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 204,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 205,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 206,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 207,
+            "count": 767,
+            "mean": 0.09752901680527203,
+            "rmse": 0.13794047683155017,
+            "p50": 0.06763391754704268,
+            "p90": 0.2084913255793822
+          },
+          {
+            "raw_frame_id": 208,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 209,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 210,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 211,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 212,
+            "count": 769,
+            "mean": 0.09391665663388092,
+            "rmse": 0.13188345655814365,
+            "p50": 0.06569862707614134,
+            "p90": 0.19975297746242177
+          },
+          {
+            "raw_frame_id": 213,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 214,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 215,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 216,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 217,
+            "count": 769,
+            "mean": 0.07866890966626877,
+            "rmse": 0.11156810808137221,
+            "p50": 0.051636345220279024,
+            "p90": 0.17537446449686345
+          },
+          {
+            "raw_frame_id": 218,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 219,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 220,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 221,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 222,
+            "count": 769,
+            "mean": 0.10518702669785632,
+            "rmse": 0.16819557243376926,
+            "p50": 0.05986627740453718,
+            "p90": 0.26804363981180385
+          },
+          {
+            "raw_frame_id": 223,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 224,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 225,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 226,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 227,
+            "count": 769,
+            "mean": 0.06469170299563863,
+            "rmse": 0.08401805007398072,
+            "p50": 0.04874002465204857,
+            "p90": 0.13781559167002672
+          },
+          {
+            "raw_frame_id": 228,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 229,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 230,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 231,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 232,
+            "count": 769,
+            "mean": 0.06099948939458975,
+            "rmse": 0.07736967602912831,
+            "p50": 0.04896354518672995,
+            "p90": 0.12167315043310283
+          },
+          {
+            "raw_frame_id": 233,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 234,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 235,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 236,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 237,
+            "count": 769,
+            "mean": 0.06924516041586402,
+            "rmse": 0.08900268578785746,
+            "p50": 0.0533845292215812,
+            "p90": 0.1525900382824328
+          },
+          {
+            "raw_frame_id": 238,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 239,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 240,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 241,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 242,
+            "count": 769,
+            "mean": 0.08793210985613467,
+            "rmse": 0.11450793885605824,
+            "p50": 0.06439643594117783,
+            "p90": 0.1920491636197625
+          },
+          {
+            "raw_frame_id": 243,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 244,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 245,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 246,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 247,
+            "count": 769,
+            "mean": 0.11011871445097053,
+            "rmse": 0.1532436392258419,
+            "p50": 0.07857101652816084,
+            "p90": 0.24758000941821315
+          },
+          {
+            "raw_frame_id": 248,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 249,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 250,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 251,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 252,
+            "count": 769,
+            "mean": 0.13161942474816235,
+            "rmse": 0.1931674325133732,
+            "p50": 0.0833267511288822,
+            "p90": 0.3165004285539222
+          },
+          {
+            "raw_frame_id": 253,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 254,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 255,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 256,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 257,
+            "count": 767,
+            "mean": 0.16491843726910585,
+            "rmse": 0.258630460204268,
+            "p50": 0.09991566128578502,
+            "p90": 0.39586635740482395
+          },
+          {
+            "raw_frame_id": 258,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 259,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          }
+        ]
+      },
+      "results/corgi_integer_aligned": {
+        "count": 9220,
+        "mean": 0.10045245887497688,
+        "rmse": 0.15800349232379296,
+        "p50": 0.062490298317133486,
+        "p90": 0.21792331774479032,
+        "per_raw_frame": [
+          {
+            "raw_frame_id": 200,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 201,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 202,
+            "count": 765,
+            "mean": 0.08901307615437465,
+            "rmse": 0.12756115873166313,
+            "p50": 0.06316151701294814,
+            "p90": 0.18693135190522198
+          },
+          {
+            "raw_frame_id": 203,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 204,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 205,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 206,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 207,
+            "count": 767,
+            "mean": 0.09410384002372267,
+            "rmse": 0.13378297113616344,
+            "p50": 0.061091310875680295,
+            "p90": 0.1949893806570299
+          },
+          {
+            "raw_frame_id": 208,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 209,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 210,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 211,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 212,
+            "count": 769,
+            "mean": 0.09310865092392752,
+            "rmse": 0.13185328185385348,
+            "p50": 0.06462310902111496,
+            "p90": 0.20567606166721603
+          },
+          {
+            "raw_frame_id": 213,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 214,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 215,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 216,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 217,
+            "count": 769,
+            "mean": 0.07837127583902945,
+            "rmse": 0.11058274258122597,
+            "p50": 0.051859270786588405,
+            "p90": 0.17102153151460037
+          },
+          {
+            "raw_frame_id": 218,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 219,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 220,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 221,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 222,
+            "count": 769,
+            "mean": 0.11581272182313022,
+            "rmse": 0.19125957590017872,
+            "p50": 0.058374930210136115,
+            "p90": 0.3320532644339722
+          },
+          {
+            "raw_frame_id": 223,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 224,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 225,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 226,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 227,
+            "count": 769,
+            "mean": 0.06591909028098059,
+            "rmse": 0.08657698549233805,
+            "p50": 0.04685429566370868,
+            "p90": 0.13876519516913247
+          },
+          {
+            "raw_frame_id": 228,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 229,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 230,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 231,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 232,
+            "count": 769,
+            "mean": 0.06133060936329038,
+            "rmse": 0.07689676609755443,
+            "p50": 0.04984893025848546,
+            "p90": 0.12760095337314237
+          },
+          {
+            "raw_frame_id": 233,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 234,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 235,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 236,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 237,
+            "count": 769,
+            "mean": 0.07137691202861336,
+            "rmse": 0.0914920907460524,
+            "p50": 0.05419963631047101,
+            "p90": 0.15621053065502127
+          },
+          {
+            "raw_frame_id": 238,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 239,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 240,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 241,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 242,
+            "count": 769,
+            "mean": 0.09057655716717863,
+            "rmse": 0.11850317312434082,
+            "p50": 0.06690522117184244,
+            "p90": 0.19862526129081753
+          },
+          {
+            "raw_frame_id": 243,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 244,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 245,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 246,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 247,
+            "count": 769,
+            "mean": 0.10595012678537703,
+            "rmse": 0.1489166116887133,
+            "p50": 0.07271234877322928,
+            "p90": 0.24456368961803635
+          },
+          {
+            "raw_frame_id": 248,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 249,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 250,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 251,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 252,
+            "count": 769,
+            "mean": 0.13308030217583094,
+            "rmse": 0.19321574877692896,
+            "p50": 0.08664062286071647,
+            "p90": 0.31752114718996705
+          },
+          {
+            "raw_frame_id": 253,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 254,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 255,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 256,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 257,
+            "count": 767,
+            "mean": 0.20698740391019113,
+            "rmse": 0.3225345057153578,
+            "p50": 0.1219462683648671,
+            "p90": 0.5193586467177645
+          },
+          {
+            "raw_frame_id": 258,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 259,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          }
+        ]
+      },
+      "results_density1/corgi_raw": {
+        "count": 9220,
+        "mean": 0.09558797056122853,
+        "rmse": 0.14540717705092493,
+        "p50": 0.06095504495579304,
+        "p90": 0.2093727041672011,
+        "per_raw_frame": [
+          {
+            "raw_frame_id": 200,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 201,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 202,
+            "count": 765,
+            "mean": 0.10292802349344243,
+            "rmse": 0.1448728196427582,
+            "p50": 0.07234579537085743,
+            "p90": 0.22040307618441912
+          },
+          {
+            "raw_frame_id": 203,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 204,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 205,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 206,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 207,
+            "count": 767,
+            "mean": 0.09492125743316661,
+            "rmse": 0.13560214428331044,
+            "p50": 0.06310373391774854,
+            "p90": 0.2019562528969923
+          },
+          {
+            "raw_frame_id": 208,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 209,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 210,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 211,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 212,
+            "count": 769,
+            "mean": 0.09204484130360481,
+            "rmse": 0.13007557424685132,
+            "p50": 0.06258055597395418,
+            "p90": 0.1969838547286049
+          },
+          {
+            "raw_frame_id": 213,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 214,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 215,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 216,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 217,
+            "count": 769,
+            "mean": 0.07697154126173952,
+            "rmse": 0.10947603605974117,
+            "p50": 0.05075976731163106,
+            "p90": 0.17359120993101834
+          },
+          {
+            "raw_frame_id": 218,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 219,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 220,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 221,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 222,
+            "count": 769,
+            "mean": 0.10254469451979549,
+            "rmse": 0.16476805162207753,
+            "p50": 0.05860976639655173,
+            "p90": 0.23974672171573344
+          },
+          {
+            "raw_frame_id": 223,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 224,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 225,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 226,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 227,
+            "count": 769,
+            "mean": 0.06379583340202871,
+            "rmse": 0.0833913515007047,
+            "p50": 0.047019852749815204,
+            "p90": 0.13746655744136163
+          },
+          {
+            "raw_frame_id": 228,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 229,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 230,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 231,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 232,
+            "count": 769,
+            "mean": 0.05988470535471066,
+            "rmse": 0.07659273574792456,
+            "p50": 0.04745932834176135,
+            "p90": 0.12075437090457918
+          },
+          {
+            "raw_frame_id": 233,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 234,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 235,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 236,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 237,
+            "count": 769,
+            "mean": 0.06804209875455595,
+            "rmse": 0.08807762251938718,
+            "p50": 0.05139348402404683,
+            "p90": 0.1500907015187009
+          },
+          {
+            "raw_frame_id": 238,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 239,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 240,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 241,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 242,
+            "count": 769,
+            "mean": 0.08680524309479608,
+            "rmse": 0.11375660268894368,
+            "p50": 0.06234656748269824,
+            "p90": 0.19205590969556868
+          },
+          {
+            "raw_frame_id": 243,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 244,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 245,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 246,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 247,
+            "count": 769,
+            "mean": 0.10831323069624801,
+            "rmse": 0.15197985869947314,
+            "p50": 0.07398185328924248,
+            "p90": 0.24524996035284458
+          },
+          {
+            "raw_frame_id": 248,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 249,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 250,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 251,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 252,
+            "count": 769,
+            "mean": 0.1289153984124779,
+            "rmse": 0.19070189424837058,
+            "p50": 0.08090665943429563,
+            "p90": 0.310296001393093
+          },
+          {
+            "raw_frame_id": 253,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 254,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 255,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 256,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 257,
+            "count": 767,
+            "mean": 0.16209820326158766,
+            "rmse": 0.25575964929339834,
+            "p50": 0.09549105154038601,
+            "p90": 0.39600348132427043
+          },
+          {
+            "raw_frame_id": 258,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 259,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          }
+        ]
+      },
+      "results_density1/corgi_integer_aligned": {
+        "count": 9220,
+        "mean": 0.0976658862652538,
+        "rmse": 0.15528070861451346,
+        "p50": 0.05929235108830752,
+        "p90": 0.21409261392104273,
+        "per_raw_frame": [
+          {
+            "raw_frame_id": 200,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 201,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 202,
+            "count": 765,
+            "mean": 0.08573817791771172,
+            "rmse": 0.12480980814331925,
+            "p50": 0.059569944217582785,
+            "p90": 0.18096080257758682
+          },
+          {
+            "raw_frame_id": 203,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 204,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 205,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 206,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 207,
+            "count": 767,
+            "mean": 0.09112361653700629,
+            "rmse": 0.13151345085382546,
+            "p50": 0.05750988338168578,
+            "p90": 0.19397826543382612
+          },
+          {
+            "raw_frame_id": 208,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 209,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 210,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 211,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 212,
+            "count": 769,
+            "mean": 0.0903296751601824,
+            "rmse": 0.12985153188705137,
+            "p50": 0.06108236471545451,
+            "p90": 0.20410146644774083
+          },
+          {
+            "raw_frame_id": 213,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 214,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 215,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 216,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 217,
+            "count": 769,
+            "mean": 0.07609114803259379,
+            "rmse": 0.10833913296911711,
+            "p50": 0.05011198907080597,
+            "p90": 0.16500995862299445
+          },
+          {
+            "raw_frame_id": 218,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 219,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 220,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 221,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 222,
+            "count": 769,
+            "mean": 0.11224704594686437,
+            "rmse": 0.18689079314777338,
+            "p50": 0.05670029033849376,
+            "p90": 0.287265413875202
+          },
+          {
+            "raw_frame_id": 223,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 224,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 225,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 226,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 227,
+            "count": 769,
+            "mean": 0.06443249345355612,
+            "rmse": 0.08530695192098874,
+            "p50": 0.04450889081752148,
+            "p90": 0.13759130165386274
+          },
+          {
+            "raw_frame_id": 228,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 229,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 230,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 231,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 232,
+            "count": 769,
+            "mean": 0.05966406079940801,
+            "rmse": 0.07567081783107965,
+            "p50": 0.04768696789363639,
+            "p90": 0.12654517304238833
+          },
+          {
+            "raw_frame_id": 233,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 234,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 235,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 236,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 237,
+            "count": 769,
+            "mean": 0.06880042311033933,
+            "rmse": 0.08921013599979959,
+            "p50": 0.051170600959344364,
+            "p90": 0.15247354978447572
+          },
+          {
+            "raw_frame_id": 238,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 239,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 240,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 241,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 242,
+            "count": 769,
+            "mean": 0.08897502065062089,
+            "rmse": 0.11733518906208582,
+            "p50": 0.06378201975829145,
+            "p90": 0.19931017469409104
+          },
+          {
+            "raw_frame_id": 243,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 244,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 245,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 246,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 247,
+            "count": 769,
+            "mean": 0.10357279819580498,
+            "rmse": 0.1472235806753473,
+            "p50": 0.06925106772286305,
+            "p90": 0.24171413175909137
+          },
+          {
+            "raw_frame_id": 248,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 249,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 250,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 251,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 252,
+            "count": 769,
+            "mean": 0.12927535365090223,
+            "rmse": 0.18986833415379528,
+            "p50": 0.08209750788957174,
+            "p90": 0.3125783419725
+          },
+          {
+            "raw_frame_id": 253,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 254,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 255,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 256,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 257,
+            "count": 767,
+            "mean": 0.20193293971772808,
+            "rmse": 0.31721872204661816,
+            "p50": 0.1167446435988966,
+            "p90": 0.5074365219633898
+          },
+          {
+            "raw_frame_id": 258,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          },
+          {
+            "raw_frame_id": 259,
+            "count": 0,
+            "mean": null,
+            "rmse": null,
+            "p50": null,
+            "p90": null
+          }
+        ]
+      }
+    }
+  },
+  "common_reference07_by_results_root": {
+    "results": {
+      "reference_camera_id": 7,
+      "run_keys": [
+        "results/corgi_raw",
+        "results/corgi_integer_aligned"
+      ],
+      "shared_seed_ids_count": 1488,
+      "shared_raw_frames": [
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259
+      ],
+      "mutual_original_heldout_observations": 16712,
+      "common_finite_prediction_heldout_observations": 9699,
+      "common_prediction_coverage": 0.5803614169459071,
+      "common_seed_ids_with_predictions": 809,
+      "original_observed_uv_bitwise_equal": true,
+      "checked_target_count": 16712,
+      "target_identity_sha256": "2c9a857ea2a51c0db8bdf5cbe01ea2573d1516fcab843036cc1474ebc5b54803",
+      "common_observed_uv_sha256": "4d6ee2f4f4a052458698486f114b0f8c32dbb15a81a42cee5dabdefeb7e807a8",
+      "sample_definition": "Identical camera07, reference pixel ID and original raw frame ID; held out in every listed run, finite predicted2D in every listed run; no residual-based selection.",
+      "by_run": {
+        "results/corgi_raw": {
+          "count": 9699,
+          "mean": 0.0974396287199351,
+          "rmse": 0.14734403518147127,
+          "p50": 0.06267859296582903,
+          "p90": 0.21309934121067567,
+          "per_raw_frame": [
+            {
+              "raw_frame_id": 200,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 201,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 202,
+              "count": 804,
+              "mean": 0.1061399857551376,
+              "rmse": 0.1487111557348393,
+              "p50": 0.07469837849441471,
+              "p90": 0.2282107901176382
+            },
+            {
+              "raw_frame_id": 203,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 204,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 205,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 206,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 207,
+              "count": 807,
+              "mean": 0.09843108391514117,
+              "rmse": 0.14053780995736923,
+              "p50": 0.06664704992861423,
+              "p90": 0.21529586973970985
+            },
+            {
+              "raw_frame_id": 208,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 209,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 210,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 211,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 212,
+              "count": 809,
+              "mean": 0.09455388903510845,
+              "rmse": 0.1335492963706856,
+              "p50": 0.06532044897303299,
+              "p90": 0.2009653287869996
+            },
+            {
+              "raw_frame_id": 213,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 214,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 215,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 216,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 217,
+              "count": 809,
+              "mean": 0.07927809092431505,
+              "rmse": 0.11311257100337292,
+              "p50": 0.05168643131440687,
+              "p90": 0.17770217707569852
+            },
+            {
+              "raw_frame_id": 218,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 219,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 220,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 221,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 222,
+              "count": 809,
+              "mean": 0.10465452146123275,
+              "rmse": 0.16704306165802618,
+              "p50": 0.05986627740453718,
+              "p90": 0.2661136531158412
+            },
+            {
+              "raw_frame_id": 223,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 224,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 225,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 226,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 227,
+              "count": 809,
+              "mean": 0.0663529906797884,
+              "rmse": 0.08764842549996278,
+              "p50": 0.04980284210815564,
+              "p90": 0.1406081147629734
+            },
+            {
+              "raw_frame_id": 228,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 229,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 230,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 231,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 232,
+              "count": 809,
+              "mean": 0.06198671732331961,
+              "rmse": 0.07996495635153991,
+              "p50": 0.04928291579815294,
+              "p90": 0.12231371769340858
+            },
+            {
+              "raw_frame_id": 233,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 234,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 235,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 236,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 237,
+              "count": 809,
+              "mean": 0.06941690949477078,
+              "rmse": 0.09027159749841308,
+              "p50": 0.05283877423533729,
+              "p90": 0.1522463636257821
+            },
+            {
+              "raw_frame_id": 238,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 239,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 240,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 241,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 242,
+              "count": 809,
+              "mean": 0.08761897701231666,
+              "rmse": 0.11495556800938814,
+              "p50": 0.06305486046179944,
+              "p90": 0.1896110614631095
+            },
+            {
+              "raw_frame_id": 243,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 244,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 245,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 246,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 247,
+              "count": 809,
+              "mean": 0.10919983968218551,
+              "rmse": 0.1529889099349278,
+              "p50": 0.07516915838052193,
+              "p90": 0.24671180567133177
+            },
+            {
+              "raw_frame_id": 248,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 249,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 250,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 251,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 252,
+              "count": 809,
+              "mean": 0.1296482689938302,
+              "rmse": 0.19114186409705458,
+              "p50": 0.08135606701915633,
+              "p90": 0.31408980025661476
+            },
+            {
+              "raw_frame_id": 253,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 254,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 255,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 256,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 257,
+              "count": 807,
+              "mean": 0.162210619778247,
+              "rmse": 0.2546510089956463,
+              "p50": 0.09600129471740158,
+              "p90": 0.39013835898032484
+            },
+            {
+              "raw_frame_id": 258,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 259,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            }
+          ]
+        },
+        "results/corgi_integer_aligned": {
+          "count": 9699,
+          "mean": 0.10007450928469118,
+          "rmse": 0.1573387555750037,
+          "p50": 0.062076322520835135,
+          "p90": 0.2177663345183374,
+          "per_raw_frame": [
+            {
+              "raw_frame_id": 200,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 201,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 202,
+              "count": 804,
+              "mean": 0.08852478050929423,
+              "rmse": 0.1275034786706627,
+              "p50": 0.061538385303111454,
+              "p90": 0.18699604400154252
+            },
+            {
+              "raw_frame_id": 203,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 204,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 205,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 206,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 207,
+              "count": 807,
+              "mean": 0.09424894571170299,
+              "rmse": 0.134544914164314,
+              "p50": 0.06009669282229647,
+              "p90": 0.19948580681008277
+            },
+            {
+              "raw_frame_id": 208,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 209,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 210,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 211,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 212,
+              "count": 809,
+              "mean": 0.09347778436685084,
+              "rmse": 0.1329095703706798,
+              "p50": 0.06454118338322538,
+              "p90": 0.20807081981085163
+            },
+            {
+              "raw_frame_id": 213,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 214,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 215,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 216,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 217,
+              "count": 809,
+              "mean": 0.07837886491197184,
+              "rmse": 0.11132486039819707,
+              "p50": 0.05172975368015344,
+              "p90": 0.17102153151460037
+            },
+            {
+              "raw_frame_id": 218,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 219,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 220,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 221,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 222,
+              "count": 809,
+              "mean": 0.11496909313218381,
+              "rmse": 0.1898372699017081,
+              "p50": 0.0582007161121431,
+              "p90": 0.33057727319892055
+            },
+            {
+              "raw_frame_id": 223,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 224,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 225,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 226,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 227,
+              "count": 809,
+              "mean": 0.06726664333297057,
+              "rmse": 0.0898360637156557,
+              "p50": 0.04735706596706262,
+              "p90": 0.14355757036075026
+            },
+            {
+              "raw_frame_id": 228,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 229,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 230,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 231,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 232,
+              "count": 809,
+              "mean": 0.062130808253891,
+              "rmse": 0.07944888618193112,
+              "p50": 0.05007581577670025,
+              "p90": 0.12796541189977495
+            },
+            {
+              "raw_frame_id": 233,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 234,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 235,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 236,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 237,
+              "count": 809,
+              "mean": 0.07157099896387459,
+              "rmse": 0.09291152951289984,
+              "p50": 0.054062807655806455,
+              "p90": 0.15525454344740022
+            },
+            {
+              "raw_frame_id": 238,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 239,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 240,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 241,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 242,
+              "count": 809,
+              "mean": 0.09015992754190238,
+              "rmse": 0.1187630072572491,
+              "p50": 0.06679492442178521,
+              "p90": 0.19806271406721532
+            },
+            {
+              "raw_frame_id": 243,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 244,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 245,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 246,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 247,
+              "count": 809,
+              "mean": 0.1052388477296696,
+              "rmse": 0.1485818504573604,
+              "p50": 0.07085906037913083,
+              "p90": 0.24456368961803635
+            },
+            {
+              "raw_frame_id": 248,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 249,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 250,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 251,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 252,
+              "count": 809,
+              "mean": 0.1311674529103775,
+              "rmse": 0.1910430092077089,
+              "p50": 0.08547283045531308,
+              "p90": 0.31432320393413343
+            },
+            {
+              "raw_frame_id": 253,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 254,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 255,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 256,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 257,
+              "count": 807,
+              "mean": 0.2039309320051499,
+              "rmse": 0.31786118252624623,
+              "p50": 0.11882136914054622,
+              "p90": 0.5089509073089454
+            },
+            {
+              "raw_frame_id": 258,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 259,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            }
+          ]
+        }
+      },
+      "paired_change_second_minus_first": {
+        "mean_endpoint_error_change_px": 0.002634880564756074,
+        "second_lower_fraction": 0.5129394782967316,
+        "note": "Paired held-out2D prediction difference, not independently verified physical3D accuracy"
+      }
+    },
+    "results_density1": {
+      "reference_camera_id": 7,
+      "run_keys": [
+        "results_density1/corgi_raw",
+        "results_density1/corgi_integer_aligned"
+      ],
+      "shared_seed_ids_count": 24000,
+      "shared_raw_frames": [
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259
+      ],
+      "mutual_original_heldout_observations": 268908,
+      "common_finite_prediction_heldout_observations": 150503,
+      "common_prediction_coverage": 0.5596821217665521,
+      "common_seed_ids_with_predictions": 12556,
+      "original_observed_uv_bitwise_equal": true,
+      "checked_target_count": 268908,
+      "target_identity_sha256": "9dac671f0c4c611e4cf3e41476d007abe2441d17cfe2b989b426c2532983f15f",
+      "common_observed_uv_sha256": "1e322c62a64f60fed998710a9a24c3e6c9a16568b61e532ddbf26391e31680ad",
+      "sample_definition": "Identical camera07, reference pixel ID and original raw frame ID; held out in every listed run, finite predicted2D in every listed run; no residual-based selection.",
+      "by_run": {
+        "results_density1/corgi_raw": {
+          "count": 150503,
+          "mean": 0.0934819532792516,
+          "rmse": 0.14331756257024536,
+          "p50": 0.059915446440090156,
+          "p90": 0.20554014378115545,
+          "per_raw_frame": [
+            {
+              "raw_frame_id": 200,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 201,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 202,
+              "count": 12465,
+              "mean": 0.10199683238439788,
+              "rmse": 0.14311473191935437,
+              "p50": 0.07194555624104242,
+              "p90": 0.2184800261070967
+            },
+            {
+              "raw_frame_id": 203,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 204,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 205,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 206,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 207,
+              "count": 12499,
+              "mean": 0.09392146248979058,
+              "rmse": 0.13602207501487404,
+              "p50": 0.06310373391774854,
+              "p90": 0.2059557640254918
+            },
+            {
+              "raw_frame_id": 208,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 209,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 210,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 211,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 212,
+              "count": 12554,
+              "mean": 0.09075158367189277,
+              "rmse": 0.12875366054426104,
+              "p50": 0.06268939937545293,
+              "p90": 0.19722017349273996
+            },
+            {
+              "raw_frame_id": 213,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 214,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 215,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 216,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 217,
+              "count": 12556,
+              "mean": 0.07589692501333128,
+              "rmse": 0.10787639559930301,
+              "p50": 0.050893748353570537,
+              "p90": 0.17266569196080664
+            },
+            {
+              "raw_frame_id": 218,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 219,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 220,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 221,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 222,
+              "count": 12556,
+              "mean": 0.10057398920937864,
+              "rmse": 0.16308581558712698,
+              "p50": 0.05700769583587517,
+              "p90": 0.2515770587765513
+            },
+            {
+              "raw_frame_id": 223,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 224,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 225,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 226,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 227,
+              "count": 12556,
+              "mean": 0.062485216311535356,
+              "rmse": 0.08189892336338116,
+              "p50": 0.046723123496343194,
+              "p90": 0.1310928316097258
+            },
+            {
+              "raw_frame_id": 228,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 229,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 230,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 231,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 232,
+              "count": 12556,
+              "mean": 0.058467918687625936,
+              "rmse": 0.07407494454611022,
+              "p50": 0.04596013266979817,
+              "p90": 0.11772959350083852
+            },
+            {
+              "raw_frame_id": 233,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 234,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 235,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 236,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 237,
+              "count": 12556,
+              "mean": 0.06701149784808559,
+              "rmse": 0.08612896234251607,
+              "p50": 0.05165562044302371,
+              "p90": 0.1421713269154878
+            },
+            {
+              "raw_frame_id": 238,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 239,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 240,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 241,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 242,
+              "count": 12556,
+              "mean": 0.0851867258297915,
+              "rmse": 0.1110891366562379,
+              "p50": 0.06282096623832335,
+              "p90": 0.18608011879507164
+            },
+            {
+              "raw_frame_id": 243,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 244,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 245,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 246,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 247,
+              "count": 12556,
+              "mean": 0.10437240493540395,
+              "rmse": 0.14586521533150193,
+              "p50": 0.07075546510510303,
+              "p90": 0.24228607977125632
+            },
+            {
+              "raw_frame_id": 248,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 249,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 250,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 251,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 252,
+              "count": 12554,
+              "mean": 0.12402805684712756,
+              "rmse": 0.1841586839590847,
+              "p50": 0.07584351773257697,
+              "p90": 0.2914735468291149
+            },
+            {
+              "raw_frame_id": 253,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 254,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 255,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 256,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 257,
+              "count": 12539,
+              "mean": 0.15724529524538172,
+              "rmse": 0.25610869725232793,
+              "p50": 0.0875839878981004,
+              "p90": 0.36837515988300173
+            },
+            {
+              "raw_frame_id": 258,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 259,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            }
+          ]
+        },
+        "results_density1/corgi_integer_aligned": {
+          "count": 150503,
+          "mean": 0.09477286894996105,
+          "rmse": 0.15163333413641708,
+          "p50": 0.05895287363039978,
+          "p90": 0.2077935069171594,
+          "per_raw_frame": [
+            {
+              "raw_frame_id": 200,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 201,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 202,
+              "count": 12465,
+              "mean": 0.08294390282620731,
+              "rmse": 0.11668768542873659,
+              "p50": 0.05880506027216494,
+              "p90": 0.18087190730689567
+            },
+            {
+              "raw_frame_id": 203,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 204,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 205,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 206,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 207,
+              "count": 12499,
+              "mean": 0.0885181452286308,
+              "rmse": 0.12668049055647868,
+              "p50": 0.05835236825953427,
+              "p90": 0.1954231371485296
+            },
+            {
+              "raw_frame_id": 208,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 209,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 210,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 211,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 212,
+              "count": 12554,
+              "mean": 0.0879521742849037,
+              "rmse": 0.12597563081036015,
+              "p50": 0.06026868780923062,
+              "p90": 0.19302123935664356
+            },
+            {
+              "raw_frame_id": 213,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 214,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 215,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 216,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 217,
+              "count": 12556,
+              "mean": 0.07415127144466091,
+              "rmse": 0.10448969778292891,
+              "p50": 0.05080815210901951,
+              "p90": 0.16353951260153207
+            },
+            {
+              "raw_frame_id": 218,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 219,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 220,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 221,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 222,
+              "count": 12556,
+              "mean": 0.10896352023799415,
+              "rmse": 0.18142579899604877,
+              "p50": 0.05548127118191004,
+              "p90": 0.2896813096543101
+            },
+            {
+              "raw_frame_id": 223,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 224,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 225,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 226,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 227,
+              "count": 12556,
+              "mean": 0.06347019847908736,
+              "rmse": 0.08418752063221831,
+              "p50": 0.045183410831363485,
+              "p90": 0.14034956806548032
+            },
+            {
+              "raw_frame_id": 228,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 229,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 230,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 231,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 232,
+              "count": 12556,
+              "mean": 0.05920621474295224,
+              "rmse": 0.07461794367506643,
+              "p50": 0.04592136812087262,
+              "p90": 0.12127558822997009
+            },
+            {
+              "raw_frame_id": 233,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 234,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 235,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 236,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 237,
+              "count": 12556,
+              "mean": 0.06833004435786602,
+              "rmse": 0.08810100917074978,
+              "p50": 0.052313604786408716,
+              "p90": 0.14648111768147165
+            },
+            {
+              "raw_frame_id": 238,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 239,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 240,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 241,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 242,
+              "count": 12556,
+              "mean": 0.08616708308945696,
+              "rmse": 0.1129267244435673,
+              "p50": 0.0633016508946861,
+              "p90": 0.19170007411535495
+            },
+            {
+              "raw_frame_id": 243,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 244,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 245,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 246,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 247,
+              "count": 12556,
+              "mean": 0.0990047026462869,
+              "rmse": 0.13887183221619234,
+              "p50": 0.06665425913690831,
+              "p90": 0.23477875329136358
+            },
+            {
+              "raw_frame_id": 248,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 249,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 250,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 251,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 252,
+              "count": 12554,
+              "mean": 0.1237122307819851,
+              "rmse": 0.18291642657484808,
+              "p50": 0.0765099201008853,
+              "p90": 0.2982207809977818
+            },
+            {
+              "raw_frame_id": 253,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 254,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 255,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 256,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 257,
+              "count": 12539,
+              "mean": 0.19487987566681778,
+              "rmse": 0.31723419884636717,
+              "p50": 0.10732620747878527,
+              "p90": 0.4675872811734268
+            },
+            {
+              "raw_frame_id": 258,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            },
+            {
+              "raw_frame_id": 259,
+              "count": 0,
+              "mean": null,
+              "rmse": null,
+              "p50": null,
+              "p90": null
+            }
+          ]
+        }
+      },
+      "paired_change_second_minus_first": {
+        "mean_endpoint_error_change_px": 0.0012909156707094627,
+        "second_lower_fraction": 0.5172189258685873,
+        "note": "Paired held-out2D prediction difference, not independently verified physical3D accuracy"
+      }
+    }
+  }
+}

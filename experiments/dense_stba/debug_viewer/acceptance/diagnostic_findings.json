@@ -1,0 +1,4424 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-12T02:01:54.339248+00:00",
+  "run_id": "results_density1/corgi_raw",
+  "method": "B3",
+  "run_directory": "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw",
+  "source_validation": {
+    "observations_sha256": "b95bda09504339eb2b8387dda9a20b4ff7c5406fa3300a6c0116618dc6b2e6ac",
+    "observations_expected_sha256": "b95bda09504339eb2b8387dda9a20b4ff7c5406fa3300a6c0116618dc6b2e6ac",
+    "manifest_sha256": "75867f53d063dd794ab3b4dccb113bd31f43c4eebba34b0639112efe9ab524ee",
+    "manifest_expected_sha256": "75867f53d063dd794ab3b4dccb113bd31f43c4eebba34b0639112efe9ab524ee",
+    "calibration_sources": {
+      "/data/datasets/SelfCap/corgi-release/optimized/intri.yml": "0ffc58c859c8083edffb3d7cdba12b2bea5140e5228f680541e599eee79fc492",
+      "/data/datasets/SelfCap/corgi-release/optimized/extri.yml": "22aa3a0eb954d456e853020609320fc5d6658b4b9c30eae56d4e9282148741f2"
+    },
+    "raw_or_lsm_observations": "raw",
+    "verified": true
+  },
+  "roi": {
+    "type": "dog",
+    "bounds": [
+      207,
+      145,
+      241,
+      213
+    ],
+    "coordinate_system": "reference_seed_image_integer_pixel_centers_xy",
+    "seed_frame": 30,
+    "reference_camera_id": 7,
+    "image_size": [
+      480,
+      270
+    ],
+    "selected_query_count": 2312,
+    "total_query_count": 24000,
+    "caution": "Manual broad seed-frame regions, not semantic or identity ground truth. Boxes may overlap and include background; selection is never applied at current-frame UV.",
+    "builtin_boxes_source": "data_frontend_diagnostics.py reference camera07 raw frame230; descriptive only"
+  },
+  "ground_truth_used": false,
+  "no_estimation_performed": true,
+  "read_only_source_hash_check": {
+    "all_unchanged": true,
+    "file_count": 29,
+    "sha256_before": {
+      "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw/B3.npz": "a241b5713aee65b9c7d41d37f5eba9df33caf80c23ee36ff96aafa096bfd5a43",
+      "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw/B3.json": "ae2b53cffa638af68cfb4b7492c6926e74c2890d7ef4ad7908efe4c6bf455564",
+      "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw/meta.json": "aa8af199dcb29dd36f02fbfd833f05d891f8ec015e277af8bff3c98693f5a9c4",
+      "/data/jjy/ipc/stba/experiments/dense_stba/results_density1/corgi_raw/observations.npz": "b95bda09504339eb2b8387dda9a20b4ff7c5406fa3300a6c0116618dc6b2e6ac",
+      "/data/jjy/ipc/stba/experiments/dense_stba/data/real/raw/manifest.json": "75867f53d063dd794ab3b4dccb113bd31f43c4eebba34b0639112efe9ab524ee",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/roma/pair_7f0015_9f0015.npz": "09a43ecf6b3676e00c943cdea0e15d9a32125514178b2d717782b76fe645a11d",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/roma/pair_7f0045_9f0045.npz": "ee5e85098fb0f34b8d76c3abab11b63b767ca41ae61deace9773bc825485c890",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/roma/pair_7f0015_10f0015.npz": "dcfed2da253bec000a8c69796148477a608637ca1eac6d5ee4b80e23731a2ad1",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/roma/pair_7f0045_10f0045.npz": "57c7a76dec4072befd0a297a3294809170d42de8cfe02920a752297b172b0707",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_215_216_bb91c28bef29b6ed8b73.npz": "91afe25f4563723227ae22aaba0d93beb660a24329b10f6498e92abc1260b3a3",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_214_215_a84d9d3b6e749a91c813.npz": "4aee5cfda6e3d7c0f09228ca4f09c6d89cd0fca86db9219ebe2d297f1a8b188d",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_215_220_bb3f3c4442bb84da31f1.npz": "fbb936dcab35bb165f6d1c7e6646d23e6790029e143cc65b51dc2b5931a9ff4e",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_219_220_e3ba9c6e7d44445d97f4.npz": "c06a96ad60b1e7966ffa2866fc4320d1f43c33c7d7a0d80c3a533a95075ac661",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_218_219_50e1bcc0d47745f3a55f.npz": "f9e19313a88f34f02801e338c3e6bfe8048cbc0e20ab46d1d2140a5ceebe4e87",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_217_218_eca3851e3d7e95016a1c.npz": "c84b1be55edeb99b2ca7c4e06e162f99d3f63beb3a485656bcb3c697c502806c",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_216_217_9d7eae180d0baeaec180.npz": "9f59dc3112fe9c74dae4cdb72d2007ee46061f60f83be7ce0dff3a07bbb25704",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_244_245_44f9dd2d6e44d1891e52.npz": "7809121a24d8abc9b61ab25da99d4ad64d9665bd300d023fcc457214d8f89979",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_243_244_1b1ef64fc69208feb1ee.npz": "df87ca5e2c1b95b2658f75d035419166d53c023c3202376d1cb9f0e8349ebc97",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_240_245_cc12f458808f08ce270b.npz": "d65c01a97b620d10404e0a7eef16fa4f85aa58f5534a886b082069544d6fce4a",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_240_241_0895dcb442101267a10e.npz": "11073eec1eca33cb45a448b89883e7d7d47c4cf5df6ad5f6567b601060015c89",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_241_242_a69148722084bbf04da0.npz": "5b85cc16a62cb2c027c676e87cc1006244df889b927fca83e7347b7396ee9afc",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_242_243_4904c10a650213ac79f3.npz": "52ca61835acaf62bc302873fde377065e8fce19b8034faaeef33b8a9873de669",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_230_231_5f8e4157e8675bd9b920.npz": "051288d203fb510f1dcaf1c3ab579fd53ac158cbae5eb42eb9c11ca2362a9356",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_229_230_12cf0941cca6f8d56423.npz": "941549077f1089389d53e038c6750d0777dc703e71938e474368885b48a555ae",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_230_235_3fdcca37f6bc88b9c2d6.npz": "a076175b0bfe681bf2dc0562742462e4467b24837333a1719130f7657d5410ad",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_231_232_d6bb265e172812e5f5ff.npz": "a041ee73badf27f0e27451a561882bfaa5b7f5a978f552fdb6a886f3241e6888",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_232_233_7b33ee4d07de67e8ce56.npz": "619b68fa1b8356b2ef6c6a0d2ca5eeb8d03582c5ed7db736d93f044db6145228",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_233_234_f542fcfec12f7323850f.npz": "82bbc5aa47b21576838e578f200781e0f65e3b1632a88fe0f71fba15bfec692e",
+      "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_234_235_76276bcdf3e49d13b209.npz": "186ec3456c8980d1edaca750c89733129e95f5d788d50cabfa07138638d629af"
+    }
+  },
+  "target_dog_coverage": {
+    "9": {
+      "schema_version": 1,
+      "run_id": "results_density1/corgi_raw",
+      "method": "B3",
+      "roi": {
+        "type": "dog",
+        "bounds": [
+          207,
+          145,
+          241,
+          213
+        ],
+        "coordinate_system": "reference_seed_image_integer_pixel_centers_xy",
+        "seed_frame": 30,
+        "reference_camera_id": 7,
+        "image_size": [
+          480,
+          270
+        ],
+        "selected_query_count": 2312,
+        "total_query_count": 24000,
+        "caution": "Manual broad seed-frame regions, not semantic or identity ground truth. Boxes may overlap and include background; selection is never applied at current-frame UV.",
+        "builtin_boxes_source": "data_frontend_diagnostics.py reference camera07 raw frame230; descriptive only"
+      },
+      "camera_index": 1,
+      "camera_id": 9,
+      "reference_camera_id": 7,
+      "stage": "first_failure",
+      "image_shape": [
+        270,
+        480
+      ],
+      "stage_counts": {
+        "query": {
+          "count": 2312,
+          "denominator": 2312,
+          "fraction": 1.0
+        },
+        "roma_initial_valid": {
+          "count": 1721,
+          "denominator": 2312,
+          "fraction": 0.7443771626297578
+        },
+        "collision_free": {
+          "count": 1667,
+          "denominator": 2312,
+          "fraction": 0.7210207612456747
+        },
+        "flow": {
+          "count": 2262,
+          "denominator": 2312,
+          "fraction": 0.9783737024221453
+        },
+        "anchor_support": {
+          "count": 80,
+          "denominator": 2312,
+          "fraction": 0.03460207612456748
+        },
+        "anchor_error": {
+          "count": 1170,
+          "denominator": 2312,
+          "fraction": 0.5060553633217993
+        },
+        "target_edge_accepted": {
+          "count": 45,
+          "denominator": 2312,
+          "fraction": 0.019463667820069204
+        },
+        "temporal_success": {
+          "count": 2258,
+          "denominator": 2312,
+          "fraction": 0.976643598615917
+        },
+        "multiview_seed": {
+          "count": 47,
+          "denominator": 2312,
+          "fraction": 0.02032871972318339
+        },
+        "all_three_seed": {
+          "count": 8,
+          "denominator": 2312,
+          "fraction": 0.0034602076124567475
+        },
+        "initialization": {
+          "count": 47,
+          "denominator": 2312,
+          "fraction": 0.02032871972318339
+        },
+        "trajectory_valid": {
+          "count": 47,
+          "denominator": 2312,
+          "fraction": 0.02032871972318339
+        },
+        "anchors": {
+          "count": 49,
+          "denominator": 2312,
+          "fraction": 0.021193771626297576
+        }
+      },
+      "target_pipeline_cumulative_counts": [
+        {
+          "stage": "query",
+          "count": 2312,
+          "missing": false
+        },
+        {
+          "stage": "roma_initial_valid",
+          "count": 1721,
+          "missing": false
+        },
+        {
+          "stage": "collision_free",
+          "count": 1667,
+          "missing": false
+        },
+        {
+          "stage": "flow",
+          "count": 1647,
+          "missing": false
+        },
+        {
+          "stage": "anchor_support",
+          "count": 67,
+          "missing": false
+        },
+        {
+          "stage": "anchor_error",
+          "count": 45,
+          "missing": false
+        },
+        {
+          "stage": "target_edge_accepted",
+          "count": 45,
+          "missing": false
+        }
+      ],
+      "recorded_first_gate_counts": {
+        "collision": 54,
+        "flow_or_anchors": 1622,
+        "roma_initial": 591,
+        "success": 45
+      },
+      "overlapping_condition_counts": {
+        "roma_score_below_threshold": 540,
+        "roma_fb_above_threshold_or_nonfinite": 322,
+        "recorded_collision": 54,
+        "target_observation_count_insufficient": 50,
+        "independent_anchor_support_insufficient": 2232,
+        "independent_anchor_error_above_threshold": 264,
+        "reference_temporal_insufficient": 54,
+        "multiview_insufficient": 2265,
+        "initialization_rejected": 2265,
+        "trajectory_invalid": 2265
+      },
+      "edge4_subdivision": {
+        "recorded_count": 1622,
+        "conditions_can_overlap": true,
+        "counts": {
+          "target_observation_count_insufficient": 20,
+          "independent_anchor_support_insufficient": 1600,
+          "independent_anchor_error_above_threshold": 67
+        },
+        "not_explained_by_available_fields": 0,
+        "interpretation": "Saved combined gate; subdivisions are reconstructed from saved counts/independent anchors and are not recorded first-subgate order"
+      },
+      "thresholds": {
+        "min_track_observations": 8,
+        "anchor_min_support": 2,
+        "anchor_error_max": 1.5,
+        "confidence_min": 0.15,
+        "roma_fb_max": 2.0
+      },
+      "missing_fields": [],
+      "legend": {
+        "pass": {
+          "label": "Pass",
+          "color": [
+            44,
+            180,
+            110,
+            255
+          ]
+        },
+        "fail": {
+          "label": "Fail",
+          "color": [
+            226,
+            87,
+            76,
+            255
+          ]
+        },
+        "success": {
+          "label": "Valid reconstructed trajectory",
+          "color": [
+            44,
+            180,
+            110,
+            255
+          ]
+        },
+        "roma_initial": {
+          "label": "Recorded RoMa score / FB / validity / bounds gate",
+          "color": [
+            233,
+            93,
+            75,
+            255
+          ]
+        },
+        "collision": {
+          "label": "Recorded competing seed gate",
+          "color": [
+            228,
+            164,
+            48,
+            255
+          ]
+        },
+        "flow_or_anchors": {
+          "label": "Recorded combined temporal / anchor gate (edge4)",
+          "color": [
+            173,
+            94,
+            213,
+            255
+          ]
+        },
+        "reference_flow": {
+          "label": "Reference temporal observation count insufficient",
+          "color": [
+            232,
+            128,
+            82,
+            255
+          ]
+        },
+        "multiview": {
+          "label": "No accepted multiview seed",
+          "color": [
+            149,
+            113,
+            80,
+            255
+          ]
+        },
+        "initialization": {
+          "label": "Not selected by 3D initialization",
+          "color": [
+            72,
+            148,
+            210,
+            255
+          ]
+        },
+        "trajectory": {
+          "label": "Initialized but final trajectory invalid",
+          "color": [
+            56,
+            96,
+            164,
+            255
+          ]
+        },
+        "not_attempted": {
+          "label": "Recorded edge not attempted",
+          "color": [
+            140,
+            140,
+            140,
+            255
+          ]
+        },
+        "missing": {
+          "label": "Required diagnostic field missing",
+          "color": [
+            92,
+            92,
+            92,
+            255
+          ]
+        }
+      },
+      "interpretation": [
+        "All ROI coordinates belong to the reference seed image, never the displayed current frame.",
+        "Stage counts are independent conditions; only target_pipeline_cumulative_counts impose pipeline order.",
+        "first_failure uses the selected camera edge gate before downstream multiview/initialization/trajectory eligibility; an earlier camera failure can coexist with a valid trajectory from other cameras.",
+        "RoMa initial validity is inferred exactly from saved edge status; individual model-valid/bounds rejection was not separately persisted.",
+        "Flow duration counts saved status==1 before cross-view masking, not final visible==1.",
+        "Seed-frame anchor is excluded. No ground-truth identity or semantic label is used."
+      ]
+    },
+    "10": {
+      "schema_version": 1,
+      "run_id": "results_density1/corgi_raw",
+      "method": "B3",
+      "roi": {
+        "type": "dog",
+        "bounds": [
+          207,
+          145,
+          241,
+          213
+        ],
+        "coordinate_system": "reference_seed_image_integer_pixel_centers_xy",
+        "seed_frame": 30,
+        "reference_camera_id": 7,
+        "image_size": [
+          480,
+          270
+        ],
+        "selected_query_count": 2312,
+        "total_query_count": 24000,
+        "caution": "Manual broad seed-frame regions, not semantic or identity ground truth. Boxes may overlap and include background; selection is never applied at current-frame UV.",
+        "builtin_boxes_source": "data_frontend_diagnostics.py reference camera07 raw frame230; descriptive only"
+      },
+      "camera_index": 2,
+      "camera_id": 10,
+      "reference_camera_id": 7,
+      "stage": "first_failure",
+      "image_shape": [
+        270,
+        480
+      ],
+      "stage_counts": {
+        "query": {
+          "count": 2312,
+          "denominator": 2312,
+          "fraction": 1.0
+        },
+        "roma_initial_valid": {
+          "count": 1485,
+          "denominator": 2312,
+          "fraction": 0.6423010380622838
+        },
+        "collision_free": {
+          "count": 1359,
+          "denominator": 2312,
+          "fraction": 0.58780276816609
+        },
+        "flow": {
+          "count": 2302,
+          "denominator": 2312,
+          "fraction": 0.995674740484429
+        },
+        "anchor_support": {
+          "count": 78,
+          "denominator": 2312,
+          "fraction": 0.03373702422145329
+        },
+        "anchor_error": {
+          "count": 709,
+          "denominator": 2312,
+          "fraction": 0.30666089965397925
+        },
+        "target_edge_accepted": {
+          "count": 10,
+          "denominator": 2312,
+          "fraction": 0.004325259515570935
+        },
+        "temporal_success": {
+          "count": 2258,
+          "denominator": 2312,
+          "fraction": 0.976643598615917
+        },
+        "multiview_seed": {
+          "count": 47,
+          "denominator": 2312,
+          "fraction": 0.02032871972318339
+        },
+        "all_three_seed": {
+          "count": 8,
+          "denominator": 2312,
+          "fraction": 0.0034602076124567475
+        },
+        "initialization": {
+          "count": 47,
+          "denominator": 2312,
+          "fraction": 0.02032871972318339
+        },
+        "trajectory_valid": {
+          "count": 47,
+          "denominator": 2312,
+          "fraction": 0.02032871972318339
+        },
+        "anchors": {
+          "count": 10,
+          "denominator": 2312,
+          "fraction": 0.004325259515570935
+        }
+      },
+      "target_pipeline_cumulative_counts": [
+        {
+          "stage": "query",
+          "count": 2312,
+          "missing": false
+        },
+        {
+          "stage": "roma_initial_valid",
+          "count": 1485,
+          "missing": false
+        },
+        {
+          "stage": "collision_free",
+          "count": 1359,
+          "missing": false
+        },
+        {
+          "stage": "flow",
+          "count": 1357,
+          "missing": false
+        },
+        {
+          "stage": "anchor_support",
+          "count": 66,
+          "missing": false
+        },
+        {
+          "stage": "anchor_error",
+          "count": 10,
+          "missing": false
+        },
+        {
+          "stage": "target_edge_accepted",
+          "count": 10,
+          "missing": false
+        }
+      ],
+      "recorded_first_gate_counts": {
+        "collision": 126,
+        "flow_or_anchors": 1349,
+        "roma_initial": 827,
+        "success": 10
+      },
+      "overlapping_condition_counts": {
+        "roma_score_below_threshold": 798,
+        "roma_fb_above_threshold_or_nonfinite": 525,
+        "recorded_collision": 126,
+        "target_observation_count_insufficient": 10,
+        "independent_anchor_support_insufficient": 2234,
+        "independent_anchor_error_above_threshold": 396,
+        "reference_temporal_insufficient": 54,
+        "multiview_insufficient": 2265,
+        "initialization_rejected": 2265,
+        "trajectory_invalid": 2265
+      },
+      "edge4_subdivision": {
+        "recorded_count": 1349,
+        "conditions_can_overlap": true,
+        "counts": {
+          "target_observation_count_insufficient": 2,
+          "independent_anchor_support_insufficient": 1293,
+          "independent_anchor_error_above_threshold": 197
+        },
+        "not_explained_by_available_fields": 0,
+        "interpretation": "Saved combined gate; subdivisions are reconstructed from saved counts/independent anchors and are not recorded first-subgate order"
+      },
+      "thresholds": {
+        "min_track_observations": 8,
+        "anchor_min_support": 2,
+        "anchor_error_max": 1.5,
+        "confidence_min": 0.15,
+        "roma_fb_max": 2.0
+      },
+      "missing_fields": [],
+      "legend": {
+        "pass": {
+          "label": "Pass",
+          "color": [
+            44,
+            180,
+            110,
+            255
+          ]
+        },
+        "fail": {
+          "label": "Fail",
+          "color": [
+            226,
+            87,
+            76,
+            255
+          ]
+        },
+        "success": {
+          "label": "Valid reconstructed trajectory",
+          "color": [
+            44,
+            180,
+            110,
+            255
+          ]
+        },
+        "roma_initial": {
+          "label": "Recorded RoMa score / FB / validity / bounds gate",
+          "color": [
+            233,
+            93,
+            75,
+            255
+          ]
+        },
+        "collision": {
+          "label": "Recorded competing seed gate",
+          "color": [
+            228,
+            164,
+            48,
+            255
+          ]
+        },
+        "flow_or_anchors": {
+          "label": "Recorded combined temporal / anchor gate (edge4)",
+          "color": [
+            173,
+            94,
+            213,
+            255
+          ]
+        },
+        "reference_flow": {
+          "label": "Reference temporal observation count insufficient",
+          "color": [
+            232,
+            128,
+            82,
+            255
+          ]
+        },
+        "multiview": {
+          "label": "No accepted multiview seed",
+          "color": [
+            149,
+            113,
+            80,
+            255
+          ]
+        },
+        "initialization": {
+          "label": "Not selected by 3D initialization",
+          "color": [
+            72,
+            148,
+            210,
+            255
+          ]
+        },
+        "trajectory": {
+          "label": "Initialized but final trajectory invalid",
+          "color": [
+            56,
+            96,
+            164,
+            255
+          ]
+        },
+        "not_attempted": {
+          "label": "Recorded edge not attempted",
+          "color": [
+            140,
+            140,
+            140,
+            255
+          ]
+        },
+        "missing": {
+          "label": "Required diagnostic field missing",
+          "color": [
+            92,
+            92,
+            92,
+            255
+          ]
+        }
+      },
+      "interpretation": [
+        "All ROI coordinates belong to the reference seed image, never the displayed current frame.",
+        "Stage counts are independent conditions; only target_pipeline_cumulative_counts impose pipeline order.",
+        "first_failure uses the selected camera edge gate before downstream multiview/initialization/trajectory eligibility; an earlier camera failure can coexist with a valid trajectory from other cameras.",
+        "RoMa initial validity is inferred exactly from saved edge status; individual model-valid/bounds rejection was not separately persisted.",
+        "Flow duration counts saved status==1 before cross-view masking, not final visible==1.",
+        "Seed-frame anchor is excluded. No ground-truth identity or semantic label is used."
+      ]
+    }
+  },
+  "anchor_missing_support_partition": {
+    "9": [
+      {
+        "frame": 15,
+        "raw_frame_ids": [
+          215,
+          215,
+          215
+        ],
+        "edge4_dog_candidates": 1622,
+        "missing_support": 1001,
+        "reference_not_tracked_only": 240,
+        "target_not_tracked_only": 223,
+        "both_not_tracked": 385,
+        "both_tracked_but_anchor_unsupported": 153,
+        "interpretation": "Four mutually exclusive categories partition missing saved anchor support. Both statuses==1 with support=false implies raw RoMa anchor gate rejection under original support formula; score/FB/model-valid/bounds subgate was not separately saved. Interior anchors15/45 are not sequence endpoints."
+      },
+      {
+        "frame": 45,
+        "raw_frame_ids": [
+          245,
+          245,
+          245
+        ],
+        "edge4_dog_candidates": 1622,
+        "missing_support": 1208,
+        "reference_not_tracked_only": 306,
+        "target_not_tracked_only": 97,
+        "both_not_tracked": 801,
+        "both_tracked_but_anchor_unsupported": 4,
+        "interpretation": "Four mutually exclusive categories partition missing saved anchor support. Both statuses==1 with support=false implies raw RoMa anchor gate rejection under original support formula; score/FB/model-valid/bounds subgate was not separately saved. Interior anchors15/45 are not sequence endpoints."
+      }
+    ],
+    "10": [
+      {
+        "frame": 15,
+        "raw_frame_ids": [
+          215,
+          215,
+          215
+        ],
+        "edge4_dog_candidates": 1349,
+        "missing_support": 853,
+        "reference_not_tracked_only": 165,
+        "target_not_tracked_only": 176,
+        "both_not_tracked": 252,
+        "both_tracked_but_anchor_unsupported": 260,
+        "interpretation": "Four mutually exclusive categories partition missing saved anchor support. Both statuses==1 with support=false implies raw RoMa anchor gate rejection under original support formula; score/FB/model-valid/bounds subgate was not separately saved. Interior anchors15/45 are not sequence endpoints."
+      },
+      {
+        "frame": 45,
+        "raw_frame_ids": [
+          245,
+          245,
+          245
+        ],
+        "edge4_dog_candidates": 1349,
+        "missing_support": 976,
+        "reference_not_tracked_only": 174,
+        "target_not_tracked_only": 124,
+        "both_not_tracked": 664,
+        "both_tracked_but_anchor_unsupported": 14,
+        "interpretation": "Four mutually exclusive categories partition missing saved anchor support. Both statuses==1 with support=false implies raw RoMa anchor gate rejection under original support formula; score/FB/model-valid/bounds subgate was not separately saved. Interior anchors15/45 are not sequence endpoints."
+      }
+    ]
+  },
+  "acceptance_A_failed_candidate": {
+    "point_id": 86142,
+    "seed_uv": [
+      222.0,
+      179.0
+    ],
+    "seed_frame": 30,
+    "edge_status": [
+      1,
+      4,
+      4
+    ],
+    "temporal_status_timeline": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        5,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "temporal_observation_counts": [
+      45,
+      44,
+      60
+    ],
+    "saved_anchor_frames": [
+      15,
+      30,
+      45
+    ],
+    "saved_anchor_support": [
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        false
+      ],
+      [
+        true,
+        true,
+        false
+      ]
+    ],
+    "saved_anchor_error_px": [
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        0.0,
+        null
+      ],
+      [
+        1.0646507740020752,
+        0.0,
+        null
+      ]
+    ],
+    "saved_roma_seed_confidence": [
+      1.0,
+      0.8895515203475952,
+      0.7580475211143494
+    ],
+    "saved_roma_seed_fb_error_px": [
+      0.0,
+      0.05449036508798599,
+      0.12283828109502792
+    ],
+    "multiview_seed": false,
+    "all_three_seed": false,
+    "initialization_eligible": false,
+    "trajectory_valid": false,
+    "valid_3D_samples": 0,
+    "selection_policy": "Among manual dog-ROI candidates with target09 edge4 and a recorded cycle-failure status5, choose nearest seed to manual box center (224,179), without GT.",
+    "anchor_evidence": [
+      {
+        "camera_index": 1,
+        "camera_id": 9,
+        "frame": 15,
+        "raw_frame_id": 215,
+        "reference_recorded_status": 1,
+        "target_recorded_status": 5,
+        "saved_anchor_support": false,
+        "saved_anchor_error_px": null,
+        "raw_roma_cache_query": {
+          "available": true,
+          "frame": 15,
+          "reference_uv": [
+            237.624755859375,
+            161.13027954101562
+          ],
+          "available_anchor_frames": [
+            15,
+            30,
+            45
+          ],
+          "cache_path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/roma/pair_7f0015_9f0015.npz",
+          "source": "Pre-existing raw RoMa cache; no model inference",
+          "frozen_with_result": false,
+          "target_uv": [
+            228.4990370395567,
+            131.0895505538034
+          ],
+          "confidence": 0.9467862738041513,
+          "backward_uv": [
+            237.66517254118114,
+            161.07579506139245
+          ],
+          "forward_backward_error": 0.06783853394661504,
+          "raw_model_valid": true,
+          "backward_valid": true,
+          "passes_raw_candidate_checks": true,
+          "decoding": {
+            "decoding": "Stored audited working-image field, bilinear subpixel query",
+            "field": "uv_AB"
+          },
+          "score_meaning": "Uncalibrated model score; not a probability or localization variance",
+          "note": "Availability is not accepted physical identity; temporal/anchor/association gates remain separate",
+          "source_fingerprint_verified_against_current_images_and_recorded_provenance": true,
+          "cache_sha256": "09a43ecf6b3676e00c943cdea0e15d9a32125514178b2d717782b76fe645a11d"
+        }
+      },
+      {
+        "camera_index": 1,
+        "camera_id": 9,
+        "frame": 45,
+        "raw_frame_id": 245,
+        "reference_recorded_status": 5,
+        "target_recorded_status": 1,
+        "saved_anchor_support": false,
+        "saved_anchor_error_px": null,
+        "raw_roma_cache_query": {
+          "available": true,
+          "frame": 45,
+          "reference_uv": [
+            214.79409790039062,
+            211.22779846191406
+          ],
+          "available_anchor_frames": [
+            15,
+            30,
+            45
+          ],
+          "cache_path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/roma/pair_7f0045_9f0045.npz",
+          "source": "Pre-existing raw RoMa cache; no model inference",
+          "frozen_with_result": false,
+          "target_uv": [
+            203.79199666114903,
+            183.73531207012326
+          ],
+          "confidence": 0.8671255374830538,
+          "backward_uv": [
+            214.7656942460794,
+            211.1385438110133
+          ],
+          "forward_backward_error": 0.09366514979248079,
+          "raw_model_valid": true,
+          "backward_valid": true,
+          "passes_raw_candidate_checks": true,
+          "decoding": {
+            "decoding": "Stored audited working-image field, bilinear subpixel query",
+            "field": "uv_AB"
+          },
+          "score_meaning": "Uncalibrated model score; not a probability or localization variance",
+          "note": "Availability is not accepted physical identity; temporal/anchor/association gates remain separate",
+          "source_fingerprint_verified_against_current_images_and_recorded_provenance": true,
+          "cache_sha256": "ee5e85098fb0f34b8d76c3abab11b63b767ca41ae61deace9773bc825485c890"
+        }
+      },
+      {
+        "camera_index": 2,
+        "camera_id": 10,
+        "frame": 15,
+        "raw_frame_id": 215,
+        "reference_recorded_status": 1,
+        "target_recorded_status": 1,
+        "saved_anchor_support": true,
+        "saved_anchor_error_px": 1.0646507740020752,
+        "raw_roma_cache_query": {
+          "available": true,
+          "frame": 15,
+          "reference_uv": [
+            237.624755859375,
+            161.13027954101562
+          ],
+          "available_anchor_frames": [
+            15,
+            30,
+            45
+          ],
+          "cache_path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/roma/pair_7f0015_10f0015.npz",
+          "source": "Pre-existing raw RoMa cache; no model inference",
+          "frozen_with_result": false,
+          "target_uv": [
+            211.36895486802598,
+            180.55641757943738
+          ],
+          "confidence": 0.9035909045005881,
+          "backward_uv": [
+            237.72763566904894,
+            161.18908929408457
+          ],
+          "forward_backward_error": 0.11850249910687699,
+          "raw_model_valid": true,
+          "backward_valid": true,
+          "passes_raw_candidate_checks": true,
+          "decoding": {
+            "decoding": "Stored audited working-image field, bilinear subpixel query",
+            "field": "uv_AB"
+          },
+          "score_meaning": "Uncalibrated model score; not a probability or localization variance",
+          "note": "Availability is not accepted physical identity; temporal/anchor/association gates remain separate",
+          "source_fingerprint_verified_against_current_images_and_recorded_provenance": true,
+          "cache_sha256": "dcfed2da253bec000a8c69796148477a608637ca1eac6d5ee4b80e23731a2ad1"
+        }
+      },
+      {
+        "camera_index": 2,
+        "camera_id": 10,
+        "frame": 45,
+        "raw_frame_id": 245,
+        "reference_recorded_status": 5,
+        "target_recorded_status": 1,
+        "saved_anchor_support": false,
+        "saved_anchor_error_px": null,
+        "raw_roma_cache_query": {
+          "available": true,
+          "frame": 45,
+          "reference_uv": [
+            214.79409790039062,
+            211.22779846191406
+          ],
+          "available_anchor_frames": [
+            15,
+            30,
+            45
+          ],
+          "cache_path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/roma/pair_7f0045_10f0045.npz",
+          "source": "Pre-existing raw RoMa cache; no model inference",
+          "frozen_with_result": false,
+          "target_uv": [
+            184.31325912774264,
+            240.65489930012092
+          ],
+          "confidence": 0.61872221741877,
+          "backward_uv": [
+            214.5662895638198,
+            211.20182108695795
+          ],
+          "forward_backward_error": 0.22928467506743583,
+          "raw_model_valid": true,
+          "backward_valid": true,
+          "passes_raw_candidate_checks": true,
+          "decoding": {
+            "decoding": "Stored audited working-image field, bilinear subpixel query",
+            "field": "uv_AB"
+          },
+          "score_meaning": "Uncalibrated model score; not a probability or localization variance",
+          "note": "Availability is not accepted physical identity; temporal/anchor/association gates remain separate",
+          "source_fingerprint_verified_against_current_images_and_recorded_provenance": true,
+          "cache_sha256": "57c7a76dec4072befd0a297a3294809170d42de8cfe02920a752297b172b0707"
+        }
+      }
+    ],
+    "flow_target09_at_failure": {
+      "schema_version": 1,
+      "run_id": "results_density1/corgi_raw",
+      "method": "B3",
+      "point_id": 86142,
+      "camera_index": 1,
+      "camera_id": 9,
+      "seed_frame": 30,
+      "selected_frame": 15,
+      "recorded": {
+        "uv": [
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            227.59364318847656,
+            131.78958129882812
+          ],
+          [
+            227.46372985839844,
+            131.98312377929688
+          ],
+          [
+            226.99658203125,
+            132.4010467529297
+          ],
+          [
+            226.27549743652344,
+            133.29896545410156
+          ],
+          [
+            225.2666015625,
+            134.47836303710938
+          ],
+          [
+            225.2666015625,
+            134.47836303710938
+          ],
+          [
+            224.03172302246094,
+            135.86248779296875
+          ],
+          [
+            222.5393829345703,
+            137.29319763183594
+          ],
+          [
+            220.85494995117188,
+            139.03988647460938
+          ],
+          [
+            219.13101196289062,
+            140.79287719726562
+          ],
+          [
+            217.7650909423828,
+            142.36822509765625
+          ],
+          [
+            216.18885803222656,
+            144.1786346435547
+          ],
+          [
+            214.6147918701172,
+            145.8041229248047
+          ],
+          [
+            213.33616638183594,
+            147.42086791992188
+          ],
+          [
+            212.40374755859375,
+            149.1496124267578
+          ],
+          [
+            211.7560577392578,
+            151.00244140625
+          ],
+          [
+            211.069580078125,
+            153.00584411621094
+          ],
+          [
+            210.3789825439453,
+            155.18228149414062
+          ],
+          [
+            209.59681701660156,
+            157.54879760742188
+          ],
+          [
+            208.78636169433594,
+            160.18373107910156
+          ],
+          [
+            208.02349853515625,
+            162.98556518554688
+          ],
+          [
+            207.4522705078125,
+            165.9788055419922
+          ],
+          [
+            206.91770935058594,
+            169.20777893066406
+          ],
+          [
+            206.5364532470703,
+            172.51889038085938
+          ],
+          [
+            206.18594360351562,
+            175.9478759765625
+          ],
+          [
+            205.98399353027344,
+            179.4801025390625
+          ],
+          [
+            205.5068359375,
+            182.2564239501953
+          ],
+          [
+            205.39039611816406,
+            183.6024627685547
+          ],
+          [
+            205.0599365234375,
+            183.8360595703125
+          ],
+          [
+            204.71206665039062,
+            183.86900329589844
+          ],
+          [
+            204.23719787597656,
+            183.5257568359375
+          ],
+          [
+            203.81723022460938,
+            183.270263671875
+          ],
+          [
+            203.4632568359375,
+            183.02194213867188
+          ],
+          [
+            203.14402770996094,
+            182.7720184326172
+          ],
+          [
+            202.9834442138672,
+            182.59947204589844
+          ],
+          [
+            202.6935577392578,
+            182.43496704101562
+          ],
+          [
+            202.50733947753906,
+            182.375244140625
+          ],
+          [
+            202.40504455566406,
+            182.36158752441406
+          ],
+          [
+            202.231689453125,
+            182.3867950439453
+          ],
+          [
+            202.05850219726562,
+            182.40342712402344
+          ],
+          [
+            201.91116333007812,
+            182.4056854248047
+          ],
+          [
+            201.64862060546875,
+            182.3778076171875
+          ],
+          [
+            201.46519470214844,
+            182.3798828125
+          ],
+          [
+            201.2343292236328,
+            182.35562133789062
+          ],
+          [
+            201.1120147705078,
+            182.3569793701172
+          ]
+        ],
+        "status": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "status_legend": {
+          "0": "unvisited",
+          "1": "tracked",
+          "2": "outside_image",
+          "3": "fb_inconsistent_possible_occlusion",
+          "4": "low_seed_texture",
+          "5": "multi_frame_drift",
+          "6": "lost_after_failure",
+          "7": "invalid_seed",
+          "8": "invalid_flow"
+        },
+        "temporal_fb_error_px": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0.16638460755348206,
+          0.06196299567818642,
+          0.1838349997997284,
+          0.034847356379032135,
+          6.155837127153063e-06,
+          0.08931887149810791,
+          0.19618818163871765,
+          0.10272286832332611,
+          0.09248103201389313,
+          0.09087115526199341,
+          0.18396012485027313,
+          0.06633707880973816,
+          0.03574799746274948,
+          0.046841252595186234,
+          0.049818601459264755,
+          0.0,
+          0.03224809467792511,
+          0.04837886616587639,
+          0.03551732376217842,
+          0.03579990193247795,
+          0.027582082897424698,
+          0.07530327886343002,
+          0.06701575964689255,
+          0.06151803210377693,
+          0.055844079703092575,
+          0.10069198906421661,
+          0.1435922384262085,
+          0.28861483931541443,
+          0.43390342593193054,
+          0.0332510732114315,
+          0.014219459146261215,
+          0.056387826800346375,
+          0.05767633765935898,
+          0.08158233761787415,
+          0.07752582430839539,
+          0.13448894023895264,
+          0.08053352683782578,
+          0.04734824225306511,
+          0.0459909588098526,
+          0.0441448874771595,
+          0.012579469010233879,
+          0.02838040143251419,
+          0.02151290886104107,
+          0.016022374853491783,
+          0.021816212683916092
+        ],
+        "visible_after_cross_view_gate": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "first_failure_forward": null,
+        "first_failure_backward": {
+          "frame": 15,
+          "status": 5,
+          "reason": "multi_frame_drift"
+        },
+        "cycle_error_available": false,
+        "largest_accepted_adjacent_displacements": [
+          {
+            "source_frame": 39,
+            "target_frame": 40,
+            "displacement_px": 3.537994861602783
+          },
+          {
+            "source_frame": 38,
+            "target_frame": 39,
+            "displacement_px": 3.4468536376953125
+          },
+          {
+            "source_frame": 37,
+            "target_frame": 38,
+            "displacement_px": 3.332988977432251
+          },
+          {
+            "source_frame": 36,
+            "target_frame": 37,
+            "displacement_px": 3.272922992706299
+          },
+          {
+            "source_frame": 35,
+            "target_frame": 36,
+            "displacement_px": 3.0472593307495117
+          },
+          {
+            "source_frame": 34,
+            "target_frame": 35,
+            "displacement_px": 2.9038310050964355
+          },
+          {
+            "source_frame": 40,
+            "target_frame": 41,
+            "displacement_px": 2.8170268535614014
+          },
+          {
+            "source_frame": 33,
+            "target_frame": 34,
+            "displacement_px": 2.7567574977874756
+          },
+          {
+            "source_frame": 32,
+            "target_frame": 33,
+            "displacement_px": 2.492424726486206
+          },
+          {
+            "source_frame": 23,
+            "target_frame": 24,
+            "displacement_px": 2.458645820617676
+          }
+        ],
+        "jump_interpretation": "Ranked image displacement only; no jump rejection threshold or identity error is inferred"
+      },
+      "cache_replay": {
+        "available": true,
+        "semantics": "\u4ece\u51bb\u7ed3\u7f13\u5b58\u91cd\u653e\u7684\u8bca\u65ad\u503c / diagnostic replay from frozen cache; not original recorded cycle errors",
+        "metadata_path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/sequence_200_259_a26a26899c1b5e42.json",
+        "metadata": {
+          "settings": {
+            "method": "dis",
+            "preset": "medium",
+            "finest_scale": 0,
+            "gradient_descent_iterations": 25,
+            "variational_refinement_iterations": 5,
+            "cv2_threads": 4,
+            "skip_stride": 5
+          },
+          "opencv": "4.13.0",
+          "size": [
+            480,
+            270
+          ],
+          "camera_id": 9,
+          "n_frames": 60,
+          "raw_frame_ids": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259
+          ],
+          "pair_cache_hits": 70,
+          "pairs_computed": 0,
+          "flow_compute_seconds": 0.0,
+          "flow_save_seconds": 0.0,
+          "total_seconds": 1.1683443058282137,
+          "device": "CPU",
+          "peak_gpu_memory_bytes": 0,
+          "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query",
+          "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"
+        },
+        "source_verification": "Each sampled pair filename fingerprint is recomputed from actual source grayscale pixels and recorded settings/OpenCV/camera/size. Files are SHA256 fingerprinted; no estimation runs.",
+        "tracking_config_source": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/observations.json",
+        "thresholds": {
+          "fb_max": 0.75,
+          "fb_relative": 0.03,
+          "cycle_max": 1.5,
+          "cycle_fb_max": 2.0,
+          "seed_texture_min": 0.005,
+          "use_cycle": true
+        },
+        "forward": {
+          "source_frame": 15,
+          "target_frame": 16,
+          "source_uv": [
+            227.59364318847656,
+            131.78958129882812
+          ],
+          "displacement": [
+            -0.2958376109600067,
+            0.20597805082798004
+          ],
+          "predicted_uv": [
+            227.2978057861328,
+            131.9955596923828
+          ],
+          "reverse_displacement_at_prediction": [
+            0.12162372469902039,
+            -0.19002899527549744
+          ],
+          "source_valid": true,
+          "target_reverse_valid": true,
+          "fb_error_px": 0.17494241893291473,
+          "available": true,
+          "fb_tolerance_px": 0.7608144283294678,
+          "recorded_target_uv": [
+            227.46372985839844,
+            131.98312377929688
+          ],
+          "recorded_target_status": 1,
+          "proposal_difference_from_recorded_px": 0.16638945043087006
+        },
+        "backward": {
+          "source_frame": 15,
+          "target_frame": 14,
+          "source_uv": [
+            227.59364318847656,
+            131.78958129882812
+          ],
+          "displacement": [
+            0.2591148316860199,
+            0.09774575382471085
+          ],
+          "predicted_uv": [
+            227.85275268554688,
+            131.8873291015625
+          ],
+          "reverse_displacement_at_prediction": [
+            -0.2903859615325928,
+            -0.13101446628570557
+          ],
+          "source_valid": true,
+          "target_reverse_valid": true,
+          "fb_error_px": 0.0456584133207798,
+          "available": true,
+          "fb_tolerance_px": 0.7583081722259521,
+          "recorded_target_uv": [
+            null,
+            null
+          ],
+          "recorded_target_status": 6,
+          "proposal_difference_from_recorded_px": null
+        },
+        "direct_vs_composed": {
+          "available": true,
+          "source_frame": 20,
+          "target_frame": 15,
+          "direct": {
+            "source_frame": 20,
+            "target_frame": 15,
+            "source_uv": [
+              225.2666015625,
+              134.47836303710938
+            ],
+            "displacement": [
+              3.55790114402771,
+              -3.58406925201416
+            ],
+            "predicted_uv": [
+              228.8245086669922,
+              130.894287109375
+            ],
+            "reverse_displacement_at_prediction": [
+              -3.550217866897583,
+              2.825434446334839
+            ],
+            "source_valid": true,
+            "target_reverse_valid": true,
+            "fb_error_px": 0.7586737275123596
+          },
+          "composed_uv": [
+            227.59364318847656,
+            131.78958129882812
+          ],
+          "composed_adjacent_steps": [
+            {
+              "source_frame": 20,
+              "target_frame": 19,
+              "source_uv": [
+                225.2666015625,
+                134.47836303710938
+              ],
+              "displacement": [
+                -3.6469118640525267e-06,
+                4.4558288436746807e-07
+              ],
+              "predicted_uv": [
+                225.2666015625,
+                134.47836303710938
+              ],
+              "reverse_displacement_at_prediction": [
+                9.418470654054545e-06,
+                1.695313699201506e-06
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 6.155837127153063e-06
+            },
+            {
+              "source_frame": 19,
+              "target_frame": 18,
+              "source_uv": [
+                225.2666015625,
+                134.47836303710938
+              ],
+              "displacement": [
+                1.0089019536972046,
+                -1.1793900728225708
+              ],
+              "predicted_uv": [
+                226.27549743652344,
+                133.29896545410156
+              ],
+              "reverse_displacement_at_prediction": [
+                -0.9859751462936401,
+                1.2056331634521484
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.034847356379032135
+            },
+            {
+              "source_frame": 18,
+              "target_frame": 17,
+              "source_uv": [
+                226.27549743652344,
+                133.29896545410156
+              ],
+              "displacement": [
+                0.7210860252380371,
+                -0.8979134559631348
+              ],
+              "predicted_uv": [
+                226.99658203125,
+                132.4010467529297
+              ],
+              "reverse_displacement_at_prediction": [
+                -0.7834858298301697,
+                1.0708341598510742
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.1838349997997284
+            },
+            {
+              "source_frame": 17,
+              "target_frame": 16,
+              "source_uv": [
+                226.99658203125,
+                132.4010467529297
+              ],
+              "displacement": [
+                0.4671533703804016,
+                -0.4179227948188782
+              ],
+              "predicted_uv": [
+                227.46372985839844,
+                131.98312377929688
+              ],
+              "reverse_displacement_at_prediction": [
+                -0.5132675766944885,
+                0.4593099057674408
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.06196299567818642
+            },
+            {
+              "source_frame": 16,
+              "target_frame": 15,
+              "source_uv": [
+                227.46372985839844,
+                131.98312377929688
+              ],
+              "displacement": [
+                0.12991861999034882,
+                -0.19353917241096497
+              ],
+              "predicted_uv": [
+                227.59364318847656,
+                131.78958129882812
+              ],
+              "reverse_displacement_at_prediction": [
+                -0.2958376109600067,
+                0.20597805082798004
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.16638460755348206
+            }
+          ],
+          "direct_vs_composed_error_px": 1.5220320224761963,
+          "direct_vs_recorded_endpoint_error_px": 1.5220320224761963,
+          "direct_fb_reliable": true,
+          "cycle_threshold_px": 1.5,
+          "original_cycle_interval_eligible": true,
+          "recorded_source_and_endpoint_tracked": false,
+          "composed_path_policy": "Read-only adjacent flow composition; original rejection/termination is not rerun. This path may continue after an original failure."
+        },
+        "verified_cache_files": [
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_215_216_bb91c28bef29b6ed8b73.npz",
+            "source_frames": [
+              15,
+              16
+            ],
+            "raw_frame_ids": [
+              215,
+              216
+            ],
+            "image_hashes": [
+              "adf7566d81b1611f980452ea57f5f8e07c3fd2404e76c338fef63db433217b03",
+              "1cbba208536722e8885b0d3119e60296d73cbea17942037f35d64c712cc8bd14"
+            ],
+            "fingerprint": "bb91c28bef29b6ed8b73",
+            "sha256": "91afe25f4563723227ae22aaba0d93beb660a24329b10f6498e92abc1260b3a3",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_214_215_a84d9d3b6e749a91c813.npz",
+            "source_frames": [
+              14,
+              15
+            ],
+            "raw_frame_ids": [
+              214,
+              215
+            ],
+            "image_hashes": [
+              "95ccb7bd8bf791b0f83eaac5af4fd9d95c78c8814c0b06b977837a6fd1fbeb95",
+              "adf7566d81b1611f980452ea57f5f8e07c3fd2404e76c338fef63db433217b03"
+            ],
+            "fingerprint": "a84d9d3b6e749a91c813",
+            "sha256": "4aee5cfda6e3d7c0f09228ca4f09c6d89cd0fca86db9219ebe2d297f1a8b188d",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_215_220_bb3f3c4442bb84da31f1.npz",
+            "source_frames": [
+              15,
+              20
+            ],
+            "raw_frame_ids": [
+              215,
+              220
+            ],
+            "image_hashes": [
+              "adf7566d81b1611f980452ea57f5f8e07c3fd2404e76c338fef63db433217b03",
+              "42a21ec86bea8c0ff259fb598b51f8237afac5490db6425bccfd6dd584d6d363"
+            ],
+            "fingerprint": "bb3f3c4442bb84da31f1",
+            "sha256": "fbb936dcab35bb165f6d1c7e6646d23e6790029e143cc65b51dc2b5931a9ff4e",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_219_220_e3ba9c6e7d44445d97f4.npz",
+            "source_frames": [
+              19,
+              20
+            ],
+            "raw_frame_ids": [
+              219,
+              220
+            ],
+            "image_hashes": [
+              "f486500fef647f63e531f1d92e3a5d0e8f2b1cae3a728bd0040885c18068b5bb",
+              "42a21ec86bea8c0ff259fb598b51f8237afac5490db6425bccfd6dd584d6d363"
+            ],
+            "fingerprint": "e3ba9c6e7d44445d97f4",
+            "sha256": "c06a96ad60b1e7966ffa2866fc4320d1f43c33c7d7a0d80c3a533a95075ac661",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_218_219_50e1bcc0d47745f3a55f.npz",
+            "source_frames": [
+              18,
+              19
+            ],
+            "raw_frame_ids": [
+              218,
+              219
+            ],
+            "image_hashes": [
+              "b2e1b4a8d9ada1fbf5afc72b89cea79f4e085df818316a205d68367d62e2bf3b",
+              "f486500fef647f63e531f1d92e3a5d0e8f2b1cae3a728bd0040885c18068b5bb"
+            ],
+            "fingerprint": "50e1bcc0d47745f3a55f",
+            "sha256": "f9e19313a88f34f02801e338c3e6bfe8048cbc0e20ab46d1d2140a5ceebe4e87",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_217_218_eca3851e3d7e95016a1c.npz",
+            "source_frames": [
+              17,
+              18
+            ],
+            "raw_frame_ids": [
+              217,
+              218
+            ],
+            "image_hashes": [
+              "31d1ae08785587f378b472c0d46e050d71e4cb0048ba4c840841b3da596f05ad",
+              "b2e1b4a8d9ada1fbf5afc72b89cea79f4e085df818316a205d68367d62e2bf3b"
+            ],
+            "fingerprint": "eca3851e3d7e95016a1c",
+            "sha256": "c84b1be55edeb99b2ca7c4e06e162f99d3f63beb3a485656bcb3c697c502806c",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_216_217_9d7eae180d0baeaec180.npz",
+            "source_frames": [
+              16,
+              17
+            ],
+            "raw_frame_ids": [
+              216,
+              217
+            ],
+            "image_hashes": [
+              "1cbba208536722e8885b0d3119e60296d73cbea17942037f35d64c712cc8bd14",
+              "31d1ae08785587f378b472c0d46e050d71e4cb0048ba4c840841b3da596f05ad"
+            ],
+            "fingerprint": "9d7eae180d0baeaec180",
+            "sha256": "9f59dc3112fe9c74dae4cdb72d2007ee46061f60f83be7ce0dff3a07bbb25704",
+            "source_identity_verified": true
+          }
+        ],
+        "verified_cache_paths": [
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_215_216_bb91c28bef29b6ed8b73.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_214_215_a84d9d3b6e749a91c813.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_215_220_bb3f3c4442bb84da31f1.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_219_220_e3ba9c6e7d44445d97f4.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_218_219_50e1bcc0d47745f3a55f.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_217_218_eca3851e3d7e95016a1c.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_216_217_9d7eae180d0baeaec180.npz"
+        ]
+      },
+      "missing": [
+        "obs.cycle_error was not persisted; replay is explicitly separate"
+      ],
+      "read_only": true,
+      "interpretation": "Accepted optical-flow status is not ground-truth visibility. Cross-view masking can remove a temporally tracked observation."
+    },
+    "flow_reference07_before_failure": {
+      "schema_version": 1,
+      "run_id": "results_density1/corgi_raw",
+      "method": "B3",
+      "point_id": 86142,
+      "camera_index": 0,
+      "camera_id": 7,
+      "seed_frame": 30,
+      "selected_frame": 44,
+      "recorded": {
+        "uv": [
+          [
+            244.18833923339844,
+            160.30116271972656
+          ],
+          [
+            243.5110626220703,
+            160.96029663085938
+          ],
+          [
+            243.3177032470703,
+            161.9142608642578
+          ],
+          [
+            243.44610595703125,
+            162.94615173339844
+          ],
+          [
+            243.41366577148438,
+            163.60691833496094
+          ],
+          [
+            243.13587951660156,
+            164.02317810058594
+          ],
+          [
+            242.92474365234375,
+            164.17901611328125
+          ],
+          [
+            242.49606323242188,
+            164.0471954345703
+          ],
+          [
+            241.59146118164062,
+            163.88430786132812
+          ],
+          [
+            240.7941131591797,
+            163.82875061035156
+          ],
+          [
+            240.05947875976562,
+            163.5520477294922
+          ],
+          [
+            239.50062561035156,
+            163.02464294433594
+          ],
+          [
+            239.0174102783203,
+            162.4582061767578
+          ],
+          [
+            238.36582946777344,
+            161.8585205078125
+          ],
+          [
+            237.86141967773438,
+            161.39051818847656
+          ],
+          [
+            237.624755859375,
+            161.13027954101562
+          ],
+          [
+            237.47059631347656,
+            160.96498107910156
+          ],
+          [
+            237.15447998046875,
+            161.02159118652344
+          ],
+          [
+            236.70004272460938,
+            161.76785278320312
+          ],
+          [
+            235.828369140625,
+            162.73670959472656
+          ],
+          [
+            234.7407989501953,
+            163.92611694335938
+          ],
+          [
+            233.17677307128906,
+            165.36245727539062
+          ],
+          [
+            231.54415893554688,
+            167.0233917236328
+          ],
+          [
+            229.8892822265625,
+            168.79605102539062
+          ],
+          [
+            229.8895721435547,
+            168.796142578125
+          ],
+          [
+            228.30918884277344,
+            170.5410919189453
+          ],
+          [
+            226.89430236816406,
+            172.28457641601562
+          ],
+          [
+            225.0545196533203,
+            173.99996948242188
+          ],
+          [
+            223.6733856201172,
+            175.52810668945312
+          ],
+          [
+            222.74093627929688,
+            177.17974853515625
+          ],
+          [
+            222.0,
+            179.0
+          ],
+          [
+            221.43011474609375,
+            180.89434814453125
+          ],
+          [
+            220.68995666503906,
+            182.9810333251953
+          ],
+          [
+            219.97384643554688,
+            185.32574462890625
+          ],
+          [
+            219.13377380371094,
+            187.8383026123047
+          ],
+          [
+            218.4820098876953,
+            190.53631591796875
+          ],
+          [
+            217.85548400878906,
+            193.33506774902344
+          ],
+          [
+            217.40695190429688,
+            196.38217163085938
+          ],
+          [
+            217.05435180664062,
+            199.68063354492188
+          ],
+          [
+            216.64187622070312,
+            202.87559509277344
+          ],
+          [
+            216.2965850830078,
+            206.03805541992188
+          ],
+          [
+            215.90834045410156,
+            209.1498565673828
+          ],
+          [
+            215.7796630859375,
+            210.88992309570312
+          ],
+          [
+            215.46083068847656,
+            211.2532958984375
+          ],
+          [
+            215.16209411621094,
+            211.35739135742188
+          ],
+          [
+            214.79409790039062,
+            211.22779846191406
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ],
+          [
+            null,
+            null
+          ]
+        ],
+        "status": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          5,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "status_legend": {
+          "0": "unvisited",
+          "1": "tracked",
+          "2": "outside_image",
+          "3": "fb_inconsistent_possible_occlusion",
+          "4": "low_seed_texture",
+          "5": "multi_frame_drift",
+          "6": "lost_after_failure",
+          "7": "invalid_seed",
+          "8": "invalid_flow"
+        },
+        "temporal_fb_error_px": [
+          0.19967029988765717,
+          0.06235193833708763,
+          0.12692715227603912,
+          0.055780746042728424,
+          0.138935849070549,
+          0.0655103549361229,
+          0.07343866676092148,
+          0.026890937238931656,
+          0.07051984965801239,
+          0.08208311349153519,
+          0.0763687863945961,
+          0.12296506017446518,
+          0.03978610411286354,
+          0.1104738712310791,
+          0.1936608850955963,
+          0.10195314884185791,
+          0.053370654582977295,
+          0.1997554749250412,
+          0.10939592868089676,
+          0.062015920877456665,
+          0.019207797944545746,
+          0.06252839416265488,
+          0.12724988162517548,
+          0.0001001817945507355,
+          0.03487205132842064,
+          0.07855197042226791,
+          0.09894460439682007,
+          0.05838240310549736,
+          0.05586276575922966,
+          0.10004252940416336,
+          0.0,
+          0.04822302982211113,
+          0.04652568697929382,
+          0.12510670721530914,
+          0.03235665336251259,
+          0.03270246461033821,
+          0.08141884207725525,
+          0.02472374401986599,
+          0.12913119792938232,
+          0.10628684610128403,
+          0.14092837274074554,
+          0.14279016852378845,
+          0.2112061232328415,
+          0.6194098591804504,
+          0.06634827703237534,
+          0.07049521058797836,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "visible_after_cross_view_gate": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "first_failure_forward": {
+          "frame": 45,
+          "status": 5,
+          "reason": "multi_frame_drift"
+        },
+        "first_failure_backward": null,
+        "cycle_error_available": false,
+        "largest_accepted_adjacent_displacements": [
+          {
+            "source_frame": 37,
+            "target_frame": 38,
+            "displacement_px": 3.3172545433044434
+          },
+          {
+            "source_frame": 38,
+            "target_frame": 39,
+            "displacement_px": 3.2214772701263428
+          },
+          {
+            "source_frame": 39,
+            "target_frame": 40,
+            "displacement_px": 3.1812546253204346
+          },
+          {
+            "source_frame": 40,
+            "target_frame": 41,
+            "displacement_px": 3.135927438735962
+          },
+          {
+            "source_frame": 36,
+            "target_frame": 37,
+            "displacement_px": 3.0799388885498047
+          },
+          {
+            "source_frame": 35,
+            "target_frame": 36,
+            "displacement_px": 2.868021249771118
+          },
+          {
+            "source_frame": 34,
+            "target_frame": 35,
+            "displacement_px": 2.775620937347412
+          },
+          {
+            "source_frame": 33,
+            "target_frame": 34,
+            "displacement_px": 2.6492772102355957
+          },
+          {
+            "source_frame": 26,
+            "target_frame": 27,
+            "displacement_px": 2.5154271125793457
+          },
+          {
+            "source_frame": 32,
+            "target_frame": 33,
+            "displacement_px": 2.451629161834717
+          }
+        ],
+        "jump_interpretation": "Ranked image displacement only; no jump rejection threshold or identity error is inferred"
+      },
+      "cache_replay": {
+        "available": true,
+        "semantics": "\u4ece\u51bb\u7ed3\u7f13\u5b58\u91cd\u653e\u7684\u8bca\u65ad\u503c / diagnostic replay from frozen cache; not original recorded cycle errors",
+        "metadata_path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/sequence_200_259_0a67ee818728394b.json",
+        "metadata": {
+          "settings": {
+            "method": "dis",
+            "preset": "medium",
+            "finest_scale": 0,
+            "gradient_descent_iterations": 25,
+            "variational_refinement_iterations": 5,
+            "cv2_threads": 4,
+            "skip_stride": 5
+          },
+          "opencv": "4.13.0",
+          "size": [
+            480,
+            270
+          ],
+          "camera_id": 7,
+          "n_frames": 60,
+          "raw_frame_ids": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259
+          ],
+          "pair_cache_hits": 70,
+          "pairs_computed": 0,
+          "flow_compute_seconds": 0.0,
+          "flow_save_seconds": 0.0,
+          "total_seconds": 1.1515806280076504,
+          "device": "CPU",
+          "peak_gpu_memory_bytes": 0,
+          "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query",
+          "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"
+        },
+        "source_verification": "Each sampled pair filename fingerprint is recomputed from actual source grayscale pixels and recorded settings/OpenCV/camera/size. Files are SHA256 fingerprinted; no estimation runs.",
+        "tracking_config_source": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/observations.json",
+        "thresholds": {
+          "fb_max": 0.75,
+          "fb_relative": 0.03,
+          "cycle_max": 1.5,
+          "cycle_fb_max": 2.0,
+          "seed_texture_min": 0.005,
+          "use_cycle": true
+        },
+        "forward": {
+          "source_frame": 44,
+          "target_frame": 45,
+          "source_uv": [
+            215.16209411621094,
+            211.35739135742188
+          ],
+          "displacement": [
+            -0.367992103099823,
+            -0.12959325313568115
+          ],
+          "predicted_uv": [
+            214.79409790039062,
+            211.22779846191406
+          ],
+          "reverse_displacement_at_prediction": [
+            0.3419238030910492,
+            0.06409502029418945
+          ],
+          "source_valid": true,
+          "target_reverse_valid": true,
+          "fb_error_px": 0.07049521058797836,
+          "available": true,
+          "fb_tolerance_px": 0.7617043256759644,
+          "recorded_target_uv": [
+            214.79409790039062,
+            211.22779846191406
+          ],
+          "recorded_target_status": 5,
+          "proposal_difference_from_recorded_px": 0.0
+        },
+        "backward": {
+          "source_frame": 44,
+          "target_frame": 43,
+          "source_uv": [
+            215.16209411621094,
+            211.35739135742188
+          ],
+          "displacement": [
+            0.2730195224285126,
+            -0.1652521789073944
+          ],
+          "predicted_uv": [
+            215.43511962890625,
+            211.192138671875
+          ],
+          "reverse_displacement_at_prediction": [
+            -0.30245572328567505,
+            0.10674554109573364
+          ],
+          "source_valid": true,
+          "target_reverse_valid": true,
+          "fb_error_px": 0.06549440324306488,
+          "available": true,
+          "fb_tolerance_px": 0.7595741152763367,
+          "recorded_target_uv": [
+            215.46083068847656,
+            211.2532958984375
+          ],
+          "recorded_target_status": 1,
+          "proposal_difference_from_recorded_px": 0.06634202599525452
+        },
+        "direct_vs_composed": {
+          "available": true,
+          "source_frame": 40,
+          "target_frame": 45,
+          "direct": {
+            "source_frame": 40,
+            "target_frame": 45,
+            "source_uv": [
+              216.2965850830078,
+              206.03805541992188
+            ],
+            "displacement": [
+              -1.7001134157180786,
+              1.4880294799804688
+            ],
+            "predicted_uv": [
+              214.59646606445312,
+              207.52609252929688
+            ],
+            "reverse_displacement_at_prediction": [
+              1.2404459714889526,
+              -1.7919656038284302
+            ],
+            "source_valid": true,
+            "target_reverse_valid": true,
+            "fb_error_px": 0.5510638356208801
+          },
+          "composed_uv": [
+            214.79409790039062,
+            211.22779846191406
+          ],
+          "composed_adjacent_steps": [
+            {
+              "source_frame": 40,
+              "target_frame": 41,
+              "source_uv": [
+                216.2965850830078,
+                206.03805541992188
+              ],
+              "displacement": [
+                -0.3882385194301605,
+                3.1118032932281494
+              ],
+              "predicted_uv": [
+                215.90834045410156,
+                209.1498565673828
+              ],
+              "reverse_displacement_at_prediction": [
+                0.318146675825119,
+                -2.9874000549316406
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.14279016852378845
+            },
+            {
+              "source_frame": 41,
+              "target_frame": 42,
+              "source_uv": [
+                215.90834045410156,
+                209.1498565673828
+              ],
+              "displacement": [
+                -0.12868456542491913,
+                1.7400709390640259
+              ],
+              "predicted_uv": [
+                215.7796630859375,
+                210.88992309570312
+              ],
+              "reverse_displacement_at_prediction": [
+                -0.05572628974914551,
+                -1.8430304527282715
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.2112061232328415
+            },
+            {
+              "source_frame": 42,
+              "target_frame": 43,
+              "source_uv": [
+                215.7796630859375,
+                210.88992309570312
+              ],
+              "displacement": [
+                -0.3188343644142151,
+                0.3633795380592346
+              ],
+              "predicted_uv": [
+                215.46083068847656,
+                211.2532958984375
+              ],
+              "reverse_displacement_at_prediction": [
+                -0.03194102644920349,
+                -0.8738941550254822
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.6194098591804504
+            },
+            {
+              "source_frame": 43,
+              "target_frame": 44,
+              "source_uv": [
+                215.46083068847656,
+                211.2532958984375
+              ],
+              "displacement": [
+                -0.2987372577190399,
+                0.10409098118543625
+              ],
+              "predicted_uv": [
+                215.16209411621094,
+                211.35739135742188
+              ],
+              "reverse_displacement_at_prediction": [
+                0.2730195224285126,
+                -0.1652521789073944
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.06634827703237534
+            },
+            {
+              "source_frame": 44,
+              "target_frame": 45,
+              "source_uv": [
+                215.16209411621094,
+                211.35739135742188
+              ],
+              "displacement": [
+                -0.367992103099823,
+                -0.12959325313568115
+              ],
+              "predicted_uv": [
+                214.79409790039062,
+                211.22779846191406
+              ],
+              "reverse_displacement_at_prediction": [
+                0.3419238030910492,
+                0.06409502029418945
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.07049521058797836
+            }
+          ],
+          "direct_vs_composed_error_px": 3.7069780826568604,
+          "direct_vs_recorded_endpoint_error_px": 3.7069780826568604,
+          "direct_fb_reliable": true,
+          "cycle_threshold_px": 1.5,
+          "original_cycle_interval_eligible": true,
+          "recorded_source_and_endpoint_tracked": false,
+          "composed_path_policy": "Read-only adjacent flow composition; original rejection/termination is not rerun. This path may continue after an original failure."
+        },
+        "verified_cache_files": [
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_244_245_44f9dd2d6e44d1891e52.npz",
+            "source_frames": [
+              44,
+              45
+            ],
+            "raw_frame_ids": [
+              244,
+              245
+            ],
+            "image_hashes": [
+              "74caa91940d2f5fa5d01decc4957e8608ee7214bf8ea7c3f95a126a69d81250b",
+              "6a44d216f0f73a207bcfc239bcac70eaf8802aef97c4a1e9a7bf570952971af1"
+            ],
+            "fingerprint": "44f9dd2d6e44d1891e52",
+            "sha256": "7809121a24d8abc9b61ab25da99d4ad64d9665bd300d023fcc457214d8f89979",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_243_244_1b1ef64fc69208feb1ee.npz",
+            "source_frames": [
+              43,
+              44
+            ],
+            "raw_frame_ids": [
+              243,
+              244
+            ],
+            "image_hashes": [
+              "13ef3e468c59045408edfb8691d13bcbd9f3d6d7ebef66f55be9bb70f0940ed1",
+              "74caa91940d2f5fa5d01decc4957e8608ee7214bf8ea7c3f95a126a69d81250b"
+            ],
+            "fingerprint": "1b1ef64fc69208feb1ee",
+            "sha256": "df87ca5e2c1b95b2658f75d035419166d53c023c3202376d1cb9f0e8349ebc97",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_240_245_cc12f458808f08ce270b.npz",
+            "source_frames": [
+              40,
+              45
+            ],
+            "raw_frame_ids": [
+              240,
+              245
+            ],
+            "image_hashes": [
+              "b2a8500b9a7ebe7139c8a77f32c5fc3e3c644629bb4d564b7c2d6eda99aaf756",
+              "6a44d216f0f73a207bcfc239bcac70eaf8802aef97c4a1e9a7bf570952971af1"
+            ],
+            "fingerprint": "cc12f458808f08ce270b",
+            "sha256": "d65c01a97b620d10404e0a7eef16fa4f85aa58f5534a886b082069544d6fce4a",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_240_241_0895dcb442101267a10e.npz",
+            "source_frames": [
+              40,
+              41
+            ],
+            "raw_frame_ids": [
+              240,
+              241
+            ],
+            "image_hashes": [
+              "b2a8500b9a7ebe7139c8a77f32c5fc3e3c644629bb4d564b7c2d6eda99aaf756",
+              "98e308ae9d17617ee4b748da9dcf95d9fdb813a5eb338c8c0b1930759fa318c7"
+            ],
+            "fingerprint": "0895dcb442101267a10e",
+            "sha256": "11073eec1eca33cb45a448b89883e7d7d47c4cf5df6ad5f6567b601060015c89",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_241_242_a69148722084bbf04da0.npz",
+            "source_frames": [
+              41,
+              42
+            ],
+            "raw_frame_ids": [
+              241,
+              242
+            ],
+            "image_hashes": [
+              "98e308ae9d17617ee4b748da9dcf95d9fdb813a5eb338c8c0b1930759fa318c7",
+              "bf1ec51a3331a95a62bb7b29c0c59bc88c8c5335447d885a059ac79d47135971"
+            ],
+            "fingerprint": "a69148722084bbf04da0",
+            "sha256": "5b85cc16a62cb2c027c676e87cc1006244df889b927fca83e7347b7396ee9afc",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_242_243_4904c10a650213ac79f3.npz",
+            "source_frames": [
+              42,
+              43
+            ],
+            "raw_frame_ids": [
+              242,
+              243
+            ],
+            "image_hashes": [
+              "bf1ec51a3331a95a62bb7b29c0c59bc88c8c5335447d885a059ac79d47135971",
+              "13ef3e468c59045408edfb8691d13bcbd9f3d6d7ebef66f55be9bb70f0940ed1"
+            ],
+            "fingerprint": "4904c10a650213ac79f3",
+            "sha256": "52ca61835acaf62bc302873fde377065e8fce19b8034faaeef33b8a9873de669",
+            "source_identity_verified": true
+          }
+        ],
+        "verified_cache_paths": [
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_244_245_44f9dd2d6e44d1891e52.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_243_244_1b1ef64fc69208feb1ee.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_240_245_cc12f458808f08ce270b.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_240_241_0895dcb442101267a10e.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_241_242_a69148722084bbf04da0.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam7/raw_242_243_4904c10a650213ac79f3.npz"
+        ]
+      },
+      "missing": [
+        "obs.cycle_error was not persisted; replay is explicitly separate"
+      ],
+      "read_only": true,
+      "interpretation": "Accepted optical-flow status is not ground-truth visibility. Cross-view masking can remove a temporally tracked observation."
+    },
+    "conclusion": "Target09 backward branch fails exactly at anchor15 with recorded cycle status5; reference07 forward branch fails exactly at anchor45 with recorded cycle status5. All four current cached raw RoMa anchor probes pass, so selected-point missing support is explained by temporal rejection, not raw-anchor candidate gate. This does not prove track correctness or that thresholds should be relaxed."
+  },
+  "acceptance_B_success_candidate": {
+    "point_id": 69807,
+    "seed_uv": [
+      207.0,
+      145.0
+    ],
+    "seed_frame": 30,
+    "edge_status": [
+      1,
+      1,
+      1
+    ],
+    "temporal_status_timeline": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "temporal_observation_counts": [
+      60,
+      60,
+      60
+    ],
+    "saved_anchor_frames": [
+      15,
+      30,
+      45
+    ],
+    "saved_anchor_support": [
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true
+      ]
+    ],
+    "saved_anchor_error_px": [
+      [
+        null,
+        null,
+        null
+      ],
+      [
+        0.7124231457710266,
+        0.0,
+        0.06739143282175064
+      ],
+      [
+        0.5725169777870178,
+        0.0,
+        0.06450573354959488
+      ]
+    ],
+    "saved_roma_seed_confidence": [
+      1.0,
+      0.6385915279388428,
+      0.6972407698631287
+    ],
+    "saved_roma_seed_fb_error_px": [
+      0.0,
+      0.20043471455574036,
+      0.12375765293836594
+    ],
+    "multiview_seed": true,
+    "all_three_seed": true,
+    "initialization_eligible": true,
+    "trajectory_valid": true,
+    "valid_3D_samples": 59,
+    "current_seed_frame": {
+      "local_frame": 30,
+      "raw_frame_ids": [
+        230,
+        230,
+        230
+      ],
+      "observed_uv": [
+        [
+          207.0,
+          145.0
+        ],
+        [
+          192.89547729492188,
+          127.95599365234375
+        ],
+        [
+          139.0433807373047,
+          165.369873046875
+        ]
+      ],
+      "observed_visible": [
+        true,
+        true,
+        true
+      ],
+      "temporal_status": [
+        1,
+        1,
+        1
+      ],
+      "train_visible": [
+        true,
+        true,
+        true
+      ],
+      "holdout_visible": [
+        false,
+        false,
+        false
+      ],
+      "observation_inlier": [
+        true,
+        true,
+        true
+      ],
+      "predicted_uv": [
+        [
+          206.962662874512,
+          144.93726002349158
+        ],
+        [
+          192.89863309330374,
+          128.06163875465904
+        ],
+        [
+          139.07396467270252,
+          165.33343681115133
+        ]
+      ],
+      "residual_px": [
+        0.07300935277061378,
+        0.10569222633020726,
+        0.04757075128825905
+      ],
+      "xyz": [
+        1.356893454135189,
+        0.2606825265879964,
+        4.244690958686049
+      ],
+      "valid": true,
+      "view_support": 3
+    },
+    "flow_cache_replay": {
+      "schema_version": 1,
+      "run_id": "results_density1/corgi_raw",
+      "method": "B3",
+      "point_id": 69807,
+      "camera_index": 1,
+      "camera_id": 9,
+      "seed_frame": 30,
+      "selected_frame": 30,
+      "recorded": {
+        "uv": [
+          [
+            193.05348205566406,
+            127.17884063720703
+          ],
+          [
+            193.05923461914062,
+            127.17819213867188
+          ],
+          [
+            193.0491485595703,
+            127.16647338867188
+          ],
+          [
+            193.06002807617188,
+            127.18299865722656
+          ],
+          [
+            193.04930114746094,
+            127.17545318603516
+          ],
+          [
+            193.05841064453125,
+            127.1827163696289
+          ],
+          [
+            193.05618286132812,
+            127.18067169189453
+          ],
+          [
+            193.04266357421875,
+            127.18933868408203
+          ],
+          [
+            193.0590362548828,
+            127.16095733642578
+          ],
+          [
+            193.04307556152344,
+            127.14085388183594
+          ],
+          [
+            193.0591583251953,
+            127.14134979248047
+          ],
+          [
+            193.0440216064453,
+            127.1174545288086
+          ],
+          [
+            193.0531463623047,
+            127.1276626586914
+          ],
+          [
+            193.04727172851562,
+            127.11708068847656
+          ],
+          [
+            193.04666137695312,
+            127.11933135986328
+          ],
+          [
+            193.04566955566406,
+            127.12232971191406
+          ],
+          [
+            193.03919982910156,
+            127.13166809082031
+          ],
+          [
+            193.02577209472656,
+            127.14862060546875
+          ],
+          [
+            193.01443481445312,
+            127.17262268066406
+          ],
+          [
+            192.98377990722656,
+            127.20723724365234
+          ],
+          [
+            192.98377990722656,
+            127.20724487304688
+          ],
+          [
+            192.94546508789062,
+            127.29704284667969
+          ],
+          [
+            192.89915466308594,
+            127.58032989501953
+          ],
+          [
+            192.8723602294922,
+            127.74668884277344
+          ],
+          [
+            192.88401794433594,
+            127.84352111816406
+          ],
+          [
+            192.88931274414062,
+            127.88421630859375
+          ],
+          [
+            192.89474487304688,
+            127.91322326660156
+          ],
+          [
+            192.89791870117188,
+            127.93257904052734
+          ],
+          [
+            192.8980255126953,
+            127.95341491699219
+          ],
+          [
+            192.89195251464844,
+            127.95011901855469
+          ],
+          [
+            192.89547729492188,
+            127.95599365234375
+          ],
+          [
+            192.90121459960938,
+            127.9581298828125
+          ],
+          [
+            192.89495849609375,
+            127.94668579101562
+          ],
+          [
+            192.895263671875,
+            127.94673919677734
+          ],
+          [
+            192.89414978027344,
+            127.94633483886719
+          ],
+          [
+            192.88343811035156,
+            127.93258666992188
+          ],
+          [
+            192.88323974609375,
+            127.9333267211914
+          ],
+          [
+            192.8856658935547,
+            127.95854949951172
+          ],
+          [
+            192.87567138671875,
+            127.93984985351562
+          ],
+          [
+            192.8953094482422,
+            127.94304656982422
+          ],
+          [
+            192.91221618652344,
+            127.95938873291016
+          ],
+          [
+            192.8963623046875,
+            127.95323944091797
+          ],
+          [
+            192.89540100097656,
+            127.9550552368164
+          ],
+          [
+            192.90304565429688,
+            127.95948791503906
+          ],
+          [
+            192.89984130859375,
+            127.96007537841797
+          ],
+          [
+            192.88787841796875,
+            127.94780731201172
+          ],
+          [
+            192.887451171875,
+            127.95384979248047
+          ],
+          [
+            192.87612915039062,
+            127.95950317382812
+          ],
+          [
+            192.8663330078125,
+            127.94087219238281
+          ],
+          [
+            192.88458251953125,
+            127.94709777832031
+          ],
+          [
+            192.9000244140625,
+            127.95899200439453
+          ],
+          [
+            192.90354919433594,
+            127.95584869384766
+          ],
+          [
+            192.90252685546875,
+            127.95850372314453
+          ],
+          [
+            192.89964294433594,
+            127.95294189453125
+          ],
+          [
+            192.90013122558594,
+            127.95550537109375
+          ],
+          [
+            192.89649963378906,
+            127.96240234375
+          ],
+          [
+            192.88232421875,
+            127.9615478515625
+          ],
+          [
+            192.883544921875,
+            127.95649719238281
+          ],
+          [
+            192.86917114257812,
+            127.95478057861328
+          ],
+          [
+            192.8834686279297,
+            127.96577453613281
+          ]
+        ],
+        "status": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "status_legend": {
+          "0": "unvisited",
+          "1": "tracked",
+          "2": "outside_image",
+          "3": "fb_inconsistent_possible_occlusion",
+          "4": "low_seed_texture",
+          "5": "multi_frame_drift",
+          "6": "lost_after_failure",
+          "7": "invalid_seed",
+          "8": "invalid_flow"
+        },
+        "temporal_fb_error_px": [
+          0.00017634325195103884,
+          0.0034402813762426376,
+          0.0014523995341733098,
+          0.004354778677225113,
+          0.010800182819366455,
+          0.0014997138641774654,
+          0.010776842944324017,
+          0.01027451828122139,
+          0.0027852142229676247,
+          0.013925131410360336,
+          0.0013189964229241014,
+          0.0036742761731147766,
+          0.003794637741521001,
+          0.0008989812340587378,
+          0.001329507795162499,
+          0.0024037729017436504,
+          0.0032196228858083487,
+          0.0172770693898201,
+          0.01812898740172386,
+          1.112493464461295e-06,
+          0.03543201461434364,
+          0.13125178217887878,
+          0.028232857584953308,
+          0.03849928826093674,
+          0.0014350382843986154,
+          0.0019466112134978175,
+          0.006768899038434029,
+          0.006495850160717964,
+          0.004132481757551432,
+          0.006159383803606033,
+          0.0,
+          0.002054753713309765,
+          0.0017247921787202358,
+          0.0002681187470443547,
+          0.00012868733028881252,
+          0.001343254349194467,
+          0.0025160489603877068,
+          0.004236061591655016,
+          0.0035323798656463623,
+          0.010602121241390705,
+          0.004321248736232519,
+          0.010720119811594486,
+          0.0012774227652698755,
+          0.0006570262485183775,
+          0.0006726510473527014,
+          0.002560850465670228,
+          0.0023307879455387592,
+          0.0048101069405674934,
+          0.006237488705664873,
+          0.0035355312284082174,
+          0.003924568649381399,
+          0.0005381145165301859,
+          0.0006231399020180106,
+          0.0015039662830531597,
+          0.0009922068566083908,
+          0.001792299561202526,
+          0.0037537640891969204,
+          0.0014209740329533815,
+          0.0018705676775425673,
+          0.0022676943335682154
+        ],
+        "visible_after_cross_view_gate": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "first_failure_forward": null,
+        "first_failure_backward": null,
+        "cycle_error_available": false,
+        "largest_accepted_adjacent_displacements": [
+          {
+            "source_frame": 21,
+            "target_frame": 22,
+            "displacement_px": 0.2870473861694336
+          },
+          {
+            "source_frame": 22,
+            "target_frame": 23,
+            "displacement_px": 0.16850294172763824
+          },
+          {
+            "source_frame": 20,
+            "target_frame": 21,
+            "displacement_px": 0.09763043373823166
+          },
+          {
+            "source_frame": 23,
+            "target_frame": 24,
+            "displacement_px": 0.09753149002790451
+          },
+          {
+            "source_frame": 18,
+            "target_frame": 19,
+            "displacement_px": 0.04623733460903168
+          },
+          {
+            "source_frame": 24,
+            "target_frame": 25,
+            "displacement_px": 0.04103819653391838
+          },
+          {
+            "source_frame": 7,
+            "target_frame": 8,
+            "displacement_px": 0.032765310257673264
+          },
+          {
+            "source_frame": 25,
+            "target_frame": 26,
+            "displacement_px": 0.029511211439967155
+          },
+          {
+            "source_frame": 10,
+            "target_frame": 11,
+            "displacement_px": 0.028286106884479523
+          },
+          {
+            "source_frame": 17,
+            "target_frame": 18,
+            "displacement_px": 0.026544934138655663
+          }
+        ],
+        "jump_interpretation": "Ranked image displacement only; no jump rejection threshold or identity error is inferred"
+      },
+      "cache_replay": {
+        "available": true,
+        "semantics": "\u4ece\u51bb\u7ed3\u7f13\u5b58\u91cd\u653e\u7684\u8bca\u65ad\u503c / diagnostic replay from frozen cache; not original recorded cycle errors",
+        "metadata_path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/sequence_200_259_a26a26899c1b5e42.json",
+        "metadata": {
+          "settings": {
+            "method": "dis",
+            "preset": "medium",
+            "finest_scale": 0,
+            "gradient_descent_iterations": 25,
+            "variational_refinement_iterations": 5,
+            "cv2_threads": 4,
+            "skip_stride": 5
+          },
+          "opencv": "4.13.0",
+          "size": [
+            480,
+            270
+          ],
+          "camera_id": 9,
+          "n_frames": 60,
+          "raw_frame_ids": [
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259
+          ],
+          "pair_cache_hits": 70,
+          "pairs_computed": 0,
+          "flow_compute_seconds": 0.0,
+          "flow_save_seconds": 0.0,
+          "total_seconds": 1.1683443058282137,
+          "device": "CPU",
+          "peak_gpu_memory_bytes": 0,
+          "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query",
+          "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"
+        },
+        "source_verification": "Each sampled pair filename fingerprint is recomputed from actual source grayscale pixels and recorded settings/OpenCV/camera/size. Files are SHA256 fingerprinted; no estimation runs.",
+        "tracking_config_source": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/corgi_raw/observations.json",
+        "thresholds": {
+          "fb_max": 0.75,
+          "fb_relative": 0.03,
+          "cycle_max": 1.5,
+          "cycle_fb_max": 2.0,
+          "seed_texture_min": 0.005,
+          "use_cycle": true
+        },
+        "forward": {
+          "source_frame": 30,
+          "target_frame": 31,
+          "source_uv": [
+            192.89547729492188,
+            127.95599365234375
+          ],
+          "displacement": [
+            0.00573138240724802,
+            0.0021342674735933542
+          ],
+          "predicted_uv": [
+            192.90121459960938,
+            127.9581298828125
+          ],
+          "reverse_displacement_at_prediction": [
+            -0.0065085976384580135,
+            -0.00023217668058350682
+          ],
+          "source_valid": true,
+          "target_reverse_valid": true,
+          "fb_error_px": 0.002054753713309765,
+          "available": true,
+          "fb_tolerance_px": 0.7501834630966187,
+          "recorded_target_uv": [
+            192.90121459960938,
+            127.9581298828125
+          ],
+          "recorded_target_status": 1,
+          "proposal_difference_from_recorded_px": 0.0
+        },
+        "backward": {
+          "source_frame": 30,
+          "target_frame": 29,
+          "source_uv": [
+            192.89547729492188,
+            127.95599365234375
+          ],
+          "displacement": [
+            -0.003527992404997349,
+            -0.005877773743122816
+          ],
+          "predicted_uv": [
+            192.89195251464844,
+            127.95011901855469
+          ],
+          "reverse_displacement_at_prediction": [
+            -0.00010580531670711935,
+            0.010851054452359676
+          ],
+          "source_valid": true,
+          "target_reverse_valid": true,
+          "fb_error_px": 0.006159383803606033,
+          "available": true,
+          "fb_tolerance_px": 0.7502056360244751,
+          "recorded_target_uv": [
+            192.89195251464844,
+            127.95011901855469
+          ],
+          "recorded_target_status": 1,
+          "proposal_difference_from_recorded_px": 0.0
+        },
+        "direct_vs_composed": {
+          "available": true,
+          "source_frame": 30,
+          "target_frame": 35,
+          "direct": {
+            "source_frame": 30,
+            "target_frame": 35,
+            "source_uv": [
+              192.89547729492188,
+              127.95599365234375
+            ],
+            "displacement": [
+              -0.008455839939415455,
+              -0.031009986996650696
+            ],
+            "predicted_uv": [
+              192.88702392578125,
+              127.92498016357422
+            ],
+            "reverse_displacement_at_prediction": [
+              0.003858045442029834,
+              0.03446099907159805
+            ],
+            "source_valid": true,
+            "target_reverse_valid": true,
+            "fb_error_px": 0.005748842842876911
+          },
+          "composed_uv": [
+            192.88343811035156,
+            127.93258666992188
+          ],
+          "composed_adjacent_steps": [
+            {
+              "source_frame": 30,
+              "target_frame": 31,
+              "source_uv": [
+                192.89547729492188,
+                127.95599365234375
+              ],
+              "displacement": [
+                0.00573138240724802,
+                0.0021342674735933542
+              ],
+              "predicted_uv": [
+                192.90121459960938,
+                127.9581298828125
+              ],
+              "reverse_displacement_at_prediction": [
+                -0.0065085976384580135,
+                -0.00023217668058350682
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.002054753713309765
+            },
+            {
+              "source_frame": 31,
+              "target_frame": 32,
+              "source_uv": [
+                192.90121459960938,
+                127.9581298828125
+              ],
+              "displacement": [
+                -0.006262807175517082,
+                -0.011444596573710442
+              ],
+              "predicted_uv": [
+                192.89495849609375,
+                127.94668579101562
+              ],
+              "reverse_displacement_at_prediction": [
+                0.0046780407428741455,
+                0.012125348672270775
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.0017247921787202358
+            },
+            {
+              "source_frame": 32,
+              "target_frame": 33,
+              "source_uv": [
+                192.89495849609375,
+                127.94668579101562
+              ],
+              "displacement": [
+                0.00030913541559129953,
+                5.542851795325987e-05
+              ],
+              "predicted_uv": [
+                192.895263671875,
+                127.94673919677734
+              ],
+              "reverse_displacement_at_prediction": [
+                -0.0003159701591357589,
+                -0.0003234601463191211
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.0002681187470443547
+            },
+            {
+              "source_frame": 33,
+              "target_frame": 34,
+              "source_uv": [
+                192.895263671875,
+                127.94673919677734
+              ],
+              "displacement": [
+                -0.0011181439040228724,
+                -0.0004064924723934382
+              ],
+              "predicted_uv": [
+                192.89414978027344,
+                127.94633483886719
+              ],
+              "reverse_displacement_at_prediction": [
+                0.0011304542422294617,
+                0.0005345896352082491
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.00012868733028881252
+            },
+            {
+              "source_frame": 34,
+              "target_frame": 35,
+              "source_uv": [
+                192.89414978027344,
+                127.94633483886719
+              ],
+              "displacement": [
+                -0.010708271525800228,
+                -0.013746745884418488
+              ],
+              "predicted_uv": [
+                192.88343811035156,
+                127.93258666992188
+              ],
+              "reverse_displacement_at_prediction": [
+                0.009365805424749851,
+                0.013792755082249641
+              ],
+              "source_valid": true,
+              "target_reverse_valid": true,
+              "fb_error_px": 0.001343254349194467
+            }
+          ],
+          "direct_vs_composed_error_px": 0.008409340865910053,
+          "direct_vs_recorded_endpoint_error_px": 0.008409340865910053,
+          "direct_fb_reliable": true,
+          "cycle_threshold_px": 1.5,
+          "original_cycle_interval_eligible": true,
+          "recorded_source_and_endpoint_tracked": true,
+          "composed_path_policy": "Read-only adjacent flow composition; original rejection/termination is not rerun. This path may continue after an original failure."
+        },
+        "verified_cache_files": [
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_230_231_5f8e4157e8675bd9b920.npz",
+            "source_frames": [
+              30,
+              31
+            ],
+            "raw_frame_ids": [
+              230,
+              231
+            ],
+            "image_hashes": [
+              "08685df3840ba9bc515d3f808be4e453a5b135fc751c3d71883a58ff1cee3843",
+              "e3be101b236932337a504f7376a7dffed914bf0781f339e94f0e7796fb4c91c0"
+            ],
+            "fingerprint": "5f8e4157e8675bd9b920",
+            "sha256": "051288d203fb510f1dcaf1c3ab579fd53ac158cbae5eb42eb9c11ca2362a9356",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_229_230_12cf0941cca6f8d56423.npz",
+            "source_frames": [
+              29,
+              30
+            ],
+            "raw_frame_ids": [
+              229,
+              230
+            ],
+            "image_hashes": [
+              "962eb3aa3f457f8bf21243be8c3e9b8aa85e78500d040858b32853d0f6633d40",
+              "08685df3840ba9bc515d3f808be4e453a5b135fc751c3d71883a58ff1cee3843"
+            ],
+            "fingerprint": "12cf0941cca6f8d56423",
+            "sha256": "941549077f1089389d53e038c6750d0777dc703e71938e474368885b48a555ae",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_230_235_3fdcca37f6bc88b9c2d6.npz",
+            "source_frames": [
+              30,
+              35
+            ],
+            "raw_frame_ids": [
+              230,
+              235
+            ],
+            "image_hashes": [
+              "08685df3840ba9bc515d3f808be4e453a5b135fc751c3d71883a58ff1cee3843",
+              "d94418aa039de948970351bf1153bebaec57b5a607137535fbb6fa953cb6a245"
+            ],
+            "fingerprint": "3fdcca37f6bc88b9c2d6",
+            "sha256": "a076175b0bfe681bf2dc0562742462e4467b24837333a1719130f7657d5410ad",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_231_232_d6bb265e172812e5f5ff.npz",
+            "source_frames": [
+              31,
+              32
+            ],
+            "raw_frame_ids": [
+              231,
+              232
+            ],
+            "image_hashes": [
+              "e3be101b236932337a504f7376a7dffed914bf0781f339e94f0e7796fb4c91c0",
+              "e93d3adfa3bdcd11a368c62d0eeb00be54be1e2726702201242868404c83a0bf"
+            ],
+            "fingerprint": "d6bb265e172812e5f5ff",
+            "sha256": "a041ee73badf27f0e27451a561882bfaa5b7f5a978f552fdb6a886f3241e6888",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_232_233_7b33ee4d07de67e8ce56.npz",
+            "source_frames": [
+              32,
+              33
+            ],
+            "raw_frame_ids": [
+              232,
+              233
+            ],
+            "image_hashes": [
+              "e93d3adfa3bdcd11a368c62d0eeb00be54be1e2726702201242868404c83a0bf",
+              "54b12f77a99e71a9ab1ed57458d630a709e6f8da036855747bc6289ac99ce8b9"
+            ],
+            "fingerprint": "7b33ee4d07de67e8ce56",
+            "sha256": "619b68fa1b8356b2ef6c6a0d2ca5eeb8d03582c5ed7db736d93f044db6145228",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_233_234_f542fcfec12f7323850f.npz",
+            "source_frames": [
+              33,
+              34
+            ],
+            "raw_frame_ids": [
+              233,
+              234
+            ],
+            "image_hashes": [
+              "54b12f77a99e71a9ab1ed57458d630a709e6f8da036855747bc6289ac99ce8b9",
+              "10ef7a3aa5907f755dabde5fdc91fb134f549cdbad327a5d6b211c483e8ef259"
+            ],
+            "fingerprint": "f542fcfec12f7323850f",
+            "sha256": "82bbc5aa47b21576838e578f200781e0f65e3b1632a88fe0f71fba15bfec692e",
+            "source_identity_verified": true
+          },
+          {
+            "path": "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_234_235_76276bcdf3e49d13b209.npz",
+            "source_frames": [
+              34,
+              35
+            ],
+            "raw_frame_ids": [
+              234,
+              235
+            ],
+            "image_hashes": [
+              "10ef7a3aa5907f755dabde5fdc91fb134f549cdbad327a5d6b211c483e8ef259",
+              "d94418aa039de948970351bf1153bebaec57b5a607137535fbb6fa953cb6a245"
+            ],
+            "fingerprint": "76276bcdf3e49d13b209",
+            "sha256": "186ec3456c8980d1edaca750c89733129e95f5d788d50cabfa07138638d629af",
+            "source_identity_verified": true
+          }
+        ],
+        "verified_cache_paths": [
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_230_231_5f8e4157e8675bd9b920.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_229_230_12cf0941cca6f8d56423.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_230_235_3fdcca37f6bc88b9c2d6.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_231_232_d6bb265e172812e5f5ff.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_232_233_7b33ee4d07de67e8ce56.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_233_234_f542fcfec12f7323850f.npz",
+          "/data/jjy/ipc/stba/experiments/dense_stba/cache_density1/temporal/cam9/raw_234_235_76276bcdf3e49d13b209.npz"
+        ]
+      },
+      "missing": [
+        "obs.cycle_error was not persisted; replay is explicitly separate"
+      ],
+      "read_only": true,
+      "interpretation": "Accepted optical-flow status is not ground-truth visibility. Cross-view masking can remove a temporally tracked observation."
+    },
+    "selection_policy": "First point_id in manual dog candidate ROI satisfying all_three_seed, visible in all three cameras at seed frame, valid saved 3D sample and valid trajectory. No GT consulted.",
+    "semantic_caution": "Seed (207,145) is exactly on broad manual dog-ROI boundary. Background inclusion cannot be ruled out. Successful pipeline candidate does not establish accurate dog-surface reconstruction."
+  },
+  "limitations": [
+    "Manual seed boxes are diagnostic selections, not semantic or identity GT.",
+    "Original observations did not persist cycle errors; magnitudes are separately labelled replay from source-verified frozen caches.",
+    "Both-tracked but unsupported anchor implies raw RoMa gate rejection only by the recorded formula; the precise subgate was not saved.",
+    "No asynchronous same-frame epipolar filtering, new tracking, model inference or optimization occurs.",
+    "Accepted three-camera seed observations need not have synchronous physical exposure. Valid supported 3D is a pipeline claim, not independently verified real accuracy."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "P0": "Continuous60FPSvideos and original camera calibration confirmed; +beta clock sign and integer reindex validated",
+  "P1": "Five independent asynchronous rendered dynamic cases; nine tests passed",
+  "P2": "Actual RoMa v1 dense fields plus DIS temporal tracking; automatic associations",
+  "P3": "Known-beta-only arm with automatic identities passed numerical tests and ran on rendered videos",
+  "B2_automatic_frontend_position_metrics": {
+    "count": 33161,
+    "mean": 0.009965261723873606,
+    "rmse": 0.013103623109292074,
+    "p50": 0.008236413239500277,
+    "p90": 0.01874385277707861,
+    "valid_coverage_of_original_evaluable_samples": 0.7823758405096143,
+    "correct_coverage_lt_5mm": 0.23029373599150643,
+    "correct_coverage_lt_10mm": 0.46997758641028664,
+    "correct_coverage_lt_20mm": 0.718721245723723,
+    "correct_coverage_lt_50mm": 0.7770909519877315
+  },
+  "note": "This arm uses betaGT explicitly as oracle; noGTidentity/XYZ provided. Formal nonoracle runs follow. Independent-anchor frontend quality gates were subsequently strengthened; same RoMa caches retained."
+}

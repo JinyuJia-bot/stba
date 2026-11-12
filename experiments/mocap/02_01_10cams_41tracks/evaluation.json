@@ -1,0 +1,90 @@
+{
+  "stages": [
+    {
+      "stage": "incremental",
+      "cost": "81848.173009951643",
+      "image_cost": "744.45847453969759",
+      "motion_cost": "81103.714535411942",
+      "reprojection_rmse": "0.25160344205255891",
+      "usable": "1",
+      "order_valid": "1"
+    },
+    {
+      "stage": "global",
+      "cost": "81842.557532647246",
+      "image_cost": "742.85771955948439",
+      "motion_cost": "81099.699813087762",
+      "reprojection_rmse": "0.25133279418318843",
+      "usable": "1",
+      "order_valid": "1"
+    }
+  ],
+  "reconstructed_observations": 11760,
+  "input_observations": 11760,
+  "observation_coverage": 1.0,
+  "matched_truth_observations": 11760,
+  "all_trajectory_rmse_m": 0.0016900942797095546,
+  "dynamic_trajectory_rmse_m": 0.0018475200359271498,
+  "static_trajectory_rmse_m": 4.739914530046784e-05,
+  "trajectory_metric": "Raw world coordinates, matched physical observations; no post-hoc rigid/similarity alignment.",
+  "dct_matched_truth_observations": 11760,
+  "all_dct_interpolated_rmse_m": 0.0017846938884437406,
+  "dynamic_dct_interpolated_rmse_m": 0.0019509441620766228,
+  "static_dct_interpolated_rmse_m": 4.739914530046784e-05,
+  "dct_metric": "Raw world coordinates; linearly interpolate exported DCT grid at each reconstructed observation time. Includes grid interpolation error; no extrapolation.",
+  "offset_reference_camera": 0,
+  "offset_errors": [
+    {
+      "camera_id": 0,
+      "error_seconds": 0.0,
+      "error_frames": 0.0
+    },
+    {
+      "camera_id": 1,
+      "error_seconds": 0.00013510776774613292,
+      "error_frames": 0.001621293212953595
+    },
+    {
+      "camera_id": 2,
+      "error_seconds": -0.00020652836476525022,
+      "error_frames": -0.0024783403771830026
+    },
+    {
+      "camera_id": 3,
+      "error_seconds": 7.730909745696894e-05,
+      "error_frames": 0.0009277091694836273
+    },
+    {
+      "camera_id": 4,
+      "error_seconds": -0.0005400396727719796,
+      "error_frames": -0.006480476073263755
+    },
+    {
+      "camera_id": 5,
+      "error_seconds": 0.00017375986656194622,
+      "error_frames": 0.0020851183987433547
+    },
+    {
+      "camera_id": 6,
+      "error_seconds": -7.705316295982673e-05,
+      "error_frames": -0.0009246379555179207
+    },
+    {
+      "camera_id": 7,
+      "error_seconds": 0.00033285145991508724,
+      "error_frames": 0.003994217518981047
+    },
+    {
+      "camera_id": 8,
+      "error_seconds": -5.01372436240502e-06,
+      "error_frames": -6.016469234886024e-05
+    },
+    {
+      "camera_id": 9,
+      "error_seconds": -3.6576629471658795e-05,
+      "error_frames": -0.00043891955365990554
+    }
+  ],
+  "offset_mae_frames": 0.0021123196613483408,
+  "offset_max_error_frames": 0.006480476073263755
+}

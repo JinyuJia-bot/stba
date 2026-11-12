@@ -1,0 +1,2 @@
+Incremental: Supplied saved global solution (warm start); metrics copied from source
+Global: Ceres Solver Report: Iterations: 603, Initial cost: 3.594674e+05, Final cost: 3.590104e+05, Termination: CONVERGENCE

@@ -1,0 +1,871 @@
+{
+  "name": "real_7_9_10",
+  "source_method": "A1_affine",
+  "source_files": [
+    "/data/jjy/ipc/stba/experiments/roma_lsm/results/real_7_9/A1_affine.npz",
+    "/data/jjy/ipc/stba/experiments/roma_lsm/results/real_7_10/A1_affine.npz"
+  ],
+  "source_pair_names": [
+    "real_7_9",
+    "real_7_10"
+  ],
+  "reference_camera": {
+    "camera_id": 7,
+    "image_path": "experiments/roma_lsm/data/cam07.png",
+    "static_mask_path": "experiments/roma_lsm/data/cam07_static.png",
+    "valid_mask_path": "experiments/roma_lsm/data/cam07_valid.png",
+    "size": [
+      480,
+      270
+    ],
+    "width": 480,
+    "height": 270,
+    "K": [
+      [
+        381.0895073484125,
+        0.0,
+        240.828817353825
+      ],
+      [
+        0.0,
+        380.8628253673125,
+        131.4439927698125
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "R": [
+      [
+        0.9999992278737978,
+        0.0009534705117825608,
+        0.0007969603449328353
+      ],
+      [
+        -0.0009565803266390083,
+        0.9999918950126376,
+        0.003910864752549358
+      ],
+      [
+        -0.0007932249913622051,
+        -0.003911624089455279,
+        0.999992034963827
+      ]
+    ],
+    "t": [
+      -1.8660550117,
+      -0.0744445398,
+      1.4460870028
+    ],
+    "C_world": [
+      1.8671294310381374,
+      0.0818797136105664,
+      -1.4442971702922016
+    ],
+    "D": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "distortion_model": "none_after_undistortion",
+    "coordinate_system": "undistorted_working",
+    "raw_K": [
+      [
+        3048.7160587873,
+        0.0,
+        1930.1305388306
+      ],
+      [
+        0.0,
+        3046.9026029385,
+        1055.0519421585
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "raw_D": [
+      0.096752368,
+      -0.1258416751,
+      0.0003301346,
+      -0.0007083865,
+      0.0
+    ],
+    "raw_distortion_model": "opencv_radial_tangential_k1_k2_p1_p2_k3",
+    "raw_size": [
+      3840,
+      2160
+    ],
+    "source_size": [
+      1920,
+      1080
+    ],
+    "source_K": [
+      [
+        1524.35802939365,
+        0.0,
+        964.8152694153
+      ],
+      [
+        0.0,
+        1523.45130146925,
+        527.27597107925
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "source_path": "/data/datasets/selfcap/corgi-release/videos/cam07/images_2/0230.png",
+    "source_image_sha256": "aa339cf4e2b0bfd88ee7feb8b2688cf6b95939b15a24aa3d18af3b8cc34386ea",
+    "frame": 230,
+    "timestamp": null,
+    "static_polygons": [
+      [
+        [
+          15,
+          176
+        ],
+        [
+          187,
+          176
+        ],
+        [
+          192,
+          260
+        ],
+        [
+          15,
+          260
+        ]
+      ],
+      [
+        [
+          330,
+          174
+        ],
+        [
+          465,
+          174
+        ],
+        [
+          465,
+          260
+        ],
+        [
+          330,
+          260
+        ]
+      ]
+    ],
+    "static_pixels": 26749,
+    "image_sha256": "e5133c7c0ac33006268f75bafdaca0b5d21748349bc13d3d72cf30b275321e33",
+    "working_to_raw_map_path": "experiments/roma_lsm/data/cam07_working_to_raw.npz"
+  },
+  "target_cameras": [
+    {
+      "camera_id": 9,
+      "image_path": "experiments/roma_lsm/data/cam09.png",
+      "static_mask_path": "experiments/roma_lsm/data/cam09_static.png",
+      "valid_mask_path": "experiments/roma_lsm/data/cam09_valid.png",
+      "size": [
+        480,
+        270
+      ],
+      "width": 480,
+      "height": 270,
+      "K": [
+        [
+          382.6858737746375,
+          0.0,
+          239.343402908725
+        ],
+        [
+          0.0,
+          382.4529186507875,
+          133.1495677999125
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "R": [
+        [
+          0.9978532653153008,
+          -0.00597348658578239,
+          -0.06521639638619407
+        ],
+        [
+          0.009473123692028644,
+          0.9985237007961905,
+          0.05348531458069129
+        ],
+        [
+          0.06480062366294968,
+          -0.05398829879047368,
+          0.9964367229114969
+        ]
+      ],
+      "t": [
+        -1.7627863884,
+        -0.5754708648,
+        1.3587998152
+      ],
+      "C_world": [
+        1.6764025849436544,
+        0.637450607195231,
+        -1.438141370564867
+      ],
+      "D": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "none_after_undistortion",
+      "coordinate_system": "undistorted_working",
+      "raw_K": [
+        [
+          3061.4869901971,
+          0.0,
+          1918.2472232698
+        ],
+        [
+          0.0,
+          3059.6233492063,
+          1068.6965423993
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "raw_D": [
+        0.1008397681,
+        -0.1458788674,
+        0.0003846933,
+        -0.0003484592,
+        0.0
+      ],
+      "raw_distortion_model": "opencv_radial_tangential_k1_k2_p1_p2_k3",
+      "raw_size": [
+        3840,
+        2160
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "source_K": [
+        [
+          1530.74349509855,
+          0.0,
+          958.8736116349
+        ],
+        [
+          0.0,
+          1529.81167460315,
+          534.09827119965
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_path": "/data/datasets/selfcap/corgi-release/videos/cam09/images_2/0230.png",
+      "source_image_sha256": "d28635348ea68110e54f291aa7711ebc7cc140bb05ca787a3e22755829882eab",
+      "frame": 230,
+      "timestamp": null,
+      "static_polygons": [
+        [
+          [
+            15,
+            173
+          ],
+          [
+            172,
+            173
+          ],
+          [
+            180,
+            260
+          ],
+          [
+            15,
+            260
+          ]
+        ],
+        [
+          [
+            312,
+            173
+          ],
+          [
+            465,
+            173
+          ],
+          [
+            465,
+            260
+          ],
+          [
+            312,
+            260
+          ]
+        ]
+      ],
+      "static_pixels": 27808,
+      "image_sha256": "993801eb59ffac2f6c8c242a8447c1878223164d5cb5f0558abf5ed2a5b78fea",
+      "working_to_raw_map_path": "experiments/roma_lsm/data/cam09_working_to_raw.npz"
+    },
+    {
+      "camera_id": 10,
+      "image_path": "experiments/roma_lsm/data/cam10.png",
+      "static_mask_path": "experiments/roma_lsm/data/cam10_static.png",
+      "valid_mask_path": "experiments/roma_lsm/data/cam10_valid.png",
+      "size": [
+        480,
+        270
+      ],
+      "width": 480,
+      "height": 270,
+      "K": [
+        [
+          383.409186508675,
+          0.0,
+          239.8565461071125
+        ],
+        [
+          0.0,
+          383.132936313675,
+          131.3048022996125
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "R": [
+        [
+          0.9176774073587863,
+          0.07734903988226616,
+          -0.38972464901844184
+        ],
+        [
+          -0.06884366468795203,
+          0.9969860610611261,
+          0.03576791693897554
+        ],
+        [
+          0.39131665675714455,
+          -0.005993336225528103,
+          0.9202365750530126
+        ]
+      ],
+      "t": [
+        -0.9174538851,
+        0.1230980009,
+        0.5341088176
+      ],
+      "C_world": [
+        0.6413955432997871,
+        -0.04856172016815396,
+        -0.8534638214465867
+      ],
+      "D": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "none_after_undistortion",
+      "coordinate_system": "undistorted_working",
+      "raw_K": [
+        [
+          3067.2734920694,
+          0.0,
+          1922.3523688569
+        ],
+        [
+          0.0,
+          3065.0634905094,
+          1053.9384183969
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "raw_D": [
+        0.090997844,
+        -0.1298072011,
+        0.0006368599,
+        -0.0003914096,
+        0.0
+      ],
+      "raw_distortion_model": "opencv_radial_tangential_k1_k2_p1_p2_k3",
+      "raw_size": [
+        3840,
+        2160
+      ],
+      "source_size": [
+        1920,
+        1080
+      ],
+      "source_K": [
+        [
+          1533.6367460347,
+          0.0,
+          960.92618442845
+        ],
+        [
+          0.0,
+          1532.5317452547,
+          526.71920919845
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_path": "/data/datasets/selfcap/corgi-release/videos/cam10/images_2/0230.png",
+      "source_image_sha256": "dbc4a35725857147d856636f7db1f57eb9d56ecf757be1591bdb476c645761ef",
+      "frame": 230,
+      "timestamp": null,
+      "static_polygons": [
+        [
+          [
+            15,
+            205
+          ],
+          [
+            140,
+            205
+          ],
+          [
+            148,
+            260
+          ],
+          [
+            15,
+            260
+          ]
+        ],
+        [
+          [
+            303,
+            175
+          ],
+          [
+            465,
+            175
+          ],
+          [
+            465,
+            260
+          ],
+          [
+            303,
+            260
+          ]
+        ]
+      ],
+      "static_pixels": 21298,
+      "image_sha256": "b0fb0e36e9ce88392ddafa2c52b9c144cff2b9d696cc5ff9c612620f494812a4",
+      "working_to_raw_map_path": "experiments/roma_lsm/data/cam10_working_to_raw.npz"
+    }
+  ],
+  "mode": "asynchronous_unknown",
+  "calibration_fixed": true,
+  "coordinate_system": "Undistorted working-image x/y, integer pixel centers; align_corners=False",
+  "stride": 1,
+  "seed": 20261111,
+  "config": {
+    "patch_size": 11,
+    "max_iterations": 15,
+    "batch_size": 512,
+    "sigma_photo": 0.03,
+    "huber_photo": 1.5,
+    "max_correction": 4.0,
+    "gain_min": 0.5,
+    "gain_max": 2.0,
+    "bias_limit": 0.35,
+    "affine_sv_min": 0.35,
+    "affine_sv_max": 2.8,
+    "affine_det_min": 0.12,
+    "texture_std_min": 0.012,
+    "texture_eigen_min": 1e-06,
+    "condition_max": 10000000.0,
+    "photo_rmse_max": 0.1,
+    "step_tolerance": 0.003,
+    "objective_tolerance": 1e-05,
+    "lm_initial": 0.001,
+    "require_convergence": true,
+    "min_angle_deg": 0.2,
+    "min_depth": 0.0001,
+    "max_relative_depth_change": 0.5,
+    "depth_information_min": 1e-08,
+    "quality_fb_scale": 1.5,
+    "quality_photo_scale": 0.05,
+    "quality_floor": 0.05,
+    "distance_scale": 0.0,
+    "distance_min_weight": 0.2
+  },
+  "central_config": {
+    "seed": 20261111,
+    "stride": 1,
+    "mode": "asynchronous_unknown",
+    "confidence_min": 0.2,
+    "fb_max": 2.0,
+    "lsm": {
+      "patch_size": 11,
+      "max_iterations": 15,
+      "batch_size": 512,
+      "sigma_photo": 0.03,
+      "huber_photo": 1.5,
+      "sigma_epi": 1.0,
+      "lambda_epi": 0.1,
+      "huber_epi": 2.0,
+      "affine_regularization": 0.001,
+      "max_correction": 4.0,
+      "gain_min": 0.5,
+      "gain_max": 2.0,
+      "bias_limit": 0.35,
+      "affine_sv_min": 0.35,
+      "affine_sv_max": 2.8,
+      "affine_det_min": 0.12,
+      "texture_std_min": 0.012,
+      "texture_eigen_min": 1e-06,
+      "condition_max": 10000000.0,
+      "photo_rmse_max": 0.1,
+      "step_tolerance": 0.003,
+      "objective_tolerance": 1e-05,
+      "lm_initial": 0.001,
+      "require_convergence": true
+    },
+    "multiview": {
+      "weight_modes": [
+        "uniform",
+        "quality",
+        "distance",
+        "quality_distance"
+      ],
+      "distance_floor": 0.2,
+      "distance_scale": "median_selected_baselines",
+      "weights_frozen": true
+    }
+  },
+  "reference_roi_pixels": 22090,
+  "eligible_stage1_pixels": 6241,
+  "initialization_valid_pixels": 6241,
+  "initialization_seconds": 0.04839351400732994,
+  "initialization": "Unweighted mean of both valid positive unit-ray ranges; identical for all four arms",
+  "weight_meaning": "Frozen heuristic raw model score x initial FB x initial photometric score; no calibrated probability/uncertainty claim",
+  "quality_source": "Original RoMa confidence, original forward-backward error, original affine-patch photometric error",
+  "distance_definition": "Euclidean separation of fixed camera centers, same calibration translation units",
+  "depth_definition": "Positive distance along reference unit world ray; NOT camera Z",
+  "covariance_claim": false,
+  "geometric_centers": "Both centers are projections of the same single 3D point; no independent offsets",
+  "dataset_metadata_path": null,
+  "status_legend": {
+    "0": "not_attempted",
+    "1": "success",
+    "2": "nonfinite_input",
+    "3": "reference_boundary",
+    "4": "target_boundary",
+    "5": "low_texture",
+    "6": "ill_conditioned",
+    "7": "affine_invalid",
+    "8": "no_convergence",
+    "9": "correction_limit",
+    "10": "photo_high",
+    "13": "fb_after",
+    "14": "static_mask_boundary",
+    "15": "geometry_degenerate",
+    "16": "depth_limit",
+    "17": "ineligible",
+    "18": "invalid_quality"
+  },
+  "methods": {
+    "uniform": {
+      "valid_pixels": 6113,
+      "timing": {
+        "seconds": 4.520385244861245,
+        "initialization_seconds": 0.0001749712973833084,
+        "weight_seconds": 0.0011955220252275467,
+        "peak_cuda_allocated_bytes": 24506368,
+        "points": 6241,
+        "config": {
+          "patch_size": 11,
+          "max_iterations": 15,
+          "batch_size": 512,
+          "sigma_photo": 0.03,
+          "huber_photo": 1.5,
+          "max_correction": 4.0,
+          "gain_min": 0.5,
+          "gain_max": 2.0,
+          "bias_limit": 0.35,
+          "affine_sv_min": 0.35,
+          "affine_sv_max": 2.8,
+          "affine_det_min": 0.12,
+          "texture_std_min": 0.012,
+          "texture_eigen_min": 1e-06,
+          "condition_max": 10000000.0,
+          "photo_rmse_max": 0.1,
+          "step_tolerance": 0.003,
+          "objective_tolerance": 1e-05,
+          "lm_initial": 0.001,
+          "require_convergence": true,
+          "min_angle_deg": 0.2,
+          "min_depth": 0.0001,
+          "max_relative_depth_change": 0.5,
+          "depth_information_min": 1e-08,
+          "quality_fb_scale": 1.5,
+          "quality_photo_scale": 0.05,
+          "quality_floor": 0.05,
+          "distance_scale": 0.0,
+          "distance_min_weight": 0.2
+        },
+        "device": "cuda",
+        "weight_mode": "uniform",
+        "scene_mode": "asynchronous_unknown",
+        "distance_scale": 0.9771844089086186,
+        "weights_frozen": true,
+        "depth_definition": "Positive distance along unit reference WORLD ray; not camera Z",
+        "initialization": "Unweighted mean of the same two valid positive pair ranges for all arms",
+        "postscreen_seconds": 0.026702135801315308,
+        "saving_seconds": 0.4686556626111269
+      },
+      "status_counts": {
+        "1:success": 6113,
+        "8:no_convergence": 115,
+        "14:static_mask_boundary": 13
+      },
+      "distance_scale": 0.9771844089086186,
+      "baselines": [
+        0.587429690677867,
+        1.3669391271393703
+      ],
+      "distance_component": [
+        0.6967173186187025,
+        0.2
+      ]
+    },
+    "quality": {
+      "valid_pixels": 6117,
+      "timing": {
+        "seconds": 4.541715815663338,
+        "initialization_seconds": 0.0003108847886323929,
+        "weight_seconds": 0.001494031399488449,
+        "peak_cuda_allocated_bytes": 24506368,
+        "points": 6241,
+        "config": {
+          "patch_size": 11,
+          "max_iterations": 15,
+          "batch_size": 512,
+          "sigma_photo": 0.03,
+          "huber_photo": 1.5,
+          "max_correction": 4.0,
+          "gain_min": 0.5,
+          "gain_max": 2.0,
+          "bias_limit": 0.35,
+          "affine_sv_min": 0.35,
+          "affine_sv_max": 2.8,
+          "affine_det_min": 0.12,
+          "texture_std_min": 0.012,
+          "texture_eigen_min": 1e-06,
+          "condition_max": 10000000.0,
+          "photo_rmse_max": 0.1,
+          "step_tolerance": 0.003,
+          "objective_tolerance": 1e-05,
+          "lm_initial": 0.001,
+          "require_convergence": true,
+          "min_angle_deg": 0.2,
+          "min_depth": 0.0001,
+          "max_relative_depth_change": 0.5,
+          "depth_information_min": 1e-08,
+          "quality_fb_scale": 1.5,
+          "quality_photo_scale": 0.05,
+          "quality_floor": 0.05,
+          "distance_scale": 0.0,
+          "distance_min_weight": 0.2
+        },
+        "device": "cuda",
+        "weight_mode": "quality",
+        "scene_mode": "asynchronous_unknown",
+        "distance_scale": 0.9771844089086186,
+        "weights_frozen": true,
+        "depth_definition": "Positive distance along unit reference WORLD ray; not camera Z",
+        "initialization": "Unweighted mean of the same two valid positive pair ranges for all arms",
+        "postscreen_seconds": 0.010388137772679329,
+        "saving_seconds": 0.4637304786592722
+      },
+      "status_counts": {
+        "1:success": 6117,
+        "8:no_convergence": 111,
+        "14:static_mask_boundary": 13
+      },
+      "distance_scale": 0.9771844089086186,
+      "baselines": [
+        0.587429690677867,
+        1.3669391271393703
+      ],
+      "distance_component": [
+        0.6967173186187025,
+        0.2
+      ]
+    },
+    "distance": {
+      "valid_pixels": 6092,
+      "timing": {
+        "seconds": 4.404641905799508,
+        "initialization_seconds": 0.00024307146668434143,
+        "weight_seconds": 0.0013590175658464432,
+        "peak_cuda_allocated_bytes": 24506368,
+        "points": 6241,
+        "config": {
+          "patch_size": 11,
+          "max_iterations": 15,
+          "batch_size": 512,
+          "sigma_photo": 0.03,
+          "huber_photo": 1.5,
+          "max_correction": 4.0,
+          "gain_min": 0.5,
+          "gain_max": 2.0,
+          "bias_limit": 0.35,
+          "affine_sv_min": 0.35,
+          "affine_sv_max": 2.8,
+          "affine_det_min": 0.12,
+          "texture_std_min": 0.012,
+          "texture_eigen_min": 1e-06,
+          "condition_max": 10000000.0,
+          "photo_rmse_max": 0.1,
+          "step_tolerance": 0.003,
+          "objective_tolerance": 1e-05,
+          "lm_initial": 0.001,
+          "require_convergence": true,
+          "min_angle_deg": 0.2,
+          "min_depth": 0.0001,
+          "max_relative_depth_change": 0.5,
+          "depth_information_min": 1e-08,
+          "quality_fb_scale": 1.5,
+          "quality_photo_scale": 0.05,
+          "quality_floor": 0.05,
+          "distance_scale": 0.0,
+          "distance_min_weight": 0.2
+        },
+        "device": "cuda",
+        "weight_mode": "distance",
+        "scene_mode": "asynchronous_unknown",
+        "distance_scale": 0.9771844089086186,
+        "weights_frozen": true,
+        "depth_definition": "Positive distance along unit reference WORLD ray; not camera Z",
+        "initialization": "Unweighted mean of the same two valid positive pair ranges for all arms",
+        "postscreen_seconds": 0.009903505444526672,
+        "saving_seconds": 0.45399490371346474
+      },
+      "status_counts": {
+        "1:success": 6092,
+        "8:no_convergence": 135,
+        "13:fb_after": 1,
+        "14:static_mask_boundary": 13
+      },
+      "distance_scale": 0.9771844089086186,
+      "baselines": [
+        0.587429690677867,
+        1.3669391271393703
+      ],
+      "distance_component": [
+        0.6967173186187025,
+        0.2
+      ]
+    },
+    "quality_distance": {
+      "valid_pixels": 6084,
+      "timing": {
+        "seconds": 4.335702920332551,
+        "initialization_seconds": 0.00034854933619499207,
+        "weight_seconds": 0.0014224573969841003,
+        "peak_cuda_allocated_bytes": 24506368,
+        "points": 6241,
+        "config": {
+          "patch_size": 11,
+          "max_iterations": 15,
+          "batch_size": 512,
+          "sigma_photo": 0.03,
+          "huber_photo": 1.5,
+          "max_correction": 4.0,
+          "gain_min": 0.5,
+          "gain_max": 2.0,
+          "bias_limit": 0.35,
+          "affine_sv_min": 0.35,
+          "affine_sv_max": 2.8,
+          "affine_det_min": 0.12,
+          "texture_std_min": 0.012,
+          "texture_eigen_min": 1e-06,
+          "condition_max": 10000000.0,
+          "photo_rmse_max": 0.1,
+          "step_tolerance": 0.003,
+          "objective_tolerance": 1e-05,
+          "lm_initial": 0.001,
+          "require_convergence": true,
+          "min_angle_deg": 0.2,
+          "min_depth": 0.0001,
+          "max_relative_depth_change": 0.5,
+          "depth_information_min": 1e-08,
+          "quality_fb_scale": 1.5,
+          "quality_photo_scale": 0.05,
+          "quality_floor": 0.05,
+          "distance_scale": 0.0,
+          "distance_min_weight": 0.2
+        },
+        "device": "cuda",
+        "weight_mode": "quality_distance",
+        "scene_mode": "asynchronous_unknown",
+        "distance_scale": 0.9771844089086186,
+        "weights_frozen": true,
+        "depth_definition": "Positive distance along unit reference WORLD ray; not camera Z",
+        "initialization": "Unweighted mean of the same two valid positive pair ranges for all arms",
+        "postscreen_seconds": 0.010325785726308823,
+        "saving_seconds": 0.45567923225462437
+      },
+      "status_counts": {
+        "1:success": 6084,
+        "8:no_convergence": 143,
+        "13:fb_after": 1,
+        "14:static_mask_boundary": 13
+      },
+      "distance_scale": 0.9771844089086186,
+      "baselines": [
+        0.587429690677867,
+        1.3669391271393703
+      ],
+      "distance_component": [
+        0.6967173186187025,
+        0.2
+      ]
+    }
+  },
+  "software": {
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu121"
+  },
+  "warning": "Real data without GT measures consistency only; fixed-geometry residuals are not independent accuracy evidence",
+  "total_seconds": 20.10452075302601
+}

@@ -1,0 +1,6 @@
+{
+  "cycle_rejected_but_GT_visible_samples": 1731,
+  "fraction_composed_track_EPE_lt_1px": 1.0,
+  "mean_composed_track_EPE_px": 0.1092098727428038,
+  "interpretation": "Evaluation only: cycle disagreement often rejected an accurate composed flow track. This does not justify using GT to recover rejected tracks."
+}

@@ -1,0 +1,15 @@
+# Flat key: value configuration, parsed strictly; unknown keys are errors.
+motion_weight: 1000
+epsilon_seconds: 0.000001
+min_dt: 0.0000000001
+search_radius: 0.75
+coarse_step: 0.05
+fine_step: 0.005
+max_iterations: 80
+reference_camera: 0
+optimize_offsets: true
+optimize_poses: false
+optimize_intrinsics: false
+huber_px: 0
+dct_fps: 60
+dct_max_samples: 256

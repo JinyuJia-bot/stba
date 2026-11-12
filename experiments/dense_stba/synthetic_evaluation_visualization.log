@@ -1,0 +1,5 @@
+{"case": "synthetic_fractional", "figures": "experiments/dense_stba/results/synthetic_fractional/figures", "B3_position_rmse_m": 0.011427803673768147}
+{"case": "synthetic_near_static", "figures": "experiments/dense_stba/results/synthetic_near_static/figures", "B3_position_rmse_m": 0.008188548680972454}
+{"case": "synthetic_noisy_occlusion", "figures": "experiments/dense_stba/results/synthetic_noisy_occlusion/figures", "B3_position_rmse_m": 0.02121433798413712}
+{"case": "synthetic_wide", "figures": "experiments/dense_stba/results/synthetic_wide/figures", "B3_position_rmse_m": 0.009467665404708054}
+{"case": "synthetic_zero", "figures": "experiments/dense_stba/results/synthetic_zero/figures", "B3_position_rmse_m": 0.012467656537103317}

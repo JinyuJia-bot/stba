@@ -1,0 +1,68 @@
+{
+  "translation": {
+    "01": {
+      "visible": 25521,
+      "occluded": 0,
+      "in_bounds": 25521
+    },
+    "10": {
+      "visible": 25521,
+      "occluded": 0,
+      "in_bounds": 25521
+    },
+    "02": {
+      "visible": 24850,
+      "occluded": 0,
+      "in_bounds": 24850
+    },
+    "20": {
+      "visible": 24850,
+      "occluded": 0,
+      "in_bounds": 24850
+    }
+  },
+  "affine_brightness": {
+    "01": {
+      "visible": 24224,
+      "occluded": 0,
+      "in_bounds": 24224
+    },
+    "10": {
+      "visible": 26242,
+      "occluded": 0,
+      "in_bounds": 26242
+    },
+    "02": {
+      "visible": 24901,
+      "occluded": 0,
+      "in_bounds": 24901
+    },
+    "20": {
+      "visible": 24534,
+      "occluded": 0,
+      "in_bounds": 24534
+    }
+  },
+  "occlusion_weak_noise": {
+    "01": {
+      "visible": 25481,
+      "occluded": 160,
+      "in_bounds": 25641
+    },
+    "10": {
+      "visible": 26211,
+      "occluded": 168,
+      "in_bounds": 26379
+    },
+    "02": {
+      "visible": 24813,
+      "occluded": 298,
+      "in_bounds": 25111
+    },
+    "20": {
+      "visible": 23850,
+      "occluded": 294,
+      "in_bounds": 24144
+    }
+  }
+}

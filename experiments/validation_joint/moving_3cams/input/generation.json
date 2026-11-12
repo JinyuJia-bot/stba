@@ -1,0 +1,29 @@
+{
+  "out": "experiments/validation_joint/moving_3cams/input",
+  "cameras": 3,
+  "frames": 24,
+  "tracks": 4,
+  "static_points": 20,
+  "fps": 30.0,
+  "fps_list": null,
+  "noise": 0.1,
+  "drop_rate": 0.0,
+  "seed": 42,
+  "beta": null,
+  "pose_noise": 0.003,
+  "intrinsics_noise": 0.01,
+  "moving": true,
+  "trajectory_csv": null,
+  "start_time": null,
+  "max_gap": null,
+  "true_beta_frames": [
+    0.0,
+    0.37,
+    -0.23
+  ],
+  "fps_per_camera": [
+    30.0,
+    30.0,
+    30.0
+  ]
+}

@@ -1,0 +1,45 @@
+test_identity_dense_grid (test_coordinates_geometry.CoordinateTests) ... ok
+test_no_padding_as_valid_observation (test_coordinates_geometry.CoordinateTests) ... ok
+test_pixel_centers_and_normalized_edges (test_coordinates_geometry.CoordinateTests) ... ok
+test_resize_and_crop_calibration (test_coordinates_geometry.CoordinateTests) ... ok
+test_torch_identity_sampler_and_gradients (test_coordinates_geometry.CoordinateTests) ... ok
+test_unequal_sizes_subpixel_roundtrip (test_coordinates_geometry.CoordinateTests) ... ok
+test_bad_calibration_and_raw_coordinate_rejected (test_coordinates_geometry.GeometryTests) ... ok
+test_fixed_camera_projection_and_unit_ray (test_coordinates_geometry.GeometryTests) ... ok
+test_known_3d_f_direction_and_resize (test_coordinates_geometry.GeometryTests) ... ok
+test_normalized_epipolar_distance_and_jacobian (test_coordinates_geometry.GeometryTests) ... ok
+test_ray_range_projection_derivative (test_coordinates_geometry.GeometryTests) ... ok
+test_torch_geometry_parity_and_autograd (test_coordinates_geometry.GeometryTests) ... ok
+test_triangulation_positive_depth_and_degeneracy (test_coordinates_geometry.GeometryTests) ... ok
+test_denominator_and_filtering_effect (test_evaluate.EvaluationTests) ... ok
+test_different_roi_rejected (test_evaluate.EvaluationTests) ... ok
+test_fallback_and_worsening (test_evaluate.EvaluationTests) ... ok
+test_real_has_no_accuracy_metrics (test_evaluate.EvaluationTests) ... ok
+test_affine_and_gain_bias (test_lsm.LSMTests) ... ok
+test_bilinear_validity_and_derivatives (test_lsm.LSMTests) ... ok
+test_evaluation_coverage_does_not_count_fallback_or_hide_rejections (test_lsm.LSMTests) ... ok
+test_exact_patch_jacobian_translation_and_affine (test_lsm.LSMTests) ... ok
+test_flat_texture_is_rejected (test_lsm.LSMTests) ... ok
+test_known_subpixel_translation (test_lsm.LSMTests) ... ok
+test_max_correction_is_a_failure_not_success (test_lsm.LSMTests) ... ok
+test_nan_and_boundaries_are_not_refined (test_lsm.LSMTests) ... ok
+test_nonfinite_affine_is_rejected_without_solver_crash (test_lsm.LSMTests) ... ok
+test_nonfinite_image_raises_clear_error (test_lsm.LSMTests) ... ok
+test_asynchronous_and_failure_gates (test_multiview.MultiViewTests) ... ok
+test_batch_invariance (test_multiview.MultiViewTests) ... ok
+test_four_arms_share_initialization_but_weights_affect_depth (test_multiview.MultiViewTests) ... ok
+test_frozen_weight_components_and_baselines (test_multiview.MultiViewTests) ... ok
+test_initial_range_uses_both_cameras_and_is_not_z (test_multiview.MultiViewTests) ... ok
+test_shared_depth_improves_analytic_plane (test_multiview.MultiViewTests) ... ok
+test_shared_residual_jacobian_finite_difference (test_multiview.MultiViewTests) ... ok
+test_affine_homography (test_synthetic.SyntheticTests) ... ok
+test_calibrated_subpixel_translation (test_synthetic.SyntheticTests) ... ok
+test_continuous_render_and_weak_texture (test_synthetic.SyntheticTests) ... ok
+test_controlled_initialization_error (test_synthetic.SyntheticTests) ... ok
+test_ray_distance_is_not_z_depth (test_synthetic.SyntheticTests) ... ok
+test_true_occlusion_and_visibility (test_synthetic.SyntheticTests) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 1.802s
+
+OK

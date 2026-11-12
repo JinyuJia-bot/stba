@@ -1,0 +1,2 @@
+method,scope,valid_samples,coverage,oracle_beta,train_reprojection_rmse_px,holdout_reprojection_rmse_px
+B3,own,32064,0.35913978494623655,False,0.21256623702023347,0.2170351727926418

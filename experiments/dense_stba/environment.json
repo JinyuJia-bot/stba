@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-11-11T10:57:19.352118+00:00",
+  "scope": "Actual local environment captured for the dense STBA experiment; package versions and file hashes are observations, not an installation lockfile.",
+  "repository": {
+    "path": "/data/jjy/ipc/stba",
+    "head_commit": "ee2af7d2ac260c5c6956fb9f48cf2d277dd72ae9",
+    "note": "Experiment files may be uncommitted; the repository commit alone does not identify this experiment."
+  },
+  "python": {
+    "executable": "/data/tools/miniconda3/envs/roma_corr/bin/python",
+    "version": "3.10.20",
+    "full_version": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]",
+    "implementation": "CPython"
+  },
+  "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "opencv-python": "4.13.0.92",
+    "opencv-python-headless": "4.13.0.92",
+    "matplotlib": "3.10.9",
+    "Pillow": "12.2.0",
+    "romatch": "0.1.2",
+    "kornia": "0.8.2",
+    "einops": "0.8.2",
+    "timm": "1.0.27",
+    "h5py": "3.16.0"
+  },
+  "runtime_versions": {
+    "torch": "2.5.1+cu121",
+    "torch_cuda_build": "12.1",
+    "numpy": "2.2.6",
+    "opencv": "4.13.0"
+  },
+  "gpu": {
+    "devices_from_current_probe": null,
+    "probe": {
+      "command": "nvidia-smi --query-gpu=index,name,driver_version --format=csv,noheader",
+      "exit_code": 9,
+      "stdout": "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.",
+      "stderr": ""
+    },
+    "permissions_requested": false,
+    "recorded_inference_device": "NVIDIA GeForce RTX 4090",
+    "recorded_inference_device_source": "/data/jjy/ipc/stba/experiments/roma_lsm/cache/provenance.json",
+    "recorded_inference_source_sha256": "51b0f536d493c4adcdac40dbbf9987ff0f36b9df93d94127bd35074bd31292b1",
+    "note": "Current GPU probe could not access the driver. The prior inference provenance records the GPU actually used; it is not a current hardware probe."
+  },
+  "roma": {
+    "algorithm": "RoMa v1 outdoor; full symmetric dense fields, no sparse sample() and no RoMa v2",
+    "package_root": "/data/tools/miniconda3/envs/roma_corr/lib/python3.10/site-packages/romatch",
+    "package_version": "0.1.2",
+    "installation_direct_url": {
+      "url": "https://github.com/Parskatt/RoMa.git",
+      "vcs_info": {
+        "commit_id": "77f8d68803526dcddfd9b7a46bc76125bdc25f15",
+        "vcs": "git"
+      }
+    },
+    "source_identity_note": "Installed Python source hashes define the actual local implementation, which can differ from the installation Git commit.",
+    "actual_python_source_sha256": {
+      "__init__.py": "6c02c6a719caa08da5a3c0797774bf3aa1c3d6f78c2ca503cb74c655aa711f3b",
+      "benchmarks/__init__.py": "6bec076fceebde46dc36b4a05ab425573472c435ded7d44bd0d2f0ee35412485",
+      "benchmarks/hpatches_sequences_homog_benchmark.py": "ef67ad6673ca59cb8481964c1ee3b5417ee672c34498228976986a0d56019391",
+      "benchmarks/megadepth_dense_benchmark.py": "5bc73cf403ec5fb9473d5ccf8a322e19b06ded8657978bea8073652f3192bdd1",
+      "benchmarks/megadepth_pose_estimation_benchmark.py": "6d449c7beb9ae7b9348af9477c4fc6f5aea03e95fd9bf15ece19bb7db4cca515",
+      "benchmarks/megadepth_pose_estimation_benchmark_poselib.py": "d0525fe7d976dd1f242cffe44ed4387f8974d81597a2acdd08942607320526d1",
+      "benchmarks/scannet_benchmark.py": "9927228b8a38debfb1308748ae96959b021f794bb6cc1fbff80d03fc9f2a13f2",
+      "checkpointing/__init__.py": "13ce93f10299ad819d1449aa923e13704a43dc4bd5c0bc0e50b9e520a7e0fb79",
+      "checkpointing/checkpoint.py": "44df73f52ffdb11ca0efe8f54d556e69ef58c0c27213d82708472fecf7a5ba8b",
+      "datasets/__init__.py": "3155882357827dc1e94249d447b678e2dab0a4a70706e0c5ee116fa85122271a",
+      "datasets/megadepth.py": "2c2d93965335d0d5e8faa248d7ea839332de7b6eaddf58989c08aed1f265e325",
+      "datasets/scannet.py": "ae6b6203ea2bd9940b0ae756fe94cb8daa27ec9822cb8348904bbd5a098283f3",
+      "losses/__init__.py": "cf8213e9f45c263026697770346d50c4b70319ad83187006cbcaea8cdb09b332",
+      "losses/robust_loss.py": "4c7f8097e1a0b53a4c603350f30e537aa31d1befb5830468d56bd6b63080a4af",
+      "losses/robust_loss_tiny_roma.py": "08172e5883b73efb1bd1376e6a1f588ad9c39c16cbc732eae5d3930c857aeb7d",
+      "models/__init__.py": "0641a484dd03c6fd4b99fff0e92360aa8492cad8c5510727b69f2fbdfc66b226",
+      "models/encoders.py": "567d87dfe8e4118f2b96a504e32ab421f5c734523c3842ba50aa12acf7c30149",
+      "models/matcher.py": "acefa44a0d983be14542239b4dd43d939f1fcdd5b1c0a222dc2b964b9ffb8973",
+      "models/model_zoo/__init__.py": "be696bc2559a367fccdaaf724e61f755c09c32a2fea7e9cd3af5af40d446477a",
+      "models/model_zoo/roma_models.py": "952a417cbe4bf0a510afb011280751e19710f6736c28a0f39776d0b2841169a8",
+      "models/tiny.py": "068a111a23bd84bdfa3a40252c1c4684bcca4158243b62d34c97b299d8130af6",
+      "models/transformer/__init__.py": "e5c20e82ef55281e6d7dcf0269ed403ae25ef882b2c807a1da133caa5da14508",
+      "models/transformer/dinov2.py": "0b835699807843d883167dd44723150bcbe08973ecb1f2a9d9817a1d962883ed",
+      "models/transformer/layers/__init__.py": "6dbf9db5fd20e694d01c7c6f4bb2709890b65d17d03f666df0fddc1c77a7af28",
+      "models/transformer/layers/attention.py": "bb25a4d4f5246d68b0435d6eda1d8034562119491320e0ff3ff702734657328e",
+      "models/transformer/layers/block.py": "d00e51ef630494ca141357c7acbd57c35e4dd6fd9e0a9e3ed52d0191363d4af4",
+      "models/transformer/layers/dino_head.py": "1a8dfb966458a85ba4807604a0842ed22e3ee69e0c20cebcdac99559cbd838a0",
+      "models/transformer/layers/drop_path.py": "949100aac4d9c19c9d65319dbd362886c5d46a72d7586ba4fd500e9f1d51570c",
+      "models/transformer/layers/layer_scale.py": "356817b5d1390737128cbcc03a5333fd3060b73beae478772282ccb851d0ef85",
+      "models/transformer/layers/mlp.py": "c18c5b3f021408597a473bb710070ec3fb3b39f5a2e42e88ae83ced425a608b5",
+      "models/transformer/layers/patch_embed.py": "b3f82e19926c9cfb63f10136aca5e8a723bde1ad62dae1d04f90d405f9439baf",
+      "models/transformer/layers/swiglu_ffn.py": "df81d9901240214edc1831ce1b77558dcd6227b29a2f000fc5f546df55d2d09a",
+      "train/__init__.py": "2344cce523fdf5eac0f644a800b29af59f76cdd4ea6ca8990a7d94b3b15bf94c",
+      "train/train.py": "93a3eee58c76c16ba52151950507e0ed052ac69e084742d42d5115aa59507791",
+      "utils/__init__.py": "503f77ab2b761e3c2e3e20d16db47557cadfb8bf303add0b2435f766cfcb096b",
+      "utils/kde.py": "d904f813141c42d2a123f21bfcb85bee03d34ef2a3c9d07fe7667b828cce1a6f",
+      "utils/local_correlation.py": "96fae5665a555b52316d3720e7b78c7bf33f5364901420e5bf7ba713e92a0fd2",
+      "utils/transforms.py": "14bb142c7806b556fb2ee529161fafa2b99b1b9c9ae9db5955ce05521525678d",
+      "utils/utils.py": "1166c0b5d942e41a13692d5b6b7fea98f1333c25bc758a27613f161d03863dc9"
+    },
+    "source_tree_sha256": "575bfc5808117526a15ffa2fb606d14271fbb4cee9066eb17a58a9d5ce66052e",
+    "source_tree_hash_definition": "SHA256 of UTF-8 JSON(relative .py path -> file SHA256), sorted keys and compact separators; no trailing newline.",
+    "weights": [
+      {
+        "path": "/home/jjy/.cache/torch/hub/checkpoints/roma_outdoor.pth",
+        "exists": true,
+        "size_bytes": 445647516,
+        "sha256": "c7a45c80d41ad788a63c641d1b686d7cb3f297f40097c6f4e75039889e5cc8ba"
+      },
+      {
+        "path": "/home/jjy/.cache/torch/hub/checkpoints/dinov2_vitl14_pretrain.pth",
+        "exists": true,
+        "size_bytes": 1217586395,
+        "sha256": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428"
+      }
+    ],
+    "adapter_path": "/data/jjy/ipc/stba/experiments/roma_lsm/roma_adapter.py",
+    "adapter_sha256": "8dc1e2d6398c58d93370e35f65187f5186c9828a2ffb9b3bcec05487a420e28e",
+    "coordinate_convention": "xy integer pixel centers; grid_sample align_corners=False; uv=(normalized+1)*target_size/2-0.5",
+    "inference_settings": {
+      "coarse_resolution": [
+        560,
+        560
+      ],
+      "upsample_resolution": [
+        560,
+        560
+      ],
+      "upsample_preds": true,
+      "symmetric": true,
+      "use_custom_corr": false,
+      "with_padding": false,
+      "do_compile": false,
+      "amp_dtype": "float16",
+      "seed": 20261111,
+      "device": "cuda",
+      "matmul_precision": "highest",
+      "torch_threads": 4
+    },
+    "installed_sources_match_recorded_inference": true,
+    "checkpoint_hashes_match_recorded_inference": true
+  },
+  "reproducibility": {
+    "entrypoint": "experiments/dense_stba/reproduce.sh",
+    "default_python": "/data/tools/miniconda3/envs/roma_corr/bin/python",
+    "default_cuda_visible_devices": "5",
+    "overrides": [
+      "DENSE_PY",
+      "CUDA_VISIBLE_DEVICES",
+      "DENSE_LOG_DIR"
+    ],
+    "seed": 20261111,
+    "default_device": "cuda",
+    "default_torch_threads": 4,
+    "temporal_tracker": "OpenCV DIS medium on CPU; forward/backward and independent five-frame checks; no CoTracker weights used",
+    "tests": "Python standard-library unittest; pytest is not required",
+    "bitwise_gpu_repeatability_guaranteed": false,
+    "real_input_root": "/data/datasets/selfcap/corgi-release",
+    "official_readme": "/data/datasets/SelfCap/README.md",
+    "cameras": [
+      7,
+      9,
+      10
+    ],
+    "reference_camera_id": 7,
+    "reference_raw_frame_range": [
+      200,
+      260
+    ],
+    "work_size": [
+      480,
+      270
+    ],
+    "cameras_optimized": false
+  },
+  "config_sha256": {
+    "config.json": "8825b30ee2f1eeebaeb2c824f5ff00ab74aedd32c7d68f7cd276d3ba08719e30",
+    "configs/density1.json": "96143a8c8403b0da6bac5c6a3aae9ce393d964b8ad1b3bfc096dbc186d58482d",
+    "configs/integer_wide_bounds.json": "dd274cd2771827bf65621859e3e3771de79b380be44d14c9436c92640b24597f",
+    "configs/motion_x10.json": "7d11ff4059f642813fc3f22caa4793e37ea588715732e04fb00ea06b786c21e8",
+    "configs/no_motion.json": "ee19ff505ba72de486f551a8628270297e9e9d3790ce107c0d9802fd9d0241e4",
+    "configs/uniform_observation_weights.json": "dbdca53242240e621ad0d0e2f6fe15001baf25160e97bb9b97e0693185e2fe83"
+  }
+}

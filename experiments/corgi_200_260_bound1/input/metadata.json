@@ -1,0 +1,72 @@
+{
+  "camera_original_ids": [
+    4,
+    7,
+    10,
+    13,
+    16,
+    18,
+    21,
+    23
+  ],
+  "frames_start": 200,
+  "frames_stop_exclusive": 260,
+  "fps": 60.0,
+  "observations": 6795,
+  "tracks": 17,
+  "confidence_threshold": 0.5,
+  "pixel_coordinates": "Original 3840x2160 calibration coordinates; undistorted with original K,D",
+  "geometry": "Official K,R,T fixed; original distortion used only for undistortion and visualization",
+  "reference_camera_original": 4,
+  "time_formula": "g=f-k; r=beta-k; t=(g-r)/60=(f-beta)/60",
+  "integer_shifts": [
+    0,
+    0,
+    -3,
+    -1,
+    -1,
+    1,
+    -1,
+    0
+  ],
+  "aligned_window": [
+    200,
+    260
+  ],
+  "raw_windows": [
+    [
+      200,
+      260
+    ],
+    [
+      200,
+      260
+    ],
+    [
+      197,
+      257
+    ],
+    [
+      199,
+      259
+    ],
+    [
+      199,
+      259
+    ],
+    [
+      201,
+      261
+    ],
+    [
+      199,
+      259
+    ],
+    [
+      200,
+      260
+    ]
+  ],
+  "ground_truth": false,
+  "length_unit": "Unverified SelfCap native world-coordinate unit"
+}

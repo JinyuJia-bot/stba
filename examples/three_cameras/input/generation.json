@@ -1,0 +1,29 @@
+{
+  "out": "/workspace/scratch/10f93ddfd410/stba-complete/stba-reproduction/experiments/checks/signed_offsets/input",
+  "cameras": 3,
+  "frames": 24,
+  "tracks": 4,
+  "static_points": 8,
+  "fps": 30.0,
+  "fps_list": null,
+  "noise": 0.1,
+  "drop_rate": 0.0,
+  "seed": 42,
+  "beta": "0,0.31,-0.27",
+  "pose_noise": 0.0,
+  "intrinsics_noise": 0.0,
+  "moving": false,
+  "trajectory_csv": null,
+  "start_time": null,
+  "max_gap": null,
+  "true_beta_frames": [
+    0.0,
+    0.31,
+    -0.27
+  ],
+  "fps_per_camera": [
+    30.0,
+    30.0,
+    30.0
+  ]
+}

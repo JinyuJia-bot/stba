@@ -1,0 +1,5 @@
+Generated fractional: 3 cameras x 32 RGB frames at /data/jjy/ipc/stba/experiments/dense_stba/data/synthetic/fractional
+Generated wide: 3 cameras x 32 RGB frames at /data/jjy/ipc/stba/experiments/dense_stba/data/synthetic/wide
+Generated zero: 3 cameras x 32 RGB frames at /data/jjy/ipc/stba/experiments/dense_stba/data/synthetic/zero
+Generated noisy_occlusion: 3 cameras x 32 RGB frames at /data/jjy/ipc/stba/experiments/dense_stba/data/synthetic/noisy_occlusion
+Generated near_static: 3 cameras x 32 RGB frames at /data/jjy/ipc/stba/experiments/dense_stba/data/synthetic/near_static

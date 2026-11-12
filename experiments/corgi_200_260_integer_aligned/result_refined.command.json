@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/refine/build/refine_global",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/result",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/result_refined",
+    "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/config.yaml",
+    "1000"
+  ],
+  "seconds": 12.148642301559448,
+  "returncode": 0,
+  "solver_sha256": "4d83169a7cb7a5bf175fe24fd98ee0bcd272116469df25af25de51770da5af1e",
+  "linked_root_core_sha256": "03cfcd88df85db2d75d208b9f821f767c0b0b73784f517d5aace171e4ace2d2a",
+  "trigger": "Initial global solve reached 200 iterations without convergence; continue both solves with identical 1000-iteration cap",
+  "initial_result_preserved": "/data/jjy/ipc/stba/experiments/corgi_200_260_integer_aligned/result"
+}

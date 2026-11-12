@@ -1,0 +1,130 @@
+{
+  "root_source_and_binary_unchanged": true,
+  "source_data_unchanged": true,
+  "runs": {
+    "baseline": {
+      "audited_states": 34,
+      "stage_counts": {
+        "optimize_input": 1,
+        "ceres_iterate": 32,
+        "optimize_output": 1
+      },
+      "minimum_beta": -0.3258725362829864,
+      "maximum_beta": 0.3132389900274575,
+      "final_beta": [
+        0.0,
+        0.27700283797457814,
+        0.3132389900274575,
+        -0.013246315997093916,
+        0.14366548182442784,
+        -0.3258725362829864,
+        -0.2097398075275123,
+        0.06740977813024074
+      ],
+      "calibration_max_change": 0.0,
+      "observations": 6795,
+      "independently_recomputed_rmse": 22.92997993853785,
+      "baseline_xyz_time_difference": 0.0,
+      "dct_usable_tracks": 17,
+      "solver_report": "Incremental: Ceres Solver Report: Iterations: 32, Initial cost: 4.676886e+07, Final cost: 4.871438e+05, Termination: CONVERGENCE\nGlobal: Ceres Solver Report: Iterations: 32, Initial cost: 4.676886e+07, Final cost: 4.871438e+05, Termination: CONVERGENCE\n"
+    },
+    "result": {
+      "audited_states": 58188,
+      "stage_counts": {
+        "pipeline_input": 1,
+        "pairwise_input": 28,
+        "optimize_input": 644,
+        "ceres_iterate": 56872,
+        "optimize_output": 641,
+        "graph_initialization": 1,
+        "pipeline_output": 1
+      },
+      "minimum_beta": -1.0,
+      "maximum_beta": 1.0,
+      "final_beta": [
+        0.0,
+        0.4079034080302724,
+        1.0,
+        -0.09862768968808568,
+        0.16154110361681107,
+        -0.8385189180245323,
+        -0.4443259866288541,
+        -0.5988063476573662
+      ],
+      "calibration_max_change": 0.0,
+      "observations": 6795,
+      "independently_recomputed_rmse": 21.791137558861355,
+      "baseline_xyz_time_difference": 0.0,
+      "dct_usable_tracks": 17,
+      "solver_report": "Incremental: Ceres Solver Report: Iterations: 112, Initial cost: 4.069888e+07, Final cost: 4.413491e+05, Termination: CONVERGENCE\nGlobal: Ceres Solver Report: Iterations: 9, Initial cost: 4.413491e+05, Final cost: 4.413491e+05, Termination: CONVERGENCE\n"
+    },
+    "holdout07/baseline": {
+      "audited_states": 43,
+      "stage_counts": {
+        "optimize_input": 1,
+        "ceres_iterate": 41,
+        "optimize_output": 1
+      },
+      "minimum_beta": -0.3258725362829864,
+      "maximum_beta": 0.3132389900274575,
+      "final_beta": [
+        0.0,
+        0.3132389900274575,
+        -0.013246315997093916,
+        0.14366548182442784,
+        -0.3258725362829864,
+        -0.2097398075275123,
+        0.06740977813024074
+      ],
+      "calibration_max_change": 0.0,
+      "observations": 5997,
+      "independently_recomputed_rmse": 22.261025302727685,
+      "baseline_xyz_time_difference": 0.0,
+      "dct_usable_tracks": 17,
+      "solver_report": "Incremental: Ceres Solver Report: Iterations: 41, Initial cost: 4.397578e+07, Final cost: 4.168905e+05, Termination: CONVERGENCE\nGlobal: Ceres Solver Report: Iterations: 41, Initial cost: 4.397578e+07, Final cost: 4.168905e+05, Termination: CONVERGENCE\n"
+    },
+    "holdout07/result": {
+      "audited_states": 44167,
+      "stage_counts": {
+        "pipeline_input": 1,
+        "pairwise_input": 21,
+        "optimize_input": 490,
+        "ceres_iterate": 43166,
+        "optimize_output": 487,
+        "graph_initialization": 1,
+        "pipeline_output": 1
+      },
+      "minimum_beta": -1.0,
+      "maximum_beta": 1.0,
+      "final_beta": [
+        0.0,
+        1.0,
+        0.09019540670083455,
+        0.4918879645343445,
+        -0.5830390479390819,
+        0.3108823948188792,
+        0.3108223253750723
+      ],
+      "calibration_max_change": 0.0,
+      "observations": 5997,
+      "independently_recomputed_rmse": 21.143356015584576,
+      "baseline_xyz_time_difference": 0.0,
+      "dct_usable_tracks": 17,
+      "solver_report": "Incremental: Ceres Solver Report: Iterations: 201, Initial cost: 9.130953e+07, Final cost: 3.799541e+05, Termination: NO_CONVERGENCE\nGlobal: Ceres Solver Report: Iterations: 78, Initial cost: 3.799541e+05, Final cost: 3.799265e+05, Termination: CONVERGENCE\n"
+    }
+  },
+  "videos": {
+    "skeleton": {
+      "codec_name": "h264",
+      "r_frame_rate": "15/1",
+      "nb_frames": "60"
+    },
+    "heldout07": {
+      "codec_name": "h264",
+      "r_frame_rate": "15/1",
+      "nb_frames": "60"
+    }
+  },
+  "input_same_as_unbounded": true,
+  "all_checks_passed": true
+}

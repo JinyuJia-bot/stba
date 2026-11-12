@@ -1,0 +1,12 @@
+{
+  "output": "/data/jjy/ipc/stba/experiments/dense_stba/real_comparison",
+  "runs": [
+    "results/corgi_raw",
+    "results/corgi_integer_aligned",
+    "results_density1/corgi_raw",
+    "results_density1/corgi_integer_aligned"
+  ],
+  "common_reference07_targets": 9220,
+  "bitwise_equal": true,
+  "window_stability_missing": []
+}

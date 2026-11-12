@@ -1,0 +1,14 @@
+{
+  "method": "B3",
+  "artifacts": [
+    "experiments/dense_stba/results/synthetic_noisy_occlusion/figures/coverage.png",
+    "experiments/dense_stba/results/synthetic_noisy_occlusion/figures/error_curves.png",
+    "experiments/dense_stba/results/synthetic_noisy_occlusion/figures/offsets.png",
+    "experiments/dense_stba/results/synthetic_noisy_occlusion/figures/pointcloud.gif",
+    "experiments/dense_stba/results/synthetic_noisy_occlusion/figures/pointcloud_snapshots.png",
+    "experiments/dense_stba/results/synthetic_noisy_occlusion/figures/query_status.png",
+    "experiments/dense_stba/results/synthetic_noisy_occlusion/figures/tracks_2d.png",
+    "experiments/dense_stba/results/synthetic_noisy_occlusion/figures/trajectories_3d.png"
+  ],
+  "interpretation": "Plots may subsample tracks for readability; algorithm outputs and metrics retain the full query grid. No geometric offset or post-hoc alignment is applied to GT."
+}

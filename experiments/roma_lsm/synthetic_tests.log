@@ -1,0 +1,11 @@
+test_affine_homography (test_synthetic.SyntheticTests) ... ok
+test_calibrated_subpixel_translation (test_synthetic.SyntheticTests) ... ok
+test_continuous_render_and_weak_texture (test_synthetic.SyntheticTests) ... ok
+test_controlled_initialization_error (test_synthetic.SyntheticTests) ... ok
+test_ray_distance_is_not_z_depth (test_synthetic.SyntheticTests) ... ok
+test_true_occlusion_and_visibility (test_synthetic.SyntheticTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.558s
+
+OK

@@ -1,0 +1,17 @@
+{"directory": "experiments/dense_stba/ablations/integer_wide_bounds/corgi_integer_aligned", "all_passed": true, "methods": ["B3"]}
+{"directory": "experiments/dense_stba/ablations/motion_x10/synthetic_fractional", "all_passed": true, "methods": ["B3"]}
+{"directory": "experiments/dense_stba/ablations/no_motion/synthetic_fractional", "all_passed": true, "methods": ["B3"]}
+{"directory": "experiments/dense_stba/ablations/uniform_observation_weights/synthetic_fractional", "all_passed": true, "methods": ["B3"]}
+{"directory": "experiments/dense_stba/results/corgi_integer_aligned", "all_passed": true, "methods": ["B0", "B1", "B3", "B4"]}
+{"directory": "experiments/dense_stba/results/corgi_raw", "all_passed": true, "methods": ["B0", "B1", "B3", "B4"]}
+{"directory": "experiments/dense_stba/results/synthetic_fractional", "all_passed": true, "methods": ["B0", "B1", "B2", "B3", "B4"]}
+{"directory": "experiments/dense_stba/results/synthetic_near_static", "all_passed": true, "methods": ["B0", "B1", "B2", "B3"]}
+{"directory": "experiments/dense_stba/results/synthetic_noisy_occlusion", "all_passed": true, "methods": ["B0", "B1", "B2", "B3"]}
+{"directory": "experiments/dense_stba/results/synthetic_wide", "all_passed": true, "methods": ["B0", "B1", "B2", "B3"]}
+{"directory": "experiments/dense_stba/results/synthetic_zero", "all_passed": true, "methods": ["B0", "B1", "B2", "B3"]}
+{"directory": "experiments/dense_stba/results_density1/corgi_integer_aligned", "all_passed": true, "methods": ["B3"]}
+{"directory": "experiments/dense_stba/results_density1/corgi_raw", "all_passed": true, "methods": ["B3"]}
+{"directory": "experiments/dense_stba/stability/window_0_40/corgi_integer_aligned", "all_passed": true, "methods": ["B3"]}
+{"directory": "experiments/dense_stba/stability/window_0_40/corgi_raw", "all_passed": true, "methods": ["B3"]}
+{"directory": "experiments/dense_stba/stability/window_20_60/corgi_integer_aligned", "all_passed": true, "methods": ["B3"]}
+{"directory": "experiments/dense_stba/stability/window_20_60/corgi_raw", "all_passed": true, "methods": ["B3"]}

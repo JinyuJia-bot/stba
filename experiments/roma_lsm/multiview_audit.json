@@ -1,0 +1,246 @@
+{
+  "all_passed": true,
+  "groups": {
+    "synthetic_affine_brightness": {
+      "all_passed": true,
+      "group": "synthetic_affine_brightness",
+      "scene_mode": "static",
+      "source_calibrations_exactly_equal": true,
+      "calibration_sha256": "05f27ce4dfe3999992b8f2d7bc3cbead84cb5bf38c1848316bde5d78603f1a4d",
+      "eligibility_exactly_joint_A1_affine_and_geometry": true,
+      "eligible_pixels": 18957,
+      "common_four_arms_pixels": 18930,
+      "cpu_patch_replay_threshold": 0.999,
+      "depth_initial_bitwise_identical_all_arms": true,
+      "weights_frozen_recomputed": true,
+      "no_ground_truth_used_in_acceptance_or_weights": true,
+      "arms": {
+        "uniform": {
+          "success_pixels": 18950,
+          "positive_ray_depth": true,
+          "positive_target_depth": [
+            true,
+            true
+          ],
+          "patch_mask_failed_counts": [
+            0,
+            0,
+            0
+          ],
+          "maximum_projection_replay_error_px": [
+            3.7577410401614605e-05,
+            4.5528200414093194e-05
+          ],
+          "affine_exactly_fixed_from_stage1": true,
+          "mean_frozen_weights": [
+            1.0,
+            1.0
+          ],
+          "mean_absolute_depth_change_vs_uniform_on_common": 0.0,
+          "maximum_absolute_depth_change_vs_uniform_on_common": 0.0,
+          "optimization_seconds": 6.188402445986867,
+          "peak_allocated_MB": 23.113728
+        },
+        "quality": {
+          "success_pixels": 18948,
+          "positive_ray_depth": true,
+          "positive_target_depth": [
+            true,
+            true
+          ],
+          "patch_mask_failed_counts": [
+            0,
+            0,
+            0
+          ],
+          "maximum_projection_replay_error_px": [
+            3.463396671513592e-05,
+            3.7296505291141275e-05
+          ],
+          "affine_exactly_fixed_from_stage1": true,
+          "mean_frozen_weights": [
+            0.7996518844421596,
+            1.2003481155578537
+          ],
+          "mean_absolute_depth_change_vs_uniform_on_common": 0.0006138493772596121,
+          "maximum_absolute_depth_change_vs_uniform_on_common": 0.0039119720458984375,
+          "optimization_seconds": 5.4779308419674635,
+          "peak_allocated_MB": 23.113728
+        },
+        "distance": {
+          "success_pixels": 18944,
+          "positive_ray_depth": true,
+          "positive_target_depth": [
+            true,
+            true
+          ],
+          "patch_mask_failed_counts": [
+            0,
+            0,
+            0
+          ],
+          "maximum_projection_replay_error_px": [
+            3.220452476544379e-05,
+            3.8078401216318954e-05
+          ],
+          "affine_exactly_fixed_from_stage1": true,
+          "mean_frozen_weights": [
+            1.2983578337091493,
+            0.701642166290292
+          ],
+          "mean_absolute_depth_change_vs_uniform_on_common": 0.0009620062774047256,
+          "maximum_absolute_depth_change_vs_uniform_on_common": 0.005692481994628906,
+          "optimization_seconds": 5.857379201799631,
+          "peak_allocated_MB": 23.113728
+        },
+        "quality_distance": {
+          "success_pixels": 18949,
+          "positive_ray_depth": true,
+          "positive_target_depth": [
+            true,
+            true
+          ],
+          "patch_mask_failed_counts": [
+            0,
+            0,
+            0
+          ],
+          "maximum_projection_replay_error_px": [
+            3.6435066245218694e-05,
+            4.494906206730933e-05
+          ],
+          "affine_exactly_fixed_from_stage1": true,
+          "mean_frozen_weights": [
+            1.1038197210493879,
+            0.8961802789506196
+          ],
+          "mean_absolute_depth_change_vs_uniform_on_common": 0.0003297821094747633,
+          "maximum_absolute_depth_change_vs_uniform_on_common": 0.004951000213623047,
+          "optimization_seconds": 5.270267989486456,
+          "peak_allocated_MB": 23.113728
+        }
+      }
+    },
+    "real_7_9_10": {
+      "all_passed": true,
+      "group": "real_7_9_10",
+      "scene_mode": "asynchronous_unknown",
+      "source_calibrations_exactly_equal": true,
+      "calibration_sha256": "0485baa3750ba6a7e8c6e79fb7b630f5801365bf08c16d3e2ed71f6f778d5c1c",
+      "eligibility_exactly_joint_A1_affine_and_geometry": true,
+      "eligible_pixels": 6241,
+      "common_four_arms_pixels": 5846,
+      "cpu_patch_replay_threshold": 0.999,
+      "depth_initial_bitwise_identical_all_arms": true,
+      "weights_frozen_recomputed": true,
+      "no_ground_truth_used_in_acceptance_or_weights": true,
+      "arms": {
+        "uniform": {
+          "success_pixels": 6113,
+          "positive_ray_depth": true,
+          "positive_target_depth": [
+            true,
+            true
+          ],
+          "patch_mask_failed_counts": [
+            0,
+            0,
+            0
+          ],
+          "maximum_projection_replay_error_px": [
+            0.0001292245014665201,
+            0.00011833348708937748
+          ],
+          "affine_exactly_fixed_from_stage1": true,
+          "mean_frozen_weights": [
+            1.0,
+            1.0
+          ],
+          "mean_absolute_depth_change_vs_uniform_on_common": 0.0,
+          "maximum_absolute_depth_change_vs_uniform_on_common": 0.0,
+          "optimization_seconds": 4.520385244861245,
+          "peak_allocated_MB": 24.506368
+        },
+        "quality": {
+          "success_pixels": 6117,
+          "positive_ray_depth": true,
+          "positive_target_depth": [
+            true,
+            true
+          ],
+          "patch_mask_failed_counts": [
+            0,
+            0,
+            0
+          ],
+          "maximum_projection_replay_error_px": [
+            0.0001229611048773583,
+            0.00011838640409186144
+          ],
+          "affine_exactly_fixed_from_stage1": true,
+          "mean_frozen_weights": [
+            1.1267284506632358,
+            0.8732715493367635
+          ],
+          "mean_absolute_depth_change_vs_uniform_on_common": 0.0003461556334514171,
+          "maximum_absolute_depth_change_vs_uniform_on_common": 0.007233619689941406,
+          "optimization_seconds": 4.541715815663338,
+          "peak_allocated_MB": 24.506368
+        },
+        "distance": {
+          "success_pixels": 6092,
+          "positive_ray_depth": true,
+          "positive_target_depth": [
+            true,
+            true
+          ],
+          "patch_mask_failed_counts": [
+            0,
+            0,
+            0
+          ],
+          "maximum_projection_replay_error_px": [
+            0.00013666147135225876,
+            0.00011965731314313818
+          ],
+          "affine_exactly_fixed_from_stage1": true,
+          "mean_frozen_weights": [
+            1.5539285439293296,
+            0.4460714560706388
+          ],
+          "mean_absolute_depth_change_vs_uniform_on_common": 0.0019870635587722063,
+          "maximum_absolute_depth_change_vs_uniform_on_common": 0.014513015747070312,
+          "optimization_seconds": 4.404641905799508,
+          "peak_allocated_MB": 24.506368
+        },
+        "quality_distance": {
+          "success_pixels": 6084,
+          "positive_ray_depth": true,
+          "positive_target_depth": [
+            true,
+            true
+          ],
+          "patch_mask_failed_counts": [
+            0,
+            0,
+            0
+          ],
+          "maximum_projection_replay_error_px": [
+            0.00015022704540812776,
+            0.00012421642477947545
+          ],
+          "affine_exactly_fixed_from_stage1": true,
+          "mean_frozen_weights": [
+            1.634715557700301,
+            0.36528444229969853
+          ],
+          "mean_absolute_depth_change_vs_uniform_on_common": 0.0024134234990924597,
+          "maximum_absolute_depth_change_vs_uniform_on_common": 0.016324520111083984,
+          "optimization_seconds": 4.335702920332551,
+          "peak_allocated_MB": 24.506368
+        }
+      }
+    }
+  },
+  "interpretation": "No GT is used by this invariant audit; GT is read only by separate metric evaluation and plotting."
+}

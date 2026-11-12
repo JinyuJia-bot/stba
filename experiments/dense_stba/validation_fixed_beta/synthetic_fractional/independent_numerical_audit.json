@@ -1,0 +1,46 @@
+{
+  "trajectory_count": 1408,
+  "valid_trajectories": 1401,
+  "valid_samples": 33165,
+  "evaluated_samples": 33161,
+  "GT_denominator": 42385,
+  "position_RMSE_m": 0.013103623109292074,
+  "position_P90_m": 0.01874385277707861,
+  "projection_replay_max_px": [
+    5.684341886080802e-14,
+    8.987733679556355e-14,
+    6.355287432313019e-14
+  ],
+  "frontend_GT_EPE": [
+    {
+      "camera": 0,
+      "all_observation_GT_EPE_mean": 0.06937532575191614,
+      "seed_EPE_mean": 1.5656092065291874e-14,
+      "EPE_p90": 0.15077806417036055
+    },
+    {
+      "camera": 1,
+      "all_observation_GT_EPE_mean": 0.08333894951595826,
+      "seed_EPE_mean": 0.04231544642137622,
+      "EPE_p90": 0.16110769547700388
+    },
+    {
+      "camera": 2,
+      "all_observation_GT_EPE_mean": 0.08504855670992682,
+      "seed_EPE_mean": 0.04899526844781068,
+      "EPE_p90": 0.1647380785920532
+    }
+  ],
+  "holdout_train_disjoint": true,
+  "holdout_phase_exact": true,
+  "fixed_beta_unchanged": true,
+  "all_valid_two_view_support": true,
+  "xyz_equals_exported_spline": true,
+  "positive_camera_depth": true,
+  "objective_initial": 3217.254408110935,
+  "objective_final": 63.535629520326204,
+  "iterations": 11,
+  "converged": true,
+  "is_preliminary": true,
+  "note": "Audited saved B2 observed_uv/visibility, not potentially regenerated frontend cache; explicitly oracle-beta and auto associations. Preliminary outputs predate residual-inlier support export fix."
+}

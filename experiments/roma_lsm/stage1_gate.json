@@ -1,0 +1,33 @@
+{
+  "unit_tests_before_stage2": 29,
+  "unit_test_log": "unit_tests.log",
+  "completed_stride_one_pairs": [
+    "real_7_9",
+    "real_7_10",
+    "synthetic_translation_0_1"
+  ],
+  "first_stage_result": "Coordinate and optimizer checks passed; real and synthetic A0/A0g/A1_translation/A1_affine/A2_affine executed. Geometry remains fixed. Stage2 may proceed after first-stage GPU work finishes.",
+  "real_7_9": {
+    "common_A0_A1_A2_pixels": 13963,
+    "mean_photo_A0_A1_A2": [
+      0.01405234,
+      0.00884083,
+      0.0088551
+    ],
+    "mean_FB_A0_A1_A2": [
+      0.04276958,
+      0.10146756,
+      0.09543942
+    ],
+    "interpretation": "Photometry improves; consistency against fixed raw reverse worsens. No GT accuracy claim."
+  },
+  "synthetic_translation": {
+    "common_A0_A1_A2_pixels": 22401,
+    "mean_EPE_A0_A1_A2_px": [
+      0.05205419,
+      0.01687213,
+      0.01609575
+    ]
+  },
+  "stage2_condition": "Three calibrated overlapping cameras available in static synthetic data and trusted static real ROIs."
+}

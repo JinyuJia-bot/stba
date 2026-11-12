@@ -1,0 +1,13 @@
+test_basis_matches_independent_scipy_and_partition (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_gauge_bounds_and_knots_are_enforced (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_global_beta_is_invariant_to_chunk_partition (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_joint_and_fixed_share_initialization_and_recover_timing (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_known_beta_trajectory_fit_uses_raw_training_observations_only (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_near_static_reports_no_time_information (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_projection_control_and_beta_jacobians (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_time_derivatives_autograd_and_acceleration_integral (test_spline_optimizer.SplineOptimizerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.331s
+
+OK

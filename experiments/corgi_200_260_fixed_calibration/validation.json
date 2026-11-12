@@ -1,0 +1,59 @@
+{
+  "distortion_roundtrip_max_px": 1.4380373887290168e-12,
+  "baseline": {
+    "max_calibration_change": 0.0,
+    "observations": 6807,
+    "undistorted_rmse_recomputed": 22.815757213428608,
+    "rmse_discrepancy": 0.0,
+    "dct_tracks_usable": true
+  },
+  "result": {
+    "max_calibration_change": 0.0,
+    "observations": 6807,
+    "undistorted_rmse_recomputed": 21.47830002877003,
+    "rmse_discrepancy": 0.0,
+    "dct_tracks_usable": true
+  },
+  "result_refined": {
+    "max_calibration_change": 0.0,
+    "observations": 6807,
+    "undistorted_rmse_recomputed": 21.534851879537264,
+    "rmse_discrepancy": 7.105427357601002e-15,
+    "dct_tracks_usable": true
+  },
+  "holdout07/baseline": {
+    "max_calibration_change": 0.0,
+    "observations": 6009,
+    "undistorted_rmse_recomputed": 22.187055723402622,
+    "rmse_discrepancy": 0.0,
+    "dct_tracks_usable": true
+  },
+  "holdout07/result": {
+    "max_calibration_change": 0.0,
+    "observations": 6009,
+    "undistorted_rmse_recomputed": 20.594907307531198,
+    "rmse_discrepancy": 3.552713678800501e-15,
+    "dct_tracks_usable": true
+  },
+  "holdout07/result_refined": {
+    "max_calibration_change": 0.0,
+    "observations": 6009,
+    "undistorted_rmse_recomputed": 20.80987906469023,
+    "rmse_discrepancy": 3.552713678800501e-15,
+    "dct_tracks_usable": true
+  },
+  "image_links_verified": 480,
+  "all_source_hashes_unchanged": true,
+  "videos": {
+    "skeleton": {
+      "codec_name": "h264",
+      "r_frame_rate": "15/1",
+      "nb_frames": "60"
+    },
+    "heldout07": {
+      "codec_name": "h264",
+      "r_frame_rate": "15/1",
+      "nb_frames": "60"
+    }
+  }
+}

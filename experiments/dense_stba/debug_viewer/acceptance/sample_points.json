@@ -1,0 +1,609 @@
+{
+  "total": 2312,
+  "offset": 0,
+  "limit": 40,
+  "sort": "point_id",
+  "descending": false,
+  "points": [
+    {
+      "point_id": 69807,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 2.0,
+      "max_anchor_error": 0.7124231457710266,
+      "roma_confidence": 0.6385915279388428,
+      "roma_fb_error": 0.20043471455574036,
+      "seed_uv": [
+        207.0,
+        145.0
+      ],
+      "category": "success",
+      "recorded_first_gate": "success",
+      "edge_status": 1
+    },
+    {
+      "point_id": 69808,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 2.0,
+      "max_anchor_error": 1.5410155057907104,
+      "roma_confidence": 0.4651833176612854,
+      "roma_fb_error": 0.21476908028125763,
+      "seed_uv": [
+        208.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69809,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.08625689148902893,
+      "roma_confidence": 0.3278364837169647,
+      "roma_fb_error": 0.15622448921203613,
+      "seed_uv": [
+        209.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69810,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.07916716486215591,
+      "roma_confidence": 0.2521653175354004,
+      "roma_fb_error": 0.1495223492383957,
+      "seed_uv": [
+        210.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69811,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.06835739314556122,
+      "roma_confidence": 0.22665579617023468,
+      "roma_fb_error": 0.13742701709270477,
+      "seed_uv": [
+        211.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69812,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.052736636251211166,
+      "roma_confidence": 0.23325078189373016,
+      "roma_fb_error": 0.09978858381509781,
+      "seed_uv": [
+        212.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69813,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.06213973090052605,
+      "roma_confidence": 0.2423296421766281,
+      "roma_fb_error": 0.10754667967557907,
+      "seed_uv": [
+        213.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69814,
+      "temporal_observations": 44.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.13085941970348358,
+      "roma_confidence": 0.23018917441368103,
+      "roma_fb_error": 0.11420835554599762,
+      "seed_uv": [
+        214.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69815,
+      "temporal_observations": 44.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.49159619212150574,
+      "roma_confidence": 0.17862889170646667,
+      "roma_fb_error": 0.11699634045362473,
+      "seed_uv": [
+        215.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69816,
+      "temporal_observations": 44.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 1.5282872915267944,
+      "roma_confidence": 0.10405721515417099,
+      "roma_fb_error": 0.43655693531036377,
+      "seed_uv": [
+        216.0,
+        145.0
+      ],
+      "category": "roma_initial",
+      "recorded_first_gate": "roma_initial",
+      "edge_status": 2
+    },
+    {
+      "point_id": 69817,
+      "temporal_observations": 34.0,
+      "independent_anchor_support": 0.0,
+      "max_anchor_error": null,
+      "roma_confidence": 0.05772067978978157,
+      "roma_fb_error": 1.3400448560714722,
+      "seed_uv": [
+        217.0,
+        145.0
+      ],
+      "category": "roma_initial",
+      "recorded_first_gate": "roma_initial",
+      "edge_status": 2
+    },
+    {
+      "point_id": 69818,
+      "temporal_observations": 35.0,
+      "independent_anchor_support": 0.0,
+      "max_anchor_error": null,
+      "roma_confidence": 0.03378593921661377,
+      "roma_fb_error": 3.221587896347046,
+      "seed_uv": [
+        218.0,
+        145.0
+      ],
+      "category": "roma_initial",
+      "recorded_first_gate": "roma_initial",
+      "edge_status": 2
+    },
+    {
+      "point_id": 69819,
+      "temporal_observations": 35.0,
+      "independent_anchor_support": 0.0,
+      "max_anchor_error": null,
+      "roma_confidence": 0.021593056619167328,
+      "roma_fb_error": 5.848293781280518,
+      "seed_uv": [
+        219.0,
+        145.0
+      ],
+      "category": "roma_initial",
+      "recorded_first_gate": "roma_initial",
+      "edge_status": 2
+    },
+    {
+      "point_id": 69820,
+      "temporal_observations": 35.0,
+      "independent_anchor_support": 0.0,
+      "max_anchor_error": null,
+      "roma_confidence": 0.017874734476208687,
+      "roma_fb_error": 7.771151065826416,
+      "seed_uv": [
+        220.0,
+        145.0
+      ],
+      "category": "roma_initial",
+      "recorded_first_gate": "roma_initial",
+      "edge_status": 2
+    },
+    {
+      "point_id": 69821,
+      "temporal_observations": 35.0,
+      "independent_anchor_support": 0.0,
+      "max_anchor_error": null,
+      "roma_confidence": 0.02265910431742668,
+      "roma_fb_error": 8.177271842956543,
+      "seed_uv": [
+        221.0,
+        145.0
+      ],
+      "category": "roma_initial",
+      "recorded_first_gate": "roma_initial",
+      "edge_status": 2
+    },
+    {
+      "point_id": 69822,
+      "temporal_observations": 35.0,
+      "independent_anchor_support": 0.0,
+      "max_anchor_error": null,
+      "roma_confidence": 0.04451531544327736,
+      "roma_fb_error": 6.509509086608887,
+      "seed_uv": [
+        222.0,
+        145.0
+      ],
+      "category": "roma_initial",
+      "recorded_first_gate": "roma_initial",
+      "edge_status": 2
+    },
+    {
+      "point_id": 69823,
+      "temporal_observations": 35.0,
+      "independent_anchor_support": 0.0,
+      "max_anchor_error": null,
+      "roma_confidence": 0.11213850975036621,
+      "roma_fb_error": 3.5815086364746094,
+      "seed_uv": [
+        223.0,
+        145.0
+      ],
+      "category": "roma_initial",
+      "recorded_first_gate": "roma_initial",
+      "edge_status": 2
+    },
+    {
+      "point_id": 69824,
+      "temporal_observations": 35.0,
+      "independent_anchor_support": 0.0,
+      "max_anchor_error": null,
+      "roma_confidence": 0.2719210386276245,
+      "roma_fb_error": 0.9933202862739563,
+      "seed_uv": [
+        224.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69825,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 2.0,
+      "max_anchor_error": 3.932612895965576,
+      "roma_confidence": 0.5375568270683289,
+      "roma_fb_error": 0.1624179184436798,
+      "seed_uv": [
+        225.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69826,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 2.0,
+      "max_anchor_error": 4.002937316894531,
+      "roma_confidence": 0.7838389873504639,
+      "roma_fb_error": 0.0696895495057106,
+      "seed_uv": [
+        226.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69827,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.6084969639778137,
+      "roma_confidence": 0.9052385091781616,
+      "roma_fb_error": 0.08191748708486557,
+      "seed_uv": [
+        227.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69828,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.4037538766860962,
+      "roma_confidence": 0.9452104568481445,
+      "roma_fb_error": 0.13661345839500427,
+      "seed_uv": [
+        228.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69829,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.3054329454898834,
+      "roma_confidence": 0.9572635889053345,
+      "roma_fb_error": 0.15205857157707214,
+      "seed_uv": [
+        229.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69830,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.2366686910390854,
+      "roma_confidence": 0.9606373906135559,
+      "roma_fb_error": 0.1469440460205078,
+      "seed_uv": [
+        230.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69831,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.11154007911682129,
+      "roma_confidence": 0.9637669920921326,
+      "roma_fb_error": 0.13096603751182556,
+      "seed_uv": [
+        231.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69832,
+      "temporal_observations": 41.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.07105332612991333,
+      "roma_confidence": 0.9663734436035156,
+      "roma_fb_error": 0.08337811380624771,
+      "seed_uv": [
+        232.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69833,
+      "temporal_observations": 59.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.05882905423641205,
+      "roma_confidence": 0.9688122868537903,
+      "roma_fb_error": 0.0340767428278923,
+      "seed_uv": [
+        233.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69834,
+      "temporal_observations": 59.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.07792339473962784,
+      "roma_confidence": 0.9722462296485901,
+      "roma_fb_error": 0.005734747275710106,
+      "seed_uv": [
+        234.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69835,
+      "temporal_observations": 59.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.07285704463720322,
+      "roma_confidence": 0.9777842164039612,
+      "roma_fb_error": 0.05436914414167404,
+      "seed_uv": [
+        235.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69836,
+      "temporal_observations": 59.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.07365337014198303,
+      "roma_confidence": 0.9832015037536621,
+      "roma_fb_error": 0.1036011204123497,
+      "seed_uv": [
+        236.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69837,
+      "temporal_observations": 59.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.06598923355340958,
+      "roma_confidence": 0.9870423674583435,
+      "roma_fb_error": 0.1330028772354126,
+      "seed_uv": [
+        237.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69838,
+      "temporal_observations": 59.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.03091496229171753,
+      "roma_confidence": 0.9886367321014404,
+      "roma_fb_error": 0.15022151172161102,
+      "seed_uv": [
+        238.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69839,
+      "temporal_observations": 59.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.009626787155866623,
+      "roma_confidence": 0.9892496466636658,
+      "roma_fb_error": 0.16303426027297974,
+      "seed_uv": [
+        239.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 69840,
+      "temporal_observations": 59.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.05406267195940018,
+      "roma_confidence": 0.9892846345901489,
+      "roma_fb_error": 0.16604945063591003,
+      "seed_uv": [
+        240.0,
+        145.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 70287,
+      "temporal_observations": 60.0,
+      "independent_anchor_support": 2.0,
+      "max_anchor_error": 0.6501021981239319,
+      "roma_confidence": 0.6886800527572632,
+      "roma_fb_error": 0.19913005828857422,
+      "seed_uv": [
+        207.0,
+        146.0
+      ],
+      "category": "success",
+      "recorded_first_gate": "success",
+      "edge_status": 1
+    },
+    {
+      "point_id": 70288,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.07865168899297714,
+      "roma_confidence": 0.535041868686676,
+      "roma_fb_error": 0.19005034863948822,
+      "seed_uv": [
+        208.0,
+        146.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 70289,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.07395195215940475,
+      "roma_confidence": 0.4303537607192993,
+      "roma_fb_error": 0.11101983487606049,
+      "seed_uv": [
+        209.0,
+        146.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 70290,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.07006826996803284,
+      "roma_confidence": 0.37546858191490173,
+      "roma_fb_error": 0.10909215360879898,
+      "seed_uv": [
+        210.0,
+        146.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 70291,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.06517771631479263,
+      "roma_confidence": 0.36437350511550903,
+      "roma_fb_error": 0.11320764571428299,
+      "seed_uv": [
+        211.0,
+        146.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    },
+    {
+      "point_id": 70292,
+      "temporal_observations": 39.0,
+      "independent_anchor_support": 1.0,
+      "max_anchor_error": 0.06212187558412552,
+      "roma_confidence": 0.37747809290885925,
+      "roma_fb_error": 0.12048396468162537,
+      "seed_uv": [
+        212.0,
+        146.0
+      ],
+      "category": "flow_or_anchors",
+      "recorded_first_gate": "flow_or_anchors",
+      "edge_status": 4
+    }
+  ]
+}

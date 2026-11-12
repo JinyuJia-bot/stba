@@ -1,0 +1,34 @@
+{
+  "config": {
+    "fb_max": 0.75,
+    "fb_relative": 0.03,
+    "seed_texture_min": 0.005,
+    "cycle_max": 1.5,
+    "cycle_fb_max": 2.0,
+    "use_cycle": true
+  },
+  "status_legend": {
+    "0": "unvisited",
+    "1": "tracked",
+    "2": "outside_image",
+    "3": "fb_inconsistent_possible_occlusion",
+    "4": "low_seed_texture",
+    "5": "multi_frame_drift",
+    "6": "lost_after_failure",
+    "7": "invalid_seed",
+    "8": "invalid_flow"
+  },
+  "tracking_seconds": 0.10850002430379391,
+  "seed_frame": 30,
+  "query_count": 1488,
+  "accepted_seed_count": 1475,
+  "accepted_observations": 83419,
+  "tracks_with_ge_10_observations": 1460,
+  "tracks_with_ge_30_observations": 1428,
+  "visibility_semantics": "Accepted optical-flow observation; actual occlusion vs identity error is not independently known.",
+  "identity_policy": "Persistent seed point_id; follow flow at moving coordinates in each direction. After first failure terminate that branch; no reidentification or holes filled.",
+  "confidence_semantics": "Heuristic minimum of seed texture and flow consistency scores, not calibrated probability/inverse variance",
+  "cumulative_drift_policy": "Direct skip-frame flow vs composed adjacent tracks, gated by reliable direct FB. No guarantee all drift is detected.",
+  "device": "CPU",
+  "peak_gpu_memory_bytes": 0
+}

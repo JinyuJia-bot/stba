@@ -1,0 +1,2 @@
+{"case": "corgi_raw", "figures": "experiments/dense_stba/results_density1/corgi_raw/figures", "display_cloud_limit": 3500, "display_trajectory_lines": 12, "color": "reference RGB"}
+{"case": "corgi_integer_aligned", "figures": "experiments/dense_stba/results_density1/corgi_integer_aligned/figures", "display_cloud_limit": 3500, "display_trajectory_lines": 12, "color": "reference RGB"}

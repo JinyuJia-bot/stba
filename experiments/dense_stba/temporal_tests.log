@@ -1,0 +1,15 @@
+test_actual_dis_and_shared_pair_cache (experiments.dense_stba.tests.test_temporal_tracks.TemporalTests) ... {"flow_cache": "/tmp/tmp90yridtt/cam0", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [112, 80], "camera_id": 0, "n_frames": 3, "raw_frame_ids": [10, 11, 12], "pair_cache_hits": 0, "pairs_computed": 2, "flow_compute_seconds": 0.021409668028354645, "flow_save_seconds": 0.021497996523976326, "total_seconds": 0.04301697015762329, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+{"flow_cache": "/tmp/tmp90yridtt/cam0", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [112, 80], "camera_id": 0, "n_frames": 3, "raw_frame_ids": [11, 12, 13], "pair_cache_hits": 1, "pairs_computed": 1, "flow_compute_seconds": 0.008953168988227844, "flow_save_seconds": 0.010861601680517197, "total_seconds": 0.022129956632852554, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+ok
+test_arbitrary_seed_both_directions_follow_identity (experiments.dense_stba.tests.test_temporal_tracks.TemporalTests) ... ok
+test_exact_subpixel_sampler (experiments.dense_stba.tests.test_temporal_tracks.TemporalTests) ... ok
+test_fb_failure_terminates_only_one_time_branch (experiments.dense_stba.tests.test_temporal_tracks.TemporalTests) ... ok
+test_grid_is_not_feature_detection (experiments.dense_stba.tests.test_temporal_tracks.TemporalTests) ... ok
+test_multi_frame_drift_detected_despite_local_fb (experiments.dense_stba.tests.test_temporal_tracks.TemporalTests) ... ok
+test_nonfinite_and_outside_seeds_never_visible (experiments.dense_stba.tests.test_temporal_tracks.TemporalTests) ... ok
+test_plus_clock_and_integer_shift_equivalence (experiments.dense_stba.tests.test_temporal_tracks.TemporalTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.097s
+
+OK

@@ -1,0 +1,9 @@
+test_denominator_and_filtering_effect (experiments.roma_lsm.tests.test_evaluate.EvaluationTests) ... ok
+test_different_roi_rejected (experiments.roma_lsm.tests.test_evaluate.EvaluationTests) ... ok
+test_fallback_and_worsening (experiments.roma_lsm.tests.test_evaluate.EvaluationTests) ... ok
+test_real_has_no_accuracy_metrics (experiments.roma_lsm.tests.test_evaluate.EvaluationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.075s
+
+OK

@@ -1,0 +1,50 @@
+test_changed_measurement_rejected_even_without_prediction (test_compare_real.CommonReferenceTests) ... ok
+test_only_mutually_heldout_targets_are_evaluated (test_compare_real.CommonReferenceTests) ... ok
+test_seed_and_rawframe_identity_not_array_order (test_compare_real.CommonReferenceTests) ... ok
+test_external_reference_integer_shift_sign (test_evaluation.EvaluationTests) ... ok
+test_modified_or_mismatched_frontend_cache_is_rejected (test_evaluation.EvaluationTests) ... ok
+test_rejections_reduce_fixed_denominator_coverage (test_evaluation.EvaluationTests) ... ok
+test_shared_holdout_uses_identical_raw_measurements_and_windows (test_evaluation.EvaluationTests) ... ok
+test_train_holdout_overlap_is_rejected (test_evaluation.EvaluationTests) ... ok
+test_basis_matches_independent_scipy_and_partition (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_gauge_bounds_and_knots_are_enforced (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_global_beta_is_invariant_to_chunk_partition (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_joint_and_fixed_share_initialization_and_recover_timing (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_known_beta_trajectory_fit_uses_raw_training_observations_only (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_near_static_reports_no_time_information (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_projection_control_and_beta_jacobians (test_spline_optimizer.SplineOptimizerTests) ... ok
+test_time_derivatives_autograd_and_acceleration_integral (test_spline_optimizer.SplineOptimizerTests) ... ok
+Generated fractional: 3 cameras x 8 RGB frames at /tmp/dense-stba-synthetic-mmfg2qvl
+test_public_inputs_do_not_contain_true_time_offsets_or_material_identity (test_synthetic_dynamic.DynamicFileTests) ... ok
+test_seed_identity_and_truth_api (test_synthetic_dynamic.DynamicFileTests) ... ok
+test_gt_finite_derivatives_against_independent_center_formulas (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_independent_continuous_render_finite_and_temporally_smooth (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_material_projection_ray_intersection_roundtrip (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_near_static_is_small_relative_to_dynamic_motion (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_pose_is_valid_rotation_and_accelerating_3d_motion (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_static_occluder_and_material_motion_are_distinct (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_synchronous_epipolar_geometry_and_asynchronous_difference (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_temporal_visibility_detects_true_dynamic_occlusion (test_synthetic_dynamic.DynamicGeometryTests) ... ok
+test_actual_dis_and_shared_pair_cache (test_temporal_tracks.TemporalTests) ... {"flow_cache": "/tmp/tmp4gy9l111/cam0", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [112, 80], "camera_id": 0, "n_frames": 3, "raw_frame_ids": [10, 11, 12], "pair_cache_hits": 0, "pairs_computed": 2, "flow_compute_seconds": 0.02083556167781353, "flow_save_seconds": 0.018582453951239586, "total_seconds": 0.039516327902674675, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+{"flow_cache": "/tmp/tmp4gy9l111/cam0", "settings": {"method": "dis", "preset": "medium", "finest_scale": 0, "gradient_descent_iterations": 25, "variational_refinement_iterations": 5, "cv2_threads": 4, "skip_stride": 5}, "opencv": "4.13.0", "size": [112, 80], "camera_id": 0, "n_frames": 3, "raw_frame_ids": [11, 12, 13], "pair_cache_hits": 1, "pairs_computed": 1, "flow_compute_seconds": 0.008693819865584373, "flow_save_seconds": 0.009443363174796104, "total_seconds": 0.019888751208782196, "device": "CPU", "peak_gpu_memory_bytes": 0, "flow_semantics": "Dense pixel displacement (dx,dy), integer-center source samples, exact bilinear subpixel query", "skip_semantics": "Independent direct flow every5frames by default, compared to composed adjacent tracks only where direct FB is reliable"}
+ok
+test_arbitrary_seed_both_directions_follow_identity (test_temporal_tracks.TemporalTests) ... ok
+test_exact_subpixel_sampler (test_temporal_tracks.TemporalTests) ... ok
+test_fb_failure_terminates_only_one_time_branch (test_temporal_tracks.TemporalTests) ... ok
+test_grid_is_not_feature_detection (test_temporal_tracks.TemporalTests) ... ok
+test_multi_frame_drift_detected_despite_local_fb (test_temporal_tracks.TemporalTests) ... ok
+test_nonfinite_and_outside_seeds_never_visible (test_temporal_tracks.TemporalTests) ... ok
+test_plus_clock_and_integer_shift_equivalence (test_temporal_tracks.TemporalTests) ... ok
+test_aligned_triangulation_uses_query_time_minus_beta (test_time_init.TimeInitializationTests) ... ok
+test_heldout_coordinates_and_weights_do_not_affect_initialization (test_time_init.TimeInitializationTests) ... ok
+test_interpolation_never_extrapolates_or_fills_long_gaps (test_time_init.TimeInitializationTests) ... ok
+test_motion_along_epipolar_lines_has_flat_time_profile (test_time_init.TimeInitializationTests) ... ok
+test_near_static_cannot_estimate_time_offsets (test_time_init.TimeInitializationTests) ... ok
+test_plus_beta_sign_is_recovered_from_projected_motion (test_time_init.TimeInitializationTests) ... ok
+test_separated_periodic_minima_are_not_declared_reliable (test_time_init.TimeInitializationTests) ... ok
+test_training_split_is_disjoint_and_preserves_missing_data (test_time_init.TimeInitializationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 1.358s
+
+OK

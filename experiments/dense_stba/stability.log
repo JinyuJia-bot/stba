@@ -1,0 +1,12 @@
+{"case": "corgi_raw", "coarse_beta_frames": [0.0, 0.36019640663088864, 1.0849743001580563], "reliable": [true, true, true], "motion_tracks": 651}
+/data/jjy/ipc/stba/experiments/dense_stba/run_experiment.py:211: RuntimeWarning: Mean of empty slice
+  fields['confidence']=np.nanmean(np.where(method_obs['visible'],method_obs['weight'],np.nan),axis=(1,2))
+{"case": "corgi_raw", "method": "B3", "beta_frames": [0.0, 0.33578003723028477, 1.4825245923921837], "trajectories": 831, "valid_samples": 32277, "status": ["reference_gauge", "locally_observable", "locally_observable"], "seconds": 1.3996272683143616}
+{"case": "corgi_integer_aligned", "coarse_beta_frames": [0.0, -0.6750605332164592, -0.9999979291974356], "reliable": [true, true, false], "motion_tracks": 651}
+{"case": "corgi_integer_aligned", "method": "B3", "beta_frames": [0.0, -0.5676492324829462, -1.0], "trajectories": 823, "valid_samples": 32044, "status": ["reference_gauge", "iteration_limit_or_no_convergence", "at_beta_bound"], "seconds": 2.7797106467187405}
+{"case": "corgi_raw", "coarse_beta_frames": [0.0, 0.6112783722142012, 1.571845395773552], "reliable": [true, true, true], "motion_tracks": 689}
+/data/jjy/ipc/stba/experiments/dense_stba/run_experiment.py:211: RuntimeWarning: Mean of empty slice
+  fields['confidence']=np.nanmean(np.where(method_obs['visible'],method_obs['weight'],np.nan),axis=(1,2))
+{"case": "corgi_raw", "method": "B3", "beta_frames": [0.0, 0.5431271552722607, 1.7974058011041834], "trajectories": 831, "valid_samples": 32279, "status": ["reference_gauge", "locally_observable", "locally_observable"], "seconds": 1.5012218225747347}
+{"case": "corgi_integer_aligned", "coarse_beta_frames": [0.0, -0.49950561602286253, -0.9999979291974356], "reliable": [true, true, false], "motion_tracks": 689}
+{"case": "corgi_integer_aligned", "method": "B3", "beta_frames": [0.0, -0.49755382303364215, -1.0], "trajectories": 823, "valid_samples": 32064, "status": ["reference_gauge", "iteration_limit_or_no_convergence", "at_beta_bound"], "seconds": 2.7528237886726856}
