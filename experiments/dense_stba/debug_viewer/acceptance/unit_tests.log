@@ -3,7 +3,26 @@ test_frozen_source_hash_and_traversal_are_rejected (test_adapter.AdapterTests) .
 test_image_rgb_single_frame_and_identity (test_adapter.AdapterTests) ... ok
 test_json_conversion_and_readonly_requests_do_not_write (test_adapter.AdapterTests) ... ok
 test_method_specific_frozen_lsm_and_two_run_cache (test_adapter.AdapterTests) ... ok
+test_reference_seed_identity_is_independent_of_display_frame_and_method (test_adapter.AdapterTests) ... ok
 test_single_point_row_does_not_materialize_large_field (test_adapter.AdapterTests) ... ok
+test_archived_history_only_and_roi_does_not_refit_beta (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_changed_observations_counted_before_missing_predictions (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_dataset_seed_and_gt_mismatches_are_rejected (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_raw_exposure_pairing_does_not_pair_equal_local_frame_indices (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_reference_clock_mismatch_keeps_exposure_pairing_separate (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_saved_time_windows_restrict_heldout_comparison (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_scene_fixed_camera_centers_and_actual_ray_times (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_scene_roi_excludes_outside_selection_from_cloud_statistics (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_support_states_and_query_grid_difference_remain_distinct (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_synthetic_gt_beta_is_separate_read_only_overlay (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_trajectory_support_never_fills_invalid_gaps_or_extrapolates (test_alignment_scene_comparison.ViewerPanelsTests) ... ok
+test_changed_frozen_sources_are_rejected_at_write_and_read (test_capture.CaptureTests) ... ok
+test_corruption_and_different_method_cannot_be_loaded (test_capture.CaptureTests) ... ok
+test_experiment_directory_and_symlink_escape_are_rejected (test_capture.CaptureTests) ... ok
+test_metadata_beta_and_npz_path_must_agree (test_capture.CaptureTests) ... ok
+test_optional_triangulation_preserves_missing_samples_without_inventing_xyz (test_capture.CaptureTests) ... ok
+test_round_trip_is_independent_bound_readonly_and_does_not_modify_experiment (test_capture.CaptureTests) ... ok
+test_shapes_identity_provenance_and_reference_gauge_are_required (test_capture.CaptureTests) ... ok
 test_missing_and_point_pagination (test_diagnostics_rois_flow.CoverageTests) ... ok
 test_recorded_order_and_overlapping_edge4_reasons (test_diagnostics_rois_flow.CoverageTests) ... ok
 test_seed_anchor_never_counts_as_independent (test_diagnostics_rois_flow.CoverageTests) ... ok
@@ -14,7 +33,12 @@ test_polygon_boundary_and_ids (test_diagnostics_rois_flow.ROITests) ... ok
 test_save_refuses_workspace_symlink (test_diagnostics_rois_flow.ROITests) ... ok
 test_save_requires_explicit_and_rejects_escape (test_diagnostics_rois_flow.ROITests) ... ok
 test_seed_coordinates_half_open_and_background (test_diagnostics_rois_flow.ROITests) ... ok
+test_experiment_and_parent_paths_rejected_without_writes (test_export_diagnostics.ExportTests) ... ok
+test_export_is_read_only_and_missing_not_fabricated (test_export_diagnostics.ExportTests) ... ok
+test_symlink_destinations_cannot_redirect_writes (test_export_diagnostics.ExportTests) ... ok
+test_unknown_point_does_not_create_output (test_export_diagnostics.ExportTests) ... ok
 test_continuous_samples_do_not_claim_support_across_long_gap (test_inspector.InspectorTests) ... ok
+test_gt_current_uses_selected_frame_and_independent_physical_time (test_inspector.InspectorTests) ... ok
 test_native_roma_fallback_respects_direction_and_half_pixel_convention (test_inspector.InspectorTests) ... ok
 test_nonseed_click_uses_moving_track_not_pixel_id (test_inspector.InspectorTests) ... ok
 test_point_status_time_residual_spline_and_missing_initial_controls (test_inspector.InspectorTests) ... ok
@@ -22,8 +46,12 @@ test_raw_work_mapping_applies_distortion_then_half_pixel_resize (test_inspector.
 test_readonly_inspection_and_explicit_missing_field (test_inspector.InspectorTests) ... ok
 test_seed_click_does_not_invent_unqueried_trajectory (test_inspector.InspectorTests) ... ok
 test_unreconstructed_candidate_is_still_inspectable (test_inspector.InspectorTests) ... ok
+test_coverage_sends_small_raster_and_bounded_point_page (test_server.ServerTests) ... ok
+test_explicit_roi_save_does_not_modify_experiment_files (test_server.ServerTests) ... ok
+test_image_point_and_unqueried_pixel_http_contract (test_server.ServerTests) ... ok
+test_workspace_and_invalid_path_guards (test_server.ServerTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 0.260s
+Ran 52 tests in 0.616s
 
 OK
